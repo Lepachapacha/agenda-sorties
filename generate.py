@@ -67,7 +67,7 @@ def build_events_json(client, manual_events, scraped_content, today):
         if e["date"] >= today
     )
 
-    prompt = f"""Extrait tous les événements culturels pertinents pour la région Montpellier–Nîmes–Sète–Béziers.
+    prompt = f"""Extrait tous les événements culturels pertinents pour la région Montpellier–Nîmes–Sète–Béziers–Marseille.
 
 ÉVÉNEMENTS CONFIRMÉS (priorité absolue, à inclure tels quels) :
 {manual_text}
@@ -76,21 +76,21 @@ CONTENU SCRAPÉ DES SOURCES :
 {scraped_content}
 
 Critères de sélection depuis les sources :
-- Zone : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30)
-- Période : {today} jusqu'à dans 3 mois
-- Catégories valides : festival, concert, jazz, electro, classique, theatre, expo, danse, feria, activite
+- Zone : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille (13)
+- Période : {today} jusqu'à dans 12 mois (événements futurs à anticiper inclus)
+- Catégories valides : festival, concert, jazz, electro, classique, theatre, expo, danse, humour, feria, activite
 
 Retourne UNIQUEMENT un tableau JSON valide (aucun texte avant ou après), avec ce format exact :
 [
   {{
     "date": "YYYY-MM-DD",
     "titre": "Nom de l'événement",
-    "cat": "categorie",
+    "cat": "categorie (festival|concert|jazz|electro|classique|theatre|expo|danse|humour|feria|activite)",
     "lieu": "Lieu, Ville",
     "note": "Description courte ou vide",
     "fils": true/false,
     "stars": 1/2/3,
-    "section": "concerts|expos|activites",
+    "section": "concerts|expos|activites|danse|humour",
     "url": "URL billetterie ou page officielle de l'événement, vide si introuvable",
     "gratuit": true/false,
     "groupe": "slug de regroupement si présent dans les événements confirmés (ex: festival-nimes, jazz-sete), sinon vide"
@@ -180,8 +180,10 @@ def main():
                 "fils":    ev["fils"],
                 "stars":   ev["etoiles"],
                 "section": "activites" if ev["categorie"] == "activite"
-                           else ("expos" if ev["categorie"] in ("expo","theatre","danse")
-                           else "concerts"),
+                           else ("danse" if ev["categorie"] == "danse"
+                           else ("humour" if ev["categorie"] == "humour"
+                           else ("expos" if ev["categorie"] in ("expo","theatre")
+                           else "concerts"))),
                 "url":     ev["url"],
                 "gratuit": False,
                 "groupe":  ev.get("groupe", ""),
