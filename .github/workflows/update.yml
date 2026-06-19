@@ -27,7 +27,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Sync with remote
-        run: git pull --rebase origin main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Generate index.html
         env:
