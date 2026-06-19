@@ -2,11 +2,12 @@ name: Daily agenda update
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # tous les jours à 6h UTC (= 8h heure Paris)
+    - cron: '0 6 * * *'
   push:
     paths:
-      - 'agenda-config.md' # aussi déclenché si tu édites le fichier config
-  workflow_dispatch:        # bouton manuel dans l'UI GitHub pour tester
+      - 'agenda-config.md'
+      - 'sources.md'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -17,19 +18,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: 'pip'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Sync with remote
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
 
       - name: Generate index.html
         env:
@@ -38,10 +38,10 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git config user.name  "agenda-bot"
+          git config user.name "agenda-bot"
           git config user.email "agenda-bot@users.noreply.github.com"
           git add index.html
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            git push origin HEAD:main
           fi
