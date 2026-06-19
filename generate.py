@@ -49,7 +49,7 @@ def extract_json(text):
 def ask_claude(client, prompt):
     msg = client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=8192,
+        max_tokens=16384,
         messages=[{"role": "user", "content": prompt}]
     )
     return msg.content[0].text
