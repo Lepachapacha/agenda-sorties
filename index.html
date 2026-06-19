@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Sorties — Montpellier · Nîmes · Sète · Béziers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #0d0f1a;
+      --bg-nav:       #0d0f1aee;
+      --bg-card:      #161929;
+      --bg-card-h:    #1c2033;
+      --accent:       #f59e0b;
+      --accent-l:     #fbbf24;
+      --text:         #e2e8f0;
+      --muted:        #8892aa;
+      --border:       #1e2540;
+      --c-festival:   #7c3aed;
+      --c-concert:    #dc2626;
+      --c-jazz:       #0284c7;
+      --c-electro:    #0891b2;
+      --c-classique:  #64748b;
+      --c-theatre:    #b45309;
+      --c-expo:       #047857;
+      --c-danse:      #be185d;
+      --c-feria:      #c2410c;
+      --c-cinema:     #1d4ed8;
+      --c-activite:   #15803d;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg-nav);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+      display: flex; align-items: center; gap: 0; overflow-x: auto;
+    }
+    nav a {
+      color: var(--muted); text-decoration: none; font-size: .82rem;
+      font-family: 'Space Mono', monospace; letter-spacing: .03em;
+      padding: .85rem .9rem; white-space: nowrap;
+      border-bottom: 2px solid transparent; transition: color .2s, border-color .2s;
+    }
+    nav a:hover { color: var(--text); }
+    nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .nav-sep { flex: 1; }
+    #btn-fils {
+      flex-shrink: 0; padding: .4rem .85rem; margin-left: .5rem;
+      background: transparent; border: 1px solid var(--border);
+      color: var(--muted); font-size: .78rem; font-family: 'Space Mono', monospace;
+      border-radius: 2rem; cursor: pointer; transition: all .2s; white-space: nowrap;
+    }
+    #btn-fils.on { background: #1a2a1a; border-color: #22c55e; color: #86efac; }
+
+    /* ── HEADER ── */
+    header {
+      padding: 4rem 1.5rem 3rem;
+      max-width: 900px; margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    header .eyebrow {
+      font-family: 'Space Mono', monospace; font-size: .75rem;
+      color: var(--accent); letter-spacing: .12em; text-transform: uppercase;
+      margin-bottom: .75rem;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700; line-height: 1.15; margin-bottom: .75rem;
+    }
+    header h1 em { font-style: italic; color: var(--accent); }
+    header .sub {
+      color: var(--muted); font-size: .95rem; font-weight: 300;
+    }
+    .meta-bar {
+      display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+      margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-family: 'Space Mono', monospace; font-size: .72rem; color: var(--muted);
+    }
+    .meta-bar span { display: flex; align-items: center; gap: .35rem; }
+
+    /* ── FILTERS ── */
+    .filters-bar {
+      padding: 1.25rem 1.5rem;
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center; flex-wrap: wrap; gap: .5rem;
+    }
+    .filters-label {
+      font-family: 'Space Mono', monospace; font-size: .72rem;
+      color: var(--muted); margin-right: .25rem;
+    }
+    .chip {
+      padding: .3rem .75rem; border-radius: 2rem; font-size: .78rem; font-weight: 500;
+      border: 1px solid var(--border); background: transparent;
+      color: var(--muted); cursor: pointer; transition: all .15s;
+    }
+    .chip.all { border-color: var(--accent); color: var(--accent); }
+    .chip.all.off { border-color: var(--border); color: var(--muted); }
+    .chip[data-cat].on { color: #fff; }
+    .chip[data-cat="festival"].on  { background: var(--c-festival); border-color: var(--c-festival); }
+    .chip[data-cat="concert"].on   { background: var(--c-concert);  border-color: var(--c-concert); }
+    .chip[data-cat="jazz"].on      { background: var(--c-jazz);     border-color: var(--c-jazz); }
+    .chip[data-cat="electro"].on   { background: var(--c-electro);  border-color: var(--c-electro); }
+    .chip[data-cat="classique"].on { background: var(--c-classique);border-color: var(--c-classique); }
+    .chip[data-cat="theatre"].on   { background: var(--c-theatre);  border-color: var(--c-theatre); }
+    .chip[data-cat="expo"].on      { background: var(--c-expo);     border-color: var(--c-expo); }
+    .chip[data-cat="danse"].on     { background: var(--c-danse);    border-color: var(--c-danse); }
+    .chip[data-cat="feria"].on     { background: var(--c-feria);    border-color: var(--c-feria); }
+
+    /* ── SECTIONS ── */
+    section { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    section + section { border-top: 1px solid var(--border); }
+    .section-title {
+      font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700;
+      margin-bottom: 1.5rem; display: flex; align-items: center; gap: .6rem;
+    }
+    .section-title .icon { font-size: 1.1rem; }
+
+    /* ── EVENT CARDS ── */
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .event-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: .5rem; padding: 1.1rem 1.25rem;
+      transition: background .15s, border-color .15s, transform .15s;
+      cursor: default;
+    }
+    .event-card:hover {
+      background: var(--bg-card-h); border-color: #2d3555;
+      transform: translateY(-1px);
+    }
+    .event-card.hidden { display: none; }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: .5rem; margin-bottom: .65rem; }
+    .event-date {
+      font-family: 'Space Mono', monospace; font-size: .72rem; color: var(--accent);
+    }
+    .card-badges { display: flex; align-items: center; gap: .3rem; }
+    .cat-badge {
+      padding: .15rem .5rem; border-radius: 3px; font-size: .68rem;
+      font-weight: 600; text-transform: uppercase; letter-spacing: .05em;
+    }
+    .cat-badge.festival  { background: #3b1d8c22; color: #a78bfa; border: 1px solid #7c3aed55; }
+    .cat-badge.concert   { background: #7f1d1d22; color: #fca5a5; border: 1px solid #dc262655; }
+    .cat-badge.jazz      { background: #0c4a6e22; color: #7dd3fc; border: 1px solid #0284c755; }
+    .cat-badge.electro   { background: #164e6322; color: #67e8f9; border: 1px solid #0891b255; }
+    .cat-badge.classique { background: #1e293b22; color: #94a3b8; border: 1px solid #64748b55; }
+    .cat-badge.theatre   { background: #78350f22; color: #fcd34d; border: 1px solid #b4530955; }
+    .cat-badge.expo      { background: #064e3b22; color: #6ee7b7; border: 1px solid #04785755; }
+    .cat-badge.danse     { background: #831843aa; color: #f9a8d4; border: 1px solid #be185d55; }
+    .cat-badge.feria     { background: #7c2d1222; color: #fdba74; border: 1px solid #c2410c55; }
+    .cat-badge.activite  { background: #14532d22; color: #86efac; border: 1px solid #15803d55; }
+    .star { color: var(--accent); font-size: .8rem; }
+    .fils-tag { font-size: .9rem; }
+    .event-title {
+      font-size: .95rem; font-weight: 600; margin-bottom: .3rem; line-height: 1.3;
+    }
+    .event-lieu { font-size: .8rem; color: var(--muted); margin-bottom: .3rem; }
+    .event-lieu::before { content: '📍 '; font-size: .75rem; }
+    .event-note { font-size: .78rem; color: var(--muted); font-style: italic; }
+    .tag-complet {
+      display: inline-block; margin-top: .5rem; padding: .1rem .45rem;
+      background: #7f1d1d33; color: #f87171; border: 1px solid #dc262655;
+      font-size: .68rem; font-weight: 700; border-radius: 3px; text-transform: uppercase;
+    }
+    .tag-gratuit {
+      display: inline-block; margin-top: .5rem; padding: .1rem .45rem;
+      background: #14532d33; color: #86efac; border: 1px solid #15803d55;
+      font-size: .68rem; font-weight: 700; border-radius: 3px; text-transform: uppercase;
+    }
+    .tag-famille {
+      display: inline-block; margin-top: .5rem; padding: .1rem .45rem;
+      background: #1e3a5f33; color: #93c5fd; border: 1px solid #1d4ed855;
+      font-size: .68rem; font-weight: 700; border-radius: 3px;
+    }
+    .empty-state {
+      text-align: center; padding: 2rem; color: var(--muted);
+      font-size: .9rem; grid-column: 1/-1;
+    }
+
+    /* ── CINEMA ── */
+    .cinema-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    @media (max-width: 600px) { .cinema-grid { grid-template-columns: 1fr; } }
+    .cinema-box {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: .5rem; padding: 1.25rem;
+    }
+    .cinema-name {
+      font-family: 'Space Mono', monospace; font-size: .78rem;
+      color: var(--accent); margin-bottom: .75rem; font-weight: 700;
+    }
+    .cinema-info { font-size: .82rem; color: var(--muted); margin-bottom: .5rem; }
+    .film-list { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .film-item {
+      display: flex; align-items: flex-start; gap: .6rem;
+      padding: .6rem .75rem; background: var(--bg); border-radius: .35rem;
+      border: 1px solid var(--border);
+    }
+    .film-icon { font-size: .9rem; flex-shrink: 0; margin-top: .05rem; }
+    .film-details { flex: 1; }
+    .film-title { font-size: .85rem; font-weight: 500; }
+    .film-meta { font-size: .75rem; color: var(--muted); margin-top: .1rem; }
+    .film-famille {
+      font-size: .68rem; padding: .1rem .4rem; border-radius: 3px;
+      background: #1e3a5f33; color: #93c5fd; border: 1px solid #1d4ed855;
+      margin-top: .25rem; display: inline-block;
+    }
+    .cinema-note {
+      margin-top: .75rem; padding: .6rem .75rem;
+      background: #f59e0b11; border: 1px solid #f59e0b33;
+      border-radius: .35rem; font-size: .78rem; color: var(--muted);
+    }
+
+    /* ── PERMANENT / SOURCES ── */
+    .perm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .75rem; }
+    .perm-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: .5rem; padding: 1rem;
+    }
+    .perm-card .p-icon { font-size: 1.5rem; margin-bottom: .4rem; }
+    .perm-card .p-title { font-size: .88rem; font-weight: 600; margin-bottom: .2rem; }
+    .perm-card .p-desc { font-size: .76rem; color: var(--muted); }
+
+    .sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .75rem; }
+    .source-item {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: .5rem; padding: .85rem 1rem;
+      display: flex; align-items: center; gap: .65rem;
+    }
+    .source-item a {
+      color: var(--text); text-decoration: none; font-size: .84rem; font-weight: 500;
+      transition: color .15s;
+    }
+    .source-item a:hover { color: var(--accent); }
+    .source-freq {
+      margin-left: auto; font-size: .7rem; font-family: 'Space Mono', monospace;
+      color: var(--muted); flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      max-width: 900px; margin: 0 auto;
+      padding: 2rem 1.5rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+      font-size: .78rem; color: var(--muted); font-family: 'Space Mono', monospace;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      nav a { padding: .75rem .65rem; font-size: .75rem; }
+      header { padding: 2.5rem 1rem 2rem; }
+      section { padding: 2rem 1rem; }
+      .filters-bar { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="#concerts" class="nav-link">🎵 Concerts</a>
+  <a href="#cinema" class="nav-link">🎬 Cinéma</a>
+  <a href="#expos" class="nav-link">🖼️ Expos</a>
+  <a href="#activites" class="nav-link">🧗 Activités</a>
+  <a href="#permanent" class="nav-link">📍 Permanent</a>
+  <a href="#sources" class="nav-link">🔗 Sources</a>
+  <span class="nav-sep"></span>
+  <button id="btn-fils" title="Afficher seulement les sorties avec mon fils">👦 Avec mon fils</button>
+</nav>
+
+<header>
+  <p class="eyebrow">Montpellier · Nîmes · Sète · Béziers — Été 2026</p>
+  <h1>Agenda <em>Sorties</em></h1>
+  <p class="sub">Concerts, festivals, cinéma & activités — du Languedoc au bout de la mer.</p>
+  <div class="meta-bar">
+    <span>🗓️ Mis à jour le <strong id="last-updated">19 juin 2026</strong></span>
+    <span>🎪 <strong id="event-count">—</strong> événements</span>
+    <span>📍 Zone : Vendargues → 80 km</span>
+  </div>
+</header>
+
+<!-- FILTERS -->
+<div class="filters-bar">
+  <span class="filters-label">Filtres :</span>
+  <button class="chip all" id="chip-all" data-action="all">Tout</button>
+  <button class="chip" data-cat="festival">Festival</button>
+  <button class="chip" data-cat="concert">Concert</button>
+  <button class="chip" data-cat="jazz">Jazz</button>
+  <button class="chip" data-cat="electro">Électro</button>
+  <button class="chip" data-cat="classique">Classique</button>
+  <button class="chip" data-cat="theatre">Théâtre</button>
+  <button class="chip" data-cat="expo">Expo</button>
+  <button class="chip" data-cat="danse">Danse</button>
+  <button class="chip" data-cat="feria">Féria</button>
+</div>
+
+<!-- ── SECTION 1 : CONCERTS & FESTIVALS ── -->
+<section id="concerts">
+  <h2 class="section-title"><span class="icon">🎵</span> Festivals &amp; Concerts</h2>
+  <div class="events-grid" id="grid-concerts"></div>
+</section>
+
+<!-- ── SECTION 2 : CINEMA ── -->
+<section id="cinema">
+  <h2 class="section-title"><span class="icon">🎬</span> Cinéma</h2>
+  <div class="cinema-grid">
+    <div class="cinema-box">
+      <div class="cinema-name">🏟️ Pathé Odysseum</div>
+      <div class="cinema-info">Millénaire — IMAX · 4DX · Dolby Atmos</div>
+      <ul class="film-list">
+        <li class="film-item">
+          <span class="film-icon">🎭</span>
+          <div class="film-details">
+            <div class="film-title">Superman (2025)</div>
+            <div class="film-meta">DC · James Gunn — Action</div>
+            <span class="film-famille">Famille ✓ 10 ans</span>
+          </div>
+        </li>
+        <li class="film-item">
+          <span class="film-icon">🚀</span>
+          <div class="film-details">
+            <div class="film-title">Mission: Impossible 8</div>
+            <div class="film-meta">Tom Cruise — Action</div>
+          </div>
+        </li>
+        <li class="film-item">
+          <span class="film-icon">🧊</span>
+          <div class="film-details">
+            <div class="film-title">Reine des Neiges 3</div>
+            <div class="film-meta">Disney Animation</div>
+            <span class="film-famille">Famille ✓ 10 ans</span>
+          </div>
+        </li>
+      </ul>
+      <div class="cinema-note">⚠️ Séances à vérifier chaque mercredi sur AlloCiné</div>
+    </div>
+    <div class="cinema-box">
+      <div class="cinema-name">🎞️ Mégarama Saint-Gély</div>
+      <div class="cinema-info">15 min nord Montpellier — ambiance locale</div>
+      <ul class="film-list">
+        <li class="film-item">
+          <span class="film-icon">⚡</span>
+          <div class="film-details">
+            <div class="film-title">Thunderbolts</div>
+            <div class="film-meta">Marvel — Action</div>
+            <span class="film-famille">Famille ✓ 10 ans</span>
+          </div>
+        </li>
+        <li class="film-item">
+          <span class="film-icon">🔫</span>
+          <div class="film-details">
+            <div class="film-title">Ballerina</div>
+            <div class="film-meta">John Wick Universe</div>
+          </div>
+        </li>
+        <li class="film-item">
+          <span class="film-icon">🦁</span>
+          <div class="film-details">
+            <div class="film-title">Paddington au Pérou</div>
+            <div class="film-meta">Comédie familiale</div>
+            <span class="film-famille">Famille ✓ 10 ans</span>
+          </div>
+        </li>
+      </ul>
+      <div class="cinema-note">💡 Prochaines sorties mercredi : à mettre à jour</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 3 : EXPOS ── -->
+<section id="expos">
+  <h2 class="section-title"><span class="icon">🖼️</span> Expos &amp; Spectacles</h2>
+  <div class="events-grid" id="grid-expos"></div>
+</section>
+
+<!-- ── SECTION 4 : ACTIVITES ── -->
+<section id="activites">
+  <h2 class="section-title"><span class="icon">🧗</span> Activités Père &amp; Fils</h2>
+  <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.25rem;">Sport &amp; culture — adapté 10 ans, 50/50</p>
+  <div class="events-grid" id="grid-activites"></div>
+</section>
+
+<!-- ── SECTION 5 : PERMANENT ── -->
+<section id="permanent">
+  <h2 class="section-title"><span class="icon">📍</span> Sorties Permanentes</h2>
+  <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.25rem;">Toujours disponibles — parfait pour un dimanche</p>
+  <div class="perm-grid">
+    <div class="perm-card">
+      <div class="p-icon">🧗</div>
+      <div class="p-title">Escalade indoor</div>
+      <div class="p-desc">Arkose Montpellier — niveaux tous publics, ouvert WE</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🔫</div>
+      <div class="p-title">Laser Game</div>
+      <div class="p-desc">Laser Zone Montpellier — idéal canicule, 8 ans+</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🔐</div>
+      <div class="p-title">Escape Game</div>
+      <div class="p-desc">Time Breaker Montpellier — salles thématiques 10 ans+</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🎳</div>
+      <div class="p-title">Bowling</div>
+      <div class="p-desc">Lucky Strike Odysseum — avec arcade</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🛶</div>
+      <div class="p-title">Canoë Gardon</div>
+      <div class="p-desc">Collias — descente gorges du Gardon, saison mai→sept</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🌲</div>
+      <div class="p-title">Accrobranche</div>
+      <div class="p-desc">Récré des 3 Curés, Palavas — bord de mer + parcours</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🦈</div>
+      <div class="p-title">Aquarium</div>
+      <div class="p-desc">Marinarium de Sète — faune méditerranéenne</div>
+    </div>
+    <div class="perm-card">
+      <div class="p-icon">🏛️</div>
+      <div class="p-title">Musée Fabre</div>
+      <div class="p-desc">Montpellier — gratuit -18 ans, expos temporaires</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 6 : SOURCES ── -->
+<section id="sources">
+  <h2 class="section-title"><span class="icon">🔗</span> Sources de référence</h2>
+  <div class="sources-grid">
+    <div class="source-item"><span>📰</span><a href="https://www.jds.fr/montpellier/agenda" target="_blank">JDS Montpellier</a><span class="source-freq">Hebdo</span></div>
+    <div class="source-item"><span>📰</span><a href="https://www.lessentiel.fr/montpellier" target="_blank">L'Essentiel Montpellier</a><span class="source-freq">Hebdo</span></div>
+    <div class="source-item"><span>🎪</span><a href="https://www.festivaldenimes.com/programmation" target="_blank">Festival de Nîmes</a><span class="source-freq">Ponctuel</span></div>
+    <div class="source-item"><span>🎺</span><a href="https://www.jazzasete.com" target="_blank">Jazz à Sète</a><span class="source-freq">Juillet</span></div>
+    <div class="source-item"><span>🎪</span><a href="https://www.worldwide-festival.com" target="_blank">Worldwide Festival</a><span class="source-freq">Juin</span></div>
+    <div class="source-item"><span>🎵</span><a href="https://www.radiofrance.fr/festival-montpellier" target="_blank">Festival Radio France</a><span class="source-freq">Juillet</span></div>
+    <div class="source-item"><span>🗓️</span><a href="https://34.agendaculturel.fr" target="_blank">Agenda Culturel 34</a><span class="source-freq">Hebdo</span></div>
+    <div class="source-item"><span>🌊</span><a href="https://www.icisete.fr" target="_blank">IciSète</a><span class="source-freq">Hebdo</span></div>
+    <div class="source-item"><span>👶</span><a href="https://www.citizenkid.com/montpellier" target="_blank">CitizenKid</a><span class="source-freq">Ponctuel</span></div>
+    <div class="source-item"><span>🎬</span><a href="https://www.allocine.fr/seance/salle_gen_csalle=P0702.html" target="_blank">AlloCiné — Pathé Odysseum</a><span class="source-freq">Mercredi</span></div>
+    <div class="source-item"><span>🎬</span><a href="https://www.allocine.fr/seance/salle_gen_csalle=W4980.html" target="_blank">AlloCiné — Mégarama</a><span class="source-freq">Mercredi</span></div>
+    <div class="source-item"><span>🎭</span><a href="https://www.festivaldebeziers.fr" target="_blank">Féria de Béziers</a><span class="source-freq">Août</span></div>
+  </div>
+</section>
+
+<footer>
+  <span>Agenda personnel — Vendargues, Montpellier</span>
+  <a href="https://github.com/Lepachapacha/agenda-montpellier" target="_blank">GitHub ↗</a>
+</footer>
+
+<script>
+  // ── DATA ──
+  const EVENTS = [
+    // FESTIVALS & CONCERTS
+    { date:'2026-06-27', titre:'Worldwide Festival', cat:'festival', lieu:'Théâtre de la Mer, Sète', note:'16e édition — électro & world music au bord de mer', fils:false, stars:3, section:'concerts' },
+    { date:'2026-06-28', titre:'Worldwide Festival', cat:'festival', lieu:'Théâtre de la Mer, Sète', note:'2e soir', fils:false, stars:2, section:'concerts' },
+    { date:'2026-07-04', titre:'Festival de Nîmes — Ouverture', cat:'festival', lieu:'Arènes de Nîmes', note:'Programmation à confirmer', fils:false, stars:2, section:'concerts' },
+    { date:'2026-07-11', titre:'Festival Radio France Montpellier', cat:'festival', lieu:'Montpellier (divers lieux)', note:'Concerts gratuits & payants — 3 semaines', fils:true, stars:3, section:'concerts', gratuit:true },
+    { date:'2026-07-15', titre:'Jazz à Sète — Diana Krall', cat:'jazz', lieu:'Théâtre de la Mer, Sète', note:"Soirée d'ouverture", fils:true, stars:3, section:'concerts' },
+    { date:'2026-07-17', titre:'Jazz à Sète — Ibrahim Maalouf', cat:'jazz', lieu:'Théâtre de la Mer, Sète', note:'', fils:true, stars:3, section:'concerts' },
+    { date:'2026-07-19', titre:'Jazz à Sète — Herbie Hancock', cat:'jazz', lieu:'Théâtre de la Mer, Sète', note:'Légende du jazz', fils:false, stars:3, section:'concerts' },
+    { date:'2026-07-20', titre:'Festival de Nîmes — Soirée classique', cat:'classique', lieu:'Arènes de Nîmes', note:'Orchestre de l\'Opéra de Paris', fils:true, stars:2, section:'concerts' },
+    { date:'2026-07-25', titre:'The Cure × 3 soirs', cat:'concert', lieu:'Arènes de Nîmes', note:'Clôture Festival Nîmes', fils:false, stars:3, section:'concerts' },
+    { date:'2026-07-26', titre:'The Cure — soir 2', cat:'concert', lieu:'Arènes de Nîmes', note:'', fils:false, stars:3, section:'concerts' },
+    { date:'2026-07-27', titre:'The Cure — soir 3', cat:'concert', lieu:'Arènes de Nîmes', note:'', fils:false, stars:3, section:'concerts' },
+    { date:'2026-08-01', titre:'Family Piknik', cat:'electro', lieu:"Pérols — Pérol's Beach", note:'15e édition', fils:true, stars:3, section:'concerts' },
+    { date:'2026-08-02', titre:'Family Piknik', cat:'electro', lieu:"Pérols — Pérol's Beach", note:'2e soir', fils:true, stars:2, section:'concerts' },
+    { date:'2026-08-13', titre:'Féria de Béziers', cat:'feria', lieu:'Béziers', note:'5 jours — corridas, bandas, bodégas', fils:false, stars:2, section:'concerts' },
+    { date:'2026-08-14', titre:'Féria de Béziers', cat:'feria', lieu:'Béziers', note:'', fils:false, stars:2, section:'concerts' },
+    { date:'2026-08-22', titre:'Clôture Festival Radio France', cat:'classique', lieu:'Opéra Comédie, Montpellier', note:'Concert symphonique de clôture', fils:true, stars:2, section:'concerts' },
+    // EXPOS
+    { date:'2026-06-20', titre:'Exposition Chagall', cat:'expo', lieu:'Musée Fabre, Montpellier', note:"Jusqu'au 30 août", fils:true, stars:2, section:'expos' },
+    { date:'2026-07-01', titre:'Cinescénie — Puy du Fou', cat:'theatre', lieu:'Puy du Fou (déplacement)', note:'Spectacle nocturne légendaire', fils:true, stars:3, section:'expos' },
+    { date:'2026-07-10', titre:'Festival des Arts de Rue', cat:'theatre', lieu:'Centre historique, Montpellier', note:'Gratuit — animations de rue', fils:true, stars:2, section:'expos', gratuit:true },
+    { date:'2026-08-05', titre:'Ballet de l\'Opéra de Montpellier', cat:'danse', lieu:'Opéra Comédie, Montpellier', note:'Programme estival', fils:false, stars:2, section:'expos' },
+    // ACTIVITES
+    { date:'2026-06-28', titre:'Escalade falaises de Thaurac', cat:'activite', lieu:'Thaurac (30 min Montpellier)', note:'Via ferrata adaptée 10 ans', fils:true, stars:3, section:'activites' },
+    { date:'2026-07-12', titre:'Canoë — Gorges du Gardon', cat:'activite', lieu:'Collias (près de Nîmes)', note:'Descente gorges — 10 km', fils:true, stars:3, section:'activites' },
+    { date:'2026-07-18', titre:'Accrobranche Palavas', cat:'activite', lieu:'Palavas-les-Flots', note:'Parcours aventure bord de mer', fils:true, stars:2, section:'activites' },
+    { date:'2026-08-08', titre:'Laser Game Montpellier', cat:'activite', lieu:'Montpellier', note:'Zone indoor — parfait si canicule', fils:true, stars:2, section:'activites' },
+    { date:'2026-08-15', titre:'Escape Game — Thème Pharaon', cat:'activite', lieu:'Montpellier', note:'60 min — niveau intermédiaire', fils:true, stars:2, section:'activites' },
+  ];
+
+  // ── STATE ──
+  let filsOnly = false;
+  const activeCategories = new Set();
+
+  // ── RENDER ──
+  function formatDate(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
+    return d.toLocaleDateString('fr-FR', { weekday:'short', day:'numeric', month:'short' });
+  }
+
+  function renderCard(ev) {
+    const stars = '★'.repeat(ev.stars);
+    const filsBadge = ev.fils ? '<span class="fils-tag" title="Avec mon fils">👦</span>' : '';
+    const starBadge = ev.stars >= 3 ? `<span class="star" title="Incontournable">${stars}</span>` : '';
+    const tags = [
+      ev.complet ? '<span class="tag-complet">Complet</span>' : '',
+      ev.gratuit ? '<span class="tag-gratuit">Gratuit</span>' : '',
+      ev.famille ? '<span class="tag-famille">Famille ✓</span>' : '',
+    ].join('');
+    return `
+      <div class="event-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
+        <div class="card-top">
+          <span class="event-date">${formatDate(ev.date)}</span>
+          <div class="card-badges">
+            ${filsBadge}${starBadge}
+            <span class="cat-badge ${ev.cat}">${ev.cat}</span>
+          </div>
+        </div>
+        <div class="event-title">${ev.titre}</div>
+        <div class="event-lieu">${ev.lieu}</div>
+        ${ev.note ? `<div class="event-note">${ev.note}</div>` : ''}
+        ${tags}
+      </div>`;
+  }
+
+  function render() {
+    const sections = { concerts: [], expos: [], activites: [] };
+    EVENTS.forEach(ev => { if (sections[ev.section]) sections[ev.section].push(ev); });
+
+    ['concerts', 'expos', 'activites'].forEach(sec => {
+      const grid = document.getElementById('grid-' + sec);
+      if (!grid) return;
+      grid.innerHTML = sections[sec].map(ev => renderCard(ev)).join('');
+    });
+
+    document.getElementById('event-count').textContent = EVENTS.length;
+    applyFilters();
+  }
+
+  function applyFilters() {
+    document.querySelectorAll('.event-card').forEach(card => {
+      const cat = card.dataset.cat;
+      const isFils = card.dataset.fils === '1';
+      const catOk = activeCategories.size === 0 || activeCategories.has(cat);
+      const filsOk = !filsOnly || isFils;
+      card.classList.toggle('hidden', !(catOk && filsOk));
+    });
+
+    // Empty state messages
+    ['concerts', 'expos', 'activites'].forEach(sec => {
+      const grid = document.getElementById('grid-' + sec);
+      if (!grid) return;
+      const existing = grid.querySelector('.empty-state');
+      if (existing) existing.remove();
+      const visible = grid.querySelectorAll('.event-card:not(.hidden)').length;
+      if (visible === 0) {
+        grid.insertAdjacentHTML('beforeend', '<p class="empty-state">Aucun événement pour ces filtres.</p>');
+      }
+    });
+  }
+
+  // ── FILTER CHIPS ──
+  document.querySelectorAll('.chip[data-cat]').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const cat = chip.dataset.cat;
+      if (activeCategories.has(cat)) {
+        activeCategories.delete(cat);
+        chip.classList.remove('on');
+      } else {
+        activeCategories.add(cat);
+        chip.classList.add('on');
+      }
+      document.getElementById('chip-all').classList.toggle('off', activeCategories.size > 0);
+      applyFilters();
+    });
+  });
+
+  document.getElementById('chip-all').addEventListener('click', () => {
+    activeCategories.clear();
+    document.querySelectorAll('.chip[data-cat]').forEach(c => c.classList.remove('on'));
+    document.getElementById('chip-all').classList.remove('off');
+    applyFilters();
+  });
+
+  document.getElementById('btn-fils').addEventListener('click', () => {
+    filsOnly = !filsOnly;
+    document.getElementById('btn-fils').classList.toggle('on', filsOnly);
+    applyFilters();
+  });
+
+  // ── NAV ACTIVE ──
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const link = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
+
+  // ── INIT ──
+  render();
+</script>
+</body>
+</html>
