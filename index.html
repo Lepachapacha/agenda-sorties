@@ -153,12 +153,11 @@
     .star { color: var(--accent); font-size: .8rem; }
     .fils-tag { font-size: .9rem; }
     .event-title { font-size: .95rem; font-weight: 600; margin-bottom: .3rem; line-height: 1.3; }
+    .event-title a { color: var(--text); text-decoration: none; border-bottom: 1px solid #f59e0b55; transition: color .15s, border-color .15s; }
+    .event-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
     .event-lieu { font-size: .8rem; color: var(--muted); margin-bottom: .3rem; }
     .event-lieu::before { content: '📍 '; font-size: .75rem; }
     .event-note { font-size: .78rem; color: var(--muted); font-style: italic; }
-    .event-url { font-size: .75rem; margin-top: .4rem; }
-    .event-url a { color: var(--accent); text-decoration: none; opacity: .8; }
-    .event-url a:hover { opacity: 1; }
     .tag-complet {
       display: inline-block; margin-top: .5rem; padding: .1rem .45rem;
       background: #7f1d1d33; color: #f87171; border: 1px solid #dc262655;
@@ -396,7 +395,7 @@
     "note": "Spectacle nocturne légendaire",
     "fils": true,
     "stars": 3,
-    "section": "concerts",
+    "section": "activites",
     "url": "https://www.puydufou.com/france/fr/billetterie",
     "gratuit": false
   },
@@ -434,7 +433,7 @@
     "stars": 3,
     "section": "concerts",
     "url": "https://www.radiofrance.fr/festival-de-radio-france-et-montpellier",
-    "gratuit": true
+    "gratuit": false
   },
   {
     "date": "2026-07-06",
@@ -468,7 +467,7 @@
     "note": "Gratuit — animations de rue",
     "fils": true,
     "stars": 2,
-    "section": "concerts",
+    "section": "activites",
     "url": "",
     "gratuit": true
   },
@@ -624,7 +623,7 @@
     "note": "Programme estival",
     "fils": false,
     "stars": 2,
-    "section": "concerts",
+    "section": "activites",
     "url": "https://www.opera-orchestre-montpellier.fr",
     "gratuit": false
   },
@@ -648,7 +647,7 @@
     "note": "5 jours — corridas, bandas, bodégas",
     "fils": false,
     "stars": 2,
-    "section": "concerts",
+    "section": "activites",
     "url": "https://www.festivaldebeziers.fr",
     "gratuit": false
   },
@@ -660,7 +659,7 @@
     "note": "",
     "fils": false,
     "stars": 2,
-    "section": "concerts",
+    "section": "activites",
     "url": "https://www.festivaldebeziers.fr",
     "gratuit": false
   },
@@ -698,44 +697,44 @@
   },
   {
     "cinema": "pathe",
-    "titre": "Une étrange porte",
+    "titre": "La Porte",
     "meta": "Thriller",
     "famille": false
   },
   {
     "cinema": "pathe",
-    "titre": "Influenceur",
+    "titre": "Influenza",
     "meta": "Drame",
     "famille": false
   },
   {
     "cinema": "pathe",
-    "titre": "Allemand",
-    "meta": "Comédie",
+    "titre": "Deutschstunde",
+    "meta": "Comédie dramatique",
     "famille": false
   },
   {
     "cinema": "pathe",
     "titre": "La Bataille de Gaulle: L'Âge de Fer",
-    "meta": "Historique",
+    "meta": "Biopic historique",
     "famille": false
   },
   {
     "cinema": "pathe",
-    "titre": "Souhait",
-    "meta": "Comédie fantastique",
+    "titre": "Wish Upon",
+    "meta": "Fantasy romance",
     "famille": false
   },
   {
     "cinema": "pathe",
     "titre": "Michael",
-    "meta": "Documentaire",
+    "meta": "Documentaire biographique",
     "famille": false
   },
   {
     "cinema": "pathe",
-    "titre": "Infected",
-    "meta": "Horreur, science-fiction",
+    "titre": "Alive",
+    "meta": "Science-fiction horreur",
     "famille": false
   },
   {
@@ -746,8 +745,8 @@
   },
   {
     "cinema": "pathe",
-    "titre": "Recherche",
-    "meta": "Action, thriller",
+    "titre": "Lost Bullet 3",
+    "meta": "Action thriller",
     "famille": false
   },
   {
@@ -759,7 +758,7 @@
   {
     "cinema": "pathe",
     "titre": "Star Wars: The Mandalorian and Grogu",
-    "meta": "Science-fiction, aventure",
+    "meta": "Science-fiction aventure",
     "famille": true
   },
   {
@@ -770,14 +769,14 @@
   },
   {
     "cinema": "megarama",
-    "titre": "Une étrange porte",
+    "titre": "La Porte",
     "meta": "Thriller",
     "famille": false
   },
   {
     "cinema": "megarama",
-    "titre": "Allemand",
-    "meta": "Comédie",
+    "titre": "Deutschstunde",
+    "meta": "Comédie dramatique",
     "famille": false
   },
   {
@@ -789,49 +788,55 @@
   {
     "cinema": "megarama",
     "titre": "Michael",
-    "meta": "Documentaire",
+    "meta": "Documentaire biographique",
     "famille": false
   },
   {
     "cinema": "megarama",
     "titre": "Star Wars: The Mandalorian and Grogu",
-    "meta": "Science-fiction, aventure",
+    "meta": "Science-fiction aventure",
     "famille": true
   },
   {
     "cinema": "megarama",
-    "titre": "Scream VII",
-    "meta": "Horreur",
-    "famille": false
-  },
-  {
-    "cinema": "megarama",
     "titre": "Super Mario Galaxy Le Film",
-    "meta": "Animation, aventure",
+    "meta": "Animation",
     "famille": true
   },
   {
     "cinema": "megarama",
     "titre": "Le Tigre et les animaux de la forêt",
-    "meta": "Animation, courts métrages",
+    "meta": "Courts métrages jeunesse",
     "famille": true
   },
   {
     "cinema": "megarama",
     "titre": "La Bataille de Gaulle: L'Âge de Fer",
-    "meta": "Historique",
+    "meta": "Biopic historique",
     "famille": false
   },
   {
     "cinema": "megarama",
-    "titre": "Nouveau départ en Thaïlande",
+    "titre": "Un mensonge pour survivre",
     "meta": "Drame",
     "famille": false
   },
   {
     "cinema": "megarama",
-    "titre": "Les Noces de Figaro",
+    "titre": "Noces de Figaro",
     "meta": "Drame",
+    "famille": false
+  },
+  {
+    "cinema": "megarama",
+    "titre": "Samuel Paty",
+    "meta": "Documentaire",
+    "famille": false
+  },
+  {
+    "cinema": "megarama",
+    "titre": "Scream VII",
+    "meta": "Horreur",
     "famille": false
   }
 ];
@@ -932,21 +937,23 @@
     const filsBadge = ev.fils ? '<span class="fils-tag" title="Avec mon fils">👦</span>' : '';
     const starBadge = ev.stars >= 3 ? `<span class="star">★★★</span>` : ev.stars === 2 ? '<span class="star">★★</span>' : '';
     const tags = [
-      ev.complet  ? '<span class="tag-complet">Complet</span>'      : '',
-      ev.gratuit  ? '<span class="tag-gratuit">Gratuit</span>'       : '',
-      ev.famille  ? '<span class="tag-famille">Famille ✓</span>'     : '',
+      ev.complet  ? '<span class="tag-complet">Complet</span>'  : '',
+      ev.gratuit  ? '<span class="tag-gratuit">Gratuit</span>'  : '',
+      ev.famille  ? '<span class="tag-famille">Famille ✓</span>': '',
     ].join('');
-    const urlTag = ev.url ? `<div class="event-url"><a href="${ev.url}" target="_blank">↗ Plus d'infos</a></div>` : '';
+    const titre = ev.url
+      ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.titre}</a>`
+      : ev.titre;
     return `
       <div class="event-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
         <div class="card-top">
           <span class="event-date">${formatDate(ev.date)}</span>
           <div class="card-badges">${filsBadge}${starBadge}<span class="cat-badge ${ev.cat}">${ev.cat}</span></div>
         </div>
-        <div class="event-title">${ev.titre}</div>
+        <div class="event-title">${titre}</div>
         <div class="event-lieu">${ev.lieu}</div>
         ${ev.note ? `<div class="event-note">${ev.note}</div>` : ''}
-        ${tags}${urlTag}
+        ${tags}
       </div>`;
   }
 
