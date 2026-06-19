@@ -18,7 +18,7 @@
       --accent:       #f59e0b;
       --accent-l:     #fbbf24;
       --text:         #e2e8f0;
-      --muted:        #8892aa;
+      --muted:        #9daabb;
       --border:       #1e2540;
       --c-festival:   #7c3aed;
       --c-concert:    #dc2626;
@@ -122,6 +122,31 @@
     }
     .section-title .icon { font-size: 1.1rem; }
 
+    /* ── WEEKEND SECTION ── */
+    #weekend {
+      background: linear-gradient(160deg, #161929 0%, #1a1f35 100%);
+      border-bottom: 2px solid #f59e0b44;
+    }
+    .weekend-eyebrow {
+      font-family: 'Space Mono', monospace; font-size: .7rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: .3rem;
+    }
+    .weekend-dates {
+      font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic;
+      color: var(--text); margin-bottom: 1.25rem;
+    }
+    .weekend-empty {
+      padding: 1.25rem 0; color: var(--muted); font-size: .88rem; font-style: italic;
+    }
+    .weekend-empty a { color: var(--accent); text-decoration: none; }
+    .weekend-empty a:hover { text-decoration: underline; }
+    .weekend-badge {
+      display: inline-block; padding: .06rem .45rem; margin-right: .3rem;
+      background: #f59e0b22; color: var(--accent); border: 1px solid #f59e0b55;
+      border-radius: 3px; font-size: .62rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .08em; vertical-align: middle;
+    }
+
     /* ── EVENT CARDS ── */
     .events-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem;
@@ -177,12 +202,50 @@
       text-align: center; padding: 2rem; color: var(--muted); font-size: .9rem; grid-column: 1/-1;
     }
 
+    /* ── GROUP CARDS ── */
+    .group-card { grid-column: 1 / -1; }
+    .group-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: .3rem;
+    }
+    .group-name {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700;
+    }
+    .group-name a {
+      color: var(--text); text-decoration: none;
+      border-bottom: 1px solid #f59e0b55; transition: color .15s, border-color .15s;
+    }
+    .group-name a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    .group-meta { font-size: .78rem; color: var(--muted); margin-bottom: .85rem; }
+    .group-rows {
+      border-top: 1px solid var(--border); padding-top: .45rem;
+      display: flex; flex-direction: column; gap: .1rem;
+    }
+    .group-row {
+      display: flex; align-items: center; gap: .6rem;
+      padding: .28rem .2rem; border-radius: .25rem; transition: background .1s;
+    }
+    .group-row:hover { background: var(--bg); }
+    .group-row.dimmed { opacity: .3; }
+    .group-row-date {
+      font-family: 'Space Mono', monospace; font-size: .68rem;
+      color: var(--accent); width: 3rem; flex-shrink: 0;
+    }
+    .group-row-titre { flex: 1; font-size: .85rem; font-weight: 500; }
+    .group-row-badge { flex-shrink: 0; font-size: .75rem; }
+    .group-footer {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: .7rem; padding-top: .55rem; border-top: 1px solid var(--border);
+    }
+    .group-footer a { font-size: .8rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+    .group-footer a:hover { text-decoration: underline; }
+    .group-count { font-size: .7rem; color: var(--muted); font-family: 'Space Mono', monospace; }
+
     /* ── CINEMA ── */
     .cinema-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     @media (max-width: 600px) { .cinema-grid { grid-template-columns: 1fr; } }
     .cinema-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: .5rem; padding: 1.25rem; }
-    .cinema-name { font-family: 'Space Mono', monospace; font-size: .78rem; color: var(--accent); margin-bottom: .75rem; font-weight: 700; }
-    .cinema-info { font-size: .82rem; color: var(--muted); margin-bottom: .5rem; }
+    .cinema-name { font-family: 'Space Mono', monospace; font-size: .78rem; color: var(--accent); margin-bottom: .35rem; font-weight: 700; }
+    .cinema-info { font-size: .8rem; color: var(--muted); margin-bottom: .75rem; }
     .film-list { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
     .film-item {
       display: flex; align-items: flex-start; gap: .6rem;
@@ -197,11 +260,13 @@
       background: #1e3a5f33; color: #93c5fd; border: 1px solid #1d4ed855;
       margin-top: .25rem; display: inline-block;
     }
-    .cinema-note {
-      margin-top: .75rem; padding: .6rem .75rem;
-      background: #f59e0b11; border: 1px solid #f59e0b33;
-      border-radius: .35rem; font-size: .78rem; color: var(--muted);
+    .cinema-links { display: flex; gap: .6rem; margin-top: .85rem; }
+    .cinema-links a {
+      font-size: .76rem; color: var(--accent); text-decoration: none; font-weight: 500;
+      padding: .28rem .65rem; border: 1px solid #f59e0b44; border-radius: .35rem;
+      transition: background .15s;
     }
+    .cinema-links a:hover { background: #f59e0b18; }
 
     /* ── PERMANENT / SOURCES ── */
     .perm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .75rem; }
@@ -218,7 +283,6 @@
     }
     .source-item a { color: var(--text); text-decoration: none; font-size: .84rem; font-weight: 500; transition: color .15s; }
     .source-item a:hover { color: var(--accent); }
-    .source-freq { margin-left: auto; font-size: .7rem; font-family: 'Space Mono', monospace; color: var(--muted); flex-shrink: 0; }
 
     /* ── FOOTER ── */
     footer {
@@ -236,12 +300,26 @@
       header { padding: 2.5rem 1rem 2rem; }
       section { padding: 2rem 1rem; }
       .filters-bar { padding: 1rem; }
+      body { padding-bottom: 5rem; }
+
+      /* btn-fils flottant sur mobile */
+      #btn-fils {
+        position: fixed; bottom: 1rem; right: 1rem; z-index: 200;
+        background: var(--bg-card); border: 1px solid var(--border);
+        box-shadow: 0 4px 16px #0009; font-size: .8rem; padding: .55rem 1.1rem;
+        margin-left: 0;
+      }
+      #btn-fils.on {
+        background: #1a2a1a; border-color: #22c55e; color: #86efac;
+        box-shadow: 0 4px 16px #22c55e33;
+      }
     }
   </style>
 </head>
 <body>
 
 <nav id="main-nav">
+  <a href="#weekend" class="nav-link">⚡ Ce weekend</a>
   <a href="#concerts" class="nav-link">🎵 Concerts</a>
   <a href="#cinema" class="nav-link">🎬 Cinéma</a>
   <a href="#expos" class="nav-link">🖼️ Expos</a>
@@ -277,6 +355,12 @@
   <button class="chip" data-cat="feria">Féria</button>
 </div>
 
+<section id="weekend">
+  <p class="weekend-eyebrow">⚡ Ce weekend</p>
+  <p class="weekend-dates" id="weekend-dates">…</p>
+  <div class="events-grid" id="grid-weekend"></div>
+</section>
+
 <section id="concerts">
   <h2 class="section-title"><span class="icon">🎵</span> Festivals &amp; Concerts</h2>
   <div class="events-grid" id="grid-concerts"></div>
@@ -289,13 +373,17 @@
       <div class="cinema-name">🏟️ Pathé Odysseum</div>
       <div class="cinema-info">Millénaire — IMAX · 4DX · Dolby Atmos</div>
       <ul class="film-list" id="films-pathe"></ul>
-      <div class="cinema-note">⚠️ Séances à vérifier sur AlloCiné</div>
+      <div class="cinema-links">
+        <a href="https://www.allocine.fr/seance/salle_gen_csalle=P0702.html" target="_blank" rel="noopener">Séances AlloCiné ↗</a>
+      </div>
     </div>
     <div class="cinema-box">
       <div class="cinema-name">🎞️ Mégarama Saint-Gély</div>
       <div class="cinema-info">15 min nord Montpellier</div>
       <ul class="film-list" id="films-megarama"></ul>
-      <div class="cinema-note">💡 Mise à jour chaque mercredi</div>
+      <div class="cinema-links">
+        <a href="https://www.allocine.fr/seance/salle_gen_csalle=W4980.html" target="_blank" rel="noopener">Séances AlloCiné ↗</a>
+      </div>
     </div>
   </div>
 </section>
@@ -346,19 +434,45 @@
   let filsOnly = false;
   const activeCategories = new Set();
 
-  // ── RENDER ──
+  // ── NOMS ET URLS PAR GROUPE ──
+  const GROUP_NAMES = {
+    'festival-nimes': 'Festival de Nîmes',
+    'jazz-sete':      'Jazz à Sète',
+    'worldwide-sete': 'Worldwide Festival',
+    'family-piknik':  'Family Piknik',
+    'feria-beziers':  'Féria de Béziers',
+    'radio-france':   'Festival Radio France Montpellier',
+    'fiest-a-sete':   "Fiest'A Sète",
+  };
+  const GROUP_URLS = {
+    'festival-nimes': 'https://www.festivaldenimes.com/billetterie',
+    'jazz-sete':      'https://www.jazzasete.com/billetterie',
+    'worldwide-sete': 'https://www.worldwide-festival.com',
+    'family-piknik':  'https://www.familypiknik.com',
+    'feria-beziers':  'https://www.festivaldebeziers.fr',
+    'radio-france':   'https://www.radiofrance.fr/festival-de-radio-france-et-montpellier',
+    'fiest-a-sete':   'https://www.fiestasetee.com/billetterie',
+  };
+
+  // ── UTILS ──
   function formatDate(dateStr) {
     const d = new Date(dateStr + 'T00:00:00');
-    return d.toLocaleDateString('fr-FR', { weekday:'short', day:'numeric', month:'short' });
+    return d.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
+  }
+  function formatDateShort(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
+    return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0');
   }
 
-  function renderCard(ev) {
+  // ── RENDER CARD INDIVIDUELLE ──
+  function renderCard(ev, isWeekend) {
     const filsBadge = ev.fils ? '<span class="fils-tag" title="Avec mon fils">👦</span>' : '';
-    const starBadge = ev.stars >= 3 ? `<span class="star">★★★</span>` : ev.stars === 2 ? '<span class="star">★★</span>' : '';
+    const starBadge = ev.stars >= 3 ? '<span class="star">★★★</span>' : ev.stars === 2 ? '<span class="star">★★</span>' : '';
+    const wBadge   = isWeekend ? '<span class="weekend-badge">CE WE</span> ' : '';
     const tags = [
-      ev.complet  ? '<span class="tag-complet">Complet</span>'  : '',
-      ev.gratuit  ? '<span class="tag-gratuit">Gratuit</span>'  : '',
-      ev.famille  ? '<span class="tag-famille">Famille ✓</span>': '',
+      ev.complet ? '<span class="tag-complet">Complet</span>'   : '',
+      ev.gratuit ? '<span class="tag-gratuit">Gratuit</span>'   : '',
+      ev.famille ? '<span class="tag-famille">Famille ✓</span>' : '',
     ].join('');
     const titre = ev.url
       ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.titre}</a>`
@@ -366,13 +480,57 @@
     return `
       <div class="event-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
         <div class="card-top">
-          <span class="event-date">${formatDate(ev.date)}</span>
+          <span class="event-date">${wBadge}${formatDate(ev.date)}</span>
           <div class="card-badges">${filsBadge}${starBadge}<span class="cat-badge ${ev.cat}">${ev.cat}</span></div>
         </div>
         <div class="event-title">${titre}</div>
         <div class="event-lieu">${ev.lieu}</div>
         ${ev.note ? `<div class="event-note">${ev.note}</div>` : ''}
         ${tags}
+      </div>`;
+  }
+
+  // ── RENDER GROUP CARD ──
+  function renderGroupCard(slug, events) {
+    events = [...events].sort((a, b) => a.date.localeCompare(b.date));
+    const name = GROUP_NAMES[slug] || events[0].titre;
+    const url  = GROUP_URLS[slug] || events.find(e => e.url)?.url || '';
+    const lieu = events[0].lieu;
+    const dMin = formatDateShort(events[0].date);
+    const dMax = formatDateShort(events[events.length - 1].date);
+    const dateRange = events.length > 1 ? `${dMin} → ${dMax}` : dMin;
+
+    const cats   = [...new Set(events.map(e => e.cat))];
+    const hasFils = events.some(e => e.fils) ? '1' : '0';
+
+    const rows = events.map(ev => {
+      const stars   = '★'.repeat(Math.max(ev.stars || 1, 1));
+      const filsIco = ev.fils ? '👦 ' : '';
+      return `<div class="group-row" data-fils="${ev.fils ? '1' : '0'}">
+        <span class="group-row-date">${formatDateShort(ev.date)}</span>
+        <span class="group-row-titre">${ev.titre}</span>
+        <span class="group-row-badge"><span class="star">${filsIco}${stars}</span></span>
+      </div>`;
+    }).join('');
+
+    const nameHtml = url
+      ? `<a href="${url}" target="_blank" rel="noopener">${name}</a>`
+      : name;
+    const n = events.length;
+    const countLabel = n + ' soirée' + (n > 1 ? 's' : '');
+
+    return `
+      <div class="event-card group-card" data-cats="${cats.join(' ')}" data-fils="${hasFils}" data-groupe="${slug}">
+        <div class="group-header">
+          <div class="group-name">${nameHtml}</div>
+          <span class="cat-badge ${cats[0]}">${cats[0]}</span>
+        </div>
+        <div class="group-meta">📍 ${lieu} &nbsp;·&nbsp; ${dateRange}</div>
+        <div class="group-rows">${rows}</div>
+        <div class="group-footer">
+          ${url ? `<a href="${url}" target="_blank" rel="noopener">→ Billetterie &amp; programme</a>` : '<span></span>'}
+          <span class="group-count">${countLabel}</span>
+        </div>
       </div>`;
   }
 
@@ -387,47 +545,112 @@
       </div></li>`;
   }
 
+  // ── WEEKEND CALC ──
+  function getWeekend() {
+    const now = new Date();
+    const day = now.getDay();
+    let sat, sun;
+    if (day === 0) {
+      sun = now;
+      sat = new Date(now); sat.setDate(now.getDate() - 1);
+    } else if (day === 6) {
+      sat = now;
+      sun = new Date(now); sun.setDate(now.getDate() + 1);
+    } else {
+      sat = new Date(now); sat.setDate(now.getDate() + (6 - day));
+      sun = new Date(sat); sun.setDate(sat.getDate() + 1);
+    }
+    return {
+      dates: new Set([sat.toISOString().split('T')[0], sun.toISOString().split('T')[0]]),
+      label: 'Sam. ' + sat.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })
+           + ' & dim. ' + sun.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' }),
+    };
+  }
+
+  // ── RENDER PRINCIPAL ──
   function render() {
+    const { dates: wkDates, label: wkLabel } = getWeekend();
+    document.getElementById('weekend-dates').textContent = wkLabel;
+
+    function splitGroups(evs) {
+      const groupMap = {}, singles = [];
+      evs.forEach(ev => {
+        if (ev.groupe) { (groupMap[ev.groupe] = groupMap[ev.groupe] || []).push(ev); }
+        else { singles.push(ev); }
+      });
+      return { groupMap, singles };
+    }
+
     const sections = { concerts: [], expos: [], activites: [] };
     EVENTS.forEach(ev => { if (sections[ev.section]) sections[ev.section].push(ev); });
 
     ['concerts', 'expos', 'activites'].forEach(sec => {
       const grid = document.getElementById('grid-' + sec);
-      if (grid) grid.innerHTML = sections[sec].map(renderCard).join('');
+      if (!grid) return;
+      const { groupMap, singles } = splitGroups(sections[sec]);
+      let html = '';
+      Object.entries(groupMap).forEach(([slug, evs]) => { html += renderGroupCard(slug, evs); });
+      singles.forEach(ev => { html += renderCard(ev, false); });
+      grid.innerHTML = html;
     });
 
+    // Section ce weekend
+    const wGrid = document.getElementById('grid-weekend');
+    if (wGrid) {
+      const wEvents = EVENTS.filter(ev => wkDates.has(ev.date));
+      wGrid.innerHTML = wEvents.length
+        ? wEvents.map(ev => renderCard(ev, true)).join('')
+        : '<p class="weekend-empty">Aucun événement ce weekend — <a href="#concerts">voir tous les concerts →</a></p>';
+    }
+
+    // Films
     const pathe    = FILMS.filter(f => f.cinema === 'pathe');
     const megarama = FILMS.filter(f => f.cinema === 'megarama');
+    const empty = '<li style="padding:.5rem;color:var(--muted);font-size:.8rem">Mise à jour chaque mercredi</li>';
     const fp = document.getElementById('films-pathe');
     const fm = document.getElementById('films-megarama');
-    if (fp) fp.innerHTML = pathe.length    ? pathe.map(renderFilm).join('')    : '<li style="padding:.5rem;color:var(--muted);font-size:.8rem">À mettre à jour</li>';
-    if (fm) fm.innerHTML = megarama.length ? megarama.map(renderFilm).join('') : '<li style="padding:.5rem;color:var(--muted);font-size:.8rem">À mettre à jour</li>';
+    if (fp) fp.innerHTML = pathe.length    ? pathe.map(renderFilm).join('')    : empty;
+    if (fm) fm.innerHTML = megarama.length ? megarama.map(renderFilm).join('') : empty;
 
+    // Sources
     const sg = document.getElementById('grid-sources');
     if (sg) sg.innerHTML = SOURCES_LIST.map(s =>
-      `<div class="source-item"><span>🔗</span><a href="${s.url}" target="_blank">${s.name}</a></div>`
+      `<div class="source-item"><span>🔗</span><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a></div>`
     ).join('');
 
     document.getElementById('event-count').textContent = EVENTS.length;
     applyFilters();
   }
 
+  // ── FILTRES ──
   function applyFilters() {
-    document.querySelectorAll('.event-card').forEach(card => {
-      const catOk = activeCategories.size === 0 || activeCategories.has(card.dataset.cat);
+    document.querySelectorAll('.event-card:not(.group-card)').forEach(card => {
+      const catOk  = activeCategories.size === 0 || activeCategories.has(card.dataset.cat);
       const filsOk = !filsOnly || card.dataset.fils === '1';
       card.classList.toggle('hidden', !(catOk && filsOk));
     });
+
+    document.querySelectorAll('.group-card').forEach(card => {
+      const cats  = (card.dataset.cats || '').split(' ').filter(Boolean);
+      const catOk  = activeCategories.size === 0 || cats.some(c => activeCategories.has(c));
+      const filsOk = !filsOnly || card.dataset.fils === '1';
+      card.classList.toggle('hidden', !(catOk && filsOk));
+      card.querySelectorAll('.group-row').forEach(row => {
+        row.classList.toggle('dimmed', filsOnly && row.dataset.fils !== '1');
+      });
+    });
+
     ['concerts', 'expos', 'activites'].forEach(sec => {
       const grid = document.getElementById('grid-' + sec);
       if (!grid) return;
-      const existing = grid.querySelector('.empty-state');
-      if (existing) existing.remove();
+      const ex = grid.querySelector('.empty-state');
+      if (ex) ex.remove();
       if (!grid.querySelector('.event-card:not(.hidden)'))
         grid.insertAdjacentHTML('beforeend', '<p class="empty-state">Aucun événement pour ces filtres.</p>');
     });
   }
 
+  // ── LISTENERS ──
   document.querySelectorAll('.chip[data-cat]').forEach(chip => {
     chip.addEventListener('click', () => {
       chip.classList.toggle('on');
@@ -448,6 +671,7 @@
     applyFilters();
   });
 
+  // ── NAV ACTIVE ──
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {

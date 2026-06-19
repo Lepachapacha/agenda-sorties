@@ -25,6 +25,7 @@ def parse_events(path="agenda-config.md"):
                             "fils":      parts[5].lower() == "oui",
                             "etoiles":   int(parts[6]) if len(parts) > 6 else 1,
                             "url":       parts[7] if len(parts) > 7 else "",
+                            "groupe":    parts[8] if len(parts) > 8 else "",
                         })
                     except (ValueError, IndexError):
                         pass
@@ -61,6 +62,7 @@ def build_events_json(client, manual_events, scraped_content, today):
         + (" | fils=oui" if e["fils"] else "")
         + (f" | etoiles={e['etoiles']}")
         + (f" | url={e['url']}" if e["url"] else "")
+        + (f" | groupe={e['groupe']}" if e.get("groupe") else "")
         for e in manual_events
         if e["date"] >= today
     )
@@ -90,7 +92,8 @@ Retourne UNIQUEMENT un tableau JSON valide (aucun texte avant ou après), avec c
     "stars": 1/2/3,
     "section": "concerts|expos|activites",
     "url": "URL billetterie ou page officielle de l'événement, vide si introuvable",
-    "gratuit": true/false
+    "gratuit": true/false,
+    "groupe": "slug de regroupement si présent dans les événements confirmés (ex: festival-nimes, jazz-sete), sinon vide"
   }}
 ]
 
@@ -181,6 +184,7 @@ def main():
                            else "concerts"),
                 "url":     ev["url"],
                 "gratuit": False,
+                "groupe":  ev.get("groupe", ""),
             }
             for ev in manual_events if ev["date"] >= today
         ]
