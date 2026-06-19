@@ -33,9 +33,15 @@ def parse_events(path="agenda-config.md"):
 
 def extract_json(text):
     text = text.strip()
-    text = re.sub(r'^```json\s*', '', text)
-    text = re.sub(r'^```\s*',     '', text)
-    text = re.sub(r'\s*```$',     '', text)
+    # Retire les blocs markdown ```json ... ```
+    text = re.sub(r'^```json\s*', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^```\s*',     '', text, flags=re.MULTILINE)
+    text = re.sub(r'\s*```$',     '', text, flags=re.MULTILINE)
+    text = text.strip()
+    # Extrait le premier tableau JSON trouvé dans la réponse
+    match = re.search(r'\[.*\]', text, re.DOTALL)
+    if match:
+        text = match.group(0)
     return json.loads(text)
 
 
@@ -159,7 +165,24 @@ def main():
         print(f"  {len(events)} événements extraits")
     except Exception as e:
         print(f"  ERREUR extraction événements : {e}", file=sys.stderr)
-        sys.exit(1)
+        print("  Fallback : utilisation des événements manuels uniquement")
+        events = [
+            {
+                "date":    ev["date"],
+                "titre":   ev["titre"],
+                "cat":     ev["categorie"],
+                "lieu":    ev["lieu"],
+                "note":    ev["note"],
+                "fils":    ev["fils"],
+                "stars":   ev["etoiles"],
+                "section": "activites" if ev["categorie"] == "activite"
+                           else ("expos" if ev["categorie"] in ("expo","theatre","danse")
+                           else "concerts"),
+                "url":     ev["url"],
+                "gratuit": False,
+            }
+            for ev in manual_events if ev["date"] >= today
+        ]
 
     print("Extraction films (Claude)...")
     films = build_films_json(client, scraped, today)
