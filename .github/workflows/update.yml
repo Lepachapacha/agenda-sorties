@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Sync with remote
+        run: git pull --rebase origin main
+
       - name: Generate index.html
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -35,8 +38,6 @@ jobs:
         run: |
           git config user.name  "agenda-bot"
           git config user.email "agenda-bot@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add index.html
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update $(date -u +'%Y-%m-%d %H:%M UTC')"
