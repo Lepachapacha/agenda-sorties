@@ -185,8 +185,12 @@ def main():
         ]
 
     print("Extraction films (Claude)...")
-    films = build_films_json(client, scraped, today)
-    print(f"  {len(films)} films extraits")
+    try:
+        films = build_films_json(client, scraped, today)
+        print(f"  {len(films)} films extraits")
+    except Exception as e:
+        print(f"  ERREUR films : {e}", file=sys.stderr)
+        films = []
 
     sources_list = build_sources_json()
 
