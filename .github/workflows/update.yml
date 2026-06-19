@@ -1,0 +1,42 @@
+name: Daily agenda update
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # tous les jours à 6h UTC (= 8h heure Paris)
+  push:
+    paths:
+      - 'agenda-config.md' # aussi déclenché si tu édites le fichier config
+  workflow_dispatch:        # bouton manuel dans l'UI GitHub pour tester
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate index.html
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "agenda-bot"
+          git config user.email "agenda-bot@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || (
+            git commit -m "Auto-update $(date -u +'%Y-%m-%d %H:%M UTC')" &&
+            git push
+          )
