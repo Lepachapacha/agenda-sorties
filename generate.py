@@ -89,15 +89,16 @@ Retourne UNIQUEMENT un tableau JSON valide (aucun texte avant ou après), avec c
     "fils": true/false,
     "stars": 1/2/3,
     "section": "concerts|expos|activites",
-    "url": "https://... ou vide",
+    "url": "URL billetterie ou page officielle de l'événement, vide si introuvable",
     "gratuit": true/false
   }}
 ]
 
 Règles :
 - Ne jamais inventer de dates ou d'événements non vérifiables
-- En cas de doublon avec les événements confirmés, conserver la version confirmée
-- Ignorer tout événement hors zone ou hors période"""
+- En cas de doublon avec les événements confirmés, conserver la version confirmée (et son URL)
+- Ignorer tout événement hors zone ou hors période
+- Pour l'URL : privilégier la page billetterie, sinon la page officielle de l'événement"""
 
     raw = ask_claude(client, prompt)
     return extract_json(raw)
