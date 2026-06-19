@@ -33,6 +33,7 @@
       --c-expo:       #047857;
       --c-danse:      #be185d;
       --c-feria:      #c2410c;
+      --c-humour:     #d97706;
       --c-cinema:     #1d4ed8;
       --c-activite:   #15803d;
     }
@@ -145,6 +146,7 @@
     .chip[data-cat="expo"].on      { background: var(--c-expo);     border-color: var(--c-expo); }
     .chip[data-cat="danse"].on     { background: var(--c-danse);    border-color: var(--c-danse); }
     .chip[data-cat="feria"].on     { background: var(--c-feria);    border-color: var(--c-feria); }
+    .chip[data-cat="humour"].on    { background: var(--c-humour);   border-color: var(--c-humour); }
 
     /* ── SECTIONS ── */
     section { max-width: 900px; margin: 0 auto; padding: 2.75rem 1.5rem; }
@@ -762,7 +764,7 @@
       });
     });
 
-    ['concerts', 'expos', 'activites'].forEach(sec => {
+    ['concerts', 'expos', 'danse', 'humour', 'activites'].forEach(sec => {
       const grid = document.getElementById('grid-' + sec);
       if (!grid) return;
       const ex = grid.querySelector('.empty-state');
