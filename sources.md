@@ -1,5 +1,5 @@
 # Sources — Agenda Sorties Montpellier · Nîmes · Sète · Béziers · Marseille
-# Mis à jour le : 2026-06-20
+# Mis à jour le : 2026-06-20b
 # Édite ce fichier pour ajouter ou supprimer des sources
 # Format : - NOM | URL
 # Les lignes commençant par # sont ignorées
