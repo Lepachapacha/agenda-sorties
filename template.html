@@ -153,12 +153,11 @@
     .star { color: var(--accent); font-size: .8rem; }
     .fils-tag { font-size: .9rem; }
     .event-title { font-size: .95rem; font-weight: 600; margin-bottom: .3rem; line-height: 1.3; }
+    .event-title a { color: var(--text); text-decoration: none; border-bottom: 1px solid #f59e0b55; transition: color .15s, border-color .15s; }
+    .event-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
     .event-lieu { font-size: .8rem; color: var(--muted); margin-bottom: .3rem; }
     .event-lieu::before { content: '📍 '; font-size: .75rem; }
     .event-note { font-size: .78rem; color: var(--muted); font-style: italic; }
-    .event-url { font-size: .75rem; margin-top: .4rem; }
-    .event-url a { color: var(--accent); text-decoration: none; opacity: .8; }
-    .event-url a:hover { opacity: 1; }
     .tag-complet {
       display: inline-block; margin-top: .5rem; padding: .1rem .45rem;
       background: #7f1d1d33; color: #f87171; border: 1px solid #dc262655;
@@ -357,21 +356,23 @@
     const filsBadge = ev.fils ? '<span class="fils-tag" title="Avec mon fils">👦</span>' : '';
     const starBadge = ev.stars >= 3 ? `<span class="star">★★★</span>` : ev.stars === 2 ? '<span class="star">★★</span>' : '';
     const tags = [
-      ev.complet  ? '<span class="tag-complet">Complet</span>'      : '',
-      ev.gratuit  ? '<span class="tag-gratuit">Gratuit</span>'       : '',
-      ev.famille  ? '<span class="tag-famille">Famille ✓</span>'     : '',
+      ev.complet  ? '<span class="tag-complet">Complet</span>'  : '',
+      ev.gratuit  ? '<span class="tag-gratuit">Gratuit</span>'  : '',
+      ev.famille  ? '<span class="tag-famille">Famille ✓</span>': '',
     ].join('');
-    const urlTag = ev.url ? `<div class="event-url"><a href="${ev.url}" target="_blank">↗ Plus d'infos</a></div>` : '';
+    const titre = ev.url
+      ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.titre}</a>`
+      : ev.titre;
     return `
       <div class="event-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
         <div class="card-top">
           <span class="event-date">${formatDate(ev.date)}</span>
           <div class="card-badges">${filsBadge}${starBadge}<span class="cat-badge ${ev.cat}">${ev.cat}</span></div>
         </div>
-        <div class="event-title">${ev.titre}</div>
+        <div class="event-title">${titre}</div>
         <div class="event-lieu">${ev.lieu}</div>
         ${ev.note ? `<div class="event-note">${ev.note}</div>` : ''}
-        ${tags}${urlTag}
+        ${tags}
       </div>`;
   }
 
