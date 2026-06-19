@@ -46,9 +46,9 @@ def extract_json(text):
     return json.loads(text)
 
 
-def ask_claude(client, prompt):
+def ask_claude(client, prompt, model="claude-sonnet-4-6"):
     msg = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model=model,
         max_tokens=16384,
         messages=[{"role": "user", "content": prompt}]
     )
@@ -67,41 +67,62 @@ def build_events_json(client, manual_events, scraped_content, today):
         if e["date"] >= today
     )
 
-    prompt = f"""Extrait tous les événements culturels pertinents pour la région Montpellier–Nîmes–Sète–Béziers–Marseille.
+    prompt = f"""Extrait TOUS les événements culturels mentionnés pour la région Montpellier–Nîmes–Sète–Béziers–Marseille.
 
-ÉVÉNEMENTS CONFIRMÉS (priorité absolue, à inclure tels quels) :
+ÉVÉNEMENTS CONFIRMÉS (priorité absolue, inclure tels quels sans modification) :
 {manual_text}
 
 CONTENU SCRAPÉ DES SOURCES :
 {scraped_content}
 
-Critères de sélection depuis les sources :
-- Zone : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille (13)
-- Période : {today} jusqu'à dans 12 mois (événements futurs à anticiper inclus)
-- Catégories valides : festival, concert, jazz, electro, classique, theatre, expo, danse, humour, feria, activite
+RÈGLES D'EXTRACTION :
+- Zone : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille et alentours (13)
+- Période : {today} jusqu'à dans 12 mois
+- Être EXHAUSTIF : extraire TOUS les événements identifiables dans le contenu, même si la date est approximative
+- En cas de doublon avec les événements confirmés : conserver la version confirmée
+- Si la date exacte est inconnue mais que l'événement est réel : utiliser "2099-01-01" pour le signaler
+- Ne pas inventer de détails absents du contenu, mais ne pas non plus rejeter des événements par excès de prudence
 
-Retourne UNIQUEMENT un tableau JSON valide (aucun texte avant ou après), avec ce format exact :
+CATÉGORIES (choisir la plus précise) :
+- festival : multi-jours avec plusieurs artistes
+- concert : concert unique (rock, pop, rap, chanson, world...)
+- jazz : concert jazz ou musiques du monde
+- electro : club, DJ set, techno, house
+- classique : musique classique, opéra, orchestre
+- theatre : pièce de théâtre, spectacle de scène
+- expo : exposition, musée, galerie
+- danse : spectacle de danse, soirée salsa/bachata, festival dansant
+- humour : one-man-show, stand-up, café-théâtre, sketch
+- feria : corrida, féria, tauromachie
+- activite : loisirs, sport, famille, sortie nature
+
+MAPPING section (obligatoire, choisir exactement une valeur) :
+- "concerts"  → cat = festival, concert, jazz, electro, classique, feria
+- "expos"     → cat = theatre, expo
+- "danse"     → cat = danse
+- "humour"    → cat = humour
+- "activites" → cat = activite
+
+Retourne UNIQUEMENT un tableau JSON valide (aucun texte avant ou après) :
 [
   {{
     "date": "YYYY-MM-DD",
-    "titre": "Nom de l'événement",
-    "cat": "categorie (festival|concert|jazz|electro|classique|theatre|expo|danse|humour|feria|activite)",
-    "lieu": "Lieu, Ville",
-    "note": "Description courte ou vide",
-    "fils": true/false,
-    "stars": 1/2/3,
-    "section": "concerts|expos|activites|danse|humour",
-    "url": "URL billetterie ou page officielle de l'événement, vide si introuvable",
-    "gratuit": true/false,
-    "groupe": "slug de regroupement si présent dans les événements confirmés (ex: festival-nimes, jazz-sete), sinon vide"
+    "titre": "Nom exact de l'événement",
+    "cat": "categorie",
+    "lieu": "Nom du lieu, Ville",
+    "note": "Artiste, description courte — vide si rien",
+    "fils": false,
+    "stars": 1,
+    "section": "concerts|expos|danse|humour|activites",
+    "url": "URL directe de l'événement ou billetterie, vide si introuvable",
+    "gratuit": false,
+    "groupe": ""
   }}
 ]
 
-Règles :
-- Ne jamais inventer de dates ou d'événements non vérifiables
-- En cas de doublon avec les événements confirmés, conserver la version confirmée (et son URL)
-- Ignorer tout événement hors zone ou hors période
-- Pour l'URL : privilégier la page billetterie, sinon la page officielle de l'événement"""
+Pour "stars" : 3 = incontournable/rare, 2 = très bon, 1 = normal.
+Pour "fils" : true uniquement si l'événement est adapté à un enfant de 10 ans.
+Pour "url" : utiliser l'URL la plus directe vers la billetterie ou la page de l'événement."""
 
     raw = ask_claude(client, prompt)
     return extract_json(raw)
