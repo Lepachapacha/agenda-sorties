@@ -2,6 +2,7 @@ import os
 import sys
 from datetime import date
 import anthropic
+from scraper import scrape_all
 
 
 def parse_events(path="agenda-config.md"):
@@ -27,78 +28,82 @@ def parse_events(path="agenda-config.md"):
     return events
 
 
-def generate_html(events, today):
+def generate_html(events, scraped_content, today):
     upcoming = [e for e in events if e["date"] >= today]
-    print(f"  {len(events)} events parsed, {len(upcoming)} upcoming")
+    print(f"  {len(events)} events dans le fichier, {len(upcoming)} à venir")
 
     client = anthropic.Anthropic()
 
     events_text = "\n".join(
         f"- {e['date']} | {e['titre']} | {e['categorie']} | {e['lieu']}"
         + (f" | {e['note']}" if e["note"] else "")
-        + (" | ⭐" * e["etoiles"])
-        + (" | 👦" if e["fils"] else "")
+        + (" ⭐" * e["etoiles"])
+        + (" 👦" if e["fils"] else "")
         for e in upcoming
     )
 
-    message = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=4096,
-        messages=[{
-            "role": "user",
-            "content": f"""Tu génères le <body> d'une page HTML simple listant ces événements à venir.
-- Regroupe par mois
-- Indique la catégorie et le lieu
-- Mets en avant les ⭐⭐⭐ et les événements 👦 (père & fils)
-- HTML minimaliste, pas de CSS externe
-- Retourne uniquement le HTML du body, rien d'autre
+    prompt = f"""Tu es un assistant agenda pour la région Montpellier–Nîmes–Sète–Béziers.
 
+═══ ÉVÉNEMENTS CONFIRMÉS (priorité absolue) ═══
+{events_text}
+
+═══ CONTENU SCRAPÉ DES SOURCES DU JOUR ═══
+{scraped_content}
+
+═══ INSTRUCTIONS ═══
 Aujourd'hui : {today}
 
-Événements :
-{events_text}"""
-        }]
+1. Extrais les événements pertinents du contenu scrapé :
+   - Zone géographique : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30)
+   - Période : à partir d'aujourd'hui jusqu'à 3 mois
+   - Catégories : concerts, festivals, expos, théâtre, danse, jazz, électro, féria, cinéma, activités famille
+
+2. Fusionne avec les événements confirmés :
+   - En cas de doublon, conserve les infos des événements confirmés
+   - Ignore les événements dont la date est antérieure à {today}
+
+3. Génère une page HTML complète avec :
+   - Dark theme élégant (fond sombre, accents ambrés)
+   - Google Fonts : Playfair Display + Inter
+   - Sections : Festivals & Concerts / Expos & Spectacles / Activités Père & Fils / Cinéma
+   - Chaque événement : date formatée en français, titre, lieu, catégorie (badge coloré)
+   - Badge ⭐ sur les incontournables, badge 👦 sur les sorties père & fils
+   - Navigation sticky en haut
+   - Pied de page : "Généré le {today} · Sources : {len(scraped_content.split('===')) - 1} sites scrapés"
+   - Responsive mobile
+
+Retourne uniquement le HTML complet (de <!DOCTYPE html> à </html>), rien d'autre."""
+
+    message = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=8192,
+        messages=[{"role": "user", "content": prompt}]
     )
 
-    body = message.content[0].text
-
-    return f"""<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agenda Sorties — Montpellier · Nîmes · Sète</title>
-  <style>
-    body {{ font-family: system-ui, sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1.25rem; color: #1a1a2e; }}
-    h1 {{ font-size: 1.8rem; margin-bottom: .25rem; }}
-    footer {{ margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: .75rem; color: #888; }}
-  </style>
-</head>
-<body>
-{body}
-<footer>
-  Généré automatiquement le {today} · GitHub Actions + Claude API ·
-  <a href="https://github.com/Lepachapacha/agenda-sorties">Source</a>
-</footer>
-</body>
-</html>"""
+    return message.content[0].text
 
 
 def main():
     today = date.today().isoformat()
-    print(f"[generate.py] {today}")
+    print(f"[generate.py] Démarrage — {today}")
 
     if not os.getenv("ANTHROPIC_API_KEY"):
-        print("ERROR: ANTHROPIC_API_KEY not set", file=sys.stderr)
+        print("ERREUR : ANTHROPIC_API_KEY non définie", file=sys.stderr)
         sys.exit(1)
 
+    print("Lecture agenda-config.md...")
     events = parse_events()
-    html = generate_html(events, today)
+
+    print("Scraping des sources...")
+    scraped = scrape_all()
+
+    print("Appel Claude API...")
+    html = generate_html(events, scraped, today)
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print("  index.html written")
+    print("index.html généré avec succès.")
 
 
 if __name__ == "__main__":
