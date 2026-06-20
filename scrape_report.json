@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8655,
+      "chars": 8598,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6627,
+      "chars": 6594,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6606,
-      "preview": "[RSS · 20 items] IN SITU célèbre son anniversaire avec une exposition rétrospective exceptionnelle |"
+      "chars": 6570,
+      "preview": "[RSS · 20 items] Circa 137 | Sat, 20 Jun 2026 | https://13.agendaculturel.fr/concert/marseille/circa"
     },
     {
       "name": "Montpellier Events",
@@ -75,18 +75,18 @@
     {
       "name": "Infoconcert Montpellier",
       "url": "https://www.infoconcert.com/ville/montpellier-2271/concerts",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 764,
-      "preview": "Tous les concerts à Montpellier Ajouter plus de genres Concerts à Montpellier 2026 : dates et billet"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Infoconcert Marseille",
       "url": "https://www.infoconcert.com/ville/marseille-5132/concerts",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 583,
-      "preview": "Tous les concerts à Marseille Ajouter plus de genres Concerts à Marseille 2026 : dates et billetteri"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Zénith Sud Montpellier",
@@ -158,7 +158,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda sam. 20 juin de 15h00 à 17h00 Atelier créatif - Cotton & Cranberry Ateliers "
+      "preview": "Halle Tropisme - Agenda dim. 21 juin de 09h00 à 14h00 Tous les dimanches de 09h00 à 14h00 BOUTIQUE, "
     },
     {
       "name": "Paloma Nîmes",
@@ -195,18 +195,18 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Espace Julien Marseille",
       "url": "https://www.infoconcert.com/salle/espace-julien-a-marseille-168/concerts",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 3358,
-      "preview": "39 cours Julien, 13006, Espace Julien A Marseille Espace Julien A Marseille 39 cours Julien, 13006, "
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -355,10 +355,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "erreur",
-      "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
     },
     {
       "name": "Family Piknik Montpellier",
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 14,
     "sources_jsonld": 3,
-    "sources_text": 31,
-    "sources_erreur": 4,
-    "total_items_structured": 181,
-    "total_chars": 163629
+    "sources_text": 27,
+    "sources_erreur": 7,
+    "total_items_structured": 184,
+    "total_chars": 160057
   },
-  "timestamp": "2026-06-20T12:12:51Z"
+  "timestamp": "2026-06-20T17:11:02Z"
 }

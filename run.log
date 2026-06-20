@@ -5,9 +5,9 @@ Lecture agenda-config.md...
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/51] Scraping : JDS Montpellier
-    → texte, 8655 chars
+    → texte, 8598 chars
   [2/51] Scraping : JDS Nîmes
-    → texte, 6627 chars
+    → texte, 6594 chars
   [3/51] Scraping : JDS Marseille
     → texte, 6703 chars
   [4/51] Scraping : Agenda Culturel 34 Montpellier
@@ -15,7 +15,7 @@ Scraping des sources...
   [5/51] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 6697 chars, 20 items
   [6/51] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6606 chars, 20 items
+    → RSS, 6570 chars, 20 items
   [7/51] Scraping : Montpellier Events
     → texte, 536 chars
   [8/51] Scraping : IciSète
@@ -23,9 +23,9 @@ Scraping des sources...
   [9/51] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/51] Scraping : Infoconcert Montpellier
-    → texte, 764 chars
+    → erreur, 19 chars
   [11/51] Scraping : Infoconcert Marseille
-    → texte, 583 chars
+    → erreur, 19 chars
   [12/51] Scraping : Zénith Sud Montpellier
     → texte, 144 chars
   [13/51] Scraping : Le Corum Montpellier
@@ -53,9 +53,9 @@ Scraping des sources...
   [24/51] Scraping : Le Silo Marseille
     → texte, 4877 chars
   [25/51] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [26/51] Scraping : Espace Julien Marseille
-    → texte, 3358 chars
+    → erreur, 19 chars
   [27/51] Scraping : La Friche Belle de Mai
     → RSS, 3455 chars, 10 items
   [28/51] Scraping : Le Moulin Marseille
@@ -93,7 +93,7 @@ Scraping des sources...
   [44/51] Scraping : Jazz à Sète
     → texte, 61 chars
   [45/51] Scraping : Festival Radio France Occitanie
-    → erreur, 19 chars
+    → RSS, 1336 chars, 3 items
   [46/51] Scraping : Family Piknik Montpellier
     → texte, 4428 chars
   [47/51] Scraping : CitizenKid Montpellier
@@ -107,22 +107,51 @@ Scraping des sources...
   [51/51] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  51 sources — RSS:13 JSON-LD:3 texte:31 skip:0 erreur:4 | 181 items structurés
+  51 sources — RSS:14 JSON-LD:3 texte:27 skip:0 erreur:7 | 184 items structurés
 Recherches Gemini Search (couche 3)...
+  [Gemini] gemini-2.0-flash : quota search grounding dépassé
+  [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
+  [Gemini] gemini-1.5-flash-latest : modèle non disponible
+  [Gemini] Fallback sans grounding sur gemini-2.0-flash-lite
   [Gemini 1/14] Concerts Montpellier-Nîmes 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini] Quota dépassé — skip restant
+  [Gemini 2/14] Concerts Sète-Béziers-Agde 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 3/14] Concerts Marseille 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 4/14] Festival de Nîmes 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 5/14] Jazz à Sète 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 6/14] Paloma Nîmes 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 7/14] Corum Montpellier 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 8/14] Humoristes tournée Sud 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 9/14] Salsa Bachata Montpellier 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 10/14] Tempo Latino 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 11/14] Électro Montpellier-Marseille 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 12/14] Expos Théâtre Montpellier-Nîmes 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 13/14] Activités famille Montpellier 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 14/14] Films cinéma Pathé Odysseum
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 167718 → 110000 chars
+  Scrape tronqué : 164146 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude raw début] '[{"date":"2026-06-20","titre":"Festival Montpellier Danse 2026","cat":"festival","lieu":"Domaine d\'O, Montpellier","note":"Festival international danse contemporaine","fils":false,"stars":3,"section":"concerts","url":"","gratuit":false,"groupe":""}\n,{"date":"2026-06-20","titre":"Festival Printemps d'
-  301 nouveaux événements extraits depuis les sources
-  Total : 330 événements (29 manuels + 301 scrapés)
+  [Claude raw début] '[{"date":"2026-06-20","titre":"Fête de la musique à Saussines","cat":"concert","lieu":"Saussines, Hérault","note":"20-21 juin","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/festival/fete-de-la-musique-saussines.html","gratuit":true,"groupe":""}\n,{"date":"2026-06-20"'
+  240 nouveaux événements extraits depuis les sources
+  Total : 269 événements (29 manuels + 240 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "La Porte",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pathe",\n    '
+  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "Porte 9",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pathe",\n    "'
   32 films extraits
 Sauvegarde events_extracted.json...
 Injection dans template.html...
