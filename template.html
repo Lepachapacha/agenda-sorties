@@ -13,36 +13,36 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:           #0d0f1a;
-      --bg-nav:       #0d0f1af5;
-      --bg-card:      #141726;
-      --bg-card-h:    #191d30;
-      --bg-hero:      linear-gradient(135deg, #1a1030 0%, #1c1428 60%, #141726 100%);
-      --accent:       #f59e0b;
-      --accent-l:     #fbbf24;
-      --accent-dim:   #f59e0b1a;
-      --accent-mid:   #f59e0b44;
-      --coral:        #f97316;
-      --coral-dim:    #f9731618;
-      --text:         #e2e8f0;
-      --muted:        #8fa3b8;
-      --muted-l:      #b0c4d8;
-      --border:       #1e2540;
-      --border-h:     #2d3a5c;
-      --hero-border:  #7c3aed55;
-      --hero-glow:    #7c3aed22;
-      --c-festival:   #7c3aed;
-      --c-concert:    #dc2626;
-      --c-jazz:       #0284c7;
-      --c-electro:    #0891b2;
-      --c-classique:  #64748b;
-      --c-theatre:    #b45309;
-      --c-expo:       #047857;
-      --c-danse:      #be185d;
-      --c-feria:      #c2410c;
-      --c-humour:     #d97706;
-      --c-cinema:     #1d4ed8;
-      --c-activite:   #15803d;
+      --bg:           #08080c;
+      --bg-nav:       #08080cee;
+      --bg-card:      #0f0f17;
+      --bg-card-h:    #141420;
+      --bg-hero:      linear-gradient(135deg, #130926 0%, #0c0618 55%, #08080c 100%);
+      --accent:       #818cf8;
+      --accent-l:     #a5b4fc;
+      --accent-dim:   #818cf814;
+      --accent-mid:   #818cf832;
+      --coral:        #f472b6;
+      --coral-dim:    #f472b614;
+      --text:         #f1f5f9;
+      --muted:        #64748b;
+      --muted-l:      #94a3b8;
+      --border:       #1c1c28;
+      --border-h:     #2e2e44;
+      --hero-border:  #818cf845;
+      --hero-glow:    #818cf81a;
+      --c-festival:   #a78bfa;
+      --c-concert:    #f87171;
+      --c-jazz:       #38bdf8;
+      --c-electro:    #22d3ee;
+      --c-classique:  #94a3b8;
+      --c-theatre:    #fb923c;
+      --c-expo:       #34d399;
+      --c-danse:      #f472b6;
+      --c-feria:      #fbbf24;
+      --c-humour:     #facc15;
+      --c-cinema:     #60a5fa;
+      --c-activite:   #4ade80;
       --bottom-nav-h: 56px;
     }
 
@@ -100,8 +100,8 @@
     }
     #btn-fils:hover { border-color: var(--border-h); color: var(--muted-l); }
     #btn-fils.on {
-      background: #162416; border-color: #22c55e; color: #86efac;
-      box-shadow: 0 0 12px #22c55e18;
+      background: #12102a; border-color: var(--accent); color: var(--accent-l);
+      box-shadow: 0 0 12px var(--accent-dim);
     }
 
     /* ── HEADER ── */
@@ -261,7 +261,7 @@
     #weekend {
       border-left: 3px solid var(--accent);
       padding-left: calc(1.5rem - 3px);
-      background: linear-gradient(100deg, #14162288 0%, transparent 70%);
+      background: linear-gradient(100deg, #13102688 0%, transparent 70%);
     }
     .weekend-eyebrow {
       font-family: 'Space Mono', monospace; font-size: .63rem; letter-spacing: .16em;
@@ -304,11 +304,11 @@
     .hero-card::before {
       content: ''; position: absolute; top: -40%; right: -10%;
       width: 280px; height: 280px; border-radius: 50%;
-      background: radial-gradient(circle, #7c3aed18 0%, transparent 70%);
+      background: radial-gradient(circle, #818cf820 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-card:hover {
-      border-color: #7c3aed88;
+      border-color: #818cf880;
       box-shadow: 0 8px 32px var(--hero-glow);
     }
     .hero-top {
@@ -363,17 +363,17 @@
       padding: .12rem .42rem; border-radius: 3px; font-size: .62rem;
       font-weight: 600; text-transform: uppercase; letter-spacing: .05em;
     }
-    .cat-badge.festival  { background: #3b1d8c22; color: #a78bfa; border: 1px solid #7c3aed44; }
-    .cat-badge.concert   { background: #7f1d1d22; color: #fca5a5; border: 1px solid #dc262644; }
-    .cat-badge.jazz      { background: #0c4a6e22; color: #7dd3fc; border: 1px solid #0284c744; }
-    .cat-badge.electro   { background: #164e6322; color: #67e8f9; border: 1px solid #0891b244; }
-    .cat-badge.classique { background: #1e293b22; color: #94a3b8; border: 1px solid #64748b44; }
-    .cat-badge.theatre   { background: #78350f22; color: #fcd34d; border: 1px solid #b4530944; }
-    .cat-badge.expo      { background: #064e3b22; color: #6ee7b7; border: 1px solid #04785744; }
-    .cat-badge.danse     { background: #83184322; color: #f9a8d4; border: 1px solid #be185d44; }
-    .cat-badge.feria     { background: #7c2d1222; color: #fdba74; border: 1px solid #c2410c44; }
-    .cat-badge.activite  { background: #14532d22; color: #86efac; border: 1px solid #15803d44; }
-    .cat-badge.humour    { background: #78350f22; color: #fde68a; border: 1px solid #d9770644; }
+    .cat-badge.festival  { background: #2d1d6618; color: #a78bfa; border: 1px solid #a78bfa38; }
+    .cat-badge.concert   { background: #3d0d0d18; color: #f87171; border: 1px solid #f8717138; }
+    .cat-badge.jazz      { background: #082a4018; color: #7dd3fc; border: 1px solid #38bdf838; }
+    .cat-badge.electro   { background: #0a2e3418; color: #67e8f9; border: 1px solid #22d3ee38; }
+    .cat-badge.classique { background: #1e293b18; color: #94a3b8; border: 1px solid #94a3b838; }
+    .cat-badge.theatre   { background: #3d1a0418; color: #fdba74; border: 1px solid #fb923c38; }
+    .cat-badge.expo      { background: #0a3d2a18; color: #6ee7b7; border: 1px solid #34d39938; }
+    .cat-badge.danse     { background: #3d103218; color: #f9a8d4; border: 1px solid #f472b638; }
+    .cat-badge.feria     { background: #3d2d0418; color: #fde68a; border: 1px solid #fbbf2438; }
+    .cat-badge.activite  { background: #0a3d1a18; color: #86efac; border: 1px solid #4ade8038; }
+    .cat-badge.humour    { background: #3d2c0418; color: #fde68a; border: 1px solid #facc1538; }
     .star { color: var(--accent); font-size: .75rem; letter-spacing: -.03em; }
     .fils-tag { font-size: .82rem; }
     .event-title { font-size: .92rem; font-weight: 600; margin-bottom: .3rem; line-height: 1.3; }
@@ -391,9 +391,9 @@
       font-size: .62rem; font-weight: 700; border-radius: 3px;
       text-transform: uppercase; letter-spacing: .05em;
     }
-    .tag-complet { background: #7f1d1d28; color: #f87171; border: 1px solid #dc262644; }
-    .tag-gratuit { background: #14532d28; color: #86efac; border: 1px solid #15803d44; }
-    .tag-famille { background: #1e3a5f28; color: #93c5fd; border: 1px solid #1d4ed844; }
+    .tag-complet { background: #3d0d0d22; color: #f87171; border: 1px solid #f8717138; }
+    .tag-gratuit { background: #0a3d1a22; color: #86efac; border: 1px solid #4ade8038; }
+    .tag-famille { background: #1a1a3a22; color: #a5b4fc; border: 1px solid #818cf838; }
     .weekend-badge {
       display: inline-block; padding: .04rem .35rem; margin-right: .25rem;
       background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-mid);
@@ -519,7 +519,7 @@
     .film-meta { font-size: .7rem; color: var(--muted); margin-top: .1rem; }
     .film-famille {
       font-size: .62rem; padding: .08rem .35rem; border-radius: 3px;
-      background: #1e3a5f28; color: #93c5fd; border: 1px solid #1d4ed844;
+      background: #1a1a3a22; color: #a5b4fc; border: 1px solid #818cf838;
       margin-top: .25rem; display: inline-block; letter-spacing: .02em;
     }
     .cinema-links { display: flex; gap: .5rem; margin-top: .85rem; }
