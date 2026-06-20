@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8598,
+      "chars": 8579,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6594,
+      "chars": 6585,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6703,
+      "chars": 6743,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6570,
-      "preview": "[RSS · 20 items] Circa 137 | Sat, 20 Jun 2026 | https://13.agendaculturel.fr/concert/marseille/circa"
+      "chars": 6584,
+      "preview": "[RSS · 20 items] Le Grand Boucan Concert et Théâtre | Sat, 20 Jun 2026 | https://13.agendaculturel.f"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1539,
-      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -71,22 +71,6 @@
       "items": 1,
       "chars": 25,
       "preview": "[JSON-LD · 1 événements] "
-    },
-    {
-      "name": "Infoconcert Montpellier",
-      "url": "https://www.infoconcert.com/ville/montpellier-2271/concerts",
-      "method": "erreur",
-      "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
-    },
-    {
-      "name": "Infoconcert Marseille",
-      "url": "https://www.infoconcert.com/ville/marseille-5132/concerts",
-      "method": "erreur",
-      "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Zénith Sud Montpellier",
@@ -103,14 +87,6 @@
       "items": 0,
       "chars": 249,
       "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... COMPLET - 2ème da"
-    },
-    {
-      "name": "Rockstore Montpellier",
-      "url": "https://www.rockstore.fr/PBEvents.asp?CatID=2004556",
-      "method": "erreur",
-      "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
     },
     {
       "name": "Victoire 2 Saint-Jean-de-Védas",
@@ -141,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1933,
+      "chars": 1844,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -171,18 +147,18 @@
     {
       "name": "Festival de Nîmes",
       "url": "https://www.festivaldenimes.com/programmation",
-      "method": "RSS",
-      "items": 1,
-      "chars": 307,
-      "preview": "[RSS · 1 items] Bonjour tout le monde ! | Fri, 31 Jan 2025 | https://festivaldenimes.com/2025/01/31/"
+      "method": "texte",
+      "items": 0,
+      "chars": 962,
+      "preview": "Artistes Archive - Festival de Nîmes BOURSE AUX BILLETS OFFICIELLE DISPONIBLE   - BOURSE AUX BILLETS"
     },
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -195,14 +171,6 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
-      "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
-    },
-    {
-      "name": "Espace Julien Marseille",
-      "url": "https://www.infoconcert.com/salle/espace-julien-a-marseille-168/concerts",
       "method": "erreur",
       "items": 0,
       "chars": 19,
@@ -307,10 +275,10 @@
     {
       "name": "Alma Dance Montpellier",
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
-      "method": "RSS",
-      "items": 1,
-      "chars": 302,
-      "preview": "[RSS · 1 items] Bonjour tout le monde ! | Sat, 23 Mar 2019 | https://almadance.fr/2019/03/23/bonjour"
+      "method": "texte",
+      "items": 0,
+      "chars": 4052,
+      "preview": "Soirées SBK - école de danse Alma Dance à Montpellier « ET POURTANT… JE ME SOUVIENS. » “Et pourtant,"
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -339,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 10,
+      "preview": "[HTTP 403]"
     },
     {
       "name": "Jazz à Sète",
@@ -389,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6373,
+      "chars": 6636,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -410,14 +378,14 @@
     }
   ],
   "totals": {
-    "sources_total": 51,
+    "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 14,
+    "sources_rss": 10,
     "sources_jsonld": 3,
-    "sources_text": 27,
-    "sources_erreur": 7,
-    "total_items_structured": 184,
-    "total_chars": 160057
+    "sources_text": 30,
+    "sources_erreur": 4,
+    "total_items_structured": 167,
+    "total_chars": 149530
   },
-  "timestamp": "2026-06-20T17:11:02Z"
+  "timestamp": "2026-06-20T20:44:15Z"
 }

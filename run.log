@@ -1,158 +1,152 @@
 [generate.py] 2026-06-20
 Lecture agenda-config.md...
   29 événements manuels
-/home/runner/work/agenda-sorties/agenda-sorties/generate.py:263: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+/home/runner/work/agenda-sorties/agenda-sorties/generate.py:269: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
-  [1/51] Scraping : JDS Montpellier
-    → texte, 8598 chars
-  [2/51] Scraping : JDS Nîmes
-    → texte, 6594 chars
-  [3/51] Scraping : JDS Marseille
-    → texte, 6703 chars
-  [4/51] Scraping : Agenda Culturel 34 Montpellier
+  [1/47] Scraping : JDS Montpellier
+    → texte, 8579 chars
+  [2/47] Scraping : JDS Nîmes
+    → texte, 6585 chars
+  [3/47] Scraping : JDS Marseille
+    → texte, 6743 chars
+  [4/47] Scraping : Agenda Culturel 34 Montpellier
     → RSS, 6624 chars, 20 items
-  [5/51] Scraping : Agenda Culturel 30 Nîmes
+  [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 6697 chars, 20 items
-  [6/51] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6570 chars, 20 items
-  [7/51] Scraping : Montpellier Events
+  [6/47] Scraping : Agenda Culturel 13 Marseille
+    → RSS, 6584 chars, 20 items
+  [7/47] Scraping : Montpellier Events
     → texte, 536 chars
-  [8/51] Scraping : IciSète
-    → RSS, 1539 chars, 5 items
-  [9/51] Scraping : EscapadesLR Hérault
+  [8/47] Scraping : IciSète
+    → texte, 98 chars
+  [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
-  [10/51] Scraping : Infoconcert Montpellier
-    → erreur, 19 chars
-  [11/51] Scraping : Infoconcert Marseille
-    → erreur, 19 chars
-  [12/51] Scraping : Zénith Sud Montpellier
+  [10/47] Scraping : Zénith Sud Montpellier
     → texte, 144 chars
-  [13/51] Scraping : Le Corum Montpellier
+  [11/47] Scraping : Le Corum Montpellier
     → texte, 249 chars
-  [14/51] Scraping : Rockstore Montpellier
-    → erreur, 10 chars
-  [15/51] Scraping : Victoire 2 Saint-Jean-de-Védas
+  [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
     → texte, 1181 chars
-  [16/51] Scraping : Théâtre Jean Vilar Montpellier
+  [13/47] Scraping : Théâtre Jean Vilar Montpellier
     → texte, 1436 chars
-  [17/51] Scraping : Opéra Comédie Montpellier
+  [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
-  [18/51] Scraping : Domaine d'O Montpellier
-    → texte, 1933 chars
-  [19/51] Scraping : Le Jam Montpellier (jazz)
+  [15/47] Scraping : Domaine d'O Montpellier
+    → texte, 1844 chars
+  [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3368 chars, 10 items
-  [20/51] Scraping : Halle Tropisme Montpellier
+  [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
-  [21/51] Scraping : Paloma Nîmes
+  [18/47] Scraping : Paloma Nîmes
     → RSS, 3421 chars, 10 items
-  [22/51] Scraping : Festival de Nîmes
-    → RSS, 307 chars, 1 items
-  [23/51] Scraping : Théâtre de Nîmes
-    → RSS, 1732 chars, 10 items
-  [24/51] Scraping : Le Silo Marseille
+  [19/47] Scraping : Festival de Nîmes
+    → texte, 962 chars
+  [20/47] Scraping : Théâtre de Nîmes
+    → texte, 98 chars
+  [21/47] Scraping : Le Silo Marseille
     → texte, 4877 chars
-  [25/51] Scraping : Le Dôme Marseille
+  [22/47] Scraping : Le Dôme Marseille
     → erreur, 19 chars
-  [26/51] Scraping : Espace Julien Marseille
-    → erreur, 19 chars
-  [27/51] Scraping : La Friche Belle de Mai
+  [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3455 chars, 10 items
-  [28/51] Scraping : Le Moulin Marseille
+  [24/47] Scraping : Le Moulin Marseille
     → erreur, 32 chars
-  [29/51] Scraping : Théâtre de la Mer Sète
+  [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
-  [30/51] Scraping : Scène de Bayssan Béziers
+  [26/47] Scraping : Scène de Bayssan Béziers
     → texte, 1706 chars
-  [31/51] Scraping : JDS Humour Montpellier
+  [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8246 chars, 25 items
-  [32/51] Scraping : JDS Humour Nîmes
+  [28/47] Scraping : JDS Humour Nîmes
     → JSON-LD, 7870 chars, 25 items
-  [33/51] Scraping : Fnac Humour Montpellier
+  [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
-  [34/51] Scraping : Adam Concerts Humour
+  [30/47] Scraping : Adam Concerts Humour
     → RSS, 2877 chars, 10 items
-  [35/51] Scraping : Marseille Comedy Club
+  [31/47] Scraping : Marseille Comedy Club
     → texte, 358 chars
-  [36/51] Scraping : Garage Comedy Marseille
+  [32/47] Scraping : Garage Comedy Marseille
     → texte, 56 chars
-  [37/51] Scraping : Comédie Club Vieux Port Marseille
+  [33/47] Scraping : Comédie Club Vieux Port Marseille
     → texte, 4724 chars
-  [38/51] Scraping : Temple de la Danse Montpellier
+  [34/47] Scraping : Temple de la Danse Montpellier
     → texte, 224 chars
-  [39/51] Scraping : Alma Dance Montpellier
-    → RSS, 302 chars, 1 items
-  [40/51] Scraping : Liste Salsa d'Olivier Hérault 34
+  [35/47] Scraping : Alma Dance Montpellier
+    → texte, 4052 chars
+  [36/47] Scraping : Liste Salsa d'Olivier Hérault 34
     → texte, 12000 chars
-  [41/51] Scraping : Toutlemondedanse Montpellier
+  [37/47] Scraping : Toutlemondedanse Montpellier
     → texte, 979 chars
-  [42/51] Scraping : Tempo Latino Vic-Fezensac
+  [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1546 chars
-  [43/51] Scraping : Latinamap Festivals Été
-    → texte, 12000 chars
-  [44/51] Scraping : Jazz à Sète
+  [39/47] Scraping : Latinamap Festivals Été
+    → erreur, 10 chars
+  [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
-  [45/51] Scraping : Festival Radio France Occitanie
+  [41/47] Scraping : Festival Radio France Occitanie
     → RSS, 1336 chars, 3 items
-  [46/51] Scraping : Family Piknik Montpellier
+  [42/47] Scraping : Family Piknik Montpellier
     → texte, 4428 chars
-  [47/51] Scraping : CitizenKid Montpellier
+  [43/47] Scraping : CitizenKid Montpellier
     → texte, 3550 chars
-  [48/51] Scraping : Kidiklik Montpellier-Nîmes
+  [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3948 chars
-  [49/51] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6373 chars
-  [50/51] Scraping : AlloCiné Mégarama Saint-Gély
+  [45/47] Scraping : AlloCiné Pathé Odysseum
+    → texte, 6636 chars
+  [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 4295 chars
-  [51/51] Scraping : Arènes de Béziers Feria 2026
+  [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  51 sources — RSS:14 JSON-LD:3 texte:27 skip:0 erreur:7 | 184 items structurés
+  47 sources — RSS:10 JSON-LD:3 texte:30 skip:0 erreur:4 | 167 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
   [Gemini] gemini-1.5-flash-latest : modèle non disponible
   [Gemini] Fallback sans grounding sur gemini-2.0-flash-lite
-  [Gemini 1/14] Concerts Montpellier-Nîmes 2026
+  [Gemini 1/15] Concerts Montpellier-Nîmes 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 2/14] Concerts Sète-Béziers-Agde 2026
+  [Gemini 2/15] Concerts Sète-Béziers-Agde 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 3/14] Concerts Marseille 2026
+  [Gemini 3/15] Concerts Marseille 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 4/14] Festival de Nîmes 2026
+  [Gemini 4/15] Festival de Nîmes 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 5/14] Jazz à Sète 2026
+  [Gemini 5/15] Jazz à Sète 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 6/14] Paloma Nîmes 2026
+  [Gemini 6/15] Paloma Nîmes 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 7/14] Corum Montpellier 2026
+  [Gemini 7/15] Corum Montpellier 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 8/14] Humoristes tournée Sud 2026
+  [Gemini 8/15] Humoristes tournée Sud 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 9/14] Salsa Bachata Montpellier 2026
+  [Gemini 9/15] Salsa Bachata Montpellier 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 10/14] Tempo Latino 2026
+  [Gemini 10/15] Temple de la Danse soirées 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 11/14] Électro Montpellier-Marseille 2026
+  [Gemini 11/15] Tempo Latino 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 12/14] Expos Théâtre Montpellier-Nîmes 2026
+  [Gemini 12/15] Électro Montpellier-Marseille 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 13/14] Activités famille Montpellier 2026
+  [Gemini 13/15] Expos Théâtre Montpellier-Nîmes 2026
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 14/14] Films cinéma Pathé Odysseum
+  [Gemini 14/15] Activités famille Montpellier 2026
+    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 164146 → 110000 chars
+  Scrape tronqué : 153236 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude raw début] '[{"date":"2026-06-20","titre":"Fête de la musique à Saussines","cat":"concert","lieu":"Saussines, Hérault","note":"20-21 juin","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/festival/fete-de-la-musique-saussines.html","gratuit":true,"groupe":""}\n,{"date":"2026-06-20"'
-  240 nouveaux événements extraits depuis les sources
-  Total : 269 événements (29 manuels + 240 scrapés)
+  [Claude raw début] '[{"date":"2026-06-20","titre":"Festival Montpellier Danse 2026","cat":"danse","lieu":"Domaine d\'O, Montpellier","note":"Festival international danse contemporaine","fils":false,"stars":3,"section":"danse","url":"","gratuit":false,"groupe":""},{"date":"2026-06-20","titre":"Festival Les Hérault du Cin'
+  219 nouveaux événements extraits depuis les sources
+  Total : 248 événements (29 manuels + 219 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "Porte 9",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pathe",\n    "'
-  32 films extraits
+  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Jean-Philippe Puymartin, animation",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "La Porte",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pathe",\n    '
+  33 films extraits
 Sauvegarde events_extracted.json...
 Injection dans template.html...
 index.html généré avec succès.
