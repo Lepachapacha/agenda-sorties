@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8655,
+      "chars": 8580,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6585,
+      "chars": 6594,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6818,
+      "chars": 6744,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -77,8 +77,8 @@
       "url": "https://www.infoconcert.com/ville/montpellier-2271/concerts",
       "method": "texte",
       "items": 0,
-      "chars": 766,
-      "preview": "Tous les concerts à Montpellier Ajouter plus de genres concerts à Montpellier Vendredi 04 décembre 2"
+      "chars": 764,
+      "preview": "Tous les concerts à Montpellier Ajouter plus de genres Concerts à Montpellier 2026 : dates et billet"
     },
     {
       "name": "Infoconcert Marseille",
@@ -86,7 +86,7 @@
       "method": "texte",
       "items": 0,
       "chars": 552,
-      "preview": "Tous les concerts à Marseille Ajouter plus de genres Mercredi 13 janvier 2027 à 20h30 Vendredi 30 oc"
+      "preview": "Tous les concerts à Marseille Ajouter plus de genres Concerts à Marseille 2026 : dates et billetteri"
     },
     {
       "name": "Zénith Sud Montpellier",
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "Espace Julien A Marseille 39 cours Julien, 13006, Espace Julien A Marseille Salle Concert - Programm"
+      "preview": "Espace Julien A Marseille 39 cours Julien, 13006, Espace Julien A Marseille 39 cours Julien, 13006, "
     },
     {
       "name": "La Friche Belle de Mai",
@@ -355,10 +355,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "erreur",
-      "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
     },
     {
       "name": "Family Piknik Montpellier",
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 12,
     "sources_jsonld": 3,
     "sources_text": 32,
-    "sources_erreur": 5,
-    "total_items_structured": 166,
-    "total_chars": 160572
+    "sources_erreur": 4,
+    "total_items_structured": 169,
+    "total_chars": 161747
   },
-  "timestamp": "2026-06-20T11:40:02Z"
+  "timestamp": "2026-06-20T11:51:19Z"
 }
