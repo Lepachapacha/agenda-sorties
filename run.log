@@ -1,0 +1,148 @@
+[generate.py] 2026-06-20
+Lecture agenda-config.md...
+  29 événements manuels
+Scraping des sources...
+  [1/51] Scraping : JDS Montpellier
+    → texte, 8580 chars
+  [2/51] Scraping : JDS Nîmes
+    → texte, 6594 chars
+  [3/51] Scraping : JDS Marseille
+    → texte, 6703 chars
+  [4/51] Scraping : Agenda Culturel 34 Montpellier
+    → RSS, 6624 chars, 20 items
+  [5/51] Scraping : Agenda Culturel 30 Nîmes
+    → RSS, 6697 chars, 20 items
+  [6/51] Scraping : Agenda Culturel 13 Marseille
+    → RSS, 6606 chars, 20 items
+  [7/51] Scraping : Montpellier Events
+    → texte, 536 chars
+  [8/51] Scraping : IciSète
+    → RSS, 1539 chars, 5 items
+  [9/51] Scraping : EscapadesLR Hérault
+    → JSON-LD, 25 chars, 1 items
+  [10/51] Scraping : Infoconcert Montpellier
+    → texte, 764 chars
+  [11/51] Scraping : Infoconcert Marseille
+    → texte, 552 chars
+  [12/51] Scraping : Zénith Sud Montpellier
+    → texte, 144 chars
+  [13/51] Scraping : Le Corum Montpellier
+    → texte, 249 chars
+  [14/51] Scraping : Rockstore Montpellier
+    → erreur, 10 chars
+  [15/51] Scraping : Victoire 2 Saint-Jean-de-Védas
+    → texte, 1181 chars
+  [16/51] Scraping : Théâtre Jean Vilar Montpellier
+    → texte, 1436 chars
+  [17/51] Scraping : Opéra Comédie Montpellier
+    → RSS, 3387 chars, 10 items
+  [18/51] Scraping : Domaine d'O Montpellier
+    → texte, 2022 chars
+  [19/51] Scraping : Le Jam Montpellier (jazz)
+    → RSS, 3368 chars, 10 items
+  [20/51] Scraping : Halle Tropisme Montpellier
+    → texte, 12000 chars
+  [21/51] Scraping : Paloma Nîmes
+    → RSS, 3421 chars, 10 items
+  [22/51] Scraping : Festival de Nîmes
+    → RSS, 307 chars, 1 items
+  [23/51] Scraping : Théâtre de Nîmes
+    → RSS, 1732 chars, 10 items
+  [24/51] Scraping : Le Silo Marseille
+    → texte, 4877 chars
+  [25/51] Scraping : Le Dôme Marseille
+    → texte, 134 chars
+  [26/51] Scraping : Espace Julien Marseille
+    → texte, 3358 chars
+  [27/51] Scraping : La Friche Belle de Mai
+    → RSS, 3455 chars, 10 items
+  [28/51] Scraping : Le Moulin Marseille
+    → erreur, 32 chars
+  [29/51] Scraping : Théâtre de la Mer Sète
+    → texte, 679 chars
+  [30/51] Scraping : Scène de Bayssan Béziers
+    → texte, 1706 chars
+  [31/51] Scraping : JDS Humour Montpellier
+    → JSON-LD, 8246 chars, 25 items
+  [32/51] Scraping : JDS Humour Nîmes
+    → JSON-LD, 7870 chars, 25 items
+  [33/51] Scraping : Fnac Humour Montpellier
+    → erreur, 19 chars
+  [34/51] Scraping : Adam Concerts Humour
+    → RSS, 2877 chars, 10 items
+  [35/51] Scraping : Marseille Comedy Club
+    → texte, 358 chars
+  [36/51] Scraping : Garage Comedy Marseille
+    → texte, 56 chars
+  [37/51] Scraping : Comédie Club Vieux Port Marseille
+    → texte, 4724 chars
+  [38/51] Scraping : Temple de la Danse Montpellier
+    → texte, 224 chars
+  [39/51] Scraping : Alma Dance Montpellier
+    → RSS, 302 chars, 1 items
+  [40/51] Scraping : Liste Salsa d'Olivier Hérault 34
+    → texte, 12000 chars
+  [41/51] Scraping : Toutlemondedanse Montpellier
+    → texte, 979 chars
+  [42/51] Scraping : Tempo Latino Vic-Fezensac
+    → texte, 1546 chars
+  [43/51] Scraping : Latinamap Festivals Été
+    → texte, 12000 chars
+  [44/51] Scraping : Jazz à Sète
+    → texte, 61 chars
+  [45/51] Scraping : Festival Radio France Occitanie
+    → RSS, 1336 chars, 3 items
+  [46/51] Scraping : Family Piknik Montpellier
+    → texte, 4428 chars
+  [47/51] Scraping : CitizenKid Montpellier
+    → texte, 3550 chars
+  [48/51] Scraping : Kidiklik Montpellier-Nîmes
+    → texte, 3948 chars
+  [49/51] Scraping : AlloCiné Pathé Odysseum
+    → texte, 6373 chars
+  [50/51] Scraping : AlloCiné Mégarama Saint-Gély
+    → texte, 4295 chars
+  [51/51] Scraping : Arènes de Béziers Feria 2026
+    → RSS, 986 chars, 3 items
+Sauvegarde scrape_report.json...
+  51 sources — RSS:14 JSON-LD:3 texte:31 skip:0 erreur:3 | 184 items structurés
+Recherches Gemini Search (couche 3)...
+  [Gemini 1/14] Concerts Montpellier-Nîmes 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 2/14] Concerts Sète-Béziers-Agde 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 3/14] Concerts Marseille 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 4/14] Festival de Nîmes 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 5/14] Jazz à Sète 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 6/14] Paloma Nîmes 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 7/14] Corum Montpellier 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 8/14] Humoristes tournée Sud 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 9/14] Salsa Bachata Montpellier 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 10/14] Tempo Latino 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 11/14] Électro Montpellier-Marseille 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 12/14] Expos Théâtre Montpellier-Nîmes 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 13/14] Activités famille Montpellier 2026
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini 14/14] Films cinéma Pathé Odysseum
+    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  Gemini non disponible — pipeline continue avec scrape seul
+  Scrape tronqué : 168985 → 110000 chars
+  Contenu total Claude : 110000 chars (scrape seul)
+Conversion événements manuels...
+  29 événements confirmés (agenda-config.md)
+Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
+  Total : 29 événements (29 manuels + 0 scrapés)
+Extraction films (Claude)...
+Sauvegarde events_extracted.json...
+Injection dans template.html...
+index.html généré avec succès.
