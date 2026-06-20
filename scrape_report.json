@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1539,
+      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -179,10 +179,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -195,10 +195,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "Espace Julien Marseille",
@@ -339,10 +339,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
+      "chars": 6000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 7,
-    "sources_rss": 10,
+    "sources_rss": 12,
     "sources_jsonld": 3,
     "sources_text": 27,
-    "sources_erreur": 4,
-    "total_items_structured": 158,
-    "total_chars": 119536
+    "sources_erreur": 2,
+    "total_items_structured": 173,
+    "total_chars": 128716
   },
-  "timestamp": "2026-06-20T07:15:48Z"
+  "timestamp": "2026-06-20T07:27:58Z"
 }
