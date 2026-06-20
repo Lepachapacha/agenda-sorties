@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8597,
+      "chars": 8589,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6594,
+      "chars": 6616,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6714,
+      "chars": 6703,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -38,7 +38,7 @@
       "method": "RSS",
       "items": 20,
       "chars": 6697,
-      "preview": "[RSS · 20 items] Soul Waves et Dublin Soul tribute The Commitments | Fri, 19 Jun 2026 | https://30.a"
+      "preview": "[RSS · 20 items] Soul Waves et Dublin Soul tribute The Commitments | Sat, 20 Jun 2026 | https://30.a"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1539,
-      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -77,8 +77,8 @@
       "url": "https://www.infoconcert.com/ville/montpellier-2271/concerts",
       "method": "texte",
       "items": 0,
-      "chars": 794,
-      "preview": "Tous les concerts à Montpellier Ajouter plus de genres Concerts à Montpellier 2026 : dates et billet"
+      "chars": 766,
+      "preview": "Tous les concerts à Montpellier Ajouter plus de genres concerts à Montpellier Vendredi 04 décembre 2"
     },
     {
       "name": "Infoconcert Marseille",
@@ -179,10 +179,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -195,10 +195,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Espace Julien Marseille",
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert Espace Julien A"
+      "preview": "39 cours Julien, 13006, Espace Julien A Marseille 39 cours Julien, 13006, Espace Julien A Marseille "
     },
     {
       "name": "La Friche Belle de Mai",
@@ -339,10 +339,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 10,
+      "preview": "[HTTP 403]"
     },
     {
       "name": "Jazz à Sète",
@@ -389,7 +389,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 5987,
+      "chars": 6373,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 0,
-    "sources_rss": 14,
+    "sources_rss": 12,
     "sources_jsonld": 3,
     "sources_text": 31,
-    "sources_erreur": 3,
-    "total_items_structured": 184,
-    "total_chars": 164568
+    "sources_erreur": 5,
+    "total_items_structured": 169,
+    "total_chars": 149749
   },
-  "timestamp": "2026-06-20T09:27:11Z"
+  "timestamp": "2026-06-20T10:55:50Z"
 }
