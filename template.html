@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="agenda()" x-init="init()">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --bg:           #0d0f1a;
-      --bg-nav:       #0d0f1af2;
+      --bg-nav:       #0d0f1af5;
       --bg-card:      #141726;
       --bg-card-h:    #191d30;
+      --bg-hero:      linear-gradient(135deg, #1a1030 0%, #1c1428 60%, #141726 100%);
       --accent:       #f59e0b;
       --accent-l:     #fbbf24;
-      --accent-dim:   #f59e0b22;
-      --accent-mid:   #f59e0b55;
+      --accent-dim:   #f59e0b1a;
+      --accent-mid:   #f59e0b44;
+      --coral:        #f97316;
+      --coral-dim:    #f9731618;
       --text:         #e2e8f0;
       --muted:        #8fa3b8;
       --muted-l:      #b0c4d8;
       --border:       #1e2540;
       --border-h:     #2d3a5c;
+      --hero-border:  #7c3aed55;
+      --hero-glow:    #7c3aed22;
       --c-festival:   #7c3aed;
       --c-concert:    #dc2626;
       --c-jazz:       #0284c7;
@@ -36,106 +43,179 @@
       --c-humour:     #d97706;
       --c-cinema:     #1d4ed8;
       --c-activite:   #15803d;
+      --bottom-nav-h: 56px;
     }
 
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; font-size: 16px; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: 'Inter', sans-serif; line-height: 1.6; font-size: 16px;
+      padding-bottom: 0;
+    }
+    @media (max-width: 640px) { body { padding-bottom: calc(var(--bottom-nav-h) + 1rem); } }
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition: none !important; animation: none !important; }
       html { scroll-behavior: auto; }
     }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
-    /* ── FOCUS ── */
-    :focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-      border-radius: 3px;
-    }
-
-    /* ── NAV ── */
-    nav {
+    /* ── NAV DESKTOP ── */
+    nav#main-nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--bg-nav);
-      backdrop-filter: blur(16px) saturate(1.4);
-      -webkit-backdrop-filter: blur(16px) saturate(1.4);
+      backdrop-filter: blur(20px) saturate(1.5);
+      -webkit-backdrop-filter: blur(20px) saturate(1.5);
       border-bottom: 1px solid var(--border);
       padding: 0 1.5rem;
       display: flex; align-items: stretch; gap: 0; overflow-x: auto;
       scrollbar-width: none;
     }
-    nav::-webkit-scrollbar { display: none; }
-    nav a {
-      color: var(--muted); text-decoration: none; font-size: .78rem;
-      font-family: 'Space Mono', monospace; letter-spacing: .04em;
-      padding: .9rem .85rem; white-space: nowrap;
+    nav#main-nav::-webkit-scrollbar { display: none; }
+    .nav-link {
+      color: var(--muted); text-decoration: none; font-size: .76rem;
+      font-family: 'Space Mono', monospace; letter-spacing: .03em;
+      padding: .85rem .75rem; white-space: nowrap;
       border-bottom: 2px solid transparent;
       transition: color .18s, border-color .18s;
-      display: flex; align-items: center;
+      display: flex; align-items: center; gap: .3rem;
     }
-    nav a:hover { color: var(--muted-l); }
-    nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
-    .nav-sep { flex: 1; }
+    .nav-link:hover { color: var(--muted-l); }
+    .nav-link.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .nav-count {
+      font-size: .6rem; background: var(--border); border-radius: 10px;
+      padding: .05rem .35rem; color: var(--muted); font-family: 'Space Mono', monospace;
+      transition: background .2s, color .2s;
+    }
+    .nav-link.active .nav-count { background: var(--accent-dim); color: var(--accent); }
+    .nav-sep { flex: 1; min-width: .5rem; }
+
+    /* Bouton fils dans nav */
     #btn-fils {
-      flex-shrink: 0; padding: .38rem .9rem; margin: auto .25rem auto .5rem;
+      flex-shrink: 0; padding: .35rem .85rem; margin: auto .25rem auto .5rem;
       background: transparent; border: 1px solid var(--border);
-      color: var(--muted); font-size: .75rem; font-family: 'Space Mono', monospace;
+      color: var(--muted); font-size: .73rem; font-family: 'Space Mono', monospace;
       border-radius: 4px; cursor: pointer; transition: all .18s; white-space: nowrap;
-      letter-spacing: .03em;
+      letter-spacing: .02em;
     }
     #btn-fils:hover { border-color: var(--border-h); color: var(--muted-l); }
-    #btn-fils.on { background: #162416; border-color: #22c55e; color: #86efac; }
+    #btn-fils.on {
+      background: #162416; border-color: #22c55e; color: #86efac;
+      box-shadow: 0 0 12px #22c55e18;
+    }
 
     /* ── HEADER ── */
     header {
-      padding: 4.5rem 1.5rem 3rem;
-      max-width: 900px; margin: 0 auto;
+      padding: 3.5rem 1.5rem 0;
+      max-width: 960px; margin: 0 auto;
     }
+    .header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+    .header-text { flex: 1; min-width: 260px; }
     header .eyebrow {
-      font-family: 'Space Mono', monospace; font-size: .72rem;
+      font-family: 'Space Mono', monospace; font-size: .68rem;
       color: var(--accent); letter-spacing: .14em; text-transform: uppercase;
-      margin-bottom: 1rem; display: flex; align-items: center; gap: .6rem;
+      margin-bottom: .75rem; display: flex; align-items: center; gap: .5rem;
     }
     header .eyebrow::before {
-      content: ''; display: inline-block; width: 2rem; height: 1px;
+      content: ''; display: inline-block; width: 1.75rem; height: 1px;
       background: var(--accent); flex-shrink: 0;
     }
     header h1 {
-      font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5.5vw, 3.6rem);
-      font-weight: 700; line-height: 1.1; margin-bottom: .9rem; letter-spacing: -.01em;
+      font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700; line-height: 1.1; margin-bottom: .6rem; letter-spacing: -.01em;
     }
     header h1 em { font-style: italic; color: var(--accent); }
     header .sub {
-      color: var(--muted); font-size: 1rem; font-weight: 300; line-height: 1.5;
-      max-width: 52ch;
+      color: var(--muted); font-size: .95rem; font-weight: 300; line-height: 1.5;
+      max-width: 50ch;
     }
-    .meta-bar {
-      display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap;
-      margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
-      font-family: 'Space Mono', monospace; font-size: .7rem; color: var(--muted);
+
+    /* ── SEARCH ── */
+    .search-wrap {
+      padding: 1.5rem 1.5rem .5rem;
+      max-width: 960px; margin: 0 auto;
     }
-    .meta-bar span { display: flex; align-items: center; gap: .4rem; }
-    .meta-bar strong { color: var(--muted-l); }
+    .search-box {
+      display: flex; align-items: center; gap: .75rem;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 8px; padding: .65rem 1rem;
+      transition: border-color .18s, box-shadow .18s;
+    }
+    .search-box:focus-within {
+      border-color: var(--accent-mid);
+      box-shadow: 0 0 0 3px var(--accent-dim);
+    }
+    .search-icon { color: var(--muted); font-size: .95rem; flex-shrink: 0; }
+    .search-input {
+      flex: 1; background: none; border: none; outline: none;
+      color: var(--text); font-family: 'Inter', sans-serif; font-size: .9rem;
+    }
+    .search-input::placeholder { color: var(--muted); }
+    .search-count {
+      font-family: 'Space Mono', monospace; font-size: .65rem; color: var(--muted);
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .search-clear {
+      background: none; border: none; color: var(--muted); cursor: pointer;
+      font-size: .8rem; padding: .1rem .3rem; border-radius: 3px;
+      transition: color .15s;
+    }
+    .search-clear:hover { color: var(--text); }
+
+    /* ── DASHBOARD ── */
+    .dashboard {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem;
+      padding: 1rem 1.5rem 1.5rem;
+      max-width: 960px; margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      .dashboard { grid-template-columns: 1fr; gap: .5rem; padding: .75rem 1rem 1rem; }
+    }
+    .widget {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 8px; padding: .9rem 1.1rem;
+      cursor: pointer; transition: border-color .18s, background .18s;
+      display: flex; flex-direction: column; gap: .25rem;
+      text-decoration: none;
+    }
+    .widget:hover { border-color: var(--border-h); background: var(--bg-card-h); }
+    .widget-label {
+      font-family: 'Space Mono', monospace; font-size: .62rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: .1rem;
+    }
+    .widget-main {
+      font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 700;
+      color: var(--text); line-height: 1.25; white-space: nowrap; overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .widget-sub {
+      font-size: .72rem; color: var(--muted); white-space: nowrap; overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .widget-count {
+      font-family: 'Space Mono', monospace; font-size: .8rem; font-weight: 700;
+      color: var(--accent-l);
+    }
 
     /* ── FILTERS ── */
     .filters-bar {
-      padding: 1.25rem 1.5rem 1rem; max-width: 900px; margin: 0 auto;
-      display: flex; align-items: center; flex-wrap: wrap; gap: .45rem;
-      border-bottom: 1px solid var(--border);
+      padding: .85rem 1.5rem; max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; flex-wrap: wrap; gap: .4rem;
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
     }
     .filters-label {
-      font-family: 'Space Mono', monospace; font-size: .68rem; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--muted); margin-right: .35rem;
+      font-family: 'Space Mono', monospace; font-size: .63rem; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted); margin-right: .25rem;
     }
     .chip {
-      padding: .28rem .7rem; border-radius: 4px; font-size: .75rem; font-weight: 500;
+      padding: .22rem .65rem; border-radius: 4px; font-size: .72rem; font-weight: 500;
       border: 1px solid var(--border); background: transparent;
       color: var(--muted); cursor: pointer; transition: all .15s;
-      letter-spacing: .02em;
+      letter-spacing: .02em; display: inline-flex; align-items: center; gap: .3rem;
     }
     .chip:hover { border-color: var(--border-h); color: var(--muted-l); }
-    .chip.all { border-color: var(--accent-mid); color: var(--accent); }
-    .chip.all.off { border-color: var(--border); color: var(--muted); }
+    .chip.chip-all { border-color: var(--accent-mid); color: var(--accent); }
+    .chip.chip-all.off { border-color: var(--border); color: var(--muted); }
     .chip[data-cat].on { color: #fff; }
     .chip[data-cat="festival"].on  { background: var(--c-festival); border-color: var(--c-festival); }
     .chip[data-cat="concert"].on   { background: var(--c-concert);  border-color: var(--c-concert); }
@@ -147,85 +227,141 @@
     .chip[data-cat="danse"].on     { background: var(--c-danse);    border-color: var(--c-danse); }
     .chip[data-cat="feria"].on     { background: var(--c-feria);    border-color: var(--c-feria); }
     .chip[data-cat="humour"].on    { background: var(--c-humour);   border-color: var(--c-humour); }
+    .chip-count { font-size: .58rem; opacity: .75; }
 
     /* ── SECTIONS ── */
-    section { max-width: 900px; margin: 0 auto; padding: 2.75rem 1.5rem; }
+    section { max-width: 960px; margin: 0 auto; padding: 2.25rem 1.5rem; }
     section + section { border-top: 1px solid var(--border); }
+    .section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: .75rem; margin-bottom: 1.5rem; flex-wrap: wrap;
+    }
+    .section-title-wrap { flex: 1; }
     .section-title {
-      font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700;
-      margin-bottom: .5rem; display: flex; align-items: center; gap: .6rem;
-      letter-spacing: -.01em;
+      font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700;
+      display: flex; align-items: center; gap: .5rem; letter-spacing: -.01em;
+      margin-bottom: .25rem;
     }
-    .section-title .icon { font-size: 1rem; }
-    .section-rule {
-      width: 2.5rem; height: 2px; background: var(--accent);
-      margin-bottom: 1.75rem; border-radius: 1px;
+    .section-title .icon { font-size: .9rem; }
+    .section-sub { font-size: .8rem; color: var(--muted); line-height: 1.4; }
+    .section-actions { display: flex; align-items: center; gap: .5rem; }
+    .view-toggle {
+      background: none; border: 1px solid var(--border); color: var(--muted);
+      border-radius: 4px; padding: .25rem .55rem; cursor: pointer;
+      font-size: .78rem; transition: all .15s;
     }
-    .section-sub {
-      font-size: .85rem; color: var(--muted); margin-top: -.75rem;
-      margin-bottom: 1.5rem; line-height: 1.5;
+    .view-toggle:hover { border-color: var(--border-h); color: var(--muted-l); }
+    .view-toggle.active { border-color: var(--accent-mid); color: var(--accent); }
+    .section-count-badge {
+      font-family: 'Space Mono', monospace; font-size: .62rem; color: var(--muted);
+      background: var(--border); border-radius: 10px; padding: .1rem .45rem;
     }
 
-    /* ── WEEKEND SECTION ── */
+    /* ── WEEKEND ── */
     #weekend {
       border-left: 3px solid var(--accent);
       padding-left: calc(1.5rem - 3px);
-      background: linear-gradient(100deg, #141622 0%, #0d0f1a 60%);
+      background: linear-gradient(100deg, #14162288 0%, transparent 70%);
     }
-    #weekend + section { border-top: 1px solid var(--border); }
-    .weekend-header { margin-bottom: 1.5rem; }
     .weekend-eyebrow {
-      font-family: 'Space Mono', monospace; font-size: .65rem; letter-spacing: .18em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: .5rem;
+      font-family: 'Space Mono', monospace; font-size: .63rem; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: .4rem;
       display: flex; align-items: center; gap: .5rem;
     }
     .weekend-eyebrow::after {
-      content: ''; flex: 1; max-width: 3rem; height: 1px;
+      content: ''; flex: 1; max-width: 2.5rem; height: 1px;
       background: var(--accent-mid);
     }
     .weekend-dates {
-      font-family: 'Playfair Display', serif; font-size: 1.25rem; font-style: italic;
-      color: var(--text); line-height: 1.3;
-    }
-    .weekend-empty {
-      padding: 1.5rem 0; color: var(--muted); font-size: .875rem; font-style: italic;
-      border-top: 1px solid var(--border); margin-top: .5rem;
-    }
-    .weekend-empty a { color: var(--accent); text-decoration: none; }
-    .weekend-empty a:hover { text-decoration: underline; }
-    .weekend-badge {
-      display: inline-block; padding: .05rem .4rem; margin-right: .3rem;
-      background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-mid);
-      border-radius: 2px; font-size: .6rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: .1em; vertical-align: middle;
+      font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic;
+      color: var(--text); margin-bottom: 1.5rem; line-height: 1.3;
     }
 
-    /* ── EVENT CARDS ── */
+    /* ── GRILLE EVENTS ── */
     .events-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 1rem;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)); gap: .85rem;
     }
+
+    /* ── HERO CARD ── */
     .event-card {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 6px; padding: 1.2rem 1.35rem 1.1rem;
-      transition: background .15s, border-color .15s, box-shadow .15s; cursor: default;
+      border-radius: 8px; padding: 1.1rem 1.25rem;
+      transition: background .15s, border-color .15s, box-shadow .15s;
     }
     .event-card:hover {
       background: var(--bg-card-h); border-color: var(--border-h);
-      box-shadow: 0 4px 20px #00000033;
+      box-shadow: 0 4px 18px #00000030;
     }
     .event-card.hidden { display: none; }
+
+    .hero-card {
+      grid-column: 1 / -1;
+      background: var(--bg-hero);
+      border: 1px solid var(--hero-border);
+      padding: 1.5rem 1.75rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-card::before {
+      content: ''; position: absolute; top: -40%; right: -10%;
+      width: 280px; height: 280px; border-radius: 50%;
+      background: radial-gradient(circle, #7c3aed18 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-card:hover {
+      border-color: #7c3aed88;
+      box-shadow: 0 8px 32px var(--hero-glow);
+    }
+    .hero-top {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: .75rem; margin-bottom: .85rem;
+    }
+    .hero-date {
+      font-family: 'Space Mono', monospace; font-size: .75rem; color: var(--accent);
+      letter-spacing: .04em;
+    }
+    .hero-badges { display: flex; align-items: center; gap: .4rem; }
+    .hero-stars { color: #fbbf24; font-size: .9rem; letter-spacing: .02em; }
+    .hero-title {
+      font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700;
+      font-style: italic; line-height: 1.2; margin-bottom: .6rem; letter-spacing: -.01em;
+    }
+    .hero-title a {
+      color: var(--text); text-decoration: none;
+      border-bottom: 1px solid var(--accent-mid);
+      transition: color .15s, border-color .15s;
+    }
+    .hero-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    .hero-meta {
+      display: flex; align-items: center; gap: .75rem; flex-wrap: wrap;
+      font-size: .8rem; color: var(--muted); margin-bottom: .5rem;
+    }
+    .hero-meta .sep { opacity: .35; }
+    .hero-note { font-size: .8rem; color: var(--muted-l); font-style: italic; }
+
+    /* ── CARD STANDARD ── */
     .card-top {
       display: flex; justify-content: space-between; align-items: flex-start;
-      gap: .5rem; margin-bottom: .75rem;
+      gap: .5rem; margin-bottom: .6rem;
     }
     .event-date {
-      font-family: 'Inter', sans-serif; font-size: .75rem; font-weight: 500;
+      font-family: 'Inter', sans-serif; font-size: .72rem; font-weight: 500;
       color: var(--accent); letter-spacing: .01em;
     }
-    .card-badges { display: flex; align-items: center; gap: .3rem; }
+    .date-soon {
+      display: inline-block; margin-left: .35rem;
+      padding: .05rem .3rem; border-radius: 3px;
+      background: var(--coral-dim); color: var(--coral);
+      font-size: .58rem; font-weight: 700; letter-spacing: .04em;
+      animation: pulse-soon 2s ease-in-out infinite;
+    }
+    @keyframes pulse-soon {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .6; }
+    }
+    .card-badges { display: flex; align-items: center; gap: .28rem; }
     .cat-badge {
-      padding: .14rem .48rem; border-radius: 3px; font-size: .65rem;
-      font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+      padding: .12rem .42rem; border-radius: 3px; font-size: .62rem;
+      font-weight: 600; text-transform: uppercase; letter-spacing: .05em;
     }
     .cat-badge.festival  { background: #3b1d8c22; color: #a78bfa; border: 1px solid #7c3aed44; }
     .cat-badge.concert   { background: #7f1d1d22; color: #fca5a5; border: 1px solid #dc262644; }
@@ -237,46 +373,43 @@
     .cat-badge.danse     { background: #83184322; color: #f9a8d4; border: 1px solid #be185d44; }
     .cat-badge.feria     { background: #7c2d1222; color: #fdba74; border: 1px solid #c2410c44; }
     .cat-badge.activite  { background: #14532d22; color: #86efac; border: 1px solid #15803d44; }
-    .star { color: var(--accent); font-size: .78rem; letter-spacing: -.05em; }
-    .fils-tag { font-size: .88rem; }
-    .event-title { font-size: .975rem; font-weight: 600; margin-bottom: .35rem; line-height: 1.35; }
+    .cat-badge.humour    { background: #78350f22; color: #fde68a; border: 1px solid #d9770644; }
+    .star { color: var(--accent); font-size: .75rem; letter-spacing: -.03em; }
+    .fils-tag { font-size: .82rem; }
+    .event-title { font-size: .92rem; font-weight: 600; margin-bottom: .3rem; line-height: 1.3; }
     .event-title a {
       color: var(--text); text-decoration: none;
       border-bottom: 1px solid var(--accent-mid);
       transition: color .15s, border-color .15s;
     }
     .event-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-    .event-lieu { font-size: .8rem; color: var(--muted); margin-bottom: .3rem; }
-    .event-lieu::before { content: '📍 '; font-size: .72rem; }
-    .event-note { font-size: .78rem; color: var(--muted); font-style: italic; line-height: 1.4; }
-    .tag-complet {
-      display: inline-block; margin-top: .55rem; padding: .1rem .45rem;
-      background: #7f1d1d28; color: #f87171; border: 1px solid #dc262644;
-      font-size: .65rem; font-weight: 700; border-radius: 3px; text-transform: uppercase; letter-spacing: .06em;
+    .event-lieu { font-size: .77rem; color: var(--muted); margin-bottom: .25rem; }
+    .event-lieu::before { content: '📍 '; font-size: .68rem; }
+    .event-note { font-size: .75rem; color: var(--muted); font-style: italic; line-height: 1.35; }
+    .tag-complet, .tag-gratuit, .tag-famille {
+      display: inline-block; margin-top: .45rem; padding: .08rem .38rem;
+      font-size: .62rem; font-weight: 700; border-radius: 3px;
+      text-transform: uppercase; letter-spacing: .05em;
     }
-    .tag-gratuit {
-      display: inline-block; margin-top: .55rem; padding: .1rem .45rem;
-      background: #14532d28; color: #86efac; border: 1px solid #15803d44;
-      font-size: .65rem; font-weight: 700; border-radius: 3px; text-transform: uppercase; letter-spacing: .06em;
-    }
-    .tag-famille {
-      display: inline-block; margin-top: .55rem; padding: .1rem .45rem;
-      background: #1e3a5f28; color: #93c5fd; border: 1px solid #1d4ed844;
-      font-size: .65rem; font-weight: 700; border-radius: 3px; letter-spacing: .03em;
+    .tag-complet { background: #7f1d1d28; color: #f87171; border: 1px solid #dc262644; }
+    .tag-gratuit { background: #14532d28; color: #86efac; border: 1px solid #15803d44; }
+    .tag-famille { background: #1e3a5f28; color: #93c5fd; border: 1px solid #1d4ed844; }
+    .weekend-badge {
+      display: inline-block; padding: .04rem .35rem; margin-right: .25rem;
+      background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-mid);
+      border-radius: 2px; font-size: .58rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .08em; vertical-align: middle;
     }
     .empty-state {
       text-align: center; padding: 2.5rem 1rem; color: var(--muted);
       font-size: .875rem; grid-column: 1/-1; font-style: italic;
     }
 
-    /* ── GROUP CARDS ── */
+    /* ── GROUP CARD ── */
     .group-card { grid-column: 1 / -1; }
-    .group-header {
-      display: flex; justify-content: space-between; align-items: flex-start;
-      gap: .75rem; margin-bottom: .25rem;
-    }
+    .group-header { display: flex; justify-content: space-between; align-items: flex-start; gap: .75rem; margin-bottom: .2rem; }
     .group-name {
-      font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700;
+      font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700;
       line-height: 1.2; letter-spacing: -.01em;
     }
     .group-name a {
@@ -285,208 +418,406 @@
       transition: color .15s, border-color .15s;
     }
     .group-name a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-    .group-meta {
-      font-size: .78rem; color: var(--muted); margin-bottom: 1rem;
-      display: flex; align-items: center; gap: .5rem;
-    }
-    .group-rows {
-      border-top: 1px solid var(--border); padding-top: .5rem;
-      display: flex; flex-direction: column; gap: 0;
-    }
+    .group-meta { font-size: .75rem; color: var(--muted); margin-bottom: .85rem; display: flex; align-items: center; gap: .45rem; }
+    .group-rows { border-top: 1px solid var(--border); padding-top: .4rem; display: flex; flex-direction: column; gap: 0; }
     .group-row {
-      display: flex; align-items: center; gap: .75rem;
-      padding: .38rem .35rem; border-radius: 4px;
-      transition: background .1s;
+      display: flex; align-items: center; gap: .65rem;
+      padding: .32rem .3rem; border-radius: 4px; transition: background .1s;
     }
     .group-row:hover { background: #ffffff07; }
     .group-row.dimmed { opacity: .28; }
-    .group-row-date {
-      font-family: 'Space Mono', monospace; font-size: .65rem;
-      color: var(--muted); width: 3.2rem; flex-shrink: 0; letter-spacing: .02em;
-    }
-    .group-row-titre { flex: 1; font-size: .875rem; font-weight: 500; color: var(--text); }
-    .group-row-badge { flex-shrink: 0; font-size: .72rem; }
+    .group-row-date { font-family: 'Space Mono', monospace; font-size: .62rem; color: var(--muted); width: 3rem; flex-shrink: 0; }
+    .group-row-titre { flex: 1; font-size: .84rem; font-weight: 500; }
+    .group-row-badge { flex-shrink: 0; font-size: .68rem; }
     .group-footer {
       display: flex; justify-content: space-between; align-items: center;
-      margin-top: .85rem; padding-top: .6rem; border-top: 1px solid var(--border);
+      margin-top: .75rem; padding-top: .55rem; border-top: 1px solid var(--border);
     }
     .group-footer a {
-      font-size: .78rem; font-weight: 600; color: var(--accent);
-      text-decoration: none; letter-spacing: .01em;
+      font-size: .75rem; font-weight: 600; color: var(--accent); text-decoration: none;
       transition: opacity .15s;
     }
     .group-footer a:hover { opacity: .8; text-decoration: underline; }
-    .group-count {
-      font-size: .68rem; color: var(--muted); font-family: 'Space Mono', monospace;
+    .group-count { font-size: .63rem; color: var(--muted); font-family: 'Space Mono', monospace; }
+    .group-progress {
+      margin: .5rem 0 0; height: 2px; background: var(--border); border-radius: 1px; overflow: hidden;
     }
+    .group-progress-bar { height: 100%; background: var(--accent); border-radius: 1px; transition: width .3s; }
 
-    /* ── CINEMA ── */
-    .cinema-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    @media (max-width: 600px) { .cinema-grid { grid-template-columns: 1fr; } }
+    /* ── TIMELINE MOIS ── */
+    .month-tabs {
+      display: flex; gap: .35rem; flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+    .month-tab {
+      padding: .22rem .65rem; border-radius: 4px; font-size: .7rem;
+      font-family: 'Space Mono', monospace; cursor: pointer;
+      border: 1px solid var(--border); background: transparent; color: var(--muted);
+      transition: all .15s; letter-spacing: .03em;
+    }
+    .month-tab:hover { border-color: var(--border-h); color: var(--muted-l); }
+    .month-tab.active { background: var(--accent-dim); border-color: var(--accent-mid); color: var(--accent); }
+    .month-separator {
+      grid-column: 1 / -1;
+      display: flex; align-items: center; gap: .75rem;
+      padding: .4rem 0 .1rem;
+    }
+    .month-sep-label {
+      font-family: 'Space Mono', monospace; font-size: .62rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--muted); white-space: nowrap;
+    }
+    .month-sep-line { flex: 1; height: 1px; background: var(--border); }
+
+    /* ── VUE LISTE ── */
+    .events-list { display: flex; flex-direction: column; gap: 0; }
+    .event-row {
+      display: grid; grid-template-columns: 3.5rem 1fr auto;
+      align-items: center; gap: .65rem;
+      padding: .5rem .6rem; border-radius: 4px;
+      border-bottom: 1px solid var(--border);
+      transition: background .1s;
+    }
+    .event-row:last-child { border-bottom: none; }
+    .event-row:hover { background: var(--bg-card-h); }
+    .row-date { font-family: 'Space Mono', monospace; font-size: .62rem; color: var(--muted); }
+    .row-body { min-width: 0; }
+    .row-title { font-size: .85rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .row-title a { color: var(--text); text-decoration: none; }
+    .row-title a:hover { color: var(--accent); }
+    .row-lieu { font-size: .72rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .row-meta { display: flex; align-items: center; gap: .3rem; flex-shrink: 0; }
+    .load-more {
+      grid-column: 1/-1; text-align: center; padding: .75rem;
+      font-size: .78rem; color: var(--accent); cursor: pointer;
+      border: 1px dashed var(--accent-mid); border-radius: 6px;
+      background: none; width: 100%; margin-top: .5rem;
+      transition: background .15s;
+    }
+    .load-more:hover { background: var(--accent-dim); }
+
+    /* ── CINÉMA ── */
+    .cinema-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    @media (max-width: 580px) { .cinema-grid { grid-template-columns: 1fr; } }
     .cinema-box {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 6px; padding: 1.35rem;
+      border-radius: 8px; padding: 1.25rem;
     }
     .cinema-name {
-      font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700;
-      color: var(--text); margin-bottom: .2rem; letter-spacing: -.01em;
+      font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 700;
+      color: var(--text); margin-bottom: .15rem; letter-spacing: -.01em;
     }
-    .cinema-info { font-size: .75rem; color: var(--muted); margin-bottom: .9rem; font-family: 'Space Mono', monospace; letter-spacing: .02em; }
-    .film-list { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .cinema-info { font-size: .7rem; color: var(--muted); margin-bottom: .85rem; font-family: 'Space Mono', monospace; }
+    .film-list { list-style: none; display: flex; flex-direction: column; gap: .45rem; }
     .film-item {
-      display: flex; align-items: flex-start; gap: .65rem;
-      padding: .65rem .8rem; background: var(--bg);
-      border-radius: 4px; border: 1px solid var(--border);
+      display: flex; align-items: flex-start; gap: .6rem;
+      padding: .6rem .75rem; background: var(--bg);
+      border-radius: 5px; border: 1px solid var(--border);
     }
-    .film-icon { font-size: .85rem; flex-shrink: 0; margin-top: .1rem; }
-    .film-details { flex: 1; }
-    .film-title { font-size: .875rem; font-weight: 500; line-height: 1.35; }
-    .film-meta { font-size: .73rem; color: var(--muted); margin-top: .15rem; }
+    .film-icon { font-size: .8rem; flex-shrink: 0; margin-top: .1rem; }
+    .film-details { flex: 1; min-width: 0; }
+    .film-title { font-size: .84rem; font-weight: 500; line-height: 1.3; }
+    .film-meta { font-size: .7rem; color: var(--muted); margin-top: .1rem; }
     .film-famille {
-      font-size: .65rem; padding: .1rem .4rem; border-radius: 3px;
+      font-size: .62rem; padding: .08rem .35rem; border-radius: 3px;
       background: #1e3a5f28; color: #93c5fd; border: 1px solid #1d4ed844;
-      margin-top: .3rem; display: inline-block; letter-spacing: .03em;
+      margin-top: .25rem; display: inline-block; letter-spacing: .02em;
     }
-    .cinema-links { display: flex; gap: .6rem; margin-top: .9rem; }
+    .cinema-links { display: flex; gap: .5rem; margin-top: .85rem; }
     .cinema-links a {
-      font-size: .73rem; color: var(--accent); text-decoration: none; font-weight: 500;
-      padding: .3rem .7rem; border: 1px solid var(--accent-mid); border-radius: 4px;
+      font-size: .7rem; color: var(--accent); text-decoration: none; font-weight: 500;
+      padding: .28rem .65rem; border: 1px solid var(--accent-mid); border-radius: 4px;
       transition: background .15s;
     }
     .cinema-links a:hover { background: var(--accent-dim); }
 
-    /* ── PERMANENT / SOURCES ── */
-    .perm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(205px, 1fr)); gap: .8rem; }
+    /* ── PERMANENT ── */
+    .perm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); gap: .75rem; }
     .perm-card {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 6px; padding: 1.1rem;
-      transition: border-color .15s;
+      border-radius: 7px; padding: 1rem; transition: border-color .15s;
     }
     .perm-card:hover { border-color: var(--border-h); }
-    .perm-card .p-icon { font-size: 1.4rem; margin-bottom: .5rem; display: block; }
-    .perm-card .p-title { font-size: .875rem; font-weight: 600; margin-bottom: .25rem; }
-    .perm-card .p-desc { font-size: .75rem; color: var(--muted); line-height: 1.45; }
+    .perm-card .p-icon { font-size: 1.3rem; margin-bottom: .4rem; display: block; }
+    .perm-card .p-title { font-size: .84rem; font-weight: 600; margin-bottom: .2rem; }
+    .perm-card .p-desc { font-size: .72rem; color: var(--muted); line-height: 1.4; }
 
-    .sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .75rem; }
+    /* ── SOURCES ── */
+    .sources-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: .65rem; }
     .source-item {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 6px; padding: .85rem 1rem;
-      display: flex; align-items: center; gap: .65rem;
-      transition: border-color .15s;
+      border-radius: 6px; padding: .75rem .9rem;
+      display: flex; align-items: center; gap: .55rem; transition: border-color .15s;
     }
     .source-item:hover { border-color: var(--border-h); }
-    .source-item a { color: var(--muted-l); text-decoration: none; font-size: .84rem; font-weight: 500; transition: color .15s; }
+    .source-item a { color: var(--muted-l); text-decoration: none; font-size: .8rem; font-weight: 500; transition: color .15s; }
     .source-item a:hover { color: var(--accent); }
 
     /* ── FOOTER ── */
     footer {
-      max-width: 900px; margin: 0 auto;
-      padding: 2rem 1.5rem; border-top: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
-      font-size: .72rem; color: var(--muted); font-family: 'Space Mono', monospace;
+      max-width: 960px; margin: 0 auto;
+      padding: 1.75rem 1.5rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem;
+      font-size: .69rem; color: var(--muted); font-family: 'Space Mono', monospace;
     }
     footer a { color: var(--muted); text-decoration: none; transition: color .15s; }
     footer a:hover { color: var(--accent); }
 
+    /* ── MOBILE BOTTOM NAV ── */
+    .bottom-nav {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: var(--bg-nav);
+      backdrop-filter: blur(20px) saturate(1.5);
+      -webkit-backdrop-filter: blur(20px) saturate(1.5);
+      border-top: 1px solid var(--border);
+      height: var(--bottom-nav-h);
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @media (max-width: 640px) { .bottom-nav { display: grid; } }
+    .bnav-item {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: .15rem; text-decoration: none; color: var(--muted);
+      font-size: .58rem; font-family: 'Space Mono', monospace; letter-spacing: .03em;
+      transition: color .18s; padding: .3rem .25rem;
+    }
+    .bnav-item:hover { color: var(--muted-l); }
+    .bnav-item.active { color: var(--accent); }
+    .bnav-icon { font-size: 1.1rem; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
-      nav a { padding: .8rem .6rem; font-size: .72rem; }
-      header { padding: 2.75rem 1rem 2rem; }
-      section { padding: 2rem 1rem; }
+      nav#main-nav { display: none; }
+      header { padding: 2rem 1rem .5rem; }
+      .search-wrap { padding: .75rem 1rem .25rem; }
+      .dashboard { padding: .5rem 1rem .75rem; }
+      section { padding: 1.75rem 1rem; }
       #weekend { padding-left: calc(1rem - 3px); }
-      .filters-bar { padding: .9rem 1rem; }
-      .events-grid { grid-template-columns: 1fr; gap: .75rem; }
-      body { padding-bottom: 5rem; }
-
-      #btn-fils {
-        position: fixed; bottom: 1rem; right: 1rem; z-index: 200;
-        background: var(--bg-card); border: 1px solid var(--border);
-        box-shadow: 0 4px 20px #00000055; font-size: .78rem; padding: .55rem 1.1rem;
-        margin-left: 0;
-      }
-      #btn-fils.on {
-        background: #162416; border-color: #22c55e; color: #86efac;
-        box-shadow: 0 4px 20px #22c55e28;
-      }
-
-      .group-row-date { width: 2.8rem; }
-      .cinema-grid { gap: 1rem; }
-      footer { flex-direction: column; align-items: flex-start; gap: .5rem; }
+      .filters-bar { padding: .65rem 1rem; }
+      .events-grid { grid-template-columns: 1fr; gap: .65rem; }
+      .hero-card { padding: 1.15rem 1.25rem; }
+      .hero-title { font-size: 1.2rem; }
+      footer { flex-direction: column; align-items: flex-start; gap: .4rem; padding: 1.25rem 1rem; }
+    }
+    @media (max-width: 400px) {
+      .month-tabs { gap: .25rem; }
+      .month-tab { font-size: .62rem; padding: .18rem .5rem; }
     }
   </style>
 </head>
 <body>
 
+<!-- ── NAV DESKTOP ── -->
 <nav id="main-nav">
-  <a href="#weekend" class="nav-link">⚡ Ce weekend</a>
-  <a href="#concerts" class="nav-link">🎵 Concerts</a>
-  <a href="#cinema" class="nav-link">🎬 Cinéma</a>
-  <a href="#expos" class="nav-link">🖼️ Expos</a>
-  <a href="#activites" class="nav-link">🧗 Activités</a>
-  <a href="#permanent" class="nav-link">📍 Permanent</a>
-  <a href="#danse" class="nav-link">💃 Danse</a>
-  <a href="#humour" class="nav-link">😂 Humour</a>
-  <a href="#sources" class="nav-link">🔗 Sources</a>
+  <a href="#weekend"  class="nav-link nav-item" data-section="weekend">⚡ <span>Weekend</span> <span class="nav-count" x-text="weekendEvents.length"></span></a>
+  <a href="#concerts" class="nav-link nav-item" data-section="concerts">🎵 <span>Concerts</span> <span class="nav-count" x-text="bySection('concerts').length"></span></a>
+  <a href="#cinema"   class="nav-link nav-item" data-section="cinema">🎬 <span>Cinéma</span></a>
+  <a href="#expos"    class="nav-link nav-item" data-section="expos">🖼️ <span>Expos</span> <span class="nav-count" x-text="bySection('expos').length"></span></a>
+  <a href="#danse"    class="nav-link nav-item" data-section="danse">💃 <span>Danse</span> <span class="nav-count" x-text="bySection('danse').length"></span></a>
+  <a href="#humour"   class="nav-link nav-item" data-section="humour">😂 <span>Humour</span> <span class="nav-count" x-text="bySection('humour').length"></span></a>
+  <a href="#activites" class="nav-link nav-item" data-section="activites">🧗 <span>Activités</span> <span class="nav-count" x-text="bySection('activites').length"></span></a>
+  <a href="#permanent" class="nav-link nav-item" data-section="permanent">📍 <span>Permanent</span></a>
   <span class="nav-sep"></span>
-  <button id="btn-fils" title="Afficher seulement les sorties avec mon fils">👦 Avec mon fils</button>
+  <button id="btn-fils" :class="{ on: filsOnly }" @click="toggleFils()" title="Afficher seulement les sorties avec mon fils">👦 Avec fils</button>
 </nav>
 
+<!-- ── HEADER ── -->
 <header>
-  <p class="eyebrow">Montpellier · Nîmes · Sète · Béziers — Été 2026</p>
-  <h1>Agenda <em>Sorties</em></h1>
-  <p class="sub">Concerts, festivals, cinéma & activités — du Languedoc au bout de la mer.</p>
-  <div class="meta-bar">
-    <span>🗓️ Mis à jour le <strong id="last-updated">{{LAST_UPDATED}}</strong></span>
-    <span>🎪 <strong id="event-count">—</strong> événements</span>
-    <span>📍 Zone : Vendargues → 80 km</span>
+  <div class="header-top">
+    <div class="header-text">
+      <p class="eyebrow">Montpellier · Nîmes · Sète · Béziers — Été 2026</p>
+      <h1>Agenda <em>Sorties</em></h1>
+      <p class="sub">Concerts, festivals, cinéma &amp; activités — du Languedoc au bout de la mer.</p>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.1rem;border-top:1px solid var(--border);font-family:'Space Mono',monospace;font-size:.67rem;color:var(--muted);">
+    <span>🗓️ Mis à jour le <strong style="color:var(--muted-l)">{{LAST_UPDATED}}</strong></span>
+    <span>🎪 <strong style="color:var(--muted-l)" x-text="filtered.length"></strong> événements</span>
+    <span>📍 Vendargues → 80 km</span>
   </div>
 </header>
 
-<div class="filters-bar">
-  <span class="filters-label">Filtres :</span>
-  <button class="chip all" id="chip-all" data-action="all">Tout</button>
-  <button class="chip" data-cat="festival">Festival</button>
-  <button class="chip" data-cat="concert">Concert</button>
-  <button class="chip" data-cat="jazz">Jazz</button>
-  <button class="chip" data-cat="electro">Électro</button>
-  <button class="chip" data-cat="classique">Classique</button>
-  <button class="chip" data-cat="theatre">Théâtre</button>
-  <button class="chip" data-cat="expo">Expo</button>
-  <button class="chip" data-cat="danse">Danse</button>
-  <button class="chip" data-cat="humour">Humour</button>
-  <button class="chip" data-cat="feria">Féria</button>
+<!-- ── SEARCH ── -->
+<div class="search-wrap">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input
+      class="search-input"
+      type="search"
+      placeholder="Chercher un artiste, festival, lieu…"
+      x-model="search"
+      @input="onSearch()"
+      autocomplete="off"
+      spellcheck="false"
+    >
+    <span class="search-count" x-show="search.length > 0" x-text="filtered.length + ' résultat' + (filtered.length > 1 ? 's' : '')"></span>
+    <button class="search-clear" x-show="search.length > 0" @click="search = ''; onSearch()" aria-label="Effacer">✕</button>
+  </div>
 </div>
 
+<!-- ── DASHBOARD ── -->
+<div class="dashboard">
+  <a class="widget" href="#weekend" @click.prevent="scrollTo('#weekend')">
+    <span class="widget-label">⚡ Ce weekend</span>
+    <span class="widget-count" x-text="weekendEvents.length + ' événement' + (weekendEvents.length > 1 ? 's' : '')"></span>
+    <span class="widget-main" x-text="weekendEvents[0]?.titre ?? 'Rien de prévu'"></span>
+    <span class="widget-sub" x-show="weekendEvents.length > 1" x-text="'+ ' + (weekendEvents.length - 1) + ' autre' + (weekendEvents.length > 2 ? 's' : '')"></span>
+  </a>
+  <a class="widget" href="#danse" @click.prevent="scrollTo('#danse')">
+    <span class="widget-label">💃 Prochaine salsa</span>
+    <template x-if="nextSalsa">
+      <span class="widget-main" x-text="nextSalsa.titre"></span>
+    </template>
+    <template x-if="!nextSalsa">
+      <span class="widget-main" style="color:var(--muted)">Aucune annoncée</span>
+    </template>
+    <span class="widget-sub" x-text="nextSalsa ? formatDate(nextSalsa.date) + ' · ' + (nextSalsa.lieu ?? '') : ''"></span>
+  </a>
+  <a class="widget" href="#activites" @click.prevent="scrollTo('#activites')">
+    <span class="widget-label">👦 Avec mon fils</span>
+    <template x-if="nextFils">
+      <span class="widget-main" x-text="nextFils.titre"></span>
+    </template>
+    <template x-if="!nextFils">
+      <span class="widget-main" style="color:var(--muted)">Rien de prévu</span>
+    </template>
+    <span class="widget-sub" x-text="nextFils ? formatDate(nextFils.date) : ''"></span>
+  </a>
+</div>
+
+<!-- ── FILTERS ── -->
+<div class="filters-bar">
+  <span class="filters-label">Filtres :</span>
+  <button class="chip chip-all" :class="{ off: activeCategories.size > 0 }" @click="clearCats()">Tout</button>
+  <template x-for="cat in ALL_CATS" :key="cat.key">
+    <button
+      class="chip" :data-cat="cat.key"
+      :class="{ on: activeCategories.has(cat.key) }"
+      @click="toggleCat(cat.key)"
+    >
+      <span x-text="cat.label"></span>
+      <span class="chip-count" x-text="countByCat(cat.key)"></span>
+    </button>
+  </template>
+  <!-- Filtre fils mobile (répété pour accessibilité) -->
+  <button
+    class="chip" style="margin-left:auto;display:none"
+    :class="{ on: filsOnly }"
+    @click="toggleFils()"
+    x-show="false"
+  >👦 Fils</button>
+</div>
+
+<!-- ── SECTION : CE WEEKEND ── -->
 <section id="weekend">
-  <div class="weekend-header">
-    <p class="weekend-eyebrow">⚡ Ce weekend</p>
-    <p class="weekend-dates" id="weekend-dates">…</p>
+  <div class="weekend-eyebrow">⚡ Ce weekend</div>
+  <p class="weekend-dates" x-text="weekendLabel"></p>
+  <div class="events-grid" id="grid-weekend">
+    <template x-if="weekendEvents.length === 0">
+      <p class="empty-state">Aucun événement ce weekend — <a href="#concerts" style="color:var(--accent)">voir tous les concerts →</a></p>
+    </template>
+    <template x-for="ev in weekendEvents" :key="ev.titre + ev.date">
+      <div x-html="renderCard(ev, true)"></div>
+    </template>
   </div>
-  <div class="events-grid" id="grid-weekend"></div>
 </section>
 
+<!-- ── SECTION : CONCERTS & FESTIVALS ── -->
 <section id="concerts">
-  <h2 class="section-title"><span class="icon">🎵</span> Festivals &amp; Concerts</h2>
-  <div class="section-rule"></div>
-  <div class="events-grid" id="grid-concerts"></div>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🎵</span> Festivals &amp; Concerts</h2>
+      <p class="section-sub">Montpellier · Nîmes · Sète · Marseille &amp; alentours</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('concerts').length + ' events'"></span>
+      <button class="view-toggle" :class="{ active: viewMode.concerts === 'grid' }" @click="setView('concerts','grid')" title="Vue grille">⊞</button>
+      <button class="view-toggle" :class="{ active: viewMode.concerts === 'list' }" @click="setView('concerts','list')" title="Vue liste">☰</button>
+    </div>
+  </div>
+
+  <!-- Onglets de navigation par mois -->
+  <div class="month-tabs" x-show="concertMonths.length > 1">
+    <template x-for="m in concertMonths" :key="m.key">
+      <button
+        class="month-tab" :class="{ active: activeMonth === m.key }"
+        @click="jumpToMonth(m.key)"
+        x-text="m.label"
+      ></button>
+    </template>
+  </div>
+
+  <!-- Vue grille avec séparateurs de mois -->
+  <div x-show="viewMode.concerts !== 'list'">
+    <template x-for="group in concertsByMonthFiltered" :key="group.key">
+      <div>
+        <div class="events-grid" style="margin-bottom:.75rem">
+          <div class="month-separator" :id="'month-' + group.key">
+            <span class="month-sep-label" x-text="group.label"></span>
+            <div class="month-sep-line"></div>
+            <span style="font-family:'Space Mono',monospace;font-size:.58rem;color:var(--muted)" x-text="group.events.length + ' events'"></span>
+          </div>
+          <template x-for="ev in group.events" :key="ev.titre + ev.date">
+            <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+          </template>
+        </div>
+      </div>
+    </template>
+    <template x-if="bySection('concerts').length === 0">
+      <p class="empty-state">Aucun concert pour ces filtres.</p>
+    </template>
+  </div>
+
+  <!-- Vue liste -->
+  <div x-show="viewMode.concerts === 'list'">
+    <div class="events-list">
+      <template x-for="ev in concertsListVisible" :key="ev.titre + ev.date">
+        <div x-html="renderRow(ev)"></div>
+      </template>
+    </div>
+    <button class="load-more" x-show="bySection('concerts').length > concertsListLimit" @click="concertsListLimit += 30">
+      Voir <span x-text="bySection('concerts').length - concertsListLimit"></span> concerts de plus ▼
+    </button>
+    <template x-if="bySection('concerts').length === 0">
+      <p class="empty-state">Aucun concert pour ces filtres.</p>
+    </template>
+  </div>
 </section>
 
+<!-- ── SECTION : CINÉMA ── -->
 <section id="cinema">
-  <h2 class="section-title"><span class="icon">🎬</span> Cinéma</h2>
-  <div class="section-rule"></div>
-  <div class="cinema-grid" id="grid-cinema">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🎬</span> Cinéma</h2>
+      <p class="section-sub">Pathé Odysseum &amp; Mégarama Saint-Gély</p>
+    </div>
+  </div>
+  <div class="cinema-grid">
     <div class="cinema-box">
       <div class="cinema-name">🏟️ Pathé Odysseum</div>
       <div class="cinema-info">Millénaire — IMAX · 4DX · Dolby Atmos</div>
-      <ul class="film-list" id="films-pathe"></ul>
+      <ul class="film-list">
+        <template x-for="f in filmsPathe" :key="f.titre">
+          <li x-html="renderFilm(f)"></li>
+        </template>
+        <template x-if="filmsPathe.length === 0">
+          <li style="padding:.45rem;color:var(--muted);font-size:.77rem">Mise à jour chaque mercredi</li>
+        </template>
+      </ul>
       <div class="cinema-links">
         <a href="https://www.allocine.fr/seance/salle_gen_csalle=P0702.html" target="_blank" rel="noopener">Séances AlloCiné ↗</a>
       </div>
     </div>
     <div class="cinema-box">
       <div class="cinema-name">🎞️ Mégarama Saint-Gély</div>
-      <div class="cinema-info">15 min nord Montpellier</div>
-      <ul class="film-list" id="films-megarama"></ul>
+      <div class="cinema-info">15 min nord de Montpellier</div>
+      <ul class="film-list">
+        <template x-for="f in filmsMegarama" :key="f.titre">
+          <li x-html="renderFilm(f)"></li>
+        </template>
+        <template x-if="filmsMegarama.length === 0">
+          <li style="padding:.45rem;color:var(--muted);font-size:.77rem">Mise à jour chaque mercredi</li>
+        </template>
+      </ul>
       <div class="cinema-links">
         <a href="https://www.allocine.fr/seance/salle_gen_csalle=W4980.html" target="_blank" rel="noopener">Séances AlloCiné ↗</a>
       </div>
@@ -494,37 +825,118 @@
   </div>
 </section>
 
+<!-- ── SECTION : EXPOS & SPECTACLES ── -->
 <section id="expos">
-  <h2 class="section-title"><span class="icon">🖼️</span> Expos &amp; Spectacles</h2>
-  <div class="section-rule"></div>
-  <div class="events-grid" id="grid-expos"></div>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🖼️</span> Expos &amp; Spectacles</h2>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('expos').length + ' events'"></span>
+    </div>
+  </div>
+  <div class="events-grid">
+    <template x-for="ev in bySection('expos')" :key="ev.titre + ev.date">
+      <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+    </template>
+    <template x-if="bySection('expos').length === 0">
+      <p class="empty-state">Aucun spectacle pour ces filtres.</p>
+    </template>
+  </div>
 </section>
 
+<!-- ── SECTION : DANSE ── -->
 <section id="danse">
-  <h2 class="section-title"><span class="icon">💃</span> Danse Latine &amp; Soirées</h2>
-  <div class="section-rule"></div>
-  <p class="section-sub">Salsa · Bachata · Kizomba — soirées, stages et festivals</p>
-  <div class="events-grid" id="grid-danse"></div>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">💃</span> Danse Latine &amp; Soirées</h2>
+      <p class="section-sub">Salsa · Bachata · Kizomba — soirées, stages et festivals</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('danse').length + ' events'"></span>
+    </div>
+  </div>
+  <div class="events-grid">
+    <template x-for="ev in bySection('danse')" :key="ev.titre + ev.date">
+      <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+    </template>
+    <template x-if="bySection('danse').length === 0">
+      <p class="empty-state">Aucune soirée danse pour ces filtres.</p>
+    </template>
+  </div>
 </section>
 
+<!-- ── SECTION : HUMOUR ── -->
 <section id="humour">
-  <h2 class="section-title"><span class="icon">😂</span> Humour &amp; One-Man-Shows</h2>
-  <div class="section-rule"></div>
-  <p class="section-sub">Stand-up, one-man-shows, café-théâtre — tous les lieux</p>
-  <div class="events-grid" id="grid-humour"></div>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">😂</span> Humour &amp; One-Man-Shows</h2>
+      <p class="section-sub">Stand-up · one-man-shows · café-théâtre</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('humour').length + ' events'"></span>
+      <button class="view-toggle" :class="{ active: viewMode.humour === 'grid' }" @click="setView('humour','grid')" title="Vue grille">⊞</button>
+      <button class="view-toggle" :class="{ active: viewMode.humour === 'list' }" @click="setView('humour','list')" title="Vue liste">☰</button>
+    </div>
+  </div>
+
+  <!-- Vue liste (défaut pour humour) -->
+  <div x-show="viewMode.humour !== 'grid'">
+    <div class="events-list">
+      <template x-for="ev in humourListVisible" :key="ev.titre + ev.date">
+        <div x-html="renderRow(ev)"></div>
+      </template>
+    </div>
+    <button class="load-more" x-show="bySection('humour').length > humourListLimit" @click="humourListLimit += 20">
+      Voir <span x-text="bySection('humour').length - humourListLimit"></span> spectacles de plus ▼
+    </button>
+    <template x-if="bySection('humour').length === 0">
+      <p class="empty-state">Aucun spectacle humour pour ces filtres.</p>
+    </template>
+  </div>
+
+  <!-- Vue grille -->
+  <div x-show="viewMode.humour === 'grid'">
+    <div class="events-grid">
+      <template x-for="ev in bySection('humour')" :key="ev.titre + ev.date">
+        <div x-html="renderCard(ev, false)"></div>
+      </template>
+      <template x-if="bySection('humour').length === 0">
+        <p class="empty-state">Aucun spectacle humour pour ces filtres.</p>
+      </template>
+    </div>
+  </div>
 </section>
 
+<!-- ── SECTION : ACTIVITÉS ── -->
 <section id="activites">
-  <h2 class="section-title"><span class="icon">🧗</span> Activités Père &amp; Fils</h2>
-  <div class="section-rule"></div>
-  <p class="section-sub">Sport &amp; culture — adapté 10 ans, 50/50</p>
-  <div class="events-grid" id="grid-activites"></div>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🧗</span> Activités Père &amp; Fils</h2>
+      <p class="section-sub">Sport &amp; culture — adapté 10 ans, 50/50</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('activites').length + ' events'"></span>
+    </div>
+  </div>
+  <div class="events-grid">
+    <template x-for="ev in bySection('activites')" :key="ev.titre + ev.date">
+      <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+    </template>
+    <template x-if="bySection('activites').length === 0">
+      <p class="empty-state">Aucune activité pour ces filtres.</p>
+    </template>
+  </div>
 </section>
 
+<!-- ── SECTION : PERMANENT ── -->
 <section id="permanent">
-  <h2 class="section-title"><span class="icon">📍</span> Sorties Permanentes</h2>
-  <div class="section-rule"></div>
-  <p class="section-sub">Toujours disponibles — parfait pour un dimanche improvisé</p>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">📍</span> Sorties Permanentes</h2>
+      <p class="section-sub">Toujours disponibles — parfait pour un dimanche improvisé</p>
+    </div>
+  </div>
   <div class="perm-grid">
     <div class="perm-card"><div class="p-icon">🧗</div><div class="p-title">Escalade indoor</div><div class="p-desc">Arkose Montpellier — tous niveaux, ouvert WE</div></div>
     <div class="perm-card"><div class="p-icon">🔫</div><div class="p-title">Laser Game</div><div class="p-desc">Laser Zone Montpellier — idéal canicule, 8 ans+</div></div>
@@ -537,16 +949,36 @@
   </div>
 </section>
 
+<!-- ── SECTION : SOURCES ── -->
 <section id="sources">
-  <h2 class="section-title"><span class="icon">🔗</span> Sources de référence</h2>
-  <div class="section-rule"></div>
-  <div class="sources-grid" id="grid-sources"></div>
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🔗</span> Sources de référence</h2>
+    </div>
+  </div>
+  <div class="sources-grid">
+    <template x-for="s in SOURCES_LIST" :key="s.name">
+      <div class="source-item">
+        <span>🔗</span>
+        <a :href="s.url" target="_blank" rel="noopener" x-text="s.name"></a>
+      </div>
+    </template>
+  </div>
 </section>
 
 <footer>
   <span>Agenda personnel — Vendargues · Généré le {{LAST_UPDATED}}</span>
-  <a href="https://github.com/Lepachapacha/agenda-sorties" target="_blank">GitHub ↗</a>
+  <a href="https://github.com/Lepachapacha/agenda-sorties" target="_blank" rel="noopener">GitHub ↗</a>
 </footer>
+
+<!-- ── MOBILE BOTTOM NAV ── -->
+<nav class="bottom-nav" aria-label="Navigation mobile">
+  <a href="#weekend"  class="bnav-item" @click.prevent="scrollTo('#weekend')"><span class="bnav-icon">⚡</span><span>Weekend</span></a>
+  <a href="#concerts" class="bnav-item" @click.prevent="scrollTo('#concerts')"><span class="bnav-icon">🎵</span><span>Concerts</span></a>
+  <a href="#cinema"   class="bnav-item" @click.prevent="scrollTo('#cinema')"><span class="bnav-icon">🎬</span><span>Cinéma</span></a>
+  <a href="#danse"    class="bnav-item" @click.prevent="scrollTo('#danse')"><span class="bnav-icon">💃</span><span>Danse</span></a>
+  <a href="#humour"   class="bnav-item" @click.prevent="scrollTo('#humour')"><span class="bnav-icon">😂</span><span>Humour</span></a>
+</nav>
 
 <script>
   // ── DONNÉES INJECTÉES PAR generate.py ──
@@ -554,11 +986,7 @@
   const FILMS  = {{FILMS_JSON}};
   const SOURCES_LIST = {{SOURCES_JSON}};
 
-  // ── STATE ──
-  let filsOnly = false;
-  const activeCategories = new Set();
-
-  // ── NOMS ET URLS PAR GROUPE ──
+  // ── CONSTANTES ──
   const GROUP_NAMES = {
     'festival-nimes': 'Festival de Nîmes',
     'jazz-sete':      'Jazz à Sète',
@@ -567,6 +995,7 @@
     'feria-beziers':  'Féria de Béziers',
     'radio-france':   'Festival Radio France Montpellier',
     'fiest-a-sete':   "Fiest'A Sète",
+    'tempo-latino':   'Tempo Latino',
   };
   const GROUP_URLS = {
     'festival-nimes': 'https://www.festivaldenimes.com/billetterie',
@@ -576,238 +1005,397 @@
     'feria-beziers':  'https://www.festivaldebeziers.fr',
     'radio-france':   'https://www.radiofrance.fr/festival-de-radio-france-et-montpellier',
     'fiest-a-sete':   'https://www.fiestasetee.com/billetterie',
+    'tempo-latino':   'https://www.tempolatino.com',
   };
+  const MOIS_FR = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  const MOIS_COURT = ['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc'];
 
-  // ── UTILS ──
-  function formatDate(dateStr) {
-    const d = new Date(dateStr + 'T00:00:00');
-    return d.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
-  }
-  function formatDateShort(dateStr) {
-    const d = new Date(dateStr + 'T00:00:00');
-    return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0');
-  }
-
-  // ── RENDER CARD INDIVIDUELLE ──
-  function renderCard(ev, isWeekend) {
-    const filsBadge = ev.fils ? '<span class="fils-tag" title="Avec mon fils">👦</span>' : '';
-    const starBadge = ev.stars >= 3 ? '<span class="star">★★★</span>' : ev.stars === 2 ? '<span class="star">★★</span>' : '';
-    const wBadge   = isWeekend ? '<span class="weekend-badge">CE WE</span> ' : '';
-    const tags = [
-      ev.complet ? '<span class="tag-complet">Complet</span>'   : '',
-      ev.gratuit ? '<span class="tag-gratuit">Gratuit</span>'   : '',
-      ev.famille ? '<span class="tag-famille">Famille ✓</span>' : '',
-    ].join('');
-    const titre = ev.url
-      ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.titre}</a>`
-      : ev.titre;
-    return `
-      <div class="event-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
-        <div class="card-top">
-          <span class="event-date">${wBadge}${formatDate(ev.date)}</span>
-          <div class="card-badges">${filsBadge}${starBadge}<span class="cat-badge ${ev.cat}">${ev.cat}</span></div>
-        </div>
-        <div class="event-title">${titre}</div>
-        <div class="event-lieu">${ev.lieu}</div>
-        ${ev.note ? `<div class="event-note">${ev.note}</div>` : ''}
-        ${tags}
-      </div>`;
-  }
-
-  // ── RENDER GROUP CARD ──
-  function renderGroupCard(slug, events) {
-    events = [...events].sort((a, b) => a.date.localeCompare(b.date));
-    const name = GROUP_NAMES[slug] || events[0].titre;
-    const url  = GROUP_URLS[slug] || events.find(e => e.url)?.url || '';
-    const lieu = events[0].lieu;
-    const dMin = formatDateShort(events[0].date);
-    const dMax = formatDateShort(events[events.length - 1].date);
-    const dateRange = events.length > 1 ? `${dMin} → ${dMax}` : dMin;
-
-    const cats   = [...new Set(events.map(e => e.cat))];
-    const hasFils = events.some(e => e.fils) ? '1' : '0';
-
-    const rows = events.map(ev => {
-      const stars   = '★'.repeat(Math.max(ev.stars || 1, 1));
-      const filsIco = ev.fils ? '👦 ' : '';
-      return `<div class="group-row" data-fils="${ev.fils ? '1' : '0'}">
-        <span class="group-row-date">${formatDateShort(ev.date)}</span>
-        <span class="group-row-titre">${ev.titre}</span>
-        <span class="group-row-badge"><span class="star">${filsIco}${stars}</span></span>
-      </div>`;
-    }).join('');
-
-    const nameHtml = url
-      ? `<a href="${url}" target="_blank" rel="noopener">${name}</a>`
-      : name;
-    const n = events.length;
-    const countLabel = n + ' soirée' + (n > 1 ? 's' : '');
-
-    return `
-      <div class="event-card group-card" data-cats="${cats.join(' ')}" data-fils="${hasFils}" data-groupe="${slug}">
-        <div class="group-header">
-          <div class="group-name">${nameHtml}</div>
-          <span class="cat-badge ${cats[0]}">${cats[0]}</span>
-        </div>
-        <div class="group-meta">📍 ${lieu} &nbsp;·&nbsp; ${dateRange}</div>
-        <div class="group-rows">${rows}</div>
-        <div class="group-footer">
-          ${url ? `<a href="${url}" target="_blank" rel="noopener">→ Billetterie &amp; programme</a>` : '<span></span>'}
-          <span class="group-count">${countLabel}</span>
-        </div>
-      </div>`;
-  }
-
-  function renderFilm(f) {
-    const famille = f.famille ? '<span class="film-famille">Famille ✓ 10 ans</span>' : '';
-    return `<li class="film-item">
-      <span class="film-icon">🎬</span>
-      <div class="film-details">
-        <div class="film-title">${f.titre}</div>
-        <div class="film-meta">${f.meta || ''}</div>
-        ${famille}
-      </div></li>`;
-  }
-
-  // ── WEEKEND CALC ──
-  function getWeekend() {
-    const now = new Date();
-    const day = now.getDay();
-    let sat, sun;
-    if (day === 0) {
-      sun = now;
-      sat = new Date(now); sat.setDate(now.getDate() - 1);
-    } else if (day === 6) {
-      sat = now;
-      sun = new Date(now); sun.setDate(now.getDate() + 1);
-    } else {
-      sat = new Date(now); sat.setDate(now.getDate() + (6 - day));
-      sun = new Date(sat); sun.setDate(sat.getDate() + 1);
-    }
+  function agenda() {
     return {
-      dates: new Set([sat.toISOString().split('T')[0], sun.toISOString().split('T')[0]]),
-      label: 'Sam. ' + sat.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })
-           + ' & dim. ' + sun.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' }),
+      // ── STATE ──
+      search: '',
+      activeCategories: new Set(),
+      filsOnly: false,
+      viewMode: { concerts: 'grid', humour: 'list' },
+      activeMonth: null,
+      concertsListLimit: 30,
+      humourListLimit: 15,
+      weekendLabel: '',
+      _fuse: null,
+      _today: '',
+      _weekendDates: new Set(),
+
+      ALL_CATS: [
+        { key: 'festival',  label: 'Festival' },
+        { key: 'concert',   label: 'Concert' },
+        { key: 'jazz',      label: 'Jazz' },
+        { key: 'electro',   label: 'Électro' },
+        { key: 'classique', label: 'Classique' },
+        { key: 'theatre',   label: 'Théâtre' },
+        { key: 'expo',      label: 'Expo' },
+        { key: 'danse',     label: 'Danse' },
+        { key: 'feria',     label: 'Féria' },
+        { key: 'humour',    label: 'Humour' },
+      ],
+
+      // ── INIT ──
+      init() {
+        const d = new Date();
+        this._today = d.toISOString().split('T')[0];
+        this._weekendDates = this._getWeekendDates();
+        this.weekendLabel = this._buildWeekendLabel();
+        this._fuse = new Fuse(EVENTS, {
+          keys: [
+            { name: 'titre', weight: 3 },
+            { name: 'lieu',  weight: 1 },
+            { name: 'note',  weight: 0.5 },
+          ],
+          threshold: 0.35,
+          includeScore: true,
+        });
+        // Nav active observer
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            document.querySelectorAll('.nav-item').forEach(l => l.classList.remove('active'));
+            document.querySelectorAll('.bnav-item').forEach(l => l.classList.remove('active'));
+            const id = e.target.id;
+            const l = document.querySelector(`.nav-item[href="#${id}"]`);
+            const bl = document.querySelector(`.bnav-item[href="#${id}"]`);
+            if (l) l.classList.add('active');
+            if (bl) bl.classList.add('active');
+          });
+        }, { rootMargin: '-35% 0px -60% 0px' });
+        document.querySelectorAll('section[id]').forEach(s => obs.observe(s));
+      },
+
+      // ── COMPUTED ──
+      get filtered() {
+        let evs = EVENTS;
+        // Fuzzy search
+        if (this.search.trim().length > 0) {
+          evs = this._fuse.search(this.search.trim()).map(r => r.item);
+        }
+        // Filtre catégorie
+        if (this.activeCategories.size > 0) {
+          evs = evs.filter(e => this.activeCategories.has(e.cat));
+        }
+        // Filtre fils
+        if (this.filsOnly) {
+          evs = evs.filter(e => e.fils);
+        }
+        return evs;
+      },
+
+      bySection(sec) {
+        return this.filtered.filter(e => e.section === sec);
+      },
+
+      get weekendEvents() {
+        return this.filtered.filter(e => this._weekendDates.has(e.date));
+      },
+
+      get nextSalsa() {
+        return this.filtered
+          .filter(e => e.cat === 'danse' && e.date >= this._today)
+          .sort((a, b) => a.date.localeCompare(b.date))[0] || null;
+      },
+
+      get nextFils() {
+        return this.filtered
+          .filter(e => e.fils && e.date >= this._today)
+          .sort((a, b) => a.date.localeCompare(b.date))[0] || null;
+      },
+
+      get filmsPathe() {
+        return FILMS.filter(f => f.cinema === 'pathe');
+      },
+
+      get filmsMegarama() {
+        return FILMS.filter(f => f.cinema === 'megarama');
+      },
+
+      get concertMonths() {
+        const months = new Set();
+        this.bySection('concerts').forEach(e => {
+          if (e.date && e.date.length >= 7) months.add(e.date.substring(0, 7));
+        });
+        return [...months].sort().map(key => ({
+          key,
+          label: this._monthLabel(key),
+        }));
+      },
+
+      get concertsByMonthFiltered() {
+        const map = new Map();
+        const sorted = [...this.bySection('concerts')].sort((a, b) => a.date.localeCompare(b.date));
+        sorted.forEach(ev => {
+          const key = ev.date ? ev.date.substring(0, 7) : '2099-01';
+          if (!map.has(key)) map.set(key, []);
+          map.get(key).push(ev);
+        });
+        return [...map.entries()]
+          .sort((a, b) => a[0].localeCompare(b[0]))
+          .map(([key, events]) => ({ key, label: this._monthLabel(key), events }));
+      },
+
+      get concertsListVisible() {
+        return [...this.bySection('concerts')]
+          .sort((a, b) => a.date.localeCompare(b.date))
+          .slice(0, this.concertsListLimit);
+      },
+
+      get humourListVisible() {
+        return [...this.bySection('humour')]
+          .sort((a, b) => a.date.localeCompare(b.date))
+          .slice(0, this.humourListLimit);
+      },
+
+      // ── ACTIONS ──
+      toggleCat(cat) {
+        if (this.activeCategories.has(cat)) {
+          this.activeCategories.delete(cat);
+        } else {
+          this.activeCategories.add(cat);
+        }
+        this.activeCategories = new Set(this.activeCategories);
+      },
+
+      clearCats() {
+        this.activeCategories = new Set();
+      },
+
+      toggleFils() {
+        this.filsOnly = !this.filsOnly;
+      },
+
+      setView(section, mode) {
+        this.viewMode = { ...this.viewMode, [section]: mode };
+      },
+
+      onSearch() {
+        // reset limits when searching
+        this.concertsListLimit = 30;
+        this.humourListLimit = 15;
+      },
+
+      jumpToMonth(key) {
+        this.activeMonth = key;
+        this.$nextTick(() => {
+          const el = document.getElementById('month-' + key);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      },
+
+      scrollTo(selector) {
+        const el = document.querySelector(selector);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      },
+
+      countByCat(cat) {
+        return EVENTS.filter(e => e.cat === cat).length;
+      },
+
+      // ── RENDERERS ──
+      renderCard(ev, isWeekend) {
+        const soon = this._daysUntil(ev.date);
+        const soonBadge = soon ? `<span class="date-soon">${soon}</span>` : '';
+        const wBadge = isWeekend ? '<span class="weekend-badge">CE WE</span> ' : '';
+        const filsBadge = ev.fils ? '<span class="fils-tag" title="Avec mon fils">👦</span>' : '';
+        const starBadge = ev.stars >= 3 ? '<span class="star">★★★</span>'
+                        : ev.stars === 2 ? '<span class="star">★★</span>' : '';
+        const titre = ev.url
+          ? `<a href="${this._esc(ev.url)}" target="_blank" rel="noopener">${this._esc(ev.titre)}</a>`
+          : this._esc(ev.titre);
+        const tags = [
+          ev.complet ? '<span class="tag-complet">Complet</span>' : '',
+          ev.gratuit ? '<span class="tag-gratuit">Gratuit</span>' : '',
+          ev.fils    ? '<span class="tag-famille">Famille ✓</span>' : '',
+        ].join('');
+        return `<div class="event-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
+          <div class="card-top">
+            <span class="event-date">${wBadge}${this.formatDate(ev.date)}${soonBadge}</span>
+            <div class="card-badges">${filsBadge}${starBadge}<span class="cat-badge ${ev.cat}">${ev.cat}</span></div>
+          </div>
+          <div class="event-title">${titre}</div>
+          <div class="event-lieu">${this._esc(ev.lieu)}</div>
+          ${ev.note ? `<div class="event-note">${this._esc(ev.note)}</div>` : ''}
+          ${tags}
+        </div>`;
+      },
+
+      renderHeroCard(ev) {
+        const soon = this._daysUntil(ev.date);
+        const soonBadge = soon ? `<span class="date-soon">${soon}</span>` : '';
+        const titre = ev.url
+          ? `<a href="${this._esc(ev.url)}" target="_blank" rel="noopener">${this._esc(ev.titre)}</a>`
+          : this._esc(ev.titre);
+        const filsBadge = ev.fils ? '👦 ' : '';
+        const tags = [
+          ev.complet ? '<span class="tag-complet">Complet</span>' : '',
+          ev.gratuit ? '<span class="tag-gratuit">Gratuit</span>' : '',
+        ].join('');
+        return `<div class="event-card hero-card" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
+          <div class="hero-top">
+            <span class="hero-date">${this.formatDate(ev.date)}${soonBadge}</span>
+            <div class="hero-badges">
+              <span class="hero-stars">${filsBadge}★★★</span>
+              <span class="cat-badge ${ev.cat}">${ev.cat}</span>
+            </div>
+          </div>
+          <div class="hero-title">${titre}</div>
+          <div class="hero-meta">
+            <span>📍 ${this._esc(ev.lieu)}</span>
+            ${ev.note ? `<span class="sep">·</span><span>${this._esc(ev.note)}</span>` : ''}
+          </div>
+          ${tags}
+        </div>`;
+      },
+
+      renderGroupCard(slug, events) {
+        events = [...events].sort((a, b) => a.date.localeCompare(b.date));
+        const name = GROUP_NAMES[slug] || events[0].titre;
+        const url  = GROUP_URLS[slug] || events.find(e => e.url)?.url || '';
+        const lieu = events[0].lieu;
+        const dMin = this._shortDate(events[0].date);
+        const dMax = this._shortDate(events[events.length - 1].date);
+        const dateRange = events.length > 1 ? `${dMin} → ${dMax}` : dMin;
+        const cats = [...new Set(events.map(e => e.cat))];
+        const hasFils = events.some(e => e.fils) ? '1' : '0';
+        const now = this._today;
+        const passed = events.filter(e => e.date < now).length;
+        const progPct = events.length > 0 ? Math.round((passed / events.length) * 100) : 0;
+        const rows = events.map(ev => {
+          const filsIco = ev.fils ? '👦 ' : '';
+          const stars = '★'.repeat(Math.max(ev.stars || 1, 1));
+          return `<div class="group-row" data-fils="${ev.fils ? '1' : '0'}">
+            <span class="group-row-date">${this._shortDate(ev.date)}</span>
+            <span class="group-row-titre">${this._esc(ev.titre)}</span>
+            <span class="group-row-badge"><span class="star">${filsIco}${stars}</span></span>
+          </div>`;
+        }).join('');
+        const nameHtml = url
+          ? `<a href="${this._esc(url)}" target="_blank" rel="noopener">${this._esc(name)}</a>`
+          : this._esc(name);
+        const n = events.length;
+        return `<div class="event-card group-card" data-cats="${cats.join(' ')}" data-fils="${hasFils}" data-groupe="${slug}">
+          <div class="group-header">
+            <div class="group-name">${nameHtml}</div>
+            <span class="cat-badge ${cats[0]}">${cats[0]}</span>
+          </div>
+          <div class="group-meta">📍 ${this._esc(lieu)} &nbsp;·&nbsp; ${dateRange}</div>
+          <div class="group-rows">${rows}</div>
+          ${progPct > 0 ? `<div class="group-progress"><div class="group-progress-bar" style="width:${progPct}%"></div></div>` : ''}
+          <div class="group-footer">
+            ${url ? `<a href="${this._esc(url)}" target="_blank" rel="noopener">→ Billetterie &amp; programme</a>` : '<span></span>'}
+            <span class="group-count">${n} soirée${n > 1 ? 's' : ''}</span>
+          </div>
+        </div>`;
+      },
+
+      renderRow(ev) {
+        const titre = ev.url
+          ? `<a href="${this._esc(ev.url)}" target="_blank" rel="noopener">${this._esc(ev.titre)}</a>`
+          : this._esc(ev.titre);
+        const stars = ev.stars >= 3 ? '<span class="star">★★★</span>'
+                    : ev.stars === 2 ? '<span class="star">★★</span>' : '';
+        const filsBadge = ev.fils ? '<span class="fils-tag">👦</span>' : '';
+        return `<div class="event-row" data-cat="${ev.cat}" data-fils="${ev.fils ? '1' : '0'}">
+          <span class="row-date">${this._shortDate(ev.date)}</span>
+          <div class="row-body">
+            <div class="row-title">${titre}</div>
+            <div class="row-lieu">📍 ${this._esc(ev.lieu)}</div>
+          </div>
+          <div class="row-meta">
+            ${filsBadge}${stars}
+            <span class="cat-badge ${ev.cat}">${ev.cat}</span>
+          </div>
+        </div>`;
+      },
+
+      renderFilm(f) {
+        const famille = f.famille ? '<span class="film-famille">Famille ✓ 10 ans</span>' : '';
+        return `<li class="film-item">
+          <span class="film-icon">🎬</span>
+          <div class="film-details">
+            <div class="film-title">${this._esc(f.titre)}</div>
+            <div class="film-meta">${this._esc(f.meta || '')}</div>
+            ${famille}
+          </div>
+        </li>`;
+      },
+
+      // ── UTILS ──
+      formatDate(dateStr) {
+        if (!dateStr || dateStr === '2099-01-01') return '—';
+        try {
+          const d = new Date(dateStr + 'T00:00:00');
+          return d.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
+        } catch { return dateStr; }
+      },
+
+      _shortDate(dateStr) {
+        if (!dateStr || dateStr === '2099-01-01') return '—';
+        try {
+          const d = new Date(dateStr + 'T00:00:00');
+          return String(d.getDate()).padStart(2,'0') + '/' + String(d.getMonth()+1).padStart(2,'0');
+        } catch { return dateStr; }
+      },
+
+      _daysUntil(dateStr) {
+        if (!dateStr || dateStr === '2099-01-01') return null;
+        const diff = Math.ceil((new Date(dateStr + 'T00:00:00') - new Date()) / 86400000);
+        if (diff < 0 || diff > 7) return null;
+        if (diff === 0) return 'Auj.';
+        if (diff === 1) return 'Demain';
+        return `Dans ${diff}j`;
+      },
+
+      _monthLabel(key) {
+        const [y, m] = key.split('-');
+        return MOIS_COURT[parseInt(m, 10) - 1] + ' ' + y;
+      },
+
+      _getWeekendDates() {
+        const now = new Date();
+        const day = now.getDay();
+        let sat, sun;
+        if (day === 0) {
+          sun = now;
+          sat = new Date(now); sat.setDate(now.getDate() - 1);
+        } else if (day === 6) {
+          sat = now;
+          sun = new Date(now); sun.setDate(now.getDate() + 1);
+        } else {
+          sat = new Date(now); sat.setDate(now.getDate() + (6 - day));
+          sun = new Date(sat); sun.setDate(sat.getDate() + 1);
+        }
+        return new Set([
+          sat.toISOString().split('T')[0],
+          sun.toISOString().split('T')[0],
+        ]);
+      },
+
+      _buildWeekendLabel() {
+        const dates = [...this._weekendDates].sort();
+        if (dates.length < 2) return '';
+        const sat = new Date(dates[0] + 'T00:00:00');
+        const sun = new Date(dates[1] + 'T00:00:00');
+        return 'Sam. ' + sat.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })
+             + ' & dim. ' + sun.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' });
+      },
+
+      _esc(str) {
+        if (!str) return '';
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      },
     };
   }
-
-  // ── RENDER PRINCIPAL ──
-  function render() {
-    const { dates: wkDates, label: wkLabel } = getWeekend();
-    document.getElementById('weekend-dates').textContent = wkLabel;
-
-    function splitGroups(evs) {
-      const groupMap = {}, singles = [];
-      evs.forEach(ev => {
-        if (ev.groupe) { (groupMap[ev.groupe] = groupMap[ev.groupe] || []).push(ev); }
-        else { singles.push(ev); }
-      });
-      return { groupMap, singles };
-    }
-
-    const sections = { concerts: [], expos: [], danse: [], humour: [], activites: [] };
-    EVENTS.forEach(ev => { if (sections[ev.section]) sections[ev.section].push(ev); });
-
-    ['concerts', 'expos', 'danse', 'humour', 'activites'].forEach(sec => {
-      const grid = document.getElementById('grid-' + sec);
-      if (!grid) return;
-      const { groupMap, singles } = splitGroups(sections[sec]);
-      let html = '';
-      Object.entries(groupMap).forEach(([slug, evs]) => { html += renderGroupCard(slug, evs); });
-      singles.forEach(ev => { html += renderCard(ev, false); });
-      grid.innerHTML = html;
-    });
-
-    // Section ce weekend
-    const wGrid = document.getElementById('grid-weekend');
-    if (wGrid) {
-      const wEvents = EVENTS.filter(ev => wkDates.has(ev.date));
-      wGrid.innerHTML = wEvents.length
-        ? wEvents.map(ev => renderCard(ev, true)).join('')
-        : '<p class="weekend-empty">Aucun événement ce weekend — <a href="#concerts">voir tous les concerts →</a></p>';
-    }
-
-    // Films
-    const pathe    = FILMS.filter(f => f.cinema === 'pathe');
-    const megarama = FILMS.filter(f => f.cinema === 'megarama');
-    const empty = '<li style="padding:.5rem;color:var(--muted);font-size:.8rem">Mise à jour chaque mercredi</li>';
-    const fp = document.getElementById('films-pathe');
-    const fm = document.getElementById('films-megarama');
-    if (fp) fp.innerHTML = pathe.length    ? pathe.map(renderFilm).join('')    : empty;
-    if (fm) fm.innerHTML = megarama.length ? megarama.map(renderFilm).join('') : empty;
-
-    // Sources
-    const sg = document.getElementById('grid-sources');
-    if (sg) sg.innerHTML = SOURCES_LIST.map(s =>
-      `<div class="source-item"><span>🔗</span><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a></div>`
-    ).join('');
-
-    document.getElementById('event-count').textContent = EVENTS.length;
-    applyFilters();
-  }
-
-  // ── FILTRES ──
-  function applyFilters() {
-    document.querySelectorAll('.event-card:not(.group-card)').forEach(card => {
-      const catOk  = activeCategories.size === 0 || activeCategories.has(card.dataset.cat);
-      const filsOk = !filsOnly || card.dataset.fils === '1';
-      card.classList.toggle('hidden', !(catOk && filsOk));
-    });
-
-    document.querySelectorAll('.group-card').forEach(card => {
-      const cats  = (card.dataset.cats || '').split(' ').filter(Boolean);
-      const catOk  = activeCategories.size === 0 || cats.some(c => activeCategories.has(c));
-      const filsOk = !filsOnly || card.dataset.fils === '1';
-      card.classList.toggle('hidden', !(catOk && filsOk));
-      card.querySelectorAll('.group-row').forEach(row => {
-        row.classList.toggle('dimmed', filsOnly && row.dataset.fils !== '1');
-      });
-    });
-
-    ['concerts', 'expos', 'danse', 'humour', 'activites'].forEach(sec => {
-      const grid = document.getElementById('grid-' + sec);
-      if (!grid) return;
-      const ex = grid.querySelector('.empty-state');
-      if (ex) ex.remove();
-      if (!grid.querySelector('.event-card:not(.hidden)'))
-        grid.insertAdjacentHTML('beforeend', '<p class="empty-state">Aucun événement pour ces filtres.</p>');
-    });
-  }
-
-  // ── LISTENERS ──
-  document.querySelectorAll('.chip[data-cat]').forEach(chip => {
-    chip.addEventListener('click', () => {
-      chip.classList.toggle('on');
-      chip.classList.contains('on') ? activeCategories.add(chip.dataset.cat) : activeCategories.delete(chip.dataset.cat);
-      document.getElementById('chip-all').classList.toggle('off', activeCategories.size > 0);
-      applyFilters();
-    });
-  });
-  document.getElementById('chip-all').addEventListener('click', () => {
-    activeCategories.clear();
-    document.querySelectorAll('.chip[data-cat]').forEach(c => c.classList.remove('on'));
-    document.getElementById('chip-all').classList.remove('off');
-    applyFilters();
-  });
-  document.getElementById('btn-fils').addEventListener('click', () => {
-    filsOnly = !filsOnly;
-    document.getElementById('btn-fils').classList.toggle('on', filsOnly);
-    applyFilters();
-  });
-
-  // ── NAV ACTIVE ──
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-        const link = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
-        if (link) link.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px' });
-  document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
-
-  render();
 </script>
 </body>
 </html>
