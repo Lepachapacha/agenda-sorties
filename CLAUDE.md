@@ -1,6 +1,6 @@
 # CLAUDE.md — Agenda Sorties Montpellier
 # Projet personnel Nicolas Miras — Lepachapacha
-# Dernière mise à jour : 20 juin 2026
+# Dernière mise à jour : 20 juin 2026 (session 4)
 
 ---
 
@@ -171,16 +171,18 @@ Placeholders injectés par generate.py :
 - Passages Haiku → Sonnet 4.6, max_tokens 8192 → 16384
 
 ### Session 3 — 20 juin 2026 (après-midi)
-- **Diagnostic racine :** scraper passif + sites JS inaccessibles = perte des meilleures sources
-- **Architecture hybride RSS + Gemini Search** — 3 couches
-- Création `gemini_search.py` (Gemini 1.5 Flash, 14 requêtes thématiques)
-- Création `gemini-queries.md` (requêtes éditables)
-- Suppression `JS_DOMAINS` — tous les sites tentés, Gemini complète
-- Refactorisation generate.py : `manual_to_json()` + `build_scraped_events()` séparés
+- Architecture hybride RSS + Gemini Search — 3 couches
+- Création `gemini_search.py` + `gemini-queries.md`
+- Suppression `JS_DOMAINS`, cap input 120K→150K, Gemini (40K) avant scraped (110K)
 - Fix conflit rebase Actions : `git pull --rebase -X ours`
-- Fix Gemini : `gemini-2.0-flash` → `gemini-1.5-flash` (free tier search grounding)
-- Fix JSON tronqué : `max_tokens` 16384 → 32768 + `extract_json()` repair automatique
-- Fix input trop grand : cap 120K chars avant envoi à Claude
+- Fix JSON tronqué : max_tokens 32768 + repair dans `extract_json()`
+
+### Session 4 — 20 juin 2026 (soir) — VALIDATION PIPELINE
+- **Boucle autonome** : mode push→ScheduleWakeup→git pull→run.log→fix→loop
+- **Bug critique résolu** : `ValueError: Streaming is required` (SDK Anthropic refuse `.create()` avec max_tokens≥32K) → fix `client.messages.stream()` + `stream.get_final_text()`
+- **Logging** : `run.log` capturant stdout+stderr commité par Actions à chaque run
+- **Gemini** : search grounding bloqué free tier (clé `...Pt9Q` projet "Agenda", niveau sans frais) → fallback gracieux. Déblocage : cliquer "Configurer la facturation" dans AI Studio (~1,50€/mois)
+- **Résultat validé** : **330 events (29 manuels + 301 scrapés) + 32 films** ✅
 
 ---
 
@@ -255,8 +257,8 @@ Le pipeline est : push → Actions run → git pull → analyse → fix → re-p
 - [x] Sections Humour + Danse dans le template
 - [x] Pipeline validé : 330 events + 32 films (20 juin 2026)
 - [x] Mode autonome Claude opérationnel (ScheduleWakeup + run.log)
-- [ ] **Gemini** : clé avec search grounding (plan payant) pour couvrir sites JS
-- [ ] **AlloCiné** : source alternative structurée pour les films
+- [ ] **Gemini search grounding** : cliquer "Configurer la facturation" sur clé `...Pt9Q` dans AI Studio → ~1,50€/mois → +20-50 events depuis sites JS (Festival de Nîmes officiel, Jazz à Sète, Paloma)
+- [ ] **AlloCiné** : source structurée pour les films (actuellement scrape texte JS → films depuis mémoire modèle)
 - [ ] Ajouter flux RSS Paloma officiel (le `/feed/` retourne blog, pas agenda)
 
 ---
