@@ -1,15 +1,15 @@
 [generate.py] 2026-06-20
 Lecture agenda-config.md...
   29 événements manuels
-/home/runner/work/agenda-sorties/agenda-sorties/generate.py:269: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+/home/runner/work/agenda-sorties/agenda-sorties/generate.py:270: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8579 chars
+    → texte, 8655 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6585 chars
+    → texte, 6594 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 6743 chars
+    → texte, 6784 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
     → RSS, 6624 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
@@ -29,7 +29,7 @@ Scraping des sources...
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
     → texte, 1181 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
-    → texte, 1436 chars
+    → erreur, 19 chars
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
@@ -81,7 +81,7 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1546 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → erreur, 10 chars
+    → texte, 12000 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
@@ -136,16 +136,16 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 153236 → 110000 chars
+  Scrape tronqué : 163935 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
   [Claude raw début] '[{"date":"2026-06-20","titre":"Festival Montpellier Danse 2026","cat":"danse","lieu":"Domaine d\'O, Montpellier","note":"Festival international danse contemporaine","fils":false,"stars":3,"section":"danse","url":"","gratuit":false,"groupe":""},{"date":"2026-06-20","titre":"Festival Les Hérault du Cin'
-  219 nouveaux événements extraits depuis les sources
-  Total : 248 événements (29 manuels + 219 scrapés)
+  214 nouveaux événements extraits depuis les sources
+  Total : 243 événements (29 manuels + 214 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Jean-Philippe Puymartin, animation",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "La Porte",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pathe",\n    '
+  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "Porte 666",\n    "meta": "Horreur, Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pa'
   33 films extraits
 Sauvegarde events_extracted.json...
 Injection dans template.html...
