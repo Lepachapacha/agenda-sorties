@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1539,
-      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -86,7 +86,7 @@
       "method": "texte",
       "items": 0,
       "chars": 552,
-      "preview": "Tous les concerts à Marseille Ajouter plus de genres Concerts à Marseille 2026 : dates et billetteri"
+      "preview": "Tous les concerts à Marseille Ajouter plus de genres Mercredi 13 janvier 2027 à 20h30 Vendredi 30 oc"
     },
     {
       "name": "Zénith Sud Montpellier",
@@ -179,10 +179,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -195,10 +195,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Espace Julien Marseille",
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert 39 cours Julien"
+      "preview": "Espace Julien A Marseille 39 cours Julien, 13006, 39 cours Julien, 13006, Espace Julien A Marseille "
     },
     {
       "name": "La Friche Belle de Mai",
@@ -355,10 +355,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "RSS",
-      "items": 3,
-      "chars": 1336,
-      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
+      "method": "texte",
+      "items": 0,
+      "chars": 4934,
+      "preview": "Programmes - Festival Radio France Occitanie Montpellier - 5 au 18 juillet 2026 Musique de Chambre e"
     },
     {
       "name": "Family Piknik Montpellier",
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 7,
-    "sources_rss": 12,
+    "sources_rss": 9,
     "sources_jsonld": 3,
-    "sources_text": 27,
-    "sources_erreur": 2,
-    "total_items_structured": 173,
-    "total_chars": 128716
+    "sources_text": 29,
+    "sources_erreur": 3,
+    "total_items_structured": 155,
+    "total_chars": 129124
   },
-  "timestamp": "2026-06-20T07:36:46Z"
+  "timestamp": "2026-06-20T07:44:02Z"
 }
