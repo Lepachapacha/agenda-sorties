@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8589,
+      "chars": 8655,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6585,
+      "chars": 6594,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6703,
+      "chars": 6789,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -78,7 +78,7 @@
       "method": "texte",
       "items": 0,
       "chars": 766,
-      "preview": "Tous les concerts à Montpellier Ajouter plus de genres Concerts à Montpellier 2026 : dates et billet"
+      "preview": "Tous les concerts à Montpellier Ajouter plus de genres concerts à Montpellier Vendredi 04 décembre 2"
     },
     {
       "name": "Infoconcert Marseille",
@@ -355,10 +355,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "RSS",
-      "items": 3,
-      "chars": 1336,
-      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
+      "method": "erreur",
+      "items": 0,
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Family Piknik Montpellier",
@@ -389,7 +389,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 5987,
+      "chars": 6373,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 0,
-    "sources_rss": 14,
+    "sources_rss": 13,
     "sources_jsonld": 3,
     "sources_text": 30,
-    "sources_erreur": 4,
-    "total_items_structured": 184,
-    "total_chars": 164397
+    "sources_erreur": 5,
+    "total_items_structured": 181,
+    "total_chars": 163627
   },
-  "timestamp": "2026-06-20T11:10:30Z"
+  "timestamp": "2026-06-20T11:16:22Z"
 }
