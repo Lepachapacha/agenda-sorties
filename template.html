@@ -835,9 +835,9 @@
       <span class="section-count-badge" x-text="bySection('expos').length + ' events'"></span>
     </div>
   </div>
-  <div class="events-grid">
+  <div class="events-list">
     <template x-for="ev in bySection('expos')" :key="ev.titre + ev.date">
-      <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+      <div x-html="renderRow(ev)"></div>
     </template>
     <template x-if="bySection('expos').length === 0">
       <p class="empty-state">Aucun spectacle pour ces filtres.</p>
@@ -856,9 +856,9 @@
       <span class="section-count-badge" x-text="bySection('danse').length + ' events'"></span>
     </div>
   </div>
-  <div class="events-grid">
+  <div class="events-list">
     <template x-for="ev in bySection('danse')" :key="ev.titre + ev.date">
-      <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+      <div x-html="renderRow(ev)"></div>
     </template>
     <template x-if="bySection('danse').length === 0">
       <p class="empty-state">Aucune soirée danse pour ces filtres.</p>
@@ -919,9 +919,9 @@
       <span class="section-count-badge" x-text="bySection('activites').length + ' events'"></span>
     </div>
   </div>
-  <div class="events-grid">
+  <div class="events-list">
     <template x-for="ev in bySection('activites')" :key="ev.titre + ev.date">
-      <div x-html="ev.stars >= 3 ? renderHeroCard(ev) : renderCard(ev, false)"></div>
+      <div x-html="renderRow(ev)"></div>
     </template>
     <template x-if="bySection('activites').length === 0">
       <p class="empty-state">Aucune activité pour ces filtres.</p>
@@ -1015,7 +1015,7 @@
       search: '',
       activeCategories: new Set(),
       filsOnly: false,
-      viewMode: { concerts: 'grid', humour: 'list' },
+      viewMode: { concerts: 'list', humour: 'list' },
       activeMonth: null,
       concertsListLimit: 30,
       humourListLimit: 15,
