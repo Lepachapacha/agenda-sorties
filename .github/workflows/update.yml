@@ -7,8 +7,10 @@ on:
     paths:
       - 'agenda-config.md'
       - 'sources.md'
+      - 'gemini-queries.md'
       - 'scraper.py'
       - 'generate.py'
+      - 'gemini_search.py'
   workflow_dispatch:
 
 jobs:
@@ -36,6 +38,7 @@ jobs:
       - name: Generate index.html
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python generate.py
 
       - name: Commit and push if changed

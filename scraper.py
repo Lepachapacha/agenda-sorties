@@ -11,29 +11,10 @@ HEADERS = {
     "Accept-Language": "fr-FR,fr;q=0.9",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
-MAX_CHARS_FALLBACK  = 6000  # texte brut quand pas de JSON-LD
+MAX_CHARS_FALLBACK  = 12000  # texte brut quand pas de JSON-LD
 MAX_JSONLD_EVENTS   = 60    # cap par source (évite qu'une source monopolise le contexte)
 TIMEOUT = 10
 DELAY_BETWEEN_REQUESTS = 1.0  # secondes — évite les bans
-
-# Sites JS-rendered : requests ne récupère qu'une coquille vide — skip proprement
-JS_DOMAINS = (
-    # Billetteries / agrégateurs
-    "allocine.fr",
-    "shotgun.live",
-    "ticketmaster.fr",
-    "bandsintown.com",
-    "songkick.com",
-    "ra.co",
-    "fnacspectacles.com",
-    "francebillet.com",
-    # Salles et festivals confirmés JS au test
-    "corum-montpellier.com",
-    "festivaldenimes.com",
-    "jazzasete.com",
-    "paloma-nimes.fr",
-)
-
 
 def parse_sources(path="sources.md"):
     sources = []
@@ -45,10 +26,6 @@ def parse_sources(path="sources.md"):
                 if len(parts) >= 2:
                     sources.append({"name": parts[0], "url": parts[1]})
     return sources
-
-
-def is_js_only(url):
-    return any(domain in url for domain in JS_DOMAINS)
 
 
 # ── RSS parsing ───────────────────────────────────────────────────────────────
@@ -220,8 +197,6 @@ def format_jsonld_event(ev, fallback_city=""):
 # ── Fetch ─────────────────────────────────────────────────────────────────────
 
 def fetch_text(url):
-    if is_js_only(url):
-        return "[Skipped — rendu JS requis, non scrapable avec requests]"
     try:
         # Stratégie 1 : RSS — données structurées si feed connu ou détecté
         rss_url = _rss_url_for(url)
@@ -315,8 +290,7 @@ def scrape_all(path="sources.md"):
         })
         results.append(f"=== {s['name']} ({s['url']}) ===\n{text}")
 
-        if not is_js_only(s["url"]):
-            time.sleep(DELAY_BETWEEN_REQUESTS)
+        time.sleep(DELAY_BETWEEN_REQUESTS)
 
     rapport = {
         "sources": report_sources,

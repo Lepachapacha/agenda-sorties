@@ -5,6 +5,7 @@ import sys
 from datetime import date, datetime
 import anthropic
 from scraper import parse_sources, scrape_all
+from gemini_search import run_gemini_searches
 
 
 def parse_events(path="agenda-config.md"):
@@ -223,15 +224,23 @@ def main():
           f"texte:{t['sources_text']} skip:{t['sources_skip']} erreur:{t['sources_erreur']} "
           f"| {t['total_items_structured']} items structurés")
 
+    print("Recherches Gemini Search (couche 3)...")
+    gemini_content = run_gemini_searches()
+    if gemini_content:
+        print(f"  {len(gemini_content)} chars Gemini ajoutés")
+    else:
+        print("  Gemini non disponible — pipeline continue avec scrape seul")
+    full_content = scraped + ("\n\n" + gemini_content if gemini_content else "")
+
     print("Conversion événements manuels...")
     confirmed_events = manual_to_json(manual_events, today)
     print(f"  {len(confirmed_events)} événements confirmés (agenda-config.md)")
 
     exclude_titles = [e["titre"] for e in confirmed_events]
 
-    print("Extraction nouveaux événements depuis le scrape (Claude)...")
+    print("Extraction nouveaux événements depuis le scrape + Gemini (Claude)...")
     try:
-        scraped_events = build_scraped_events(client, scraped, exclude_titles, today)
+        scraped_events = build_scraped_events(client, full_content, exclude_titles, today)
         print(f"  {len(scraped_events)} nouveaux événements extraits depuis les sources")
     except Exception as e:
         print(f"  ERREUR extraction scrape : {e}", file=sys.stderr)
