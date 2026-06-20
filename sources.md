@@ -14,10 +14,14 @@
 - Montpellier Events | https://www.montpellier-events.com/fr/agenda
 - IciSète | https://icisete.fr/
 - EscapadesLR Hérault | https://www.escapadeslr.com/agenda-herault.html
+# BACKUP JS — à réactiver quand Gemini grounding sera disponible (sites JS ou timeout actuels)
+# - Infoconcert Montpellier | https://www.infoconcert.com/ville/montpellier-2271/concerts
+# - Infoconcert Marseille | https://www.infoconcert.com/ville/marseille-5132/concerts
 
 ## Salles & Lieux — Montpellier
 - Zénith Sud Montpellier | https://www.zenithsud-montpellier.com/fr/agenda
 - Le Corum Montpellier | https://www.corum-montpellier.com/fr/agenda
+# - Rockstore Montpellier | https://www.rockstore.fr/PBEvents.asp?CatID=2004556
 - Victoire 2 Saint-Jean-de-Védas | https://www.victoire2.com/
 - Théâtre Jean Vilar Montpellier | https://theatrejeanvilar.montpellier.fr/la-saison
 - Opéra Comédie Montpellier | https://www.opera-orchestre-montpellier.fr/
@@ -34,6 +38,7 @@
 - Le Silo Marseille | https://www.cepacsilo-marseille.fr/
 - Le Dôme Marseille | https://dome.marseille.fr/programmation
 - La Friche Belle de Mai | https://www.lafriche.org/temps-forts/
+# - Espace Julien Marseille | https://www.infoconcert.com/salle/espace-julien-a-marseille-168/concerts
 - Le Moulin Marseille | https://lemoulin.org/marseille/
 
 ## Salles & Lieux — Sète / Béziers
