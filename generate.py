@@ -7,7 +7,7 @@ from datetime import date, datetime
 import anthropic
 from scraper import parse_sources, scrape_all
 from gemini_search import run_gemini_searches
-# template.html redesign — Alpine.js + Fuse.js (2026-06-20)
+# template2.html design Terrasse — Syne+Inter, fond clair, cartes date-block (2026-06-21)
 
 
 class _Tee:
