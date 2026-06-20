@@ -35,22 +35,41 @@ def parse_events(path="agenda-config.md"):
 
 def extract_json(text):
     text = text.strip()
-    # Retire les blocs markdown ```json ... ```
     text = re.sub(r'^```json\s*', '', text, flags=re.MULTILINE)
     text = re.sub(r'^```\s*',     '', text, flags=re.MULTILINE)
     text = re.sub(r'\s*```$',     '', text, flags=re.MULTILINE)
     text = text.strip()
-    # Extrait le premier tableau JSON trouvé dans la réponse
     match = re.search(r'\[.*\]', text, re.DOTALL)
     if match:
         text = match.group(0)
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # JSON tronqué (max_tokens atteint) — récupère les objets complets avant la coupure
+        last_complete = text.rfind('},')
+        if last_complete > 0:
+            try:
+                return json.loads(text[:last_complete + 1] + ']')
+            except json.JSONDecodeError:
+                pass
+        # Dernier recours : parse objet par objet
+        objects = re.findall(r'\{[^{}]*\}', text)
+        recovered = []
+        for obj in objects:
+            try:
+                recovered.append(json.loads(obj))
+            except json.JSONDecodeError:
+                pass
+        if recovered:
+            print(f"  JSON réparé : {len(recovered)} objets récupérés après coupure")
+            return recovered
+        raise
 
 
 def ask_claude(client, prompt, model="claude-sonnet-4-6"):
     msg = client.messages.create(
         model=model,
-        max_tokens=16384,
+        max_tokens=32768,
         messages=[{"role": "user", "content": prompt}]
     )
     return msg.content[0].text
@@ -133,25 +152,16 @@ danse → danse
 humour → humour
 activites → activite
 
-Retourne UNIQUEMENT un tableau JSON valide :
-[
-  {{
-    "date": "YYYY-MM-DD",
-    "titre": "Nom de l'événement",
-    "cat": "categorie",
-    "lieu": "Lieu, Ville",
-    "note": "Description courte ou vide",
-    "fils": false,
-    "stars": 1,
-    "section": "concerts|expos|danse|humour|activites",
-    "url": "URL ou vide",
-    "gratuit": false,
-    "groupe": ""
-  }}
-]
+FORMAT JSON — COMPACT (une ligne par objet, pas d'indentation) :
+[{{"date":"YYYY-MM-DD","titre":"Nom","cat":"cat","lieu":"Lieu, Ville","note":"max 60 chars","fils":false,"stars":1,"section":"concerts","url":"","gratuit":false,"groupe":""}}]
 
-Pour "stars" : 3 = incontournable, 2 = très bon, 1 = normal.
-Pour "fils" : true si adapté à un enfant de 10 ans."""
+Règles de compacité pour limiter la taille de la réponse :
+- "note" : max 60 caractères, préférer "" à une note trop longue
+- "url" : mettre "" si l'URL n'est pas directement disponible dans le contenu
+- "groupe" : toujours ""
+- Pas d'espace ni de saut de ligne entre les objets JSON
+- "stars" : 3 = incontournable (grands festivals/noms connus), 2 = très bon, 1 = normal
+- "fils" : true uniquement si adapté à un enfant de 10 ans"""
 
     raw = ask_claude(client, prompt)
     return extract_json(raw)
