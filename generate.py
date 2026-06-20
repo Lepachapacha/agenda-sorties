@@ -35,13 +35,19 @@ def parse_events(path="agenda-config.md"):
 
 def extract_json(text):
     text = text.strip()
-    text = re.sub(r'^```json\s*', '', text, flags=re.MULTILINE)
-    text = re.sub(r'^```\s*',     '', text, flags=re.MULTILINE)
-    text = re.sub(r'\s*```$',     '', text, flags=re.MULTILINE)
+    # Strip markdown code blocks
+    text = re.sub(r'^```(?:json)?\s*', '', text, flags=re.MULTILINE)
+    text = re.sub(r'\s*```\s*$',       '', text, flags=re.MULTILINE)
     text = text.strip()
-    match = re.search(r'\[.*\]', text, re.DOTALL)
+
+    # Cherche explicitement un tableau JSON d'objets [{ ... }]
+    # Plus robuste que \[.*\] qui capture aussi les [brackets] dans du texte
+    match = re.search(r'\[\s*\{[\s\S]*\}\s*\]', text)
     if match:
         text = match.group(0)
+    elif re.search(r'\[\s*\]', text):
+        return []
+
     try:
         return json.loads(text)
     except json.JSONDecodeError:
@@ -52,8 +58,8 @@ def extract_json(text):
                 return json.loads(text[:last_complete + 1] + ']')
             except json.JSONDecodeError:
                 pass
-        # Dernier recours : parse objet par objet
-        objects = re.findall(r'\{[^{}]*\}', text)
+        # Dernier recours : parse objet par objet (objets plats sans {}  imbriqués)
+        objects = re.findall(r'\{[^{}]+\}', text)
         recovered = []
         for obj in objects:
             try:
@@ -72,7 +78,9 @@ def ask_claude(client, prompt, model="claude-sonnet-4-6"):
         max_tokens=32768,
         messages=[{"role": "user", "content": prompt}]
     )
-    return msg.content[0].text
+    raw = msg.content[0].text
+    print(f"  [Claude raw début] {raw[:250]!r}")
+    return raw
 
 
 CAT_TO_SECTION = {
@@ -161,7 +169,9 @@ Règles de compacité pour limiter la taille de la réponse :
 - "groupe" : toujours ""
 - Pas d'espace ni de saut de ligne entre les objets JSON
 - "stars" : 3 = incontournable (grands festivals/noms connus), 2 = très bon, 1 = normal
-- "fils" : true uniquement si adapté à un enfant de 10 ans"""
+- "fils" : true uniquement si adapté à un enfant de 10 ans
+
+IMPORTANT : Retourner UNIQUEMENT le tableau JSON, sans texte avant ni après. Pas d'explication, pas de commentaire."""
 
     raw = ask_claude(client, prompt)
     return extract_json(raw)
@@ -240,11 +250,24 @@ def main():
         print(f"  {len(gemini_content)} chars Gemini ajoutés")
     else:
         print("  Gemini non disponible — pipeline continue avec scrape seul")
-    full_content = scraped + ("\n\n" + gemini_content if gemini_content else "")
-    MAX_CLAUDE_INPUT = 120_000  # ~30K tokens — évite que Claude coupe sa réponse JSON
-    if len(full_content) > MAX_CLAUDE_INPUT:
-        full_content = full_content[:MAX_CLAUDE_INPUT]
-        print(f"  Contenu tronqué à {MAX_CLAUDE_INPUT} chars")
+
+    # Gemini EN PREMIER pour garantir qu'il entre dans le cap (scraped fait ~170K)
+    # Cap global 150K (~38K tokens) : 40K Gemini + 110K scraped
+    MAX_GEMINI = 40_000
+    MAX_SCRAPED = 110_000
+    MAX_CLAUDE_INPUT = MAX_GEMINI + MAX_SCRAPED
+
+    scraped_capped = scraped[:MAX_SCRAPED]
+    if len(scraped) > MAX_SCRAPED:
+        print(f"  Scrape tronqué : {len(scraped)} → {MAX_SCRAPED} chars")
+
+    if gemini_content:
+        gemini_capped = gemini_content[:MAX_GEMINI]
+        full_content = gemini_capped + "\n\n" + scraped_capped
+        print(f"  Contenu total Claude : {len(full_content)} chars (Gemini: {len(gemini_capped)}, scrape: {len(scraped_capped)})")
+    else:
+        full_content = scraped_capped
+        print(f"  Contenu total Claude : {len(full_content)} chars (scrape seul)")
 
     print("Conversion événements manuels...")
     confirmed_events = manual_to_json(manual_events, today)
