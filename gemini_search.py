@@ -25,41 +25,85 @@ def run_gemini_searches(queries_path="gemini-queries.md"):
         print("  [Gemini] Aucune requête dans gemini-queries.md — skip")
         return ""
 
-    # Note : search grounding (google_search tool) est bloqué en free tier.
-    # On tente sans grounding — Gemini synthétise depuis sa connaissance des événements.
-    # Si quota dépassé, fallback gracieux.
     client = genai.Client(api_key=api_key)
-    model_name = "gemini-2.0-flash-lite"
+
+    # Tentative avec search grounding (nécessite quota suffisant — Workspace Enterprise OK)
+    # Fallback sans grounding si quota dépassé
+    search_tool = types.Tool(google_search=types.GoogleSearch())
+    USE_GROUNDING = True  # désactivé automatiquement sur 429
+
+    # Modèles par ordre de préférence
+    MODELS = ["gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-1.5-flash-latest"]
+    model_name = None
+    for candidate in MODELS:
+        try:
+            client.models.generate_content(
+                model=candidate,
+                contents="test",
+                config=types.GenerateContentConfig(
+                    tools=[search_tool],
+                    response_modalities=["TEXT"],
+                ),
+            )
+            model_name = candidate
+            print(f"  [Gemini] Modèle avec grounding : {model_name}")
+            break
+        except Exception as e:
+            err = str(e)
+            if "429" in err or "RESOURCE_EXHAUSTED" in err:
+                print(f"  [Gemini] {candidate} : quota search grounding dépassé")
+            elif "404" in err:
+                print(f"  [Gemini] {candidate} : modèle non disponible")
+            else:
+                print(f"  [Gemini] {candidate} : {type(e).__name__}: {err[:80]}")
+
+    if not model_name:
+        # Fallback sans grounding
+        USE_GROUNDING = False
+        model_name = "gemini-2.0-flash-lite"
+        print(f"  [Gemini] Fallback sans grounding sur {model_name}")
 
     results = []
     for i, (label, query) in enumerate(queries):
         print(f"  [Gemini {i+1}/{len(queries)}] {label}")
         try:
+            cfg = types.GenerateContentConfig(response_modalities=["TEXT"])
+            if USE_GROUNDING:
+                cfg = types.GenerateContentConfig(
+                    tools=[search_tool],
+                    response_modalities=["TEXT"],
+                )
+                prompt = (
+                    "Recherche les informations suivantes et liste de façon exhaustive "
+                    "TOUS les événements, artistes, dates, lieux et billetteries trouvés. "
+                    "Inclure les noms exacts, les dates, les villes et les URLs disponibles. "
+                    f"Requête : {query}"
+                )
+            else:
+                prompt = (
+                    "Liste tous les événements culturels, concerts, festivals, spectacles "
+                    f"que tu connais pour : {query}. "
+                    "Noms exacts, dates 2026, villes, lieux. Format liste, français."
+                )
             response = client.models.generate_content(
-                model=model_name,
-                contents=(
-                    "Liste de façon exhaustive TOUS les événements culturels, concerts, "
-                    "festivals, spectacles humour, soirées danse que tu connais pour : "
-                    f"{query}. "
-                    "Inclure noms exacts, dates 2026, villes, lieux. "
-                    "Répondre en français, format liste."
-                ),
+                model=model_name, contents=prompt, config=cfg,
             )
             text = response.text
             if text and text.strip():
-                results.append(f"=== [Gemini] {label} ===\n{text.strip()}")
+                mode = "grounding" if USE_GROUNDING else "knowledge"
+                results.append(f"=== [Gemini/{mode}] {label} ===\n{text.strip()}")
                 print(f"    → {len(text)} chars")
             else:
                 print("    → Vide")
         except Exception as e:
             err = str(e)[:80]
             print(f"    → Erreur : {type(e).__name__}: {err}")
-            if "429" in err or "RESOURCE_EXHAUSTED" in err:
-                print("  [Gemini] Quota dépassé — skip restant")
-                break
+            if ("429" in err or "RESOURCE_EXHAUSTED" in err) and USE_GROUNDING:
+                print("  [Gemini] Quota grounding dépassé — bascule sans grounding")
+                USE_GROUNDING = False
 
         if i < len(queries) - 1:
-            time.sleep(4)  # free tier : 15 RPM → 4 s entre chaque requête
+            time.sleep(4)
 
     return "\n\n".join(results)
 
