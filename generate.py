@@ -55,83 +55,96 @@ def ask_claude(client, prompt, model="claude-sonnet-4-6"):
     return msg.content[0].text
 
 
-def build_events_json(client, manual_events, scraped_content, today):
-    manual_text = "\n".join(
-        f"- {e['date']} | {e['titre']} | {e['categorie']} | {e['lieu']}"
-        + (f" | {e['note']}" if e["note"] else "")
-        + (" | fils=oui" if e["fils"] else "")
-        + (f" | etoiles={e['etoiles']}")
-        + (f" | url={e['url']}" if e["url"] else "")
-        + (f" | groupe={e['groupe']}" if e.get("groupe") else "")
-        for e in manual_events
-        if e["date"] >= today
-    )
+CAT_TO_SECTION = {
+    "festival": "concerts", "concert": "concerts", "jazz": "concerts",
+    "electro": "concerts", "classique": "concerts", "feria": "concerts",
+    "theatre": "expos", "expo": "expos",
+    "danse": "danse",
+    "humour": "humour",
+    "activite": "activites",
+}
 
-    prompt = f"""Extrait TOUS les événements culturels mentionnés pour la région Montpellier–Nîmes–Sète–Béziers–Marseille.
 
-ÉVÉNEMENTS CONFIRMÉS (priorité absolue, inclure tels quels sans modification) :
-{manual_text}
+def manual_to_json(manual_events, today):
+    """Convertit les événements manuels directement au format JSON de sortie, sans appel Claude."""
+    out = []
+    for e in manual_events:
+        if e["date"] < today:
+            continue
+        out.append({
+            "date":    e["date"],
+            "titre":   e["titre"],
+            "cat":     e["categorie"],
+            "lieu":    e["lieu"],
+            "note":    e["note"],
+            "fils":    e["fils"],
+            "stars":   e["etoiles"],
+            "section": CAT_TO_SECTION.get(e["categorie"], "concerts"),
+            "url":     e.get("url", ""),
+            "gratuit": False,
+            "groupe":  e.get("groupe", ""),
+        })
+    return out
 
-CONTENU SCRAPÉ DES SOURCES :
+
+def build_scraped_events(client, scraped_content, exclude_titles, today):
+    """
+    Extrait UNIQUEMENT les événements nouveaux depuis le contenu scrapé.
+    Les événements manuels sont exclus via exclude_titles pour éviter les doublons.
+    """
+    exclusion = "\n".join(f"- {t}" for t in exclude_titles) if exclude_titles else "(aucun)"
+
+    prompt = f"""Analyse ce contenu scrapé de sites d'agenda culturels et extrais les événements à venir dans la région Montpellier–Nîmes–Sète–Béziers–Marseille.
+
+CONTENU SCRAPÉ :
 {scraped_content}
 
-COMMENT LIRE LES DONNÉES SCRAPÉES :
+COMMENT LIRE LES DONNÉES :
 - Blocs [RSS · N items] : format = TITRE | pubDate | URL | description
-  → pubDate = date de publication de l'article (au plus 7 jours avant l'événement)
-  → UTILISER pubDate comme date de l'événement. Ne pas rejeter un item RSS sous prétexte que la date est "approximative".
-  → Si le titre ou la description contient une date plus précise, préférer celle-ci.
+  → pubDate est la date de publication (généralement quelques jours avant l'événement).
+  → L'utiliser comme date de l'événement. Si la description précise une autre date, la préférer.
 - Blocs [JSON-LD · N événements] : format = TITRE | startDate | LIEU | description | URL
-  → startDate = vraie date de l'événement (champ Schema.org). L'utiliser directement.
-- Texte brut : extraire toutes les dates explicitement mentionnées dans le contexte environnant.
+  → startDate est la vraie date de l'événement. L'utiliser directement.
+- Texte brut : extraire les dates explicitement mentionnées.
 
-RÈGLES D'EXTRACTION :
-- Zone : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille et alentours (13)
-- Période : {today} jusqu'à dans 12 mois
-- Être EXHAUSTIF : extraire TOUS les événements identifiables dans le contenu
-- En cas de doublon avec les événements confirmés : conserver la version confirmée
-- Utiliser "2099-01-01" UNIQUEMENT si vraiment aucune date n'est déductible (ni pubDate, ni texte, ni titre)
-- Ne pas rejeter un événement par excès de prudence : mieux vaut une date approximative qu'un événement absent
+RÈGLES :
+- Zone couverte : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille et alentours (13)
+- Période : du {today} jusqu'à dans 12 mois
+- Être EXHAUSTIF : extraire tous les événements identifiables, y compris humour, danse, expos, activités
+- Exclure les événements dont le titre est dans la liste ci-dessous (déjà dans l'agenda) :
+{exclusion}
+- Utiliser "2099-01-01" uniquement si aucune date n'est déductible
+- Retourner [] si aucun nouvel événement n'est trouvé
 
-CATÉGORIES (choisir la plus précise) :
-- festival : multi-jours avec plusieurs artistes
-- concert : concert unique (rock, pop, rap, chanson, world...)
-- jazz : concert jazz ou musiques du monde
-- electro : club, DJ set, techno, house
-- classique : musique classique, opéra, orchestre
-- theatre : pièce de théâtre, spectacle de scène
-- expo : exposition, musée, galerie
-- danse : spectacle de danse, soirée salsa/bachata, festival dansant
-- humour : one-man-show, stand-up, café-théâtre, sketch
-- feria : corrida, féria, tauromachie
-- activite : loisirs, sport, famille, sortie nature
+CATÉGORIES :
+festival, concert, jazz, electro, classique, theatre, expo, danse, humour, feria, activite
 
-MAPPING section (obligatoire, choisir exactement une valeur) :
-- "concerts"  → cat = festival, concert, jazz, electro, classique, feria
-- "expos"     → cat = theatre, expo
-- "danse"     → cat = danse
-- "humour"    → cat = humour
-- "activites" → cat = activite
+SECTION (obligatoire) :
+concerts → festival/concert/jazz/electro/classique/feria
+expos → theatre/expo
+danse → danse
+humour → humour
+activites → activite
 
-Retourne UNIQUEMENT un tableau JSON valide (aucun texte avant ou après) :
+Retourne UNIQUEMENT un tableau JSON valide :
 [
   {{
     "date": "YYYY-MM-DD",
-    "titre": "Nom exact de l'événement",
+    "titre": "Nom de l'événement",
     "cat": "categorie",
-    "lieu": "Nom du lieu, Ville",
-    "note": "Artiste, description courte — vide si rien",
+    "lieu": "Lieu, Ville",
+    "note": "Description courte ou vide",
     "fils": false,
     "stars": 1,
     "section": "concerts|expos|danse|humour|activites",
-    "url": "URL directe de l'événement ou billetterie, vide si introuvable",
+    "url": "URL ou vide",
     "gratuit": false,
     "groupe": ""
   }}
 ]
 
-Pour "stars" : 3 = incontournable/rare, 2 = très bon, 1 = normal.
-Pour "fils" : true uniquement si l'événement est adapté à un enfant de 10 ans.
-Pour "url" : utiliser l'URL la plus directe vers la billetterie ou la page de l'événement."""
+Pour "stars" : 3 = incontournable, 2 = très bon, 1 = normal.
+Pour "fils" : true si adapté à un enfant de 10 ans."""
 
     raw = ask_claude(client, prompt)
     return extract_json(raw)
@@ -204,33 +217,22 @@ def main():
           f"texte:{t['sources_text']} skip:{t['sources_skip']} erreur:{t['sources_erreur']} "
           f"| {t['total_items_structured']} items structurés")
 
-    print("Extraction événements (Claude)...")
+    print("Conversion événements manuels...")
+    confirmed_events = manual_to_json(manual_events, today)
+    print(f"  {len(confirmed_events)} événements confirmés (agenda-config.md)")
+
+    exclude_titles = [e["titre"] for e in confirmed_events]
+
+    print("Extraction nouveaux événements depuis le scrape (Claude)...")
     try:
-        events = build_events_json(client, manual_events, scraped, today)
-        print(f"  {len(events)} événements extraits")
+        scraped_events = build_scraped_events(client, scraped, exclude_titles, today)
+        print(f"  {len(scraped_events)} nouveaux événements extraits depuis les sources")
     except Exception as e:
-        print(f"  ERREUR extraction événements : {e}", file=sys.stderr)
-        print("  Fallback : utilisation des événements manuels uniquement")
-        events = [
-            {
-                "date":    ev["date"],
-                "titre":   ev["titre"],
-                "cat":     ev["categorie"],
-                "lieu":    ev["lieu"],
-                "note":    ev["note"],
-                "fils":    ev["fils"],
-                "stars":   ev["etoiles"],
-                "section": "activites" if ev["categorie"] == "activite"
-                           else ("danse" if ev["categorie"] == "danse"
-                           else ("humour" if ev["categorie"] == "humour"
-                           else ("expos" if ev["categorie"] in ("expo","theatre")
-                           else "concerts"))),
-                "url":     ev["url"],
-                "gratuit": False,
-                "groupe":  ev.get("groupe", ""),
-            }
-            for ev in manual_events if ev["date"] >= today
-        ]
+        print(f"  ERREUR extraction scrape : {e}", file=sys.stderr)
+        scraped_events = []
+
+    events = confirmed_events + scraped_events
+    print(f"  Total : {len(events)} événements ({len(confirmed_events)} manuels + {len(scraped_events)} scrapés)")
 
     print("Extraction films (Claude)...")
     try:
