@@ -20,6 +20,7 @@
 
 ## Danse Latine & Salsa
 - Salsa Bachata Montpellier 2026 | soirées salsa bachata kizomba Montpellier programme 2026 Temple de la Danse
+- Temple de la Danse soirées 2026 | Temple de la Danse Montpellier soirées salsa bachata agenda juillet août 2026 dates
 - Tempo Latino 2026 | Tempo Latino Vic-Fezensac 2026 programme artistes billetterie festival salsa
 
 ## Électro & Clubbing

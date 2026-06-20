@@ -180,8 +180,9 @@ RÈGLES :
 - Utiliser "2099-01-01" uniquement si aucune date n'est déductible
 - Retourner [] si vraiment aucun nouvel événement n'est trouvé (rare)
 
-CATÉGORIES :
+CATÉGORIES (liste exhaustive — n'utiliser QUE ces valeurs) :
 festival, concert, jazz, electro, classique, theatre, expo, danse, humour, feria, activite
+⚠ "spectacle" n'est PAS valide → utiliser "theatre" à la place.
 
 SECTION (obligatoire) :
 concerts → festival/concert/jazz/electro/classique/feria
@@ -189,6 +190,11 @@ expos → theatre/expo
 danse → danse
 humour → humour
 activites → activite
+
+TITRES GÉNÉRIQUES — À EXCLURE :
+Ne pas extraire un événement si son titre ne contient pas le nom d'un artiste, d'un spectacle précis ou d'un festival nommé.
+Exemples à EXCLURE : "Cepac Silo – concert (date)", "Domaine d'O – spectacle (dates)", "Soir 1", "Jour 2" sans artiste.
+Exemples à GARDER : "Cepac Silo – Whitney Houston Tribute", "Domaine d'O – FAUST. FAIT, NON DIT."
 
 FORMAT JSON — COMPACT (une ligne par objet, pas d'indentation) :
 [{{"date":"YYYY-MM-DD","titre":"Nom","cat":"cat","lieu":"Lieu, Ville","note":"max 60 chars","fils":false,"stars":1,"section":"concerts","url":"","gratuit":false,"groupe":""}}]

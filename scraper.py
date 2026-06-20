@@ -40,6 +40,9 @@ RSS_FEEDS = {
 # Suffixes WordPress standard détectés automatiquement
 WP_FEED_SUFFIXES = ("/feed/", "/feed", "?feed=rss2")
 
+# Domaines dont le flux WordPress est un blog de news (pas un agenda) — skip auto-détection RSS
+RSS_SKIP_DOMAINS = {"festivaldenimes.com", "almadance.fr"}
+
 
 def _rss_url_for(url):
     """
@@ -54,6 +57,11 @@ def _rss_url_for(url):
     for known_domain, feed_path in RSS_FEEDS.items():
         if known_domain in domain:
             return f"{parsed.scheme}://{parsed.netloc}{feed_path}"
+
+    # Domaines dont le flux WordPress est un blog — pas d'agenda, skip
+    for skip_domain in RSS_SKIP_DOMAINS:
+        if skip_domain in domain:
+            return None
 
     # Détection automatique WordPress (/feed/ en bout d'URL de base)
     base = f"{parsed.scheme}://{parsed.netloc}"
