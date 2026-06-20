@@ -195,10 +195,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "Espace Julien Marseille",
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "Espace Julien A Marseille 39 cours Julien, 13006, 39 cours Julien, 13006, Espace Julien A Marseille "
+      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert Espace Julien A"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -414,10 +414,10 @@
     "sources_skip": 7,
     "sources_rss": 12,
     "sources_jsonld": 3,
-    "sources_text": 26,
-    "sources_erreur": 3,
+    "sources_text": 27,
+    "sources_erreur": 2,
     "total_items_structured": 173,
-    "total_chars": 128601
+    "total_chars": 128716
   },
-  "timestamp": "2026-06-20T07:56:04Z"
+  "timestamp": "2026-06-20T08:03:26Z"
 }
