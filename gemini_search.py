@@ -33,7 +33,7 @@ def run_gemini_searches(queries_path="gemini-queries.md"):
         print(f"  [Gemini {i+1}/{len(queries)}] {label}")
         try:
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-1.5-flash",
                 contents=(
                     "Recherche les informations suivantes et liste de façon exhaustive "
                     "TOUS les événements, artistes, dates, lieux et billetteries trouvés. "

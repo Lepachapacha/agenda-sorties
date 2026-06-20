@@ -231,6 +231,10 @@ def main():
     else:
         print("  Gemini non disponible — pipeline continue avec scrape seul")
     full_content = scraped + ("\n\n" + gemini_content if gemini_content else "")
+    MAX_CLAUDE_INPUT = 120_000  # ~30K tokens — évite que Claude coupe sa réponse JSON
+    if len(full_content) > MAX_CLAUDE_INPUT:
+        full_content = full_content[:MAX_CLAUDE_INPUT]
+        print(f"  Contenu tronqué à {MAX_CLAUDE_INPUT} chars")
 
     print("Conversion événements manuels...")
     confirmed_events = manual_to_json(manual_events, today)
