@@ -344,8 +344,8 @@ def main():
 
     sources_list = build_sources_json()
 
-    print("Injection dans template.html...")
-    with open("template.html", encoding="utf-8") as f:
+    print("Injection dans template2.html...")
+    with open("template2.html", encoding="utf-8") as f:
         html = f.read()
 
     html = html.replace("{{EVENTS_JSON}}",  json.dumps(events,       ensure_ascii=False, indent=2))
