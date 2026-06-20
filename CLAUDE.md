@@ -184,12 +184,64 @@ Placeholders injectés par generate.py :
 
 ---
 
+## MODE DE TRAVAIL AUTONOME (Claude Code)
+
+Claude peut travailler en boucle autonome sur ce projet sans intervention humaine.
+Le pipeline est : push → Actions run → git pull → analyse → fix → re-push.
+
+### Protocole de boucle autonome
+
+```
+1. Push un fix → déclenche GitHub Actions automatiquement
+2. ScheduleWakeup(270s) — cache chaud, run fini dans ce délai
+3. git pull --rebase -X ours origin main
+4. Lire run.log (commité par Actions) — chercher :
+   - [Claude ERREUR API] → erreur API à corriger
+   - [Claude raw début] → voir ce que Claude retourne réellement
+   - [Gemini] → statut Gemini
+5. Lire events_extracted.json → events_count, films_count
+6. Critères d'arrêt : events_count >= 50 scrapés ET qualité OK
+   (vrais titres, vraies dates 2026, bonnes catégories)
+7. Si problème → corriger, push, retour étape 2
+```
+
+### Accès aux logs sans gh CLI
+
+`run.log` est commité par Actions après chaque run (ajouté à `git add` dans update.yml).
+`git pull` suffit pour tout lire. Pas besoin de gh CLI ni de token API GitHub.
+
+### Seuils de qualité
+
+| Métrique | Minimum acceptable | Excellent |
+|----------|-------------------|-----------|
+| events scrapés | 50 | 200+ |
+| films | 10 | 30+ |
+| catégories couvertes | 6/11 | 10/11 |
+
+### Résultat de référence (20 juin 2026)
+- **330 events** (29 manuels + 301 scrapés), **32 films**
+- Gemini non disponible (quota free tier) → scrape seul suffit
+- Festival de Nîmes, Jazz à Sète, Humour (58 events), Danse OK
+
+---
+
+## BUGS RÉSOLUS
+
+| Bug | Symptôme | Cause | Fix |
+|-----|----------|-------|-----|
+| 0 événements scrapés | events_count=29 (manuels seuls) | `ValueError: Streaming is required` — SDK Anthropic refuse `.create()` quand `max_tokens>=32K` | `client.messages.stream()` + `stream.get_final_text()` |
+| JSON tronqué | `Unterminated string` | max_tokens=16384 trop petit | max_tokens=32768 + repair dans `extract_json()` |
+| Gemini 429 | `limit: 0` sur gemini-2.0-flash | Search grounding quota=0 free tier | Fallback gracieux, pipeline continue sans Gemini |
+| Gemini 404 | `NOT_FOUND for API version v1beta` | gemini-1.5-flash disparu de v1beta avec SDK ≥1.0 | Appel sans search_tool sur gemini-2.0-flash-lite |
+| Conflit rebase Actions | push rejeté sur JSON générés | Bot commit + push local en même temps | `git pull --rebase -X ours origin main` |
+| Logs invisibles | Erreurs silencieuses | stderr non capturé par `_Tee` | `sys.stderr = _Tee(sys.stderr, _log_file)` |
+
 ## BUGS CONNUS / POINTS D'ATTENTION
 
-- **AlloCiné** : scrape texte fonctionne (5-6K chars) mais contenu peu structuré — films extraits avec qualité variable
-- **Gemini 2.0 Flash** : search grounding BLOQUÉ en free tier (`limit: 0`) — utiliser 1.5 Flash
-- **Festival de Nîmes RSS** : ne retourne qu'1 item (feed minimal) — Gemini Search est la vraie source
-- **Le Moulin Marseille / Le Dôme** : erreurs réseau intermittentes — sans impact (autres sources couvrent)
+- **Gemini search grounding** : BLOQUÉ free tier (quota=0 sur 2.0-flash, 404 sur 1.5-flash en v1beta). Clé payante nécessaire pour activer la couche 3.
+- **AlloCiné** : scrape texte 5-6K chars mais JS-rendu → films extraits depuis mémoire modèle (qualité variable, parfois hallucinés)
+- **Festival de Nîmes RSS** : 1 seul item — couvert par scrape JSON-LD JDS + mémoire Claude
+- **Titres génériques** : RSS AgendaCulturel publie parfois "Jour 1", "Ouverture" sans titre artiste
 
 ---
 
@@ -201,28 +253,33 @@ Placeholders injectés par generate.py :
 - [x] GEMINI_API_KEY configuré
 - [x] Architecture hybride 3 couches opérationnelle
 - [x] Sections Humour + Danse dans le template
-- [x] Correction JSON tronqué + max_tokens
-- [ ] **Valider** que les événements scrapés apparaissent sur la page (Gemini 1.5 Flash à tester)
-- [ ] **AlloCiné** : améliorer l'extraction films (contenu peu structuré en texte brut)
+- [x] Pipeline validé : 330 events + 32 films (20 juin 2026)
+- [x] Mode autonome Claude opérationnel (ScheduleWakeup + run.log)
+- [ ] **Gemini** : clé avec search grounding (plan payant) pour couvrir sites JS
+- [ ] **AlloCiné** : source alternative structurée pour les films
 - [ ] Ajouter flux RSS Paloma officiel (le `/feed/` retourne blog, pas agenda)
-- [ ] Vérifier que Gemini 1.5 Flash ne touche pas sa limite free tier (15 RPM, ~1500 req/jour)
 
 ---
 
 ## COMMANDES UTILES
 
 ```bash
-# Déclencher un run manuel
-# GitHub Actions → Daily agenda update → Run workflow
-
-# Voir ce qui a été extrait
-cat events_extracted.json | python -m json.tool | head -100
-
-# Voir le rapport scrape
-cat scrape_report.json | python -m json.tool
-
 # Push avec gestion conflit Actions
 git pull --rebase -X ours origin main && git push origin main
+
+# Voir les résultats du dernier run
+cat run.log | tail -20
+cat events_extracted.json | python -m json.tool | head -30
+
+# Analyser la distribution des événements
+python -c "
+import json
+d = json.load(open('events_extracted.json', encoding='utf-8'))
+from collections import Counter
+print('events:', d['events_count'], '| films:', d['films_count'])
+cats = Counter(e['cat'] for e in d['events'])
+[print(f'  {c}: {n}') for c,n in sorted(cats.items(), key=lambda x:-x[1])]
+"
 ```
 
 ---
@@ -233,3 +290,4 @@ git pull --rebase -X ours origin main && git push origin main
 - Le token GitHub est un Fine-grained PAT limité au repo agenda-sorties uniquement
 - `index.html` est généré — éditer `agenda-config.md` pour les événements manuels
 - `template.html` est la source HTML — éditer `template.html` pour changer la mise en page
+- `run.log` est généré à chaque run et commité — source de vérité pour le debug
