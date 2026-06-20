@@ -1,11 +1,13 @@
 [generate.py] 2026-06-20
 Lecture agenda-config.md...
   29 événements manuels
+/home/runner/work/agenda-sorties/agenda-sorties/generate.py:263: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/51] Scraping : JDS Montpellier
-    → texte, 8580 chars
+    → texte, 8655 chars
   [2/51] Scraping : JDS Nîmes
-    → texte, 6594 chars
+    → texte, 6648 chars
   [3/51] Scraping : JDS Marseille
     → texte, 6703 chars
   [4/51] Scraping : Agenda Culturel 34 Montpellier
@@ -37,7 +39,7 @@ Scraping des sources...
   [17/51] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
   [18/51] Scraping : Domaine d'O Montpellier
-    → texte, 2022 chars
+    → texte, 1933 chars
   [19/51] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3368 chars, 10 items
   [20/51] Scraping : Halle Tropisme Montpellier
@@ -107,42 +109,24 @@ Scraping des sources...
 Sauvegarde scrape_report.json...
   51 sources — RSS:14 JSON-LD:3 texte:31 skip:0 erreur:3 | 184 items structurés
 Recherches Gemini Search (couche 3)...
-  [Gemini 1/14] Concerts Montpellier-Nîmes 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 2/14] Concerts Sète-Béziers-Agde 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 3/14] Concerts Marseille 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 4/14] Festival de Nîmes 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 5/14] Jazz à Sète 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 6/14] Paloma Nîmes 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 7/14] Corum Montpellier 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 8/14] Humoristes tournée Sud 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 9/14] Salsa Bachata Montpellier 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 10/14] Tempo Latino 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 11/14] Électro Montpellier-Marseille 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 12/14] Expos Théâtre Montpellier-Nîmes 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 13/14] Activités famille Montpellier 2026
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  [Gemini 14/14] Films cinéma Pathé Odysseum
-    → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+  [Gemini] gemini-2.0-flash-lite : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and 
+  [Gemini] gemini-2.0-flash : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and 
+  [Gemini] gemini-1.5-flash-latest : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, o
+  [Gemini] gemini-1.5-flash-002 : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-002 is not found for API version v1beta, or i
+  [Gemini] gemini-1.5-flash : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is no
+  [Gemini] Aucun modèle disponible — skip
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 168985 → 110000 chars
+  Scrape tronqué : 169025 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
+  [Claude ERREUR API] ValueError: Streaming is required for operations that may take longer than 10 minutes. See https://github.com/anthropics/anthropic-sdk-python#long-requests for more details
+  ERREUR extraction scrape : Streaming is required for operations that may take longer than 10 minutes. See https://github.com/anthropics/anthropic-sdk-python#long-requests for more details
   Total : 29 événements (29 manuels + 0 scrapés)
 Extraction films (Claude)...
+  [Claude ERREUR API] ValueError: Streaming is required for operations that may take longer than 10 minutes. See https://github.com/anthropics/anthropic-sdk-python#long-requests for more details
+  ERREUR films : Streaming is required for operations that may take longer than 10 minutes. See https://github.com/anthropics/anthropic-sdk-python#long-requests for more details
 Sauvegarde events_extracted.json...
 Injection dans template.html...
 index.html généré avec succès.

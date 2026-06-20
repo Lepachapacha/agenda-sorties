@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8598,
+      "chars": 8655,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6594,
+      "chars": 6648,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -141,7 +141,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 2022,
+      "chars": 1933,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "Espace Julien A Marseille Espace Julien A Marseille 39 cours Julien, 13006, 39 cours Julien, 13006, "
+      "preview": "39 cours Julien, 13006, Espace Julien A Marseille Salle Concert - Programmation et billetterie | Inf"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -414,10 +414,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 4,
+    "sources_text": 31,
+    "sources_erreur": 3,
     "total_items_structured": 184,
-    "total_chars": 164799
+    "total_chars": 164936
   },
-  "timestamp": "2026-06-20T11:58:11Z"
+  "timestamp": "2026-06-20T12:06:44Z"
 }
