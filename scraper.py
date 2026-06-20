@@ -189,12 +189,27 @@ def _price_tag(offers):
     return "GRATUIT" if str(offers.get("price", "")).strip() in ("0", "0.0") else ""
 
 
-def format_jsonld_event(ev):
+def _city_from_url(url):
+    """Infère la ville principale depuis l'URL source — fallback quand location est vide en JSON-LD."""
+    u = url.lower()
+    if "montpellier" in u:   return "Montpellier"
+    if "nimes" in u:         return "Nîmes"
+    if "sete" in u:          return "Sète"
+    if "marseille" in u:     return "Marseille"
+    if "beziers" in u:       return "Béziers"
+    if "34.agenda" in u:     return "Hérault (34)"
+    if "30.agenda" in u:     return "Gard (30)"
+    if "13.agenda" in u:     return "Marseille (13)"
+    return ""
+
+
+def format_jsonld_event(ev, fallback_city=""):
     """Sérialise un Event JSON-LD en une ligne pipe-séparée pour le prompt Claude."""
+    loc = _loc_str(ev.get("location", {})) or fallback_city
     parts = [
         ev.get("name", ""),
         (ev.get("startDate") or ev.get("datePublished") or "")[:10],
-        _loc_str(ev.get("location", {})),
+        loc,
         (ev.get("description") or "")[:150].replace("\n", " "),
         ev.get("url", "") if str(ev.get("url", "")).startswith("http") else "",
         _price_tag(ev.get("offers", {})),
@@ -222,7 +237,8 @@ def fetch_text(url):
         # Stratégie 2 : JSON-LD — données structurées embarquées dans le HTML
         jsonld_events = extract_jsonld_events(soup)
         if jsonld_events:
-            lines = [format_jsonld_event(ev) for ev in jsonld_events]
+            city_hint = _city_from_url(url)
+            lines = [format_jsonld_event(ev, fallback_city=city_hint) for ev in jsonld_events]
             return f"[JSON-LD · {len(jsonld_events)} événements]\n" + "\n".join(lines)
 
         # Stratégie 3 : texte brut (fallback)

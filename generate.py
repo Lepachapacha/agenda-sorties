@@ -101,20 +101,26 @@ CONTENU SCRAPÉ :
 
 COMMENT LIRE LES DONNÉES :
 - Blocs [RSS · N items] : format = TITRE | pubDate | URL | description
-  → pubDate est la date de publication (généralement quelques jours avant l'événement).
-  → L'utiliser comme date de l'événement. Si la description précise une autre date, la préférer.
+  → pubDate est la date de publication. Pour les agendas culturels (34.agendaculturel.fr, 30.agendaculturel.fr,
+    etc.), les articles sont publiés 1-7 jours AVANT l'événement. Utiliser pubDate comme date approximative.
+  → Si la description ou le titre mentionne une date précise, la préférer à pubDate.
+  → Ne pas rejeter un item RSS uniquement parce que pubDate est dans le passé récent (< 30 jours) :
+    l'événement peut encore être à venir ou récent mais toujours pertinent à afficher.
 - Blocs [JSON-LD · N événements] : format = TITRE | startDate | LIEU | description | URL
-  → startDate est la vraie date de l'événement. L'utiliser directement.
+  → startDate est la vraie date de l'événement (champ Schema.org). L'utiliser directement.
+  → Si LIEU est vide, la source (visible dans l'en-tête === NOM (URL) ===) définit la zone géographique.
+    Ex: source "JDS Humour Montpellier" → events à Montpellier. "JDS Humour Nîmes" → Nîmes.
 - Texte brut : extraire les dates explicitement mentionnées.
 
 RÈGLES :
 - Zone couverte : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille et alentours (13)
+- Les sources ont été présélectionnées pour couvrir cette zone — faire confiance à la source si le lieu est absent
 - Période : du {today} jusqu'à dans 12 mois
 - Être EXHAUSTIF : extraire tous les événements identifiables, y compris humour, danse, expos, activités
 - Exclure les événements dont le titre est dans la liste ci-dessous (déjà dans l'agenda) :
 {exclusion}
 - Utiliser "2099-01-01" uniquement si aucune date n'est déductible
-- Retourner [] si aucun nouvel événement n'est trouvé
+- Retourner [] si vraiment aucun nouvel événement n'est trouvé (rare)
 
 CATÉGORIES :
 festival, concert, jazz, electro, classique, theatre, expo, danse, humour, feria, activite
