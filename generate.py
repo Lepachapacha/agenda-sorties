@@ -75,13 +75,22 @@ def build_events_json(client, manual_events, scraped_content, today):
 CONTENU SCRAPÉ DES SOURCES :
 {scraped_content}
 
+COMMENT LIRE LES DONNÉES SCRAPÉES :
+- Blocs [RSS · N items] : format = TITRE | pubDate | URL | description
+  → pubDate = date de publication de l'article (au plus 7 jours avant l'événement)
+  → UTILISER pubDate comme date de l'événement. Ne pas rejeter un item RSS sous prétexte que la date est "approximative".
+  → Si le titre ou la description contient une date plus précise, préférer celle-ci.
+- Blocs [JSON-LD · N événements] : format = TITRE | startDate | LIEU | description | URL
+  → startDate = vraie date de l'événement (champ Schema.org). L'utiliser directement.
+- Texte brut : extraire toutes les dates explicitement mentionnées dans le contexte environnant.
+
 RÈGLES D'EXTRACTION :
 - Zone : Montpellier, Nîmes, Sète, Béziers, Hérault (34), Gard (30), Marseille et alentours (13)
 - Période : {today} jusqu'à dans 12 mois
-- Être EXHAUSTIF : extraire TOUS les événements identifiables dans le contenu, même si la date est approximative
+- Être EXHAUSTIF : extraire TOUS les événements identifiables dans le contenu
 - En cas de doublon avec les événements confirmés : conserver la version confirmée
-- Si la date exacte est inconnue mais que l'événement est réel : utiliser "2099-01-01" pour le signaler
-- Ne pas inventer de détails absents du contenu, mais ne pas non plus rejeter des événements par excès de prudence
+- Utiliser "2099-01-01" UNIQUEMENT si vraiment aucune date n'est déductible (ni pubDate, ni texte, ni titre)
+- Ne pas rejeter un événement par excès de prudence : mieux vaut une date approximative qu'un événement absent
 
 CATÉGORIES (choisir la plus précise) :
 - festival : multi-jours avec plusieurs artistes
