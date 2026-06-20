@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8529,
+      "chars": 8507,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6662,
+      "chars": 6626,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -323,10 +323,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "texte",
-      "items": 0,
-      "chars": 4934,
-      "preview": "Programmes - Festival Radio France Occitanie Montpellier - 5 au 18 juillet 2026 Musique de Chambre e"
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
     },
     {
       "name": "Family Piknik Montpellier",
@@ -385,7 +385,7 @@
     "sources_text": 30,
     "sources_erreur": 4,
     "total_items_structured": 167,
-    "total_chars": 149919
+    "total_chars": 149861
   },
-  "timestamp": "2026-06-20T22:57:30Z"
+  "timestamp": "2026-06-20T23:40:31Z"
 }

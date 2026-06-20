@@ -5,9 +5,9 @@ Lecture agenda-config.md...
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8529 chars
+    → texte, 8507 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6662 chars
+    → texte, 6626 chars
   [3/47] Scraping : JDS Marseille
     → texte, 6801 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
@@ -85,7 +85,7 @@ Scraping des sources...
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
-    → texte, 4934 chars
+    → RSS, 1336 chars, 3 items
   [42/47] Scraping : Family Piknik Montpellier
     → texte, 4428 chars
   [43/47] Scraping : CitizenKid Montpellier
@@ -136,16 +136,16 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 153625 → 110000 chars
+  Scrape tronqué : 153567 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
   [Claude raw début] '[{"date":"2026-06-20","titre":"Batuc Bacana en fête","cat":"concert","lieu":"Montpellier","note":"Déambulation percussions brésiliennes, samba","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/batuc-bacana-en-fete.html","gratuit":false,"groupe":""}\n'
-  213 nouveaux événements extraits depuis les sources
-  Total : 242 événements (29 manuels + 213 scrapés)
+  182 nouveaux événements extraits depuis les sources
+  Total : 211 événements (29 manuels + 182 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Porte 23",\n    "meta": "Thriller, interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {'
+  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Monstres & Cie 2",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n '
   24 films extraits
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
