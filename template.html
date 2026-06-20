@@ -771,7 +771,21 @@
   <div x-show="viewMode.concerts === 'list'">
     <div class="events-list">
       <template x-for="ev in concertsListVisible" :key="ev.titre + ev.date">
-        <div x-html="renderRow(ev)"></div>
+        <div class="event-row" :data-cat="ev.cat" :data-fils="ev.fils?'1':'0'">
+          <span class="row-date" x-text="ev.date&&ev.date!=='2099-01-01'?ev.date.slice(8,10)+'/'+ev.date.slice(5,7):'—'"></span>
+          <div class="row-body">
+            <div class="row-title">
+              <a x-show="ev.url" :href="ev.url||'#'" target="_blank" rel="noopener" x-text="ev.titre"></a>
+              <span x-show="!ev.url" x-text="ev.titre"></span>
+            </div>
+            <div class="row-lieu" x-text="'📍 '+(ev.lieu||'')"></div>
+          </div>
+          <div class="row-meta">
+            <span x-show="ev.fils" class="fils-tag">👦</span>
+            <span x-show="ev.stars>=2" class="star" x-text="'★'.repeat(ev.stars||1)"></span>
+            <span class="cat-badge" :class="ev.cat" x-text="ev.cat"></span>
+          </div>
+        </div>
       </template>
     </div>
     <button class="load-more" x-show="bySection('concerts').length > concertsListLimit" @click="concertsListLimit += 30">
@@ -780,6 +794,186 @@
     <template x-if="bySection('concerts').length === 0">
       <p class="empty-state">Aucun concert pour ces filtres.</p>
     </template>
+  </div>
+</section>
+
+<!-- ── SECTION : EXPOS & SPECTACLES ── -->
+<section id="expos">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🖼️</span> Expos &amp; Spectacles</h2>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('expos').length + ' events'"></span>
+    </div>
+  </div>
+  <div class="events-list">
+    <template x-for="ev in bySection('expos')" :key="ev.titre + ev.date">
+      <div class="event-row" :data-cat="ev.cat" :data-fils="ev.fils?'1':'0'">
+        <span class="row-date" x-text="ev.date&&ev.date!=='2099-01-01'?ev.date.slice(8,10)+'/'+ev.date.slice(5,7):'—'"></span>
+        <div class="row-body">
+          <div class="row-title">
+            <a x-show="ev.url" :href="ev.url||'#'" target="_blank" rel="noopener" x-text="ev.titre"></a>
+            <span x-show="!ev.url" x-text="ev.titre"></span>
+          </div>
+          <div class="row-lieu" x-text="'📍 '+(ev.lieu||'')"></div>
+        </div>
+        <div class="row-meta">
+          <span x-show="ev.fils" class="fils-tag">👦</span>
+          <span x-show="ev.stars>=2" class="star" x-text="'★'.repeat(ev.stars||1)"></span>
+          <span class="cat-badge" :class="ev.cat" x-text="ev.cat"></span>
+        </div>
+      </div>
+    </template>
+    <template x-if="bySection('expos').length === 0">
+      <p class="empty-state">Aucun spectacle pour ces filtres.</p>
+    </template>
+  </div>
+</section>
+
+<!-- ── SECTION : DANSE ── -->
+<section id="danse">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">💃</span> Danse Latine &amp; Soirées</h2>
+      <p class="section-sub">Salsa · Bachata · Kizomba — soirées, stages et festivals</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('danse').length + ' events'"></span>
+    </div>
+  </div>
+  <div class="events-list">
+    <template x-for="ev in bySection('danse')" :key="ev.titre + ev.date">
+      <div class="event-row" :data-cat="ev.cat" :data-fils="ev.fils?'1':'0'">
+        <span class="row-date" x-text="ev.date&&ev.date!=='2099-01-01'?ev.date.slice(8,10)+'/'+ev.date.slice(5,7):'—'"></span>
+        <div class="row-body">
+          <div class="row-title">
+            <a x-show="ev.url" :href="ev.url||'#'" target="_blank" rel="noopener" x-text="ev.titre"></a>
+            <span x-show="!ev.url" x-text="ev.titre"></span>
+          </div>
+          <div class="row-lieu" x-text="'📍 '+(ev.lieu||'')"></div>
+        </div>
+        <div class="row-meta">
+          <span x-show="ev.fils" class="fils-tag">👦</span>
+          <span x-show="ev.stars>=2" class="star" x-text="'★'.repeat(ev.stars||1)"></span>
+          <span class="cat-badge" :class="ev.cat" x-text="ev.cat"></span>
+        </div>
+      </div>
+    </template>
+    <template x-if="bySection('danse').length === 0">
+      <p class="empty-state">Aucune soirée danse pour ces filtres.</p>
+    </template>
+  </div>
+</section>
+
+<!-- ── SECTION : HUMOUR ── -->
+<section id="humour">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">😂</span> Humour &amp; One-Man-Shows</h2>
+      <p class="section-sub">Stand-up · one-man-shows · café-théâtre</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('humour').length + ' events'"></span>
+      <button class="view-toggle" :class="{ active: viewMode.humour === 'grid' }" @click="setView('humour','grid')" title="Vue grille">⊞</button>
+      <button class="view-toggle" :class="{ active: viewMode.humour === 'list' }" @click="setView('humour','list')" title="Vue liste">☰</button>
+    </div>
+  </div>
+
+  <!-- Vue liste (défaut pour humour) -->
+  <div x-show="viewMode.humour !== 'grid'">
+    <div class="events-list">
+      <template x-for="ev in humourListVisible" :key="ev.titre + ev.date">
+        <div class="event-row" :data-cat="ev.cat" :data-fils="ev.fils?'1':'0'">
+          <span class="row-date" x-text="ev.date&&ev.date!=='2099-01-01'?ev.date.slice(8,10)+'/'+ev.date.slice(5,7):'—'"></span>
+          <div class="row-body">
+            <div class="row-title">
+              <a x-show="ev.url" :href="ev.url||'#'" target="_blank" rel="noopener" x-text="ev.titre"></a>
+              <span x-show="!ev.url" x-text="ev.titre"></span>
+            </div>
+            <div class="row-lieu" x-text="'📍 '+(ev.lieu||'')"></div>
+          </div>
+          <div class="row-meta">
+            <span x-show="ev.fils" class="fils-tag">👦</span>
+            <span x-show="ev.stars>=2" class="star" x-text="'★'.repeat(ev.stars||1)"></span>
+            <span class="cat-badge" :class="ev.cat" x-text="ev.cat"></span>
+          </div>
+        </div>
+      </template>
+    </div>
+    <button class="load-more" x-show="bySection('humour').length > humourListLimit" @click="humourListLimit += 20">
+      Voir <span x-text="bySection('humour').length - humourListLimit"></span> spectacles de plus ▼
+    </button>
+    <template x-if="bySection('humour').length === 0">
+      <p class="empty-state">Aucun spectacle humour pour ces filtres.</p>
+    </template>
+  </div>
+
+  <!-- Vue grille -->
+  <div x-show="viewMode.humour === 'grid'">
+    <div class="events-grid">
+      <template x-for="ev in bySection('humour')" :key="ev.titre + ev.date">
+        <div x-html="renderCard(ev, false)"></div>
+      </template>
+      <template x-if="bySection('humour').length === 0">
+        <p class="empty-state">Aucun spectacle humour pour ces filtres.</p>
+      </template>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION : ACTIVITÉS ── -->
+<section id="activites">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">🧗</span> Activités Père &amp; Fils</h2>
+      <p class="section-sub">Sport &amp; culture — adapté 10 ans, 50/50</p>
+    </div>
+    <div class="section-actions">
+      <span class="section-count-badge" x-text="bySection('activites').length + ' events'"></span>
+    </div>
+  </div>
+  <div class="events-list">
+    <template x-for="ev in bySection('activites')" :key="ev.titre + ev.date">
+      <div class="event-row" :data-cat="ev.cat" :data-fils="ev.fils?'1':'0'">
+        <span class="row-date" x-text="ev.date&&ev.date!=='2099-01-01'?ev.date.slice(8,10)+'/'+ev.date.slice(5,7):'—'"></span>
+        <div class="row-body">
+          <div class="row-title">
+            <a x-show="ev.url" :href="ev.url||'#'" target="_blank" rel="noopener" x-text="ev.titre"></a>
+            <span x-show="!ev.url" x-text="ev.titre"></span>
+          </div>
+          <div class="row-lieu" x-text="'📍 '+(ev.lieu||'')"></div>
+        </div>
+        <div class="row-meta">
+          <span x-show="ev.fils" class="fils-tag">👦</span>
+          <span x-show="ev.stars>=2" class="star" x-text="'★'.repeat(ev.stars||1)"></span>
+          <span class="cat-badge" :class="ev.cat" x-text="ev.cat"></span>
+        </div>
+      </div>
+    </template>
+    <template x-if="bySection('activites').length === 0">
+      <p class="empty-state">Aucune activité pour ces filtres.</p>
+    </template>
+  </div>
+</section>
+
+<!-- ── SECTION : PERMANENT ── -->
+<section id="permanent">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <h2 class="section-title"><span class="icon">📍</span> Sorties Permanentes</h2>
+      <p class="section-sub">Toujours disponibles — parfait pour un dimanche improvisé</p>
+    </div>
+  </div>
+  <div class="perm-grid">
+    <div class="perm-card"><div class="p-icon">🧗</div><div class="p-title">Escalade indoor</div><div class="p-desc">Arkose Montpellier — tous niveaux, ouvert WE</div></div>
+    <div class="perm-card"><div class="p-icon">🔫</div><div class="p-title">Laser Game</div><div class="p-desc">Laser Zone Montpellier — idéal canicule, 8 ans+</div></div>
+    <div class="perm-card"><div class="p-icon">🔐</div><div class="p-title">Escape Game</div><div class="p-desc">Time Breaker Montpellier — 10 ans+</div></div>
+    <div class="perm-card"><div class="p-icon">🎳</div><div class="p-title">Bowling</div><div class="p-desc">Lucky Strike Odysseum — avec arcade</div></div>
+    <div class="perm-card"><div class="p-icon">🛶</div><div class="p-title">Canoë Gardon</div><div class="p-desc">Collias — gorges du Gardon, mai→sept</div></div>
+    <div class="perm-card"><div class="p-icon">🌲</div><div class="p-title">Accrobranche</div><div class="p-desc">Récré des 3 Curés, Palavas — bord de mer</div></div>
+    <div class="perm-card"><div class="p-icon">🦈</div><div class="p-title">Aquarium</div><div class="p-desc">Marinarium de Sète — faune méditerranéenne</div></div>
+    <div class="perm-card"><div class="p-icon">🏛️</div><div class="p-title">Musée Fabre</div><div class="p-desc">Montpellier — gratuit -18 ans</div></div>
   </div>
 </section>
 
@@ -822,130 +1016,6 @@
         <a href="https://www.allocine.fr/seance/salle_gen_csalle=W4980.html" target="_blank" rel="noopener">Séances AlloCiné ↗</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ── SECTION : EXPOS & SPECTACLES ── -->
-<section id="expos">
-  <div class="section-header">
-    <div class="section-title-wrap">
-      <h2 class="section-title"><span class="icon">🖼️</span> Expos &amp; Spectacles</h2>
-    </div>
-    <div class="section-actions">
-      <span class="section-count-badge" x-text="bySection('expos').length + ' events'"></span>
-    </div>
-  </div>
-  <div class="events-list">
-    <template x-for="ev in bySection('expos')" :key="ev.titre + ev.date">
-      <div x-html="renderRow(ev)"></div>
-    </template>
-    <template x-if="bySection('expos').length === 0">
-      <p class="empty-state">Aucun spectacle pour ces filtres.</p>
-    </template>
-  </div>
-</section>
-
-<!-- ── SECTION : DANSE ── -->
-<section id="danse">
-  <div class="section-header">
-    <div class="section-title-wrap">
-      <h2 class="section-title"><span class="icon">💃</span> Danse Latine &amp; Soirées</h2>
-      <p class="section-sub">Salsa · Bachata · Kizomba — soirées, stages et festivals</p>
-    </div>
-    <div class="section-actions">
-      <span class="section-count-badge" x-text="bySection('danse').length + ' events'"></span>
-    </div>
-  </div>
-  <div class="events-list">
-    <template x-for="ev in bySection('danse')" :key="ev.titre + ev.date">
-      <div x-html="renderRow(ev)"></div>
-    </template>
-    <template x-if="bySection('danse').length === 0">
-      <p class="empty-state">Aucune soirée danse pour ces filtres.</p>
-    </template>
-  </div>
-</section>
-
-<!-- ── SECTION : HUMOUR ── -->
-<section id="humour">
-  <div class="section-header">
-    <div class="section-title-wrap">
-      <h2 class="section-title"><span class="icon">😂</span> Humour &amp; One-Man-Shows</h2>
-      <p class="section-sub">Stand-up · one-man-shows · café-théâtre</p>
-    </div>
-    <div class="section-actions">
-      <span class="section-count-badge" x-text="bySection('humour').length + ' events'"></span>
-      <button class="view-toggle" :class="{ active: viewMode.humour === 'grid' }" @click="setView('humour','grid')" title="Vue grille">⊞</button>
-      <button class="view-toggle" :class="{ active: viewMode.humour === 'list' }" @click="setView('humour','list')" title="Vue liste">☰</button>
-    </div>
-  </div>
-
-  <!-- Vue liste (défaut pour humour) -->
-  <div x-show="viewMode.humour !== 'grid'">
-    <div class="events-list">
-      <template x-for="ev in humourListVisible" :key="ev.titre + ev.date">
-        <div x-html="renderRow(ev)"></div>
-      </template>
-    </div>
-    <button class="load-more" x-show="bySection('humour').length > humourListLimit" @click="humourListLimit += 20">
-      Voir <span x-text="bySection('humour').length - humourListLimit"></span> spectacles de plus ▼
-    </button>
-    <template x-if="bySection('humour').length === 0">
-      <p class="empty-state">Aucun spectacle humour pour ces filtres.</p>
-    </template>
-  </div>
-
-  <!-- Vue grille -->
-  <div x-show="viewMode.humour === 'grid'">
-    <div class="events-grid">
-      <template x-for="ev in bySection('humour')" :key="ev.titre + ev.date">
-        <div x-html="renderCard(ev, false)"></div>
-      </template>
-      <template x-if="bySection('humour').length === 0">
-        <p class="empty-state">Aucun spectacle humour pour ces filtres.</p>
-      </template>
-    </div>
-  </div>
-</section>
-
-<!-- ── SECTION : ACTIVITÉS ── -->
-<section id="activites">
-  <div class="section-header">
-    <div class="section-title-wrap">
-      <h2 class="section-title"><span class="icon">🧗</span> Activités Père &amp; Fils</h2>
-      <p class="section-sub">Sport &amp; culture — adapté 10 ans, 50/50</p>
-    </div>
-    <div class="section-actions">
-      <span class="section-count-badge" x-text="bySection('activites').length + ' events'"></span>
-    </div>
-  </div>
-  <div class="events-list">
-    <template x-for="ev in bySection('activites')" :key="ev.titre + ev.date">
-      <div x-html="renderRow(ev)"></div>
-    </template>
-    <template x-if="bySection('activites').length === 0">
-      <p class="empty-state">Aucune activité pour ces filtres.</p>
-    </template>
-  </div>
-</section>
-
-<!-- ── SECTION : PERMANENT ── -->
-<section id="permanent">
-  <div class="section-header">
-    <div class="section-title-wrap">
-      <h2 class="section-title"><span class="icon">📍</span> Sorties Permanentes</h2>
-      <p class="section-sub">Toujours disponibles — parfait pour un dimanche improvisé</p>
-    </div>
-  </div>
-  <div class="perm-grid">
-    <div class="perm-card"><div class="p-icon">🧗</div><div class="p-title">Escalade indoor</div><div class="p-desc">Arkose Montpellier — tous niveaux, ouvert WE</div></div>
-    <div class="perm-card"><div class="p-icon">🔫</div><div class="p-title">Laser Game</div><div class="p-desc">Laser Zone Montpellier — idéal canicule, 8 ans+</div></div>
-    <div class="perm-card"><div class="p-icon">🔐</div><div class="p-title">Escape Game</div><div class="p-desc">Time Breaker Montpellier — 10 ans+</div></div>
-    <div class="perm-card"><div class="p-icon">🎳</div><div class="p-title">Bowling</div><div class="p-desc">Lucky Strike Odysseum — avec arcade</div></div>
-    <div class="perm-card"><div class="p-icon">🛶</div><div class="p-title">Canoë Gardon</div><div class="p-desc">Collias — gorges du Gardon, mai→sept</div></div>
-    <div class="perm-card"><div class="p-icon">🌲</div><div class="p-title">Accrobranche</div><div class="p-desc">Récré des 3 Curés, Palavas — bord de mer</div></div>
-    <div class="perm-card"><div class="p-icon">🦈</div><div class="p-title">Aquarium</div><div class="p-desc">Marinarium de Sète — faune méditerranéenne</div></div>
-    <div class="perm-card"><div class="p-icon">🏛️</div><div class="p-title">Musée Fabre</div><div class="p-desc">Montpellier — gratuit -18 ans</div></div>
   </div>
 </section>
 
