@@ -5,17 +5,17 @@ Lecture agenda-config.md...
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8655 chars
+    → texte, 8626 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6585 chars
+    → texte, 6692 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 6703 chars
+    → texte, 6903 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6624 chars, 20 items
+    → RSS, 6701 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6697 chars, 20 items
+    → RSS, 6820 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6584 chars, 20 items
+    → RSS, 6688 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -91,9 +91,9 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3550 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → erreur, 10 chars
+    → texte, 3948 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6373 chars
+    → texte, 6636 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 4295 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
@@ -136,17 +136,17 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 168452 → 110000 chars
+  Scrape tronqué : 169034 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude raw début] '[{"date":"2026-06-20","titre":"Festival Montpellier Danse 2026","cat":"danse","lieu":"Domaine d\'O, Montpellier","note":"Festival international danse contemporaine","fils":false,"stars":3,"section":"danse","url":"","gratuit":false,"groupe":""}\n,{"date":"2026-06-20","titre":"Fête de la Musique à Nîmes'
-  218 nouveaux événements extraits depuis les sources
-  Total : 247 événements (29 manuels + 218 scrapés)
+  [Claude raw début] '[{"date":"2026-06-20","titre":"Batuc Bacana en fête","cat":"concert","lieu":"Montpellier","note":"Déambulation percussions brésiliennes, samba","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/batuc-bacana-en-fete.html","gratuit":false,"groupe":""}\n'
+  188 nouveaux événements extraits depuis les sources
+  Total : 217 événements (29 manuels + 188 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Herbivores",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "ci'
-  25 films extraits
+  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "La Porte",\n    "meta": "Interdit - 12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pathe",\n   '
+  33 films extraits
 Sauvegarde events_extracted.json...
 Injection dans template.html...
 index.html généré avec succès.

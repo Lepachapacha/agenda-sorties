@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8655,
+      "chars": 8626,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6585,
+      "chars": 6692,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6703,
+      "chars": 6903,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6624,
-      "preview": "[RSS · 20 items] Fête de la musique à Saussines | Tue, 16 Jun 2026 | https://34.agendaculturel.fr/fe"
+      "chars": 6701,
+      "preview": "[RSS · 20 items] Batuc Bacana en fête | Sat, 20 Jun 2026 | https://34.agendaculturel.fr/concert/mont"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6697,
-      "preview": "[RSS · 20 items] Soul Waves et Dublin Soul tribute The Commitments | Sat, 20 Jun 2026 | https://30.a"
+      "chars": 6820,
+      "preview": "[RSS · 20 items] Nougaro, chants géorgiens, chanson française et la scène ouverte | Sat, 20 Jun 2026"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6584,
-      "preview": "[RSS · 20 items] Le Grand Boucan Concert et Théâtre | Sat, 20 Jun 2026 | https://13.agendaculturel.f"
+      "chars": 6688,
+      "preview": "[RSS · 20 items] Concert Fête de la Musique | Sat, 20 Jun 2026 | https://13.agendaculturel.fr/concer"
     },
     {
       "name": "Montpellier Events",
@@ -347,17 +347,17 @@
     {
       "name": "Kidiklik Montpellier-Nîmes",
       "url": "https://montpellier-nimes.kidiklik.fr/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 500]"
+      "chars": 3948,
+      "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
       "name": "AlloCiné Pathé Odysseum",
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6373,
+      "chars": 6636,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 30,
     "sources_erreur": 2,
     "total_items_structured": 182,
-    "total_chars": 164746
+    "total_chars": 165328
   },
-  "timestamp": "2026-06-20T21:28:27Z"
+  "timestamp": "2026-06-20T22:19:52Z"
 }
