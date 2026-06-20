@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6616,
+      "chars": 6585,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1539,
+      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -78,7 +78,7 @@
       "method": "texte",
       "items": 0,
       "chars": 766,
-      "preview": "Tous les concerts à Montpellier Ajouter plus de genres concerts à Montpellier Vendredi 04 décembre 2"
+      "preview": "Tous les concerts à Montpellier Ajouter plus de genres Concerts à Montpellier 2026 : dates et billet"
     },
     {
       "name": "Infoconcert Marseille",
@@ -179,10 +179,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "39 cours Julien, 13006, Espace Julien A Marseille 39 cours Julien, 13006, Espace Julien A Marseille "
+      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert Espace Julien A"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -339,10 +339,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
+      "chars": 12000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -389,7 +389,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6373,
+      "chars": 5987,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 0,
-    "sources_rss": 12,
+    "sources_rss": 14,
     "sources_jsonld": 3,
-    "sources_text": 31,
-    "sources_erreur": 5,
-    "total_items_structured": 169,
-    "total_chars": 149749
+    "sources_text": 30,
+    "sources_erreur": 4,
+    "total_items_structured": 184,
+    "total_chars": 164397
   },
-  "timestamp": "2026-06-20T10:55:50Z"
+  "timestamp": "2026-06-20T11:10:30Z"
 }
