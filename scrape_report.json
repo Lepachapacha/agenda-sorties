@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6648,
+      "chars": 6627,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -85,7 +85,7 @@
       "url": "https://www.infoconcert.com/ville/marseille-5132/concerts",
       "method": "texte",
       "items": 0,
-      "chars": 552,
+      "chars": 583,
       "preview": "Tous les concerts à Marseille Ajouter plus de genres Concerts à Marseille 2026 : dates et billetteri"
     },
     {
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "39 cours Julien, 13006, Espace Julien A Marseille Salle Concert - Programmation et billetterie | Inf"
+      "preview": "39 cours Julien, 13006, Espace Julien A Marseille Espace Julien A Marseille 39 cours Julien, 13006, "
     },
     {
       "name": "La Friche Belle de Mai",
@@ -355,10 +355,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "RSS",
-      "items": 3,
-      "chars": 1336,
-      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
+      "method": "erreur",
+      "items": 0,
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Family Piknik Montpellier",
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 0,
-    "sources_rss": 14,
+    "sources_rss": 13,
     "sources_jsonld": 3,
     "sources_text": 31,
-    "sources_erreur": 3,
-    "total_items_structured": 184,
-    "total_chars": 164936
+    "sources_erreur": 4,
+    "total_items_structured": 181,
+    "total_chars": 163629
   },
-  "timestamp": "2026-06-20T12:06:44Z"
+  "timestamp": "2026-06-20T12:12:51Z"
 }
