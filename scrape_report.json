@@ -1,0 +1,423 @@
+{
+  "sources": [
+    {
+      "name": "JDS Montpellier",
+      "url": "https://www.jds.fr/montpellier/agenda/",
+      "method": "texte",
+      "items": 0,
+      "chars": 6000,
+      "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
+    },
+    {
+      "name": "JDS Nîmes",
+      "url": "https://www.jds.fr/nimes/agenda/",
+      "method": "texte",
+      "items": 0,
+      "chars": 6000,
+      "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
+    },
+    {
+      "name": "JDS Marseille",
+      "url": "https://www.jds.fr/marseille/",
+      "method": "texte",
+      "items": 0,
+      "chars": 6000,
+      "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
+    },
+    {
+      "name": "Agenda Culturel 34 Montpellier",
+      "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
+      "method": "RSS",
+      "items": 20,
+      "chars": 6624,
+      "preview": "[RSS · 20 items] Fête de la musique à Saussines | Tue, 16 Jun 2026 | https://34.agendaculturel.fr/fe"
+    },
+    {
+      "name": "Agenda Culturel 30 Nîmes",
+      "url": "https://30.agendaculturel.fr/",
+      "method": "RSS",
+      "items": 20,
+      "chars": 6697,
+      "preview": "[RSS · 20 items] Soul Waves et Dublin Soul tribute The Commitments | Fri, 19 Jun 2026 | https://30.a"
+    },
+    {
+      "name": "Agenda Culturel 13 Marseille",
+      "url": "https://13.agendaculturel.fr/",
+      "method": "RSS",
+      "items": 20,
+      "chars": 6606,
+      "preview": "[RSS · 20 items] IN SITU célèbre son anniversaire avec une exposition rétrospective exceptionnelle |"
+    },
+    {
+      "name": "Montpellier Events",
+      "url": "https://www.montpellier-events.com/fr/agenda",
+      "method": "texte",
+      "items": 0,
+      "chars": 536,
+      "preview": "L'agenda et la programmation - Montpellier Events Retrouvez ici toute la programmation du Rechercher"
+    },
+    {
+      "name": "IciSète",
+      "url": "https://icisete.fr/",
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+    },
+    {
+      "name": "EscapadesLR Hérault",
+      "url": "https://www.escapadeslr.com/agenda-herault.html",
+      "method": "JSON-LD",
+      "items": 1,
+      "chars": 25,
+      "preview": "[JSON-LD · 1 événements] "
+    },
+    {
+      "name": "Infoconcert Montpellier",
+      "url": "https://www.infoconcert.com/ville/montpellier-2271/concerts",
+      "method": "texte",
+      "items": 0,
+      "chars": 794,
+      "preview": "Tous les concerts à Montpellier Ajouter plus de genres concerts à Montpellier Vendredi 04 décembre 2"
+    },
+    {
+      "name": "Infoconcert Marseille",
+      "url": "https://www.infoconcert.com/ville/marseille-5132/concerts",
+      "method": "texte",
+      "items": 0,
+      "chars": 552,
+      "preview": "Tous les concerts à Marseille Ajouter plus de genres Concerts à Marseille 2026 : dates et billetteri"
+    },
+    {
+      "name": "Zénith Sud Montpellier",
+      "url": "https://www.zenithsud-montpellier.com/fr/agenda",
+      "method": "texte",
+      "items": 0,
+      "chars": 144,
+      "preview": "L'agenda et la programmation - Zenith Montpellier Nom d'artiste, spectacle, etc ... COMPLET Autre da"
+    },
+    {
+      "name": "Le Corum Montpellier",
+      "url": "https://www.corum-montpellier.com/fr/agenda",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "Rockstore Montpellier",
+      "url": "https://www.rockstore.fr/PBEvents.asp?CatID=2004556",
+      "method": "erreur",
+      "items": 0,
+      "chars": 10,
+      "preview": "[HTTP 403]"
+    },
+    {
+      "name": "Victoire 2 Saint-Jean-de-Védas",
+      "url": "https://www.victoire2.com/",
+      "method": "texte",
+      "items": 0,
+      "chars": 1181,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée spéciale artistes Pépinière*"
+    },
+    {
+      "name": "Théâtre Jean Vilar Montpellier",
+      "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
+      "method": "texte",
+      "items": 0,
+      "chars": 1436,
+      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
+    },
+    {
+      "name": "Opéra Comédie Montpellier",
+      "url": "https://www.opera-orchestre-montpellier.fr/",
+      "method": "RSS",
+      "items": 10,
+      "chars": 3387,
+      "preview": "[RSS · 10 items] Saison 2026-27 | Prendre son temps | Wed, 03 Jun 2026 | https://www.opera-orchestre"
+    },
+    {
+      "name": "Domaine d'O Montpellier",
+      "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
+      "method": "texte",
+      "items": 0,
+      "chars": 2022,
+      "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
+    },
+    {
+      "name": "Le Jam Montpellier (jazz)",
+      "url": "https://www.lejam.com/",
+      "method": "RSS",
+      "items": 10,
+      "chars": 3368,
+      "preview": "[RSS · 10 items] L’ÉCOLE 2026-2027 : INSCRIPTIONS | Mon, 15 Jun 2026 | https://www.lejam.com/17368-2"
+    },
+    {
+      "name": "Halle Tropisme Montpellier",
+      "url": "https://tropisme.coop/agenda/",
+      "method": "texte",
+      "items": 0,
+      "chars": 6000,
+      "preview": "Halle Tropisme - Agenda sam. 20 juin de 15h00 à 17h00 Atelier créatif - Cotton & Cranberry Ateliers "
+    },
+    {
+      "name": "Paloma Nîmes",
+      "url": "https://paloma-nimes.fr/agenda/",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "Festival de Nîmes",
+      "url": "https://www.festivaldenimes.com/programmation",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "Théâtre de Nîmes",
+      "url": "https://theatredenimes.com/programme/",
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+    },
+    {
+      "name": "Le Silo Marseille",
+      "url": "https://www.cepacsilo-marseille.fr/",
+      "method": "texte",
+      "items": 0,
+      "chars": 4877,
+      "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
+    },
+    {
+      "name": "Le Dôme Marseille",
+      "url": "https://dome.marseille.fr/programmation",
+      "method": "erreur",
+      "items": 0,
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
+    },
+    {
+      "name": "Espace Julien Marseille",
+      "url": "https://www.infoconcert.com/salle/espace-julien-a-marseille-168/concerts",
+      "method": "texte",
+      "items": 0,
+      "chars": 3358,
+      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert 39 cours Julien"
+    },
+    {
+      "name": "La Friche Belle de Mai",
+      "url": "https://www.lafriche.org/temps-forts/",
+      "method": "RSS",
+      "items": 10,
+      "chars": 3455,
+      "preview": "[RSS · 10 items] Fatine Arafati, Arthur Lafrux & Yoan Soriano | Fri, 19 Jun 2026 | https://www.lafri"
+    },
+    {
+      "name": "Le Moulin Marseille",
+      "url": "https://lemoulin.org/marseille/",
+      "method": "erreur",
+      "items": 0,
+      "chars": 32,
+      "preview": "[Indisponible : ConnectionError]"
+    },
+    {
+      "name": "Théâtre de la Mer Sète",
+      "url": "https://www.fiestasete.com/theatre-de-la-mer-2026.html",
+      "method": "texte",
+      "items": 0,
+      "chars": 679,
+      "preview": "Concerts au ThÃ©Ã¢tre de la Mer 29 JUILLET > 3 AOUT : CONCERTS AU THEATRE DE LA MER C’est dans l’un "
+    },
+    {
+      "name": "Scène de Bayssan Béziers",
+      "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
+      "method": "texte",
+      "items": 0,
+      "chars": 1706,
+      "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
+    },
+    {
+      "name": "JDS Humour Montpellier",
+      "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
+      "method": "JSON-LD",
+      "items": 25,
+      "chars": 8246,
+      "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
+    },
+    {
+      "name": "JDS Humour Nîmes",
+      "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
+      "method": "JSON-LD",
+      "items": 25,
+      "chars": 7870,
+      "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-01-16 | Vergeze Espace, Vergèz"
+    },
+    {
+      "name": "Fnac Humour Montpellier",
+      "url": "https://www.fnacspectacles.com/city/montpellier-2035/humour-186/humoristes-one-man-show-2060/",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "Adam Concerts Humour",
+      "url": "https://adamconcerts.com/programmation/theatre-humour/",
+      "method": "RSS",
+      "items": 10,
+      "chars": 2877,
+      "preview": "[RSS · 10 items] VERINO | Fri, 19 Jun 2026 | https://adamconcerts.com/verino-8-64236/ | Verino explo"
+    },
+    {
+      "name": "Marseille Comedy Club",
+      "url": "https://marseillecomedyclub.com/programmation/",
+      "method": "texte",
+      "items": 0,
+      "chars": 358,
+      "preview": "Programmation - Marseille Comedy Club découvrez notre programmation Vente de billets en ligne Le QG "
+    },
+    {
+      "name": "Garage Comedy Marseille",
+      "url": "https://garage-comedy.com/",
+      "method": "texte",
+      "items": 0,
+      "chars": 56,
+      "preview": "Garage Comedy ⚙️ Le Bar-Tapas & Comedy Club de Marseille"
+    },
+    {
+      "name": "Comédie Club Vieux Port Marseille",
+      "url": "https://comedieclubvieuxport.com/",
+      "method": "texte",
+      "items": 0,
+      "chars": 4724,
+      "preview": "Comedie Club Vieux Port | Plateaux d'humour, stand-up à Marseille Comedie Club – Vieux Port LE PREMI"
+    },
+    {
+      "name": "Temple de la Danse Montpellier",
+      "url": "https://templededanse.com/soirees-temple-de-la-danse-montpellier",
+      "method": "texte",
+      "items": 0,
+      "chars": 224,
+      "preview": "Les Soirées du Temple - Le Temple De La Danse templededanse@gmail.com Le Temple c’est des soirées to"
+    },
+    {
+      "name": "Alma Dance Montpellier",
+      "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
+      "method": "RSS",
+      "items": 1,
+      "chars": 302,
+      "preview": "[RSS · 1 items] Bonjour tout le monde ! | Sat, 23 Mar 2019 | https://almadance.fr/2019/03/23/bonjour"
+    },
+    {
+      "name": "Liste Salsa d'Olivier Hérault 34",
+      "url": "https://salsa.faurax.fr/index.php/dpt/34",
+      "method": "texte",
+      "items": 0,
+      "chars": 6000,
+      "preview": "Soirées Salsa du département 34 (Hérault) - juin 2026 - Liste Salsa d'Olivier Soirées salsa dans le "
+    },
+    {
+      "name": "Toutlemondedanse Montpellier",
+      "url": "https://www.toutlemondedanse.fr/ville/montpellier",
+      "method": "texte",
+      "items": 0,
+      "chars": 979,
+      "preview": "Tout le monde Danse Ã  Montpellier ! SoirÃ©es salsa, kiz et rock prÃ¨s de Montpellier Votre ville : "
+    },
+    {
+      "name": "Tempo Latino Vic-Fezensac",
+      "url": "https://tempolatino.com/en/",
+      "method": "texte",
+      "items": 0,
+      "chars": 1546,
+      "preview": "Tempo Latino Festival - 1st European Afro-Cuban Latin Music Festival. Salsa - Vic-Fezensac Gers Occi"
+    },
+    {
+      "name": "Latinamap Festivals Été",
+      "url": "https://latinamap.eu/festival-europe/festival-ete/",
+      "method": "erreur",
+      "items": 0,
+      "chars": 10,
+      "preview": "[HTTP 403]"
+    },
+    {
+      "name": "Jazz à Sète",
+      "url": "https://www.jazzasete.com/programmation/",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "Festival Radio France Occitanie",
+      "url": "https://lefestival.eu/programmes/",
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
+    },
+    {
+      "name": "Family Piknik Montpellier",
+      "url": "https://www.familypiknikfestival.com/",
+      "method": "texte",
+      "items": 0,
+      "chars": 4428,
+      "preview": "Family Piknik | festival techno france Armand van Helden - Elrow Stage Armand van Helden @ Family Pi"
+    },
+    {
+      "name": "CitizenKid Montpellier",
+      "url": "https://www.citizenkid.com/montpellier",
+      "method": "texte",
+      "items": 0,
+      "chars": 3550,
+      "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
+    },
+    {
+      "name": "Kidiklik Montpellier-Nîmes",
+      "url": "https://montpellier-nimes.kidiklik.fr/",
+      "method": "texte",
+      "items": 0,
+      "chars": 3948,
+      "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
+    },
+    {
+      "name": "AlloCiné Pathé Odysseum",
+      "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "AlloCiné Mégarama Saint-Gély",
+      "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
+      "method": "skip",
+      "items": 0,
+      "chars": 56,
+      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+    },
+    {
+      "name": "Arènes de Béziers Feria 2026",
+      "url": "https://www.arenes-beziers.com/ferias-2026/",
+      "method": "RSS",
+      "items": 3,
+      "chars": 986,
+      "preview": "[RSS · 3 items] Soyez VIP à la feria OFF | Wed, 29 Apr 2026 | https://www.arenes-beziers.com/actuali"
+    }
+  ],
+  "totals": {
+    "sources_total": 51,
+    "sources_skip": 7,
+    "sources_rss": 10,
+    "sources_jsonld": 3,
+    "sources_text": 27,
+    "sources_erreur": 4,
+    "total_items_structured": 158,
+    "total_chars": 119536
+  },
+  "timestamp": "2026-06-20T07:03:44Z"
+}
