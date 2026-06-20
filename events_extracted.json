@@ -422,7 +422,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Saussines",
+      "titre": "Fête de la Musique à Saussines",
       "cat": "concert",
       "lieu": "Saussines, Hérault",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -435,7 +435,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Capestang",
+      "titre": "Fête de la Musique à Capestang",
       "cat": "concert",
       "lieu": "Capestang, Hérault",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -461,7 +461,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Jacou",
+      "titre": "Fête de la Musique à Jacou",
       "cat": "concert",
       "lieu": "Jacou, Hérault",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -477,7 +477,7 @@
       "titre": "Cosmic Banana : Disco to Techno",
       "cat": "electro",
       "lieu": "Sète, Hérault",
-      "note": "DJ set disco, electro, house, techno",
+      "note": "DJ set disco, electro, house et techno",
       "fils": false,
       "stars": 1,
       "section": "concerts",
@@ -513,7 +513,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Cournonterral",
+      "titre": "Fête de la Musique à Cournonterral",
       "cat": "concert",
       "lieu": "Cournonterral, Hérault",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -526,7 +526,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Saint-Pargoire",
+      "titre": "Fête de la Musique à Saint-Pargoire",
       "cat": "concert",
       "lieu": "Saint-Pargoire, Hérault",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -617,7 +617,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Toutes les musiques à l'honneur à Villeneuve lez Avignon",
+      "titre": "Toutes les musiques à Villeneuve-lès-Avignon",
       "cat": "concert",
       "lieu": "Villeneuve-lès-Avignon, Gard",
       "note": "Musiques actuelles Fête de la musique",
@@ -643,7 +643,20 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Saint-Hilaire-de-Brethmas",
+      "titre": "Fête de la Musique à Nîmes",
+      "cat": "concert",
+      "lieu": "Nîmes, Gard",
+      "note": "Plus de 20 lieux, de 15h à 0h30",
+      "fils": true,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": true,
+      "groupe": ""
+    },
+    {
+      "date": "2026-06-20",
+      "titre": "Fête de la Musique à Saint-Hilaire-de-Brethmas",
       "cat": "concert",
       "lieu": "Saint-Hilaire-de-Brethmas, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -656,7 +669,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Vergèze",
+      "titre": "Fête de la Musique à Vergèze",
       "cat": "concert",
       "lieu": "Vergèze, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -669,7 +682,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Rousson",
+      "titre": "Fête de la Musique à Rousson",
       "cat": "concert",
       "lieu": "Rousson, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -682,7 +695,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Sauve",
+      "titre": "Fête de la Musique à Sauve",
       "cat": "concert",
       "lieu": "Sauve, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -695,7 +708,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Uzès",
+      "titre": "Fête de la Musique à Uzès",
       "cat": "concert",
       "lieu": "Uzès, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -708,7 +721,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Saint-Siffret",
+      "titre": "Fête de la Musique à Saint-Siffret",
       "cat": "concert",
       "lieu": "Saint-Siffret, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -721,7 +734,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Carnas",
+      "titre": "Fête de la Musique à Carnas",
       "cat": "concert",
       "lieu": "Carnas, Gard",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -760,7 +773,33 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Plan-d'Orgon",
+      "titre": "Le Grand Boucan – Conservatoire Pierre Barbizet",
+      "cat": "concert",
+      "lieu": "Marseille",
+      "note": "3e édition, 20 propositions gratuites",
+      "fils": true,
+      "stars": 2,
+      "section": "concerts",
+      "url": "https://13.agendaculturel.fr/festival/le-grand-boucan-concert-et-theatre.html",
+      "gratuit": true,
+      "groupe": ""
+    },
+    {
+      "date": "2026-06-20",
+      "titre": "Circa 137 – concert électro-jazz",
+      "cat": "jazz",
+      "lieu": "Marseille",
+      "note": "Trio Gilles Cabanes, électro-jazz original",
+      "fils": false,
+      "stars": 1,
+      "section": "concerts",
+      "url": "https://13.agendaculturel.fr/concert/marseille/circa-137.html",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-06-20",
+      "titre": "Fête de la Musique à Plan-d'Orgon",
       "cat": "concert",
       "lieu": "Plan-d'Orgon, Bouches-du-Rhône",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -786,7 +825,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Saint-Andiol",
+      "titre": "Fête de la Musique à Saint-Andiol",
       "cat": "concert",
       "lieu": "Saint-Andiol, Bouches-du-Rhône",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -799,7 +838,7 @@
     },
     {
       "date": "2026-06-20",
-      "titre": "Fête de la musique à Carry-le-Rouet",
+      "titre": "Fête de la Musique à Carry-le-Rouet",
       "cat": "concert",
       "lieu": "Carry-le-Rouet, Bouches-du-Rhône",
       "note": "Concerts Fête de la musique 20-21 juin",
@@ -858,7 +897,7 @@
       "fils": true,
       "stars": 2,
       "section": "concerts",
-      "url": "",
+      "url": "https://13.agendaculturel.fr/festival/fete-de-la-musique-la-barben.html",
       "gratuit": true,
       "groupe": ""
     },
@@ -1001,6 +1040,19 @@
       "fils": false,
       "stars": 2,
       "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-06-20",
+      "titre": "On danse à dôm'icile ! – Festival de Marseille",
+      "cat": "danse",
+      "lieu": "Marseille",
+      "note": "",
+      "fils": false,
+      "stars": 1,
+      "section": "danse",
       "url": "",
       "gratuit": false,
       "groupe": ""
@@ -1259,9 +1311,9 @@
       "lieu": "Scène de Bayssan, Béziers",
       "note": "Soirée 2 juillet Nuits de Bayssan",
       "fils": false,
-      "stars": 2,
-      "section": "concerts",
-      "url": "",
+      "stars": 1,
+      "section": "humour",
+      "url": "https://www.jds.fr/nimes/spectacles/humour/dansing-de-damien-laquet-1604634_A",
       "gratuit": false,
       "groupe": ""
     },
@@ -1285,7 +1337,7 @@
       "lieu": "Théâtre Jean-Claude Carrière, Montpellier",
       "note": "Spectacle danse 3-4 juillet",
       "fils": false,
-      "stars": 3,
+      "stars": 2,
       "section": "danse",
       "url": "",
       "gratuit": false,
@@ -1324,7 +1376,7 @@
       "lieu": "Domaine d'O, Montpellier",
       "note": "Concerts Radio France 8-17 juillet",
       "fils": false,
-      "stars": 3,
+      "stars": 2,
       "section": "concerts",
       "url": "",
       "gratuit": false,
@@ -1332,7 +1384,7 @@
     },
     {
       "date": "2026-07-08",
-      "titre": "Festival Les Instantanés",
+      "titre": "Les Instantanés",
       "cat": "humour",
       "lieu": "Mas de la Barben, Nîmes",
       "note": "Comédie sketches nouvelle recette",
@@ -2947,7 +2999,7 @@
       "titre": "Exposition AUES et L'Armonie – Boujan-sur-Libron",
       "cat": "expo",
       "lieu": "Boujan-sur-Libron, Hérault",
-      "note": "Exposition collective multidisciplinaire",
+      "note": "Exposition collective artistes locaux",
       "fils": false,
       "stars": 1,
       "section": "expos",
@@ -3029,7 +3081,7 @@
       "fils": false,
       "stars": 1,
       "section": "expos",
-      "url": "https://13.agendaculturel.fr/exposition/aix-en-provence/incarnation.html",
+      "url": "https://34.agendaculturel.fr/exposition/cabrieres/clap-de-fin.html",
       "gratuit": false,
       "groupe": ""
     },
@@ -3214,6 +3266,162 @@
       "url": "",
       "gratuit": false,
       "groupe": ""
+    },
+    {
+      "date": "2026-06-19",
+      "titre": "CELIA KAMENI – YOUN SUN NAH & BOJAN Z – Jazz à Junas",
+      "cat": "jazz",
+      "lieu": "Vergèze Espace, Vergèze",
+      "note": "Pass 1 jour vendredi, Jazz à Junas",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-06-19",
+      "titre": "Gladiator Live aux Arènes de Nîmes",
+      "cat": "classique",
+      "lieu": "Arènes de Nîmes",
+      "note": "Cinéma symphonique, Festival de Nîmes",
+      "fils": false,
+      "stars": 3,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-07-12",
+      "titre": "Candlelight – Jean-Jacques Goldman – Montpellier",
+      "cat": "classique",
+      "lieu": "Amphithéâtre d'Anatomie, Montpellier",
+      "note": "Expérience bougie, jusqu'au 6 nov",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-08-29",
+      "titre": "Candlelight – Hans Zimmer – Montpellier",
+      "cat": "classique",
+      "lieu": "Amphithéâtre d'Anatomie, Montpellier",
+      "note": "Jusqu'au 21 novembre",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-07-11",
+      "titre": "Candlelight – Les Quatre Saisons de Vivaldi",
+      "cat": "classique",
+      "lieu": "Amphithéâtre d'Anatomie, Montpellier",
+      "note": "Jusqu'au 10 octobre",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-07-12",
+      "titre": "Candlelight – ABBA et plus encore – Montpellier",
+      "cat": "classique",
+      "lieu": "Amphithéâtre d'Anatomie, Montpellier",
+      "note": "Jusqu'au 21 novembre",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-09-19",
+      "titre": "Candlelight – Coldplay et Imagine Dragons",
+      "cat": "classique",
+      "lieu": "Amphithéâtre d'Anatomie, Montpellier",
+      "note": "Jusqu'au 6 novembre",
+      "fils": false,
+      "stars": 1,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-10-03",
+      "titre": "Candlelight – Jean-Jacques Goldman – Nîmes",
+      "cat": "classique",
+      "lieu": "Palais des Congrès H2, Nîmes",
+      "note": "Expérience bougie",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-10-17",
+      "titre": "The Jazz Room – Frank Sinatra & Louis Armstrong (Tropisme)",
+      "cat": "jazz",
+      "lieu": "La Halle Tropisme, Montpellier",
+      "note": "Hommage jazz, jusqu'au 16 jan 2027",
+      "fils": false,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-11-13",
+      "titre": "Cepac Silo – Vendredi 13 novembre",
+      "cat": "concert",
+      "lieu": "Cepac Silo, Marseille",
+      "note": "",
+      "fils": false,
+      "stars": 1,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2027-01-13",
+      "titre": "Cepac Silo – concert (13 jan. 2027)",
+      "cat": "concert",
+      "lieu": "Cepac Silo, Marseille",
+      "note": "",
+      "fils": false,
+      "stars": 1,
+      "section": "concerts",
+      "url": "",
+      "gratuit": false,
+      "groupe": ""
+    },
+    {
+      "date": "2026-06-19",
+      "titre": "Fête de la Musique à Marseille 2026",
+      "cat": "concert",
+      "lieu": "Marseille",
+      "note": "21 juin, nombreux lieux en ville",
+      "fils": true,
+      "stars": 2,
+      "section": "concerts",
+      "url": "",
+      "gratuit": true,
+      "groupe": ""
     }
   ],
   "films": [
@@ -3366,6 +3574,24 @@
       "titre": "Samuel Paty",
       "meta": "Tout public avec avertissement, documentaire/drame",
       "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Michael",
+      "meta": "Biopic, portrait de Michael Jackson",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Super Mario Galaxy Le Film",
+      "meta": "Animation, Mario et Luigi, aventure intergalactique",
+      "famille": true
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Le Tigre et les animaux de la forêt",
+      "meta": "Animation, courts métrages, à partir de 3/4 ans",
+      "famille": true
     }
   ]
 }

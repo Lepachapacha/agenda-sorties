@@ -347,17 +347,17 @@
     {
       "name": "Kidiklik Montpellier-Nîmes",
       "url": "https://montpellier-nimes.kidiklik.fr/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 3948,
-      "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
+      "chars": 10,
+      "preview": "[HTTP 500]"
     },
     {
       "name": "AlloCiné Pathé Odysseum",
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6636,
+      "chars": 6373,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {

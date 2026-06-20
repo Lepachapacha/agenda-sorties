@@ -91,9 +91,9 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3550 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 3948 chars
+    → erreur, 10 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6636 chars
+    → texte, 6373 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 4295 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
