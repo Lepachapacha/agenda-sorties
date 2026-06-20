@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-06-20T08:03:26Z",
+  "timestamp": "2026-06-20T08:51:17Z",
   "model": "claude-sonnet-4-6",
   "events_count": 29,
-  "films_count": 0,
+  "films_count": 31,
   "events": [
     {
       "date": "2026-06-27",
@@ -382,5 +382,192 @@
       "groupe": ""
     }
   ],
-  "films": []
+  "films": [
+    {
+      "cinema": "pathe",
+      "titre": "Toy Story 5",
+      "meta": "Animation, Jean-Philippe Puymartin",
+      "famille": true
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Porte 23",
+      "meta": "Fantastique, Interdit -12 ans avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Followers",
+      "meta": "Drame, influenceur",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Le Voyage en Allemagne",
+      "meta": "Comédie, prof et voyage scolaire",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Disclosure Day",
+      "meta": "Science-fiction, extraterrestres",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "La Bataille de Gaulle: L'Âge de Fer",
+      "meta": "Historique, tout public avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Scream 7",
+      "meta": "Horreur, Interdit -12 ans avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Star Wars: The Mandalorian and Grogu",
+      "meta": "Science-fiction, tout public avec avertissement",
+      "famille": true
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Wish Upon (objet magique)",
+      "meta": "Comédie romantique, Michael Johnston II",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Super Mario Galaxy Le Film",
+      "meta": "Animation, aventure intergalactique",
+      "famille": true
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Nouveaux copains à Puffin Rock",
+      "meta": "Animation jeunesse, Puffin Rock and the New Friends",
+      "famille": true
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Les Toutes Petites Créatures 2",
+      "meta": "Animation, The Very Small Creatures 2",
+      "famille": true
+    },
+    {
+      "cinema": "pathe",
+      "titre": "La Simulation",
+      "meta": "Comédie, amitié et philosophie",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Michael",
+      "meta": "Biopic, Michael Jackson",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "The Kidnapping (Wang Wei)",
+      "meta": "Thriller, Interdit -12 ans avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Ghost in the Shell",
+      "meta": "Science-fiction, cyber-thriller, Major Motoko Kusanagi",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Le Diable s'habille en Prada 2",
+      "meta": "Comédie, mode, The Devil Wears Prada 2",
+      "famille": false
+    },
+    {
+      "cinema": "pathe",
+      "titre": "Contamination (Séoul)",
+      "meta": "Horreur, Interdit -12 ans avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Toy Story 5",
+      "meta": "Animation, Jean-Philippe Puymartin",
+      "famille": true
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Porte 23",
+      "meta": "Fantastique, Interdit -12 ans avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Le Voyage en Allemagne",
+      "meta": "Comédie, prof et voyage scolaire",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Super Mario Galaxy Le Film",
+      "meta": "Animation, aventure intergalactique",
+      "famille": true
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Le Tigre et les animaux de la forêt",
+      "meta": "Animation courts métrages, à partir de 3/4 ans",
+      "famille": true
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Disclosure Day",
+      "meta": "Science-fiction, extraterrestres",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "La Bataille de Gaulle: L'Âge de Fer",
+      "meta": "Historique, tout public avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Star Wars: The Mandalorian and Grogu",
+      "meta": "Science-fiction, tout public avec avertissement",
+      "famille": true
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Le Voyage en Thaïlande (Mapring)",
+      "meta": "Drame familial, adoption",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Les Noces de Figaro (opéra / thriller)",
+      "meta": "Drame, coulisses d'un opéra",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Scream 7",
+      "meta": "Horreur, Interdit -12 ans avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Samuel Paty - Le Film",
+      "meta": "Drame historique, tout public avec avertissement",
+      "famille": false
+    },
+    {
+      "cinema": "megarama",
+      "titre": "Michael",
+      "meta": "Biopic, Michael Jackson",
+      "famille": false
+    }
+  ]
 }

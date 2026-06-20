@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6000,
+      "chars": 8595,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6000,
+      "chars": 6594,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6000,
+      "chars": 6714,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -99,10 +99,10 @@
     {
       "name": "Le Corum Montpellier",
       "url": "https://www.corum-montpellier.com/fr/agenda",
-      "method": "skip",
+      "method": "texte",
       "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "chars": 249,
+      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... COMPLET - 2ème da"
     },
     {
       "name": "Rockstore Montpellier",
@@ -157,24 +157,24 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6000,
+      "chars": 12000,
       "preview": "Halle Tropisme - Agenda sam. 20 juin de 15h00 à 17h00 Atelier créatif - Cotton & Cranberry Ateliers "
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
-      "method": "skip",
-      "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "method": "RSS",
+      "items": 10,
+      "chars": 3421,
+      "preview": "[RSS · 10 items] TINALS 2026 : de la fidélité et de la découverte | Thu, 11 Jun 2026 | https://palom"
     },
     {
       "name": "Festival de Nîmes",
       "url": "https://www.festivaldenimes.com/programmation",
-      "method": "skip",
-      "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "method": "RSS",
+      "items": 1,
+      "chars": 307,
+      "preview": "[RSS · 1 items] Bonjour tout le monde ! | Fri, 31 Jan 2025 | https://festivaldenimes.com/2025/01/31/"
     },
     {
       "name": "Théâtre de Nîmes",
@@ -206,7 +206,7 @@
       "method": "texte",
       "items": 0,
       "chars": 3358,
-      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert Espace Julien A"
+      "preview": "Espace Julien A Marseille Salle Concert - Programmation et billetterie | InfoConcert 39 cours Julien"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -259,10 +259,10 @@
     {
       "name": "Fnac Humour Montpellier",
       "url": "https://www.fnacspectacles.com/city/montpellier-2035/humour-186/humoristes-one-man-show-2060/",
-      "method": "skip",
+      "method": "erreur",
       "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Adam Concerts Humour",
@@ -317,7 +317,7 @@
       "url": "https://salsa.faurax.fr/index.php/dpt/34",
       "method": "texte",
       "items": 0,
-      "chars": 6000,
+      "chars": 12000,
       "preview": "Soirées Salsa du département 34 (Hérault) - juin 2026 - Liste Salsa d'Olivier Soirées salsa dans le "
     },
     {
@@ -341,16 +341,16 @@
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
       "method": "texte",
       "items": 0,
-      "chars": 6000,
+      "chars": 12000,
       "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
       "url": "https://www.jazzasete.com/programmation/",
-      "method": "skip",
+      "method": "texte",
       "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "chars": 61,
+      "preview": "PROGRAMMATION – Festival Jazz à Sète THÉÂTRE DE LA MER | SÈTE"
     },
     {
       "name": "Festival Radio France Occitanie",
@@ -387,18 +387,18 @@
     {
       "name": "AlloCiné Pathé Odysseum",
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
-      "method": "skip",
+      "method": "texte",
       "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "chars": 5987,
+      "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
       "name": "AlloCiné Mégarama Saint-Gély",
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
-      "method": "skip",
+      "method": "texte",
       "items": 0,
-      "chars": 56,
-      "preview": "[Skipped — rendu JS requis, non scrapable avec requests]"
+      "chars": 4295,
+      "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
       "name": "Arènes de Béziers Feria 2026",
@@ -411,13 +411,13 @@
   ],
   "totals": {
     "sources_total": 51,
-    "sources_skip": 7,
-    "sources_rss": 12,
+    "sources_skip": 0,
+    "sources_rss": 14,
     "sources_jsonld": 3,
-    "sources_text": 27,
-    "sources_erreur": 2,
-    "total_items_structured": 173,
-    "total_chars": 128716
+    "sources_text": 31,
+    "sources_erreur": 3,
+    "total_items_structured": 184,
+    "total_chars": 164566
   },
-  "timestamp": "2026-06-20T08:03:26Z"
+  "timestamp": "2026-06-20T08:51:17Z"
 }
