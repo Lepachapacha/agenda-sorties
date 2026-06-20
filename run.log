@@ -7,9 +7,9 @@ Scraping des sources...
   [1/47] Scraping : JDS Montpellier
     → texte, 8655 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6594 chars
+    → texte, 6585 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 6784 chars
+    → texte, 6703 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
     → RSS, 6624 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
@@ -19,7 +19,7 @@ Scraping des sources...
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → texte, 98 chars
+    → RSS, 1539 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -29,7 +29,7 @@ Scraping des sources...
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
     → texte, 1181 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
-    → erreur, 19 chars
+    → texte, 1436 chars
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
@@ -43,11 +43,11 @@ Scraping des sources...
   [19/47] Scraping : Festival de Nîmes
     → texte, 962 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → texte, 98 chars
+    → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
     → texte, 4877 chars
   [22/47] Scraping : Le Dôme Marseille
-    → erreur, 19 chars
+    → texte, 134 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3455 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -99,7 +99,7 @@ Scraping des sources...
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:10 JSON-LD:3 texte:30 skip:0 erreur:4 | 167 items structurés
+  47 sources — RSS:12 JSON-LD:3 texte:30 skip:0 erreur:2 | 182 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,17 +136,17 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 163935 → 110000 chars
+  Scrape tronqué : 168452 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   29 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude raw début] '[{"date":"2026-06-20","titre":"Festival Montpellier Danse 2026","cat":"danse","lieu":"Domaine d\'O, Montpellier","note":"Festival international danse contemporaine","fils":false,"stars":3,"section":"danse","url":"","gratuit":false,"groupe":""},{"date":"2026-06-20","titre":"Festival Les Hérault du Cin'
-  214 nouveaux événements extraits depuis les sources
-  Total : 243 événements (29 manuels + 214 scrapés)
+  [Claude raw début] '[{"date":"2026-06-20","titre":"Festival Montpellier Danse 2026","cat":"danse","lieu":"Domaine d\'O, Montpellier","note":"Festival international danse contemporaine","fils":false,"stars":3,"section":"danse","url":"","gratuit":false,"groupe":""}\n,{"date":"2026-06-20","titre":"Fête de la Musique à Nîmes'
+  218 nouveaux événements extraits depuis les sources
+  Total : 247 événements (29 manuels + 218 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe",\n    "titre": "Porte 666",\n    "meta": "Horreur, Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "cinema": "pa'
-  33 films extraits
+  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Herbivores",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n    "ci'
+  25 films extraits
 Sauvegarde events_extracted.json...
 Injection dans template.html...
 index.html généré avec succès.

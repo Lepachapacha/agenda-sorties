@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6594,
+      "chars": 6585,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6784,
+      "chars": 6703,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1539,
+      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -99,10 +99,10 @@
     {
       "name": "Théâtre Jean Vilar Montpellier",
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 1436,
+      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
     },
     {
       "name": "Opéra Comédie Montpellier",
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 10,
+    "sources_rss": 12,
     "sources_jsonld": 3,
     "sources_text": 30,
-    "sources_erreur": 4,
-    "total_items_structured": 167,
-    "total_chars": 160229
+    "sources_erreur": 2,
+    "total_items_structured": 182,
+    "total_chars": 164746
   },
-  "timestamp": "2026-06-20T21:01:22Z"
+  "timestamp": "2026-06-20T21:28:27Z"
 }
