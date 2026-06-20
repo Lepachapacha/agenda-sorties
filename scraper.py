@@ -1,4 +1,5 @@
 import json
+import re
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -239,22 +240,79 @@ def fetch_text(url):
         return f"[Indisponible : {type(e).__name__}]"
 
 
+def _item_count(text, method):
+    """Extrait le nombre d'items structurés depuis l'en-tête du contenu."""
+    if method == "RSS":
+        m = re.search(r'\[RSS · (\d+) items\]', text)
+        return int(m.group(1)) if m else 0
+    if method == "JSON-LD":
+        m = re.search(r'\[JSON-LD · (\d+)', text)
+        return int(m.group(1)) if m else 0
+    return 0
+
+
 def scrape_all(path="sources.md"):
+    """
+    Scrape toutes les sources.
+    Retourne (texte_concatene: str, rapport: dict).
+    Le rapport contient les stats par source et les totaux — utilisé par generate.py
+    pour sauvegarder scrape_report.json.
+    """
     sources = parse_sources(path)
     results = []
+    report_sources = []
+    counts = {"skip": 0, "RSS": 0, "JSON-LD": 0, "texte": 0, "erreur": 0}
+    total_items = 0
+    total_chars = 0
+
     for i, s in enumerate(sources):
         print(f"  [{i+1}/{len(sources)}] Scraping : {s['name']}")
         text = fetch_text(s["url"])
+
         if text.startswith("[JSON-LD"):
             method = "JSON-LD"
         elif text.startswith("[RSS"):
             method = "RSS"
         elif text.startswith("[Skipped"):
             method = "skip"
+        elif any(text.startswith(p) for p in ("[Timeout", "[HTTP", "[Indisponible")):
+            method = "erreur"
         else:
             method = "texte"
-        print(f"    → {method}, {len(text)} chars")
+
+        items = _item_count(text, method)
+        chars = len(text)
+        counts[method] = counts.get(method, 0) + 1
+        total_items += items
+        total_chars += chars
+
+        label = f"{method}, {chars} chars" + (f", {items} items" if items else "")
+        print(f"    → {label}")
+
+        report_sources.append({
+            "name":    s["name"],
+            "url":     s["url"],
+            "method":  method,
+            "items":   items,
+            "chars":   chars,
+            "preview": text[:100].replace("\n", " "),
+        })
         results.append(f"=== {s['name']} ({s['url']}) ===\n{text}")
+
         if not is_js_only(s["url"]):
             time.sleep(DELAY_BETWEEN_REQUESTS)
-    return "\n\n".join(results)
+
+    rapport = {
+        "sources": report_sources,
+        "totals": {
+            "sources_total":           len(sources),
+            "sources_skip":            counts["skip"],
+            "sources_rss":             counts["RSS"],
+            "sources_jsonld":          counts["JSON-LD"],
+            "sources_text":            counts["texte"],
+            "sources_erreur":          counts["erreur"],
+            "total_items_structured":  total_items,
+            "total_chars":             total_chars,
+        },
+    }
+    return "\n\n".join(results), rapport

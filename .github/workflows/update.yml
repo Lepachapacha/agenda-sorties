@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "agenda-bot"
           git config user.email "agenda-bot@users.noreply.github.com"
-          git add index.html
+          git add index.html scrape_report.json events_extracted.json
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push origin HEAD:main

@@ -2,7 +2,7 @@ import json
 import os
 import re
 import sys
-from datetime import date
+from datetime import date, datetime
 import anthropic
 from scraper import parse_sources, scrape_all
 
@@ -181,8 +181,19 @@ def main():
     manual_events = parse_events()
     print(f"  {len(manual_events)} événements manuels")
 
+    ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+
     print("Scraping des sources...")
-    scraped = scrape_all()
+    scraped, scrape_rapport = scrape_all()
+
+    print("Sauvegarde scrape_report.json...")
+    scrape_rapport["timestamp"] = ts
+    with open("scrape_report.json", "w", encoding="utf-8") as f:
+        json.dump(scrape_rapport, f, ensure_ascii=False, indent=2)
+    t = scrape_rapport["totals"]
+    print(f"  {t['sources_total']} sources — RSS:{t['sources_rss']} JSON-LD:{t['sources_jsonld']} "
+          f"texte:{t['sources_text']} skip:{t['sources_skip']} erreur:{t['sources_erreur']} "
+          f"| {t['total_items_structured']} items structurés")
 
     print("Extraction événements (Claude)...")
     try:
@@ -219,6 +230,17 @@ def main():
     except Exception as e:
         print(f"  ERREUR films : {e}", file=sys.stderr)
         films = []
+
+    print("Sauvegarde events_extracted.json...")
+    with open("events_extracted.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp":    ts,
+            "model":        "claude-sonnet-4-6",
+            "events_count": len(events),
+            "films_count":  len(films),
+            "events":       events,
+            "films":        films,
+        }, f, ensure_ascii=False, indent=2)
 
     sources_list = build_sources_json()
 
