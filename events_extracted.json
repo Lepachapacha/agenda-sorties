@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-20T08:51:17Z",
+  "timestamp": "2026-06-20T09:10:29Z",
   "model": "claude-sonnet-4-6",
   "events_count": 29,
   "films_count": 31,
@@ -391,14 +391,14 @@
     },
     {
       "cinema": "pathe",
-      "titre": "Porte 23",
-      "meta": "Fantastique, Interdit -12 ans avec avertissement",
+      "titre": "Ari",
+      "meta": "Interdit -12 ans avec avertissement",
       "famille": false
     },
     {
       "cinema": "pathe",
       "titre": "Followers",
-      "meta": "Drame, influenceur",
+      "meta": "Comédie / Drame, influenceur",
       "famille": false
     },
     {
@@ -410,13 +410,13 @@
     {
       "cinema": "pathe",
       "titre": "Disclosure Day",
-      "meta": "Science-fiction, extraterrestres",
+      "meta": "Science-fiction / Thriller",
       "famille": false
     },
     {
       "cinema": "pathe",
       "titre": "La Bataille de Gaulle: L'Âge de Fer",
-      "meta": "Historique, tout public avec avertissement",
+      "meta": "Historique, Tout public avec avertissement",
       "famille": false
     },
     {
@@ -428,37 +428,37 @@
     {
       "cinema": "pathe",
       "titre": "Star Wars: The Mandalorian and Grogu",
-      "meta": "Science-fiction, tout public avec avertissement",
+      "meta": "Science-fiction, Tout public avec avertissement",
       "famille": true
     },
     {
       "cinema": "pathe",
-      "titre": "Wish Upon (objet magique)",
-      "meta": "Comédie romantique, Michael Johnston II",
+      "titre": "Wish Upon",
+      "meta": "Fantastique / Comédie, Michael Johnston",
       "famille": false
     },
     {
       "cinema": "pathe",
       "titre": "Super Mario Galaxy Le Film",
-      "meta": "Animation, aventure intergalactique",
+      "meta": "Animation / Aventure, famille",
       "famille": true
     },
     {
       "cinema": "pathe",
       "titre": "Nouveaux copains à Puffin Rock",
-      "meta": "Animation jeunesse, Puffin Rock and the New Friends",
+      "meta": "Animation jeunesse",
       "famille": true
     },
     {
       "cinema": "pathe",
       "titre": "Les Toutes Petites Créatures 2",
-      "meta": "Animation, The Very Small Creatures 2",
+      "meta": "Animation jeunesse",
       "famille": true
     },
     {
       "cinema": "pathe",
       "titre": "La Simulation",
-      "meta": "Comédie, amitié et philosophie",
+      "meta": "Comédie / Philosophie",
       "famille": false
     },
     {
@@ -469,26 +469,26 @@
     },
     {
       "cinema": "pathe",
-      "titre": "The Kidnapping (Wang Wei)",
-      "meta": "Thriller, Interdit -12 ans avec avertissement",
+      "titre": "Vengeance",
+      "meta": "Action / Thriller, Interdit -12 ans avec avertissement",
       "famille": false
     },
     {
       "cinema": "pathe",
       "titre": "Ghost in the Shell",
-      "meta": "Science-fiction, cyber-thriller, Major Motoko Kusanagi",
+      "meta": "Animation / Science-fiction",
       "famille": false
     },
     {
       "cinema": "pathe",
       "titre": "Le Diable s'habille en Prada 2",
-      "meta": "Comédie, mode, The Devil Wears Prada 2",
+      "meta": "Comédie / Drame, suite du film culte",
       "famille": false
     },
     {
       "cinema": "pathe",
-      "titre": "Contamination (Séoul)",
-      "meta": "Horreur, Interdit -12 ans avec avertissement",
+      "titre": "Infection",
+      "meta": "Horreur / Thriller, Interdit -12 ans avec avertissement",
       "famille": false
     },
     {
@@ -499,8 +499,8 @@
     },
     {
       "cinema": "megarama",
-      "titre": "Porte 23",
-      "meta": "Fantastique, Interdit -12 ans avec avertissement",
+      "titre": "Ari",
+      "meta": "Interdit -12 ans avec avertissement",
       "famille": false
     },
     {
@@ -512,7 +512,7 @@
     {
       "cinema": "megarama",
       "titre": "Super Mario Galaxy Le Film",
-      "meta": "Animation, aventure intergalactique",
+      "meta": "Animation / Aventure, famille",
       "famille": true
     },
     {
@@ -524,30 +524,30 @@
     {
       "cinema": "megarama",
       "titre": "Disclosure Day",
-      "meta": "Science-fiction, extraterrestres",
+      "meta": "Science-fiction / Thriller",
       "famille": false
     },
     {
       "cinema": "megarama",
       "titre": "La Bataille de Gaulle: L'Âge de Fer",
-      "meta": "Historique, tout public avec avertissement",
+      "meta": "Historique, Tout public avec avertissement",
       "famille": false
     },
     {
       "cinema": "megarama",
       "titre": "Star Wars: The Mandalorian and Grogu",
-      "meta": "Science-fiction, tout public avec avertissement",
+      "meta": "Science-fiction, Tout public avec avertissement",
       "famille": true
     },
     {
       "cinema": "megarama",
-      "titre": "Le Voyage en Thaïlande (Mapring)",
+      "titre": "Retour en Thaïlande",
       "meta": "Drame familial, adoption",
       "famille": false
     },
     {
       "cinema": "megarama",
-      "titre": "Les Noces de Figaro (opéra / thriller)",
+      "titre": "Les Noces de Figaro",
       "meta": "Drame, coulisses d'un opéra",
       "famille": false
     },
@@ -559,8 +559,8 @@
     },
     {
       "cinema": "megarama",
-      "titre": "Samuel Paty - Le Film",
-      "meta": "Drame historique, tout public avec avertissement",
+      "titre": "Samuel Paty",
+      "meta": "Documentaire / Drame, Tout public avec avertissement",
       "famille": false
     },
     {
