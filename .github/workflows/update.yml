@@ -12,6 +12,7 @@ on:
       - 'generate.py'
       - 'gemini_search.py'
       - 'template.html'
+      - 'template2.html'
   workflow_dispatch:
 
 jobs:
