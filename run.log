@@ -47,7 +47,7 @@ Scraping des sources...
   [21/47] Scraping : Le Silo Marseille
     → texte, 4877 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3455 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -99,7 +99,7 @@ Scraping des sources...
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:12 JSON-LD:3 texte:30 skip:0 erreur:2 | 182 items structurés
+  47 sources — RSS:12 JSON-LD:3 texte:29 skip:0 erreur:3 | 182 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé

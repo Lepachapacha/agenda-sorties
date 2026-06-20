@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -382,8 +382,8 @@
     "sources_skip": 0,
     "sources_rss": 12,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 2,
+    "sources_text": 29,
+    "sources_erreur": 3,
     "total_items_structured": 182,
     "total_chars": 165328
   },
