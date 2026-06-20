@@ -1,6 +1,6 @@
 # CLAUDE.md — Agenda Sorties Montpellier
 # Projet personnel Nicolas Miras — Lepachapacha
-# Dernière mise à jour : 20 juin 2026 (session 4)
+# Dernière mise à jour : 21 juin 2026 (session 6)
 
 ---
 
@@ -113,12 +113,14 @@ Placeholders injectés par generate.py :
 - `{{SOURCES_JSON}}` — liste des sources
 - `{{LAST_UPDATED}}` — date FR du dernier run
 
-### template2.html — Design « Terrasse » (ACTIF)
-- **Fonts :** Syne 800 (display) + Inter 300-600 (body) — Google Fonts
-- **Palette :** fond `#F7F8F4`, surface `#FFFFFF`, accent jade `#059669`, urgent `#F04E1F`
-- **Cartes date-block :** chiffre du jour dominant (2rem Syne ExtraBold) teinté par catégorie
-- **Nav :** pills sombres (fill pour l'état actif)
-- **Sections :** section-headers Syne 800 + border-bottom 2px
+### template2.html — Design « Dark Méditerranéen » (ACTIF)
+- **Fonts :** Playfair Display 700/900 (titres événements) + Inter (corps) + Space Mono (dates/labels)
+- **Palette :** fond `#0D0B09` (chaud presque-noir), surface `#1C1915`, accent amber `#F59E0B`, urgence coral `#F97316`
+- **Hero cards ★★★ :** full-width, gradient violet `#2D1B5C` → bordeaux `#6B1F40`
+- **Cartes standard :** date amber Space Mono (petite ligne), titre Playfair Display comme élément principal
+- **Vue liste** défaut pour Humour + Activités (toggle ⊞/☰ disponible)
+- **Concerts** groupés par mois avec séparateurs amber Space Mono
+- Conforme à `UX-AGENT.md` : dark mode méditerranéen, Playfair+Space Mono, hiérarchie Hero/Standard/Dense
 
 ### template.html — Design v1 (BACKUP)
 - Dark theme : `--bg: #08080c`, accent violet `#818cf8`
@@ -206,14 +208,18 @@ Placeholders injectés par generate.py :
 - **Résultat validé** : **330 events (29 manuels + 301 scrapés) + 32 films** ✅
 - **QC agent** : 4 fixes — catégorie "spectacle" interdite, 23 titres génériques exclus, 4 sources mortes commentées, +1 requête Temple de la Danse
 
-### Session 5 — 21 juin 2026 — REDESIGN TEMPLATE
-- **Nouveau design** `template2.html` — concept « Terrasse » méditerranéen, light mode
-- **Typographie** : Syne 800 (display) + Inter (body) — remplace Playfair Display + Space Mono
-- **Palette** : fond `#F7F8F4`, accent jade `#059669`, urgence orange `#F04E1F`, cartes blanches
-- **Innovation cartes** : date-block gauche 62px avec chiffre du jour 2rem dominant, teinté par catégorie
-- **generate.py** switché de `template.html` → `template2.html`
-- `template.html` conservé en backup
-- Pipeline stable : **255 events (29 manuels + 226 scrapés) + 33 films** (run 21 juin)
+### Session 5 — 21 juin 2026 (matin) — 1ER REDESIGN (rejeté)
+- `template2.html` v1 « Terrasse » — light mode, Syne+Inter, cartes date-block gauche 62px
+- generate.py switché template.html → template2.html, déployé et validé pipeline
+- **Rejeté** : date-block dominant = mauvaise hiérarchie, le chiffre du jour écrase le titre
+
+### Session 6 — 21 juin 2026 (après-midi) — REDESIGN DARK MÉDITERRANÉEN
+- `template2.html` v2 — dark mode warm conforme UX-AGENT.md
+- **Typographie** : Playfair Display (titres) + Space Mono (dates/labels) + Inter (corps)
+- **Palette** : fond `#0D0B09`, amber `#F59E0B`, coral `#F97316`, hero gradient violet→bordeaux
+- **Hiérarchie cartes** : titre Playfair Display = élément principal, date = petite ligne amber
+- **Hero ★★★** : full-width, gradient violet `#2D1B5C` → bordeaux `#6B1F40`
+- **Vue liste** défaut humour + activités, concerts groupés par mois
 
 ---
 
@@ -288,7 +294,7 @@ Le pipeline est : push → Actions run → git pull → analyse → fix → re-p
 - [x] Sections Humour + Danse dans le template
 - [x] Pipeline validé : 330 events + 32 films (20 juin 2026)
 - [x] Mode autonome Claude opérationnel (ScheduleWakeup + run.log)
-- [x] **Redesign template2.html** — design Terrasse, Syne+Inter, cartes date-block (21 juin 2026)
+- [x] **Redesign template2.html** — design Dark Méditerranéen, Playfair+SpaceMono, hero ★★★ (21 juin 2026)
 - [ ] **Gemini search grounding** : cliquer "Configurer la facturation" sur clé `...Pt9Q` dans AI Studio → ~1,50€/mois → +20-50 events depuis sites JS (Festival de Nîmes officiel, Jazz à Sète, Paloma)
 - [ ] **AlloCiné** : source structurée pour les films (actuellement scrape texte JS → films depuis mémoire modèle)
 - [ ] Ajouter flux RSS Paloma officiel (le `/feed/` retourne blog, pas agenda)
