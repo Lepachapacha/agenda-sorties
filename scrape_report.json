@@ -323,10 +323,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "RSS",
-      "items": 3,
-      "chars": 1336,
-      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
+      "method": "texte",
+      "items": 0,
+      "chars": 4934,
+      "preview": "Programmes - Festival Radio France Occitanie Montpellier - 5 au 18 juillet 2026 Musique de Chambre e"
     },
     {
       "name": "Family Piknik Montpellier",
