@@ -22,16 +22,22 @@ Hébergée sur GitHub Pages, mise à jour automatique quotidienne via GitHub Act
 agenda-sorties/
 ├── CLAUDE.md                  ← ce fichier — contexte pour Claude
 ├── agenda-config.md           ← SOURCE DE VÉRITÉ — éditer ici les événements manuels
-├── sources.md                 ← 51 sources scrapées (agendas, salles, humour, danse...)
+├── sources.md                 ← 47 sources actives + 4 backup JS commentés
+├── sources-enrichi.md         ← 92 sources enrichies (généré par agent-recherche-sources)
 ├── gemini-queries.md          ← 14 requêtes Google Search Gemini (éditables sans code)
 ├── scraper.py                 ← couche 2 : RSS → JSON-LD → texte brut
 ├── gemini_search.py           ← couche 3 : Google Search via Gemini 1.5 Flash
 ├── generate.py                ← orchestrateur : scrape + Gemini + Claude Sonnet → JSON → HTML
-├── template.html              ← template HTML avec placeholders {{EVENTS_JSON}} etc.
+├── template.html              ← template v1 (dark, Playfair Display) — conservé en backup
+├── template2.html             ← template v2 ACTIF (Terrasse — Syne+Inter, fond clair, date-block)
 ├── index.html                 ← page générée — NE PAS éditer à la main
 ├── requirements.txt           ← anthropic, requests, beautifulsoup4, google-genai
+├── run.log                    ← logs du dernier run (généré + commité par Actions)
 ├── scrape_report.json         ← rapport debug du dernier scrape (généré automatiquement)
 ├── events_extracted.json      ← événements extraits du dernier run (généré automatiquement)
+├── agent-qc-contenu.md        ← prompt agent QC pipeline (compare scrape→extraction→page)
+├── agent-recherche-sources.md ← prompt agent recherche de nouvelles sources
+├── UX-AGENT.md                ← persona UX/UI pour décisions design
 └── .github/
     └── workflows/
         └── update.yml         ← GitHub Actions cron 6h UTC quotidien
@@ -96,7 +102,10 @@ Couche 3 : gemini_search.py       ← 14 requêtes Google via Gemini 1.5 Flash g
 
 ---
 
-## TEMPLATE HTML (template.html)
+## TEMPLATES HTML
+
+`generate.py` utilise actuellement **`template2.html`** (actif depuis session 5).
+`template.html` conservé en backup (dark theme, Playfair Display).
 
 Placeholders injectés par generate.py :
 - `{{EVENTS_JSON}}` — tableau JSON des événements
@@ -104,15 +113,27 @@ Placeholders injectés par generate.py :
 - `{{SOURCES_JSON}}` — liste des sources
 - `{{LAST_UPDATED}}` — date FR du dernier run
 
-**Sections de la page :**
-1. Concerts & Festivals (`#concerts`) — cat: festival, concert, jazz, electro, classique, feria
-2. Cinéma (`#cinema`) — films cette semaine
-3. Expos & Spectacles (`#expos`) — cat: theatre, expo
-4. Danse Latine (`#danse`) — cat: danse
-5. Humour (`#humour`) — cat: humour
-6. Activités Père & Fils (`#activites`) — cat: activite
-7. Sorties Permanentes
-8. Sources
+### template2.html — Design « Terrasse » (ACTIF)
+- **Fonts :** Syne 800 (display) + Inter 300-600 (body) — Google Fonts
+- **Palette :** fond `#F7F8F4`, surface `#FFFFFF`, accent jade `#059669`, urgent `#F04E1F`
+- **Cartes date-block :** chiffre du jour dominant (2rem Syne ExtraBold) teinté par catégorie
+- **Nav :** pills sombres (fill pour l'état actif)
+- **Sections :** section-headers Syne 800 + border-bottom 2px
+
+### template.html — Design v1 (BACKUP)
+- Dark theme : `--bg: #08080c`, accent violet `#818cf8`
+- Fonts : Playfair Display + Inter + Space Mono
+
+**Sections communes des deux templates :**
+1. Ce Weekend (`#weekend`) — green accent, événements Sam+Dim
+2. Concerts & Festivals (`#concerts`) — cat: festival, concert, jazz, electro, classique, feria
+3. Cinéma (`#cinema`) — films cette semaine
+4. Expos & Spectacles (`#expos`) — cat: theatre, expo
+5. Danse Latine (`#danse`) — cat: danse
+6. Humour (`#humour`) — cat: humour
+7. Activités Père & Fils (`#activites`) — cat: activite
+8. Sorties Permanentes
+9. Sources
 
 ---
 
@@ -179,10 +200,20 @@ Placeholders injectés par generate.py :
 
 ### Session 4 — 20 juin 2026 (soir) — VALIDATION PIPELINE
 - **Boucle autonome** : mode push→ScheduleWakeup→git pull→run.log→fix→loop
-- **Bug critique résolu** : `ValueError: Streaming is required` (SDK Anthropic refuse `.create()` avec max_tokens≥32K) → fix `client.messages.stream()` + `stream.get_final_text()`
+- **Bug critique résolu** : `ValueError: Streaming is required` → fix `client.messages.stream()` + `stream.get_final_text()`
 - **Logging** : `run.log` capturant stdout+stderr commité par Actions à chaque run
-- **Gemini** : search grounding bloqué free tier (clé `...Pt9Q` projet "Agenda", niveau sans frais) → fallback gracieux. Déblocage : cliquer "Configurer la facturation" dans AI Studio (~1,50€/mois)
+- **Gemini** : search grounding bloqué free tier → fallback gracieux. Fix : activer facturation sur clé `...Pt9Q`
 - **Résultat validé** : **330 events (29 manuels + 301 scrapés) + 32 films** ✅
+- **QC agent** : 4 fixes — catégorie "spectacle" interdite, 23 titres génériques exclus, 4 sources mortes commentées, +1 requête Temple de la Danse
+
+### Session 5 — 21 juin 2026 — REDESIGN TEMPLATE
+- **Nouveau design** `template2.html` — concept « Terrasse » méditerranéen, light mode
+- **Typographie** : Syne 800 (display) + Inter (body) — remplace Playfair Display + Space Mono
+- **Palette** : fond `#F7F8F4`, accent jade `#059669`, urgence orange `#F04E1F`, cartes blanches
+- **Innovation cartes** : date-block gauche 62px avec chiffre du jour 2rem dominant, teinté par catégorie
+- **generate.py** switché de `template.html` → `template2.html`
+- `template.html` conservé en backup
+- Pipeline stable : **255 events (29 manuels + 226 scrapés) + 33 films** (run 21 juin)
 
 ---
 
@@ -257,9 +288,11 @@ Le pipeline est : push → Actions run → git pull → analyse → fix → re-p
 - [x] Sections Humour + Danse dans le template
 - [x] Pipeline validé : 330 events + 32 films (20 juin 2026)
 - [x] Mode autonome Claude opérationnel (ScheduleWakeup + run.log)
+- [x] **Redesign template2.html** — design Terrasse, Syne+Inter, cartes date-block (21 juin 2026)
 - [ ] **Gemini search grounding** : cliquer "Configurer la facturation" sur clé `...Pt9Q` dans AI Studio → ~1,50€/mois → +20-50 events depuis sites JS (Festival de Nîmes officiel, Jazz à Sète, Paloma)
 - [ ] **AlloCiné** : source structurée pour les films (actuellement scrape texte JS → films depuis mémoire modèle)
 - [ ] Ajouter flux RSS Paloma officiel (le `/feed/` retourne blog, pas agenda)
+- [ ] Évaluer `sources-enrichi.md` (92 sources) → intégrer les meilleures dans `sources.md`
 
 ---
 
