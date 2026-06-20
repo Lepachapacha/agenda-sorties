@@ -25,37 +25,11 @@ def run_gemini_searches(queries_path="gemini-queries.md"):
         print("  [Gemini] Aucune requête dans gemini-queries.md — skip")
         return ""
 
+    # Note : search grounding (google_search tool) est bloqué en free tier.
+    # On tente sans grounding — Gemini synthétise depuis sa connaissance des événements.
+    # Si quota dépassé, fallback gracieux.
     client = genai.Client(api_key=api_key)
-    search_tool = types.Tool(google_search=types.GoogleSearch())
-
-    # Essai des modèles dans l'ordre — gemini-1.5-flash peut être absent selon la clé/région
-    CANDIDATE_MODELS = [
-        "gemini-2.0-flash-lite",
-        "gemini-2.0-flash",
-        "gemini-1.5-flash-latest",
-        "gemini-1.5-flash-002",
-        "gemini-1.5-flash",
-    ]
-    model_name = None
-    for candidate in CANDIDATE_MODELS:
-        try:
-            test = client.models.generate_content(
-                model=candidate,
-                contents="test",
-                config=types.GenerateContentConfig(
-                    tools=[search_tool],
-                    response_modalities=["TEXT"],
-                ),
-            )
-            model_name = candidate
-            print(f"  [Gemini] Modèle retenu : {model_name}")
-            break
-        except Exception as e:
-            print(f"  [Gemini] {candidate} : {type(e).__name__}: {str(e)[:120]}")
-
-    if not model_name:
-        print("  [Gemini] Aucun modèle disponible — skip")
-        return ""
+    model_name = "gemini-2.0-flash-lite"
 
     results = []
     for i, (label, query) in enumerate(queries):
@@ -64,24 +38,25 @@ def run_gemini_searches(queries_path="gemini-queries.md"):
             response = client.models.generate_content(
                 model=model_name,
                 contents=(
-                    "Recherche les informations suivantes et liste de façon exhaustive "
-                    "TOUS les événements, artistes, dates, lieux et billetteries trouvés. "
-                    "Inclure les noms exacts, les dates, les villes et les URLs disponibles. "
-                    f"Requête : {query}"
-                ),
-                config=types.GenerateContentConfig(
-                    tools=[search_tool],
-                    response_modalities=["TEXT"],
+                    "Liste de façon exhaustive TOUS les événements culturels, concerts, "
+                    "festivals, spectacles humour, soirées danse que tu connais pour : "
+                    f"{query}. "
+                    "Inclure noms exacts, dates 2026, villes, lieux. "
+                    "Répondre en français, format liste."
                 ),
             )
             text = response.text
             if text and text.strip():
-                results.append(f"=== [Gemini Search] {label} ===\n{text.strip()}")
+                results.append(f"=== [Gemini] {label} ===\n{text.strip()}")
                 print(f"    → {len(text)} chars")
             else:
                 print("    → Vide")
         except Exception as e:
-            print(f"    → Erreur : {type(e).__name__}: {e}")
+            err = str(e)[:80]
+            print(f"    → Erreur : {type(e).__name__}: {err}")
+            if "429" in err or "RESOURCE_EXHAUSTED" in err:
+                print("  [Gemini] Quota dépassé — skip restant")
+                break
 
         if i < len(queries) - 1:
             time.sleep(4)  # free tier : 15 RPM → 4 s entre chaque requête

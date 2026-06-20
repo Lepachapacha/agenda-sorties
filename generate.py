@@ -100,15 +100,15 @@ def extract_json(text):
 
 def ask_claude(client, prompt, model="claude-sonnet-4-6"):
     try:
-        msg = client.messages.create(
+        with client.messages.stream(
             model=model,
             max_tokens=32768,
             messages=[{"role": "user", "content": prompt}]
-        )
+        ) as stream:
+            raw = stream.get_final_text()
     except Exception as e:
         print(f"  [Claude ERREUR API] {type(e).__name__}: {e}")
         raise
-    raw = msg.content[0].text
     print(f"  [Claude raw début] {raw[:300]!r}")
     return raw
 
