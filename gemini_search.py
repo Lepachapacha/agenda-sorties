@@ -28,12 +28,41 @@ def run_gemini_searches(queries_path="gemini-queries.md"):
     client = genai.Client(api_key=api_key)
     search_tool = types.Tool(google_search=types.GoogleSearch())
 
+    # Essai des modèles dans l'ordre — gemini-1.5-flash peut être absent selon la clé/région
+    CANDIDATE_MODELS = [
+        "gemini-2.0-flash-lite",
+        "gemini-2.0-flash",
+        "gemini-1.5-flash-latest",
+        "gemini-1.5-flash-002",
+        "gemini-1.5-flash",
+    ]
+    model_name = None
+    for candidate in CANDIDATE_MODELS:
+        try:
+            test = client.models.generate_content(
+                model=candidate,
+                contents="test",
+                config=types.GenerateContentConfig(
+                    tools=[search_tool],
+                    response_modalities=["TEXT"],
+                ),
+            )
+            model_name = candidate
+            print(f"  [Gemini] Modèle retenu : {model_name}")
+            break
+        except Exception as e:
+            print(f"  [Gemini] {candidate} : {type(e).__name__}: {str(e)[:120]}")
+
+    if not model_name:
+        print("  [Gemini] Aucun modèle disponible — skip")
+        return ""
+
     results = []
     for i, (label, query) in enumerate(queries):
         print(f"  [Gemini {i+1}/{len(queries)}] {label}")
         try:
             response = client.models.generate_content(
-                model="gemini-1.5-flash",
+                model=model_name,
                 contents=(
                     "Recherche les informations suivantes et liste de façon exhaustive "
                     "TOUS les événements, artistes, dates, lieux et billetteries trouvés. "

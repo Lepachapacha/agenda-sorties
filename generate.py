@@ -9,11 +9,11 @@ from scraper import parse_sources, scrape_all
 from gemini_search import run_gemini_searches
 
 
-class _Tee(io.TextIOBase):
-    """Duplique stdout vers un fichier log."""
-    def __init__(self, stream, log_path):
+class _Tee:
+    """Proxy stdout+stderr vers un fichier log. Délègue tous les attributs inconnus."""
+    def __init__(self, stream, log_file):
         self._stream = stream
-        self._log = open(log_path, "w", encoding="utf-8")
+        self._log = log_file
 
     def write(self, s):
         self._stream.write(s)
@@ -25,12 +25,13 @@ class _Tee(io.TextIOBase):
         self._stream.flush()
         self._log.flush()
 
-    def close(self):
-        self._log.close()
-        super().close()
+    def __getattr__(self, name):
+        return getattr(self._stream, name)
 
-_tee = _Tee(sys.stdout, "run.log")
-sys.stdout = _tee
+
+_log_file = open("run.log", "w", encoding="utf-8")
+sys.stdout = _Tee(sys.stdout, _log_file)
+sys.stderr = _Tee(sys.stderr, _log_file)  # capture aussi les erreurs
 
 
 def parse_events(path="agenda-config.md"):
@@ -98,13 +99,17 @@ def extract_json(text):
 
 
 def ask_claude(client, prompt, model="claude-sonnet-4-6"):
-    msg = client.messages.create(
-        model=model,
-        max_tokens=32768,
-        messages=[{"role": "user", "content": prompt}]
-    )
+    try:
+        msg = client.messages.create(
+            model=model,
+            max_tokens=32768,
+            messages=[{"role": "user", "content": prompt}]
+        )
+    except Exception as e:
+        print(f"  [Claude ERREUR API] {type(e).__name__}: {e}")
+        raise
     raw = msg.content[0].text
-    print(f"  [Claude raw début] {raw[:250]!r}")
+    print(f"  [Claude raw début] {raw[:300]!r}")
     return raw
 
 
