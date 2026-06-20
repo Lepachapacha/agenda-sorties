@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1539,
+      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -86,7 +86,7 @@
       "method": "texte",
       "items": 0,
       "chars": 552,
-      "preview": "Tous les concerts à Marseille Ajouter plus de genres Mercredi 13 janvier 2027 à 20h30 Vendredi 30 oc"
+      "preview": "Tous les concerts à Marseille Ajouter plus de genres Concerts à Marseille 2026 : dates et billetteri"
     },
     {
       "name": "Zénith Sud Montpellier",
@@ -179,10 +179,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -355,10 +355,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "texte",
-      "items": 0,
-      "chars": 4934,
-      "preview": "Programmes - Festival Radio France Occitanie Montpellier - 5 au 18 juillet 2026 Musique de Chambre e"
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
     },
     {
       "name": "Family Piknik Montpellier",
@@ -412,12 +412,12 @@
   "totals": {
     "sources_total": 51,
     "sources_skip": 7,
-    "sources_rss": 9,
+    "sources_rss": 12,
     "sources_jsonld": 3,
-    "sources_text": 29,
+    "sources_text": 26,
     "sources_erreur": 3,
-    "total_items_structured": 155,
-    "total_chars": 129124
+    "total_items_structured": 173,
+    "total_chars": 128601
   },
-  "timestamp": "2026-06-20T07:44:02Z"
+  "timestamp": "2026-06-20T07:56:04Z"
 }
