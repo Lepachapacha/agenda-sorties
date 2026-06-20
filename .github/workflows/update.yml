@@ -11,6 +11,7 @@ on:
       - 'scraper.py'
       - 'generate.py'
       - 'gemini_search.py'
+      - 'template.html'
   workflow_dispatch:
 
 jobs:
