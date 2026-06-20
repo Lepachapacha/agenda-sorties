@@ -1,3 +1,4 @@
+import io
 import json
 import os
 import re
@@ -6,6 +7,30 @@ from datetime import date, datetime
 import anthropic
 from scraper import parse_sources, scrape_all
 from gemini_search import run_gemini_searches
+
+
+class _Tee(io.TextIOBase):
+    """Duplique stdout vers un fichier log."""
+    def __init__(self, stream, log_path):
+        self._stream = stream
+        self._log = open(log_path, "w", encoding="utf-8")
+
+    def write(self, s):
+        self._stream.write(s)
+        self._log.write(s)
+        self._log.flush()
+        return len(s)
+
+    def flush(self):
+        self._stream.flush()
+        self._log.flush()
+
+    def close(self):
+        self._log.close()
+        super().close()
+
+_tee = _Tee(sys.stdout, "run.log")
+sys.stdout = _tee
 
 
 def parse_events(path="agenda-config.md"):
