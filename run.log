@@ -1,15 +1,15 @@
 [generate.py] 2026-06-21
 Lecture agenda-config.md...
   29 événements manuels
-/home/runner/work/agenda-sorties/agenda-sorties/generate.py:296: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+/home/runner/work/agenda-sorties/agenda-sorties/generate.py:330: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8524 chars
+    → texte, 8503 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6697 chars
+    → texte, 6703 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 6827 chars
+    → texte, 6757 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
     → RSS, 6701 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
@@ -81,7 +81,7 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1546 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → erreur, 10 chars
+    → texte, 12000 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
@@ -99,7 +99,7 @@ Scraping des sources...
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:12 JSON-LD:3 texte:28 skip:0 erreur:4 | 182 items structurés
+  47 sources — RSS:12 JSON-LD:3 texte:29 skip:0 erreur:3 | 182 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,18 +136,18 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 156756 → 110000 chars
+  Scrape tronqué : 168661 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   28 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFzDXuLy8jeff6wDDedY'}
-  ERREUR extraction scrape : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFzDXuLy8jeff6wDDedY'}
+  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcG11At5rq2bvqDFWoNW7'}
+  ERREUR extraction scrape : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcG11At5rq2bvqDFWoNW7'}
   Fallback run précédent : 149 événements scrapés récupérés
   Total : 177 événements (28 manuels + 149 scrapés)
 Extraction films (Claude)...
-  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFzDYstEPav69Rjtpufn'}
-  ERREUR films : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFzDYstEPav69Rjtpufn'}
+  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcG11Bfxwm48NrQZgEiiD'}
+  ERREUR films : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcG11Bfxwm48NrQZgEiiD'}
   Fallback films run précédent : 24 films récupérés
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
