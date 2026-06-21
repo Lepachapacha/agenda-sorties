@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8504,
+      "chars": 8524,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6584,
+      "chars": 6697,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6871,
+      "chars": 6827,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 10,
+      "preview": "[HTTP 403]"
     },
     {
       "name": "Jazz à Sète",
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 12,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 3,
+    "sources_text": 28,
+    "sources_erreur": 4,
     "total_items_structured": 182,
-    "total_chars": 164951
+    "total_chars": 153050
   },
-  "timestamp": "2026-06-21T00:05:01Z"
+  "timestamp": "2026-06-21T07:06:21Z"
 }
