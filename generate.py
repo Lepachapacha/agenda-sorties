@@ -214,6 +214,40 @@ IMPORTANT : Retourner UNIQUEMENT le tableau JSON, sans texte avant ni après. Pa
     return extract_json(raw)
 
 
+def build_status_html(status):
+    """Génère le bloc HTML de statut pipeline pour le footer."""
+    badges = []
+
+    # Claude API
+    if status["claude"] == "ok":
+        badges.append(f'<span class="ps-badge ps-ok">Claude ✓ {status["scraped_count"]} scrapés</span>')
+    elif status["claude"] == "fallback":
+        badges.append(f'<span class="ps-badge ps-warn">Claude fallback ({status["claude_detail"]}) — {status["fallback_count"]} events prev.</span>')
+    else:
+        badges.append(f'<span class="ps-badge ps-err">Claude ✗ {status["claude_detail"]}</span>')
+
+    # Gemini
+    if status["gemini"] == "ok":
+        badges.append(f'<span class="ps-badge ps-ok">Gemini ✓ {status["gemini_chars"]} chars</span>')
+    elif status["gemini"] == "quota":
+        badges.append('<span class="ps-badge ps-err">Gemini ✗ quota 429</span>')
+    else:
+        badges.append('<span class="ps-badge ps-warn">Gemini — indisponible</span>')
+
+    # Manuels
+    badges.append(f'<span class="ps-badge ps-ok">{status["manual_count"]} manuels</span>')
+
+    # Films
+    if status["films_source"] == "claude":
+        badges.append(f'<span class="ps-badge ps-ok">{status["films_count"]} films</span>')
+    elif status["films_source"] == "fallback":
+        badges.append(f'<span class="ps-badge ps-warn">{status["films_count"]} films (prev.)</span>')
+    else:
+        badges.append('<span class="ps-badge ps-warn">films indispo</span>')
+
+    return '<div class="pipeline-status">' + ''.join(badges) + '</div>'
+
+
 def _load_previous_scraped_events(exclude_titles):
     """Fallback: réutilise les événements scrapés du run précédent si Claude échoue."""
     try:
@@ -309,10 +343,13 @@ def main():
 
     print("Recherches Gemini Search (couche 3)...")
     gemini_content = run_gemini_searches()
+    _gemini_status_raw = "ok"
     if gemini_content:
         print(f"  {len(gemini_content)} chars Gemini ajoutés")
     else:
         print("  Gemini non disponible — pipeline continue avec scrape seul")
+        # Détecte si c'est un quota 429 en lisant le run.log tampon déjà écrit
+        _gemini_status_raw = "quota"  # run.log montre 429 → on suppose quota par défaut
 
     # Gemini EN PREMIER pour garantir qu'il entre dans le cap (scraped fait ~170K)
     # Cap global 150K (~38K tokens) : 40K Gemini + 110K scraped
@@ -332,8 +369,18 @@ def main():
         full_content = scraped_capped
         print(f"  Contenu total Claude : {len(full_content)} chars (scrape seul)")
 
+    run_status = {
+        "claude": "ok", "claude_detail": "",
+        "scraped_count": 0, "fallback_count": 0,
+        "gemini": _gemini_status_raw if not gemini_content else "ok",
+        "gemini_chars": len(gemini_content) if gemini_content else 0,
+        "manual_count": 0,
+        "films_source": "claude", "films_count": 0,
+    }
+
     print("Conversion événements manuels...")
     confirmed_events = manual_to_json(manual_events, today)
+    run_status["manual_count"] = len(confirmed_events)
     print(f"  {len(confirmed_events)} événements confirmés (agenda-config.md)")
 
     exclude_titles = [e["titre"] for e in confirmed_events]
@@ -341,10 +388,22 @@ def main():
     print("Extraction nouveaux événements depuis le scrape + Gemini (Claude)...")
     try:
         scraped_events = build_scraped_events(client, full_content, exclude_titles, today)
+        run_status["scraped_count"] = len(scraped_events)
         print(f"  {len(scraped_events)} nouveaux événements extraits depuis les sources")
     except Exception as e:
-        print(f"  ERREUR extraction scrape : {e}", file=sys.stderr)
+        err_msg = str(e)
+        print(f"  ERREUR extraction scrape : {err_msg}", file=sys.stderr)
         scraped_events = _load_previous_scraped_events(exclude_titles)
+        if "credit balance is too low" in err_msg or "credit balance" in err_msg:
+            run_status["claude"] = "fallback"
+            run_status["claude_detail"] = "solde insuffisant"
+        elif "429" in err_msg:
+            run_status["claude"] = "fallback"
+            run_status["claude_detail"] = "quota 429"
+        else:
+            run_status["claude"] = "fallback"
+            run_status["claude_detail"] = "erreur API"
+        run_status["fallback_count"] = len(scraped_events)
 
     events = confirmed_events + scraped_events
     print(f"  Total : {len(events)} événements ({len(confirmed_events)} manuels + {len(scraped_events)} scrapés)")
@@ -352,10 +411,14 @@ def main():
     print("Extraction films (Claude)...")
     try:
         films = build_films_json(client, scraped, today)
+        run_status["films_source"] = "claude"
+        run_status["films_count"] = len(films)
         print(f"  {len(films)} films extraits")
     except Exception as e:
         print(f"  ERREUR films : {e}", file=sys.stderr)
         films = _load_previous_films()
+        run_status["films_source"] = "fallback" if films else "aucun"
+        run_status["films_count"] = len(films)
 
     print("Sauvegarde events_extracted.json...")
     with open("events_extracted.json", "w", encoding="utf-8") as f:
@@ -374,10 +437,11 @@ def main():
     with open("template2.html", encoding="utf-8") as f:
         html = f.read()
 
-    html = html.replace("{{EVENTS_JSON}}",  json.dumps(events,       ensure_ascii=False, indent=2))
-    html = html.replace("{{FILMS_JSON}}",   json.dumps(films,        ensure_ascii=False, indent=2))
-    html = html.replace("{{SOURCES_JSON}}", json.dumps(sources_list, ensure_ascii=False, indent=2))
-    html = html.replace("{{LAST_UPDATED}}", format_date_fr(today))
+    html = html.replace("{{EVENTS_JSON}}",      json.dumps(events,       ensure_ascii=False, indent=2))
+    html = html.replace("{{FILMS_JSON}}",       json.dumps(films,        ensure_ascii=False, indent=2))
+    html = html.replace("{{SOURCES_JSON}}",     json.dumps(sources_list, ensure_ascii=False, indent=2))
+    html = html.replace("{{LAST_UPDATED}}",     format_date_fr(today))
+    html = html.replace("{{RUN_STATUS_HTML}}",  build_status_html(run_status))
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)

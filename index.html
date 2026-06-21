@@ -470,6 +470,17 @@
     footer a { color: var(--text-3); text-decoration: none; }
     footer a:hover { color: var(--amber); }
     .footer-updated { color: var(--amber); }
+    .pipeline-status {
+      margin-top: 0.5rem;
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem;
+      font-family: var(--font-m); font-size: 0.6rem;
+    }
+    .ps-badge {
+      padding: 0.1rem 0.45rem; border-radius: 3px;
+    }
+    .ps-ok   { background: rgba(52,211,153,0.12); color: #34D399; }
+    .ps-warn { background: rgba(245,158,11,0.12); color: var(--amber); }
+    .ps-err  { background: rgba(249,115,22,0.12); color: var(--coral); }
 
     /* ── MOBILE BOTTOM NAV ── */
     .bottom-nav {
@@ -876,6 +887,7 @@
       Mis à jour le <span class="footer-updated">21 juin 2026</span>
       &nbsp;·&nbsp;
       <a href="https://github.com/Lepachapacha/agenda-sorties" target="_blank" rel="noopener">GitHub</a>
+      <div class="pipeline-status"><span class="ps-badge ps-warn">Claude fallback (solde insuffisant) — 148 events prev.</span><span class="ps-badge ps-err">Gemini ✗ quota 429</span><span class="ps-badge ps-ok">29 manuels</span><span class="ps-badge ps-warn">24 films (prev.)</span></div>
     </div>
   </footer>
 
