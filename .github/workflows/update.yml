@@ -3,16 +3,6 @@ name: Daily agenda update
 on:
   schedule:
     - cron: '0 6 * * *'
-  push:
-    paths:
-      - 'agenda-config.md'
-      - 'sources.md'
-      - 'gemini-queries.md'
-      - 'scraper.py'
-      - 'generate.py'
-      - 'gemini_search.py'
-      - 'template.html'
-      - 'template2.html'
   workflow_dispatch:
 
 jobs:

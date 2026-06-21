@@ -394,35 +394,31 @@
     .show-more:hover { border-color: var(--amber); color: var(--amber); }
 
     /* ── CINEMA ── */
-    .cinema-group { margin-bottom: 1.5rem; }
-    .cinema-label {
-      font-family: var(--font-m); font-size: 0.65rem;
-      letter-spacing: 0.09em; text-transform: uppercase;
-      color: var(--text-3); margin-bottom: 0.6rem; display: block;
-    }
-    .cinema-grid {
+    .cinema-links {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 0.65rem;
     }
-    .film-card {
+    .cinema-link {
+      display: block;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 0.9rem;
+      text-decoration: none;
+      transition: border-color 0.15s;
     }
-    .film-title {
+    .cinema-link:hover { border-color: var(--amber); }
+    .cinema-link-name {
+      display: block;
       font-family: var(--font-d); font-size: 0.95rem; font-weight: 700;
-      color: var(--text); margin-bottom: 0.2rem;
+      color: var(--text); margin-bottom: 0.25rem;
     }
-    .film-meta { font-size: 0.75rem; color: var(--text-2); }
-    .film-famille {
-      display: inline-block; margin-top: 0.4rem;
-      font-family: var(--font-m); font-size: 0.6rem;
-      padding: 0.1rem 0.4rem; border-radius: 3px;
-      background: rgba(110,231,183,0.18); color: var(--c-activite);
+    .cinema-link-meta {
+      display: block;
+      font-family: var(--font-m); font-size: 0.7rem;
+      letter-spacing: 0.04em; color: var(--amber);
     }
-    .cinema-empty { font-size: 0.85rem; color: var(--text-3); font-style: italic; }
 
     /* ── PERMANENTES ── */
     .perm-grid {
@@ -470,6 +466,17 @@
     footer a { color: var(--text-3); text-decoration: none; }
     footer a:hover { color: var(--amber); }
     .footer-updated { color: var(--amber); }
+    .stale-banner {
+      margin: 0 auto 0.9rem;
+      max-width: 640px;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid rgba(249,115,22,0.4);
+      border-radius: var(--radius);
+      background: rgba(249,115,22,0.12);
+      color: var(--coral);
+      font-size: 0.8rem; line-height: 1.45;
+    }
+    .stale-banner strong { color: var(--amber); }
     .pipeline-status {
       margin-top: 0.5rem;
       display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem;
@@ -639,27 +646,18 @@
       <section id="cinema" class="agenda-section">
         <div class="section-header">
           <h2 class="section-title">🎬 Cinéma</h2>
-          <span class="section-count" x-text="films.length + ' films'"></span>
         </div>
 
-        <template x-for="cine in cinemaGroups()" :key="cine.name">
-          <div class="cinema-group">
-            <span class="cinema-label" x-text="cine.label"></span>
-            <div class="cinema-grid">
-              <template x-for="film in cine.films" :key="film.titre">
-                <div class="film-card">
-                  <div class="film-title" x-text="film.titre"></div>
-                  <div class="film-meta" x-text="film.meta"></div>
-                  <span class="film-famille" x-show="film.famille">👨‍👦 Famille</span>
-                </div>
-              </template>
-            </div>
-          </div>
-        </template>
-
-        <p class="cinema-empty" x-show="films.length === 0">
-          Films non disponibles — données mises à jour quotidiennement.
-        </p>
+        <div class="cinema-links">
+          <a class="cinema-link" href="https://www.allocine.fr/seance/salle_gen_csalle=P0702.html" target="_blank" rel="noopener">
+            <span class="cinema-link-name">🎬 Pathé Odysseum — Montpellier</span>
+            <span class="cinema-link-meta">Séances &amp; horaires sur AlloCiné ↗</span>
+          </a>
+          <a class="cinema-link" href="https://www.allocine.fr/seance/salle_gen_csalle=W4980.html" target="_blank" rel="noopener">
+            <span class="cinema-link-name">🎬 Mégarama — Saint-Gély-du-Fesc</span>
+            <span class="cinema-link-meta">Séances &amp; horaires sur AlloCiné ↗</span>
+          </a>
+        </div>
       </section>
 
       <!-- ═══════════════════════════════════════════
@@ -884,6 +882,7 @@
 
   <footer>
     <div class="wrap">
+      {{STALE_BANNER}}
       Mis à jour le <span class="footer-updated">{{LAST_UPDATED}}</span>
       &nbsp;·&nbsp;
       <a href="https://github.com/Lepachapacha/agenda-sorties" target="_blank" rel="noopener">GitHub</a>
@@ -914,13 +913,11 @@
 
   <script>
     const EVENTS  = {{EVENTS_JSON}};
-    const FILMS   = {{FILMS_JSON}};
     const SOURCES = {{SOURCES_JSON}};
 
     function agenda() {
       return {
         events: [],
-        films:  [],
         sources: [],
         search:  '',
         filsOnly: false,
@@ -934,7 +931,6 @@
 
         init() {
           this.events  = Array.isArray(EVENTS)  ? EVENTS  : [];
-          this.films   = Array.isArray(FILMS)   ? FILMS   : [];
           this.sources = Array.isArray(SOURCES) ? SOURCES : [];
 
           this._fuse = new Fuse(this.events, {
@@ -1044,16 +1040,6 @@
           if (diff === 1) return 'Demain';
           if (diff <= 7) return 'Dans ' + diff + 'j';
           return null;
-        },
-
-        cinemaGroups() {
-          const defs = [
-            { name: 'pathe',    label: '🎬 Pathé Odysseum — Montpellier' },
-            { name: 'megarama', label: '🎬 Mégarama — Saint-Gély-du-Fesc' },
-          ];
-          return defs
-            .map(g => ({ ...g, films: this.films.filter(f => f.cinema === g.name) }))
-            .filter(g => g.films.length > 0);
         },
       };
     }

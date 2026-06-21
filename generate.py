@@ -210,7 +210,7 @@ Règles de compacité pour limiter la taille de la réponse :
 
 IMPORTANT : Retourner UNIQUEMENT le tableau JSON, sans texte avant ni après. Pas d'explication, pas de commentaire."""
 
-    raw = ask_claude(client, prompt)
+    raw = ask_claude(client, prompt, model="claude-haiku-4-5")
     return extract_json(raw)
 
 
@@ -237,15 +237,25 @@ def build_status_html(status):
     # Manuels
     badges.append(f'<span class="ps-badge ps-ok">{status["manual_count"]} manuels</span>')
 
-    # Films
-    if status["films_source"] == "claude":
-        badges.append(f'<span class="ps-badge ps-ok">{status["films_count"]} films</span>')
-    elif status["films_source"] == "fallback":
-        badges.append(f'<span class="ps-badge ps-warn">{status["films_count"]} films (prev.)</span>')
-    else:
-        badges.append('<span class="ps-badge ps-warn">films indispo</span>')
-
     return '<div class="pipeline-status">' + ''.join(badges) + '</div>'
+
+
+def build_stale_banner(status):
+    """Bandeau footer d'alerte quand les sorties scrapées ne sont plus rafraîchies."""
+    if not status.get("stale"):
+        return ""
+    if status.get("claude_detail") == "solde insuffisant":
+        amorce = "⚠ Plus de crédit API"
+    else:
+        amorce = "⚠ Mise à jour automatique indisponible"
+    fresh = status.get("last_fresh_date")
+    date_fr = format_date_fr(fresh) if fresh else "?"
+    return (
+        '<div class="stale-banner">'
+        f'{amorce} — les nouveaux événements ne sont plus récupérés. '
+        f'Dernières sorties à jour au <strong>{date_fr}</strong>.'
+        '</div>'
+    )
 
 
 def _load_previous_scraped_events(exclude_titles):
@@ -262,43 +272,47 @@ def _load_previous_scraped_events(exclude_titles):
         return []
 
 
-def _load_previous_films():
-    """Fallback: réutilise les films du run précédent si Claude échoue."""
+def _load_previous_fresh_date():
+    """Date du dernier run où Claude a réellement extrait des événements (sinon None)."""
     try:
         with open("events_extracted.json", encoding="utf-8") as f:
             prev = json.load(f)
-        films = prev.get("films", [])
-        print(f"  Fallback films run précédent : {len(films)} films récupérés")
-        return films
+        return prev.get("last_fresh_date") or (prev.get("timestamp", "")[:10] or None)
     except Exception:
-        return []
+        return None
 
 
-def build_films_json(client, scraped_content, today):
-    prompt = f"""Extrait les films actuellement à l'affiche au Pathé Odysseum (Montpellier) et au Mégarama Saint-Gély depuis le contenu scrapé.
+# Titres génériques sans nom d'artiste/spectacle (le prompt demande déjà de les exclure ;
+# ce filtre déterministe rattrape ce que le modèle laisse parfois passer).
+_GENERIC_TITLE_RE = re.compile(
+    r'^(?:jour|soir|journée|journee)\s+\d+$|^(?:jour\s+j|ouverture|clôture|cloture)$',
+    re.IGNORECASE,
+)
 
-CONTENU SCRAPÉ :
-{scraped_content}
+# Catégories interdites → catégorie valide (le prompt l'indique, ce filtre rattrape les ratés)
+_CAT_FIX = {"spectacle": "theatre", "danse-latine": "danse"}
 
-Aujourd'hui : {today}
 
-Retourne UNIQUEMENT un tableau JSON valide :
-[
-  {{
-    "cinema": "pathe|megarama",
-    "titre": "Titre du film",
-    "meta": "Genre, réalisateur ou acteur principal",
-    "famille": true/false
-  }}
-]
-
-Si aucun film n'est trouvé dans le contenu scrapé, retourne un tableau vide []."""
-
-    raw = ask_claude(client, prompt)
-    try:
-        return extract_json(raw)
-    except Exception:
-        return []
+def _filter_scraped_events(events, today):
+    """Retire les événements passés et les titres génériques, normalise les catégories."""
+    out, dropped_past, dropped_generic, fixed_cat = [], 0, 0, 0
+    for e in events:
+        d = e.get("date", "")
+        if d and d < today:                       # même règle de passé que manual_to_json
+            dropped_past += 1
+            continue
+        if _GENERIC_TITLE_RE.match((e.get("titre") or "").strip()):
+            dropped_generic += 1
+            continue
+        cat = e.get("cat")
+        if cat in _CAT_FIX:                        # catégorie interdite → valide + section cohérente
+            e["cat"] = _CAT_FIX[cat]
+            e["section"] = CAT_TO_SECTION.get(e["cat"], e.get("section") or "concerts")
+            fixed_cat += 1
+        out.append(e)
+    print(f"  Filtre scrapés : -{dropped_past} passés, -{dropped_generic} génériques, "
+          f"{fixed_cat} cat. corrigées → {len(out)} retenus")
+    return out
 
 
 def format_date_fr(iso_date):
@@ -375,7 +389,6 @@ def main():
         "gemini": _gemini_status_raw if not gemini_content else "ok",
         "gemini_chars": len(gemini_content) if gemini_content else 0,
         "manual_count": 0,
-        "films_source": "claude", "films_count": 0,
     }
 
     print("Conversion événements manuels...")
@@ -405,30 +418,33 @@ def main():
             run_status["claude_detail"] = "erreur API"
         run_status["fallback_count"] = len(scraped_events)
 
+    # Filtre déterministe : événements passés + titres génériques ("Jour 1", "Ouverture"…)
+    scraped_events = _filter_scraped_events(scraped_events, today)
+    if run_status["claude"] == "ok":
+        run_status["scraped_count"] = len(scraped_events)
+    else:
+        run_status["fallback_count"] = len(scraped_events)
+
+    # Date de dernière fraîcheur : aujourd'hui si Claude a réussi, sinon on reprend
+    # (et on gèle) la date du dernier run frais — pas de dérive en panne prolongée.
+    if run_status["claude"] == "ok":
+        last_fresh_date = today
+    else:
+        last_fresh_date = _load_previous_fresh_date() or today
+    run_status["stale"] = run_status["claude"] != "ok"
+    run_status["last_fresh_date"] = last_fresh_date
+
     events = confirmed_events + scraped_events
     print(f"  Total : {len(events)} événements ({len(confirmed_events)} manuels + {len(scraped_events)} scrapés)")
-
-    print("Extraction films (Claude)...")
-    try:
-        films = build_films_json(client, scraped, today)
-        run_status["films_source"] = "claude"
-        run_status["films_count"] = len(films)
-        print(f"  {len(films)} films extraits")
-    except Exception as e:
-        print(f"  ERREUR films : {e}", file=sys.stderr)
-        films = _load_previous_films()
-        run_status["films_source"] = "fallback" if films else "aucun"
-        run_status["films_count"] = len(films)
 
     print("Sauvegarde events_extracted.json...")
     with open("events_extracted.json", "w", encoding="utf-8") as f:
         json.dump({
-            "timestamp":    ts,
-            "model":        "claude-sonnet-4-6",
-            "events_count": len(events),
-            "films_count":  len(films),
-            "events":       events,
-            "films":        films,
+            "timestamp":       ts,
+            "model":           "claude-haiku-4-5",
+            "last_fresh_date": last_fresh_date,
+            "events_count":    len(events),
+            "events":          events,
         }, f, ensure_ascii=False, indent=2)
 
     sources_list = build_sources_json()
@@ -438,9 +454,9 @@ def main():
         html = f.read()
 
     html = html.replace("{{EVENTS_JSON}}",      json.dumps(events,       ensure_ascii=False, indent=2))
-    html = html.replace("{{FILMS_JSON}}",       json.dumps(films,        ensure_ascii=False, indent=2))
     html = html.replace("{{SOURCES_JSON}}",     json.dumps(sources_list, ensure_ascii=False, indent=2))
     html = html.replace("{{LAST_UPDATED}}",     format_date_fr(today))
+    html = html.replace("{{STALE_BANNER}}",     build_stale_banner(run_status))
     html = html.replace("{{RUN_STATUS_HTML}}",  build_status_html(run_status))
 
     with open("index.html", "w", encoding="utf-8") as f:

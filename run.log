@@ -1,13 +1,13 @@
 [generate.py] 2026-06-21
 Lecture agenda-config.md...
   29 événements manuels
-/home/runner/work/agenda-sorties/agenda-sorties/generate.py:330: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\nicom\Documents\GitHub\NicoCode\AgendaSorties\agenda-sorties\generate.py:344: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8506 chars
+    → texte, 8484 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6592 chars
+    → texte, 6595 chars
   [3/47] Scraping : JDS Marseille
     → texte, 6833 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
@@ -93,7 +93,7 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3948 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6636 chars
+    → texte, 5999 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 4295 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
@@ -101,54 +101,17 @@ Scraping des sources...
 Sauvegarde scrape_report.json...
   47 sources — RSS:12 JSON-LD:3 texte:30 skip:0 erreur:2 | 182 items structurés
 Recherches Gemini Search (couche 3)...
-  [Gemini] gemini-2.0-flash : quota search grounding dépassé
-  [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
-  [Gemini] gemini-1.5-flash-latest : modèle non disponible
-  [Gemini] Fallback sans grounding sur gemini-2.0-flash-lite
-  [Gemini 1/15] Concerts Montpellier-Nîmes 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 2/15] Concerts Sète-Béziers-Agde 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 3/15] Concerts Marseille 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 4/15] Festival de Nîmes 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 5/15] Jazz à Sète 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 6/15] Paloma Nîmes 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 7/15] Corum Montpellier 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 8/15] Humoristes tournée Sud 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 9/15] Salsa Bachata Montpellier 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 10/15] Temple de la Danse soirées 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 11/15] Tempo Latino 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 12/15] Électro Montpellier-Marseille 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 13/15] Expos Théâtre Montpellier-Nîmes 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 14/15] Activités famille Montpellier 2026
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
-  [Gemini 15/15] Films cinéma Pathé Odysseum
-    → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
+  [Gemini] GEMINI_API_KEY non définie — skip
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 168744 → 110000 chars
+  Scrape tronqué : 168088 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   28 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcGCJX9VgDrNmBq8rw5az'}
-  ERREUR extraction scrape : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcGCJX9VgDrNmBq8rw5az'}
-  Fallback run précédent : 149 événements scrapés récupérés
-  Total : 177 événements (28 manuels + 149 scrapés)
-Extraction films (Claude)...
-  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcGCJY8XZwGADy1f1td7Y'}
-  ERREUR films : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcGCJY8XZwGADy1f1td7Y'}
-  Fallback films run précédent : 24 films récupérés
+  [Claude raw début] '```json\n[{"date":"2026-06-20","titre":"Fête de la Musique - Batuc Bacana en fête","cat":"concert","lieu":"Montpellier","note":"Déambulation percussions brésiliennes","fils":false,"stars":1,"section":"concerts","url":"","gratuit":true,"groupe":""},{"date":"2026-06-20","titre":"Fête de la Musique - QG'
+  128 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -34 passés, -0 génériques, 0 cat. corrigées → 94 retenus
+  Total : 122 événements (28 manuels + 94 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
