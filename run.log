@@ -1,15 +1,15 @@
-[generate.py] 2026-06-20
+[generate.py] 2026-06-21
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:270: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8507 chars
+    → texte, 8504 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6626 chars
+    → texte, 6584 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 6801 chars
+    → texte, 6871 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
     → RSS, 6701 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
@@ -19,7 +19,7 @@ Scraping des sources...
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → texte, 98 chars
+    → RSS, 1539 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -43,7 +43,7 @@ Scraping des sources...
   [19/47] Scraping : Festival de Nîmes
     → texte, 962 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → texte, 98 chars
+    → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
     → texte, 4877 chars
   [22/47] Scraping : Le Dôme Marseille
@@ -81,7 +81,7 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1546 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → erreur, 10 chars
+    → texte, 12000 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
@@ -99,7 +99,7 @@ Scraping des sources...
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:10 JSON-LD:3 texte:30 skip:0 erreur:4 | 167 items structurés
+  47 sources — RSS:12 JSON-LD:3 texte:29 skip:0 erreur:3 | 182 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,17 +136,17 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 153567 → 110000 chars
+  Scrape tronqué : 168657 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  29 événements confirmés (agenda-config.md)
+  28 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude raw début] '[{"date":"2026-06-20","titre":"Batuc Bacana en fête","cat":"concert","lieu":"Montpellier","note":"Déambulation percussions brésiliennes, samba","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/batuc-bacana-en-fete.html","gratuit":false,"groupe":""}\n'
-  182 nouveaux événements extraits depuis les sources
-  Total : 211 événements (29 manuels + 182 scrapés)
+  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFS8SBgsir5GUFPZxXC5'}
+  ERREUR extraction scrape : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFS8SBgsir5GUFPZxXC5'}
+  Total : 28 événements (28 manuels + 0 scrapés)
 Extraction films (Claude)...
-  [Claude raw début] '```json\n[\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Toy Story 5",\n    "meta": "Animation, Jean-Philippe Puymartin",\n    "famille": true\n  },\n  {\n    "cinema": "pathe|megarama",\n    "titre": "Monstres & Cie 2",\n    "meta": "Interdit -12 ans avec avertissement",\n    "famille": false\n  },\n  {\n '
-  24 films extraits
+  [Claude ERREUR API] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFS8TR72Wp2DWtHa3L6x'}
+  ERREUR films : Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcFS8TR72Wp2DWtHa3L6x'}
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

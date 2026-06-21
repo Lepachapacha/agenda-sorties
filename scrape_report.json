@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8507,
+      "chars": 8504,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6626,
+      "chars": 6584,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6801,
+      "chars": 6871,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1539,
+      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
+      "chars": 12000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 10,
+    "sources_rss": 12,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 4,
-    "total_items_structured": 167,
-    "total_chars": 149861
+    "sources_text": 29,
+    "sources_erreur": 3,
+    "total_items_structured": 182,
+    "total_chars": 164951
   },
-  "timestamp": "2026-06-20T23:40:31Z"
+  "timestamp": "2026-06-21T00:05:01Z"
 }
