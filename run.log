@@ -1,13 +1,13 @@
 [generate.py] 2026-06-21
 Lecture agenda-config.md...
   29 événements manuels
-C:\Users\nicom\Documents\GitHub\NicoCode\AgendaSorties\agenda-sorties\generate.py:344: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+C:\Users\nicom\Documents\GitHub\NicoCode\AgendaSorties\agenda-sorties\generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
     → texte, 8484 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6595 chars
+    → texte, 6599 chars
   [3/47] Scraping : JDS Marseille
     → texte, 6833 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
@@ -95,7 +95,7 @@ Scraping des sources...
   [45/47] Scraping : AlloCiné Pathé Odysseum
     → texte, 5999 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4295 chars
+    → texte, 3635 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
@@ -103,15 +103,15 @@ Sauvegarde scrape_report.json...
 Recherches Gemini Search (couche 3)...
   [Gemini] GEMINI_API_KEY non définie — skip
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 168088 → 110000 chars
+  Scrape tronqué : 167432 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   28 événements confirmés (agenda-config.md)
-Extraction nouveaux événements depuis le scrape + Gemini (Claude)...
-  [Claude raw début] '```json\n[{"date":"2026-06-20","titre":"Fête de la Musique - Batuc Bacana en fête","cat":"concert","lieu":"Montpellier","note":"Déambulation percussions brésiliennes","fils":false,"stars":1,"section":"concerts","url":"","gratuit":true,"groupe":""},{"date":"2026-06-20","titre":"Fête de la Musique - QG'
-  128 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -34 passés, -0 génériques, 0 cat. corrigées → 94 retenus
-  Total : 122 événements (28 manuels + 94 scrapés)
+Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
+  [Claude raw début] '```json\n[{"date":"2026-06-20","titre":"Batuc Bacana en fête","cat":"concert","lieu":"Montpellier","note":"Déambulation samba brésilienne","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/batuc-bacana-en-fete.html","gratuit":false,"groupe":""},{"date'
+  146 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -41 passés, -0 génériques, 0 cat. corrigées → 105 retenus
+  Total : 133 événements (28 manuels + 105 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

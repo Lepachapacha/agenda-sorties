@@ -146,7 +146,7 @@ def manual_to_json(manual_events, today):
     return out
 
 
-def build_scraped_events(client, scraped_content, exclude_titles, today):
+def build_scraped_events(client, scraped_content, exclude_titles, today, model="claude-haiku-4-5"):
     """
     Extrait UNIQUEMENT les événements nouveaux depuis le contenu scrapé.
     Les événements manuels sont exclus via exclude_titles pour éviter les doublons.
@@ -202,7 +202,9 @@ FORMAT JSON — COMPACT (une ligne par objet, pas d'indentation) :
 
 Règles de compacité pour limiter la taille de la réponse :
 - "note" : max 60 caractères, préférer "" à une note trop longue
-- "url" : mettre "" si l'URL n'est pas directement disponible dans le contenu
+- "url" : OBLIGATOIRE quand disponible. Les items RSS ont le format "TITRE | pubDate | URL | description"
+  → reporter le 3e champ (URL) dans "url". Les items JSON-LD ont l'URL en DERNIER champ → la reporter.
+  Ne mettre "" QUE pour du texte brut sans aucun lien identifiable. Ne jamais inventer d'URL.
 - "groupe" : toujours ""
 - Pas d'espace ni de saut de ligne entre les objets JSON
 - "stars" : 3 = incontournable (grands festivals/noms connus), 2 = très bon, 1 = normal
@@ -210,7 +212,7 @@ Règles de compacité pour limiter la taille de la réponse :
 
 IMPORTANT : Retourner UNIQUEMENT le tableau JSON, sans texte avant ni après. Pas d'explication, pas de commentaire."""
 
-    raw = ask_claude(client, prompt, model="claude-haiku-4-5")
+    raw = ask_claude(client, prompt, model=model)
     return extract_json(raw)
 
 
@@ -398,9 +400,10 @@ def main():
 
     exclude_titles = [e["titre"] for e in confirmed_events]
 
-    print("Extraction nouveaux événements depuis le scrape + Gemini (Claude)...")
+    extract_model = os.getenv("EXTRACT_MODEL", "claude-haiku-4-5")  # garde-fou : EXTRACT_MODEL=claude-sonnet-4-6 pour repasser en Sonnet
+    print(f"Extraction nouveaux événements depuis le scrape + Gemini ({extract_model})...")
     try:
-        scraped_events = build_scraped_events(client, full_content, exclude_titles, today)
+        scraped_events = build_scraped_events(client, full_content, exclude_titles, today, model=extract_model)
         run_status["scraped_count"] = len(scraped_events)
         print(f"  {len(scraped_events)} nouveaux événements extraits depuis les sources")
     except Exception as e:
@@ -441,7 +444,7 @@ def main():
     with open("events_extracted.json", "w", encoding="utf-8") as f:
         json.dump({
             "timestamp":       ts,
-            "model":           "claude-haiku-4-5",
+            "model":           extract_model,
             "last_fresh_date": last_fresh_date,
             "events_count":    len(events),
             "events":          events,
