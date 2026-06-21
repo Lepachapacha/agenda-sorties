@@ -214,6 +214,32 @@ IMPORTANT : Retourner UNIQUEMENT le tableau JSON, sans texte avant ni après. Pa
     return extract_json(raw)
 
 
+def _load_previous_scraped_events(exclude_titles):
+    """Fallback: réutilise les événements scrapés du run précédent si Claude échoue."""
+    try:
+        with open("events_extracted.json", encoding="utf-8") as f:
+            prev = json.load(f)
+        exclude_set = set(exclude_titles)
+        fallback = [e for e in prev.get("events", []) if e.get("titre") not in exclude_set]
+        print(f"  Fallback run précédent : {len(fallback)} événements scrapés récupérés")
+        return fallback
+    except Exception as fe:
+        print(f"  Fallback impossible : {fe}")
+        return []
+
+
+def _load_previous_films():
+    """Fallback: réutilise les films du run précédent si Claude échoue."""
+    try:
+        with open("events_extracted.json", encoding="utf-8") as f:
+            prev = json.load(f)
+        films = prev.get("films", [])
+        print(f"  Fallback films run précédent : {len(films)} films récupérés")
+        return films
+    except Exception:
+        return []
+
+
 def build_films_json(client, scraped_content, today):
     prompt = f"""Extrait les films actuellement à l'affiche au Pathé Odysseum (Montpellier) et au Mégarama Saint-Gély depuis le contenu scrapé.
 
@@ -318,7 +344,7 @@ def main():
         print(f"  {len(scraped_events)} nouveaux événements extraits depuis les sources")
     except Exception as e:
         print(f"  ERREUR extraction scrape : {e}", file=sys.stderr)
-        scraped_events = []
+        scraped_events = _load_previous_scraped_events(exclude_titles)
 
     events = confirmed_events + scraped_events
     print(f"  Total : {len(events)} événements ({len(confirmed_events)} manuels + {len(scraped_events)} scrapés)")
@@ -329,7 +355,7 @@ def main():
         print(f"  {len(films)} films extraits")
     except Exception as e:
         print(f"  ERREUR films : {e}", file=sys.stderr)
-        films = []
+        films = _load_previous_films()
 
     print("Sauvegarde events_extracted.json...")
     with open("events_extracted.json", "w", encoding="utf-8") as f:
