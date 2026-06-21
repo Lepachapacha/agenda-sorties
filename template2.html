@@ -347,12 +347,20 @@
       text-decoration: none; transition: color 0.15s;
     }
     .card-link:hover { color: var(--coral); }
+    .title-link { color: inherit; text-decoration: none; }
+    .title-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .row-link {
+      color: var(--amber); text-decoration: none;
+      font-size: 0.8rem; transition: color 0.15s;
+      justify-self: end;
+    }
+    .row-link:hover { color: var(--coral); }
 
     /* ── DENSE LIST ── */
     .events-list { display: flex; flex-direction: column; }
     .event-row {
       display: grid;
-      grid-template-columns: 6rem 1fr auto;
+      grid-template-columns: 6rem 1fr auto auto;
       gap: 0.75rem; align-items: center;
       padding: 0.6rem 0.5rem;
       border-bottom: 1px solid var(--border);
@@ -593,7 +601,10 @@
                       <span class="badge-top"  x-show="ev.stars >= 3" aria-label="Incontournable">★★★</span>
                     </div>
                   </div>
-                  <h3 class="card-title" x-text="ev.titre"></h3>
+                  <h3 class="card-title">
+                    <template x-if="ev.url"><a class="title-link" :href="ev.url" target="_blank" rel="noopener" x-text="ev.titre"></a></template>
+                    <template x-if="!ev.url"><span x-text="ev.titre"></span></template>
+                  </h3>
                   <p  class="card-lieu"  x-text="'📍 ' + ev.lieu"></p>
                   <p  class="card-note"  x-show="ev.note" x-text="ev.note"></p>
                   <div class="card-footer">
@@ -747,6 +758,7 @@
               <span class="row-date"  x-text="formatDateShort(ev.date)"></span>
               <span class="row-title" x-text="ev.titre"></span>
               <span class="row-lieu"  x-text="ev.lieu"></span>
+              <a class="row-link" x-show="ev.url" :href="ev.url" target="_blank" rel="noopener" aria-label="Voir la page">→</a>
             </div>
           </template>
         </div>
@@ -801,6 +813,7 @@
               <span class="row-date"  x-text="formatDateShort(ev.date)"></span>
               <span class="row-title" x-text="ev.titre"></span>
               <span class="row-lieu"  x-text="ev.lieu"></span>
+              <a class="row-link" x-show="ev.url" :href="ev.url" target="_blank" rel="noopener" aria-label="Voir la page">→</a>
             </div>
           </template>
         </div>
