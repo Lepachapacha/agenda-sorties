@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8484,
+      "chars": 8574,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6599,
+      "chars": 6668,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6833,
+      "chars": 6995,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6701,
-      "preview": "[RSS · 20 items] Batuc Bacana en fête | Sat, 20 Jun 2026 | https://34.agendaculturel.fr/concert/mont"
+      "chars": 7068,
+      "preview": "[RSS · 20 items] Concert du chœur Incanto de l'Association Dante Alighieri | Mon, 22 Jun 2026 | http"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6820,
-      "preview": "[RSS · 20 items] Nougaro, chants géorgiens, chanson française et la scène ouverte | Sat, 20 Jun 2026"
+      "chars": 6409,
+      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Mon, 22 Jun 2026 | https://30.agendaculturel.fr/exposit"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6688,
-      "preview": "[RSS · 20 items] Concert Fête de la Musique | Sat, 20 Jun 2026 | https://13.agendaculturel.fr/concer"
+      "chars": 7025,
+      "preview": "[RSS · 20 items] Fête de la Musique | Sun, 21 Jun 2026 | https://13.agendaculturel.fr/concert/eyguie"
     },
     {
       "name": "Montpellier Events",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1181,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée spéciale artistes Pépinière*"
+      "chars": 1157,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée spéciale JEUNE PUBLIC avec e"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1844,
+      "chars": 1698,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda dim. 21 juin de 09h00 à 14h00 Tous les dimanches de 09h00 à 14h00 BOUTIQUE, "
+      "preview": "Halle Tropisme - Agenda DIFFUSION DU MATCH SUR ÉCRAN GÉANT La Halle Tropisme enfile son plus beau ma"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4877,
+      "chars": 4911,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -301,7 +301,7 @@
       "url": "https://tempolatino.com/en/",
       "method": "texte",
       "items": 0,
-      "chars": 1546,
+      "chars": 1541,
       "preview": "Tempo Latino Festival - 1st European Afro-Cuban Latin Music Festival. Salsa - Vic-Fezensac Gers Occi"
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3550,
+      "chars": 3561,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3948,
+      "chars": 4215,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 5999,
+      "chars": 5958,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 30,
     "sources_erreur": 2,
     "total_items_structured": 182,
-    "total_chars": 163726
+    "total_chars": 164436
   },
-  "timestamp": "2026-06-21T11:07:18Z"
+  "timestamp": "2026-06-22T11:48:25Z"
 }
