@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8574,
+      "chars": 8616,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6668,
+      "chars": 6728,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6995,
+      "chars": 7124,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7068,
-      "preview": "[RSS · 20 items] Concert du chœur Incanto de l'Association Dante Alighieri | Mon, 22 Jun 2026 | http"
+      "chars": 6929,
+      "preview": "[RSS · 20 items] Clap de Fin | Wed, 17 Jun 2026 | https://34.agendaculturel.fr/exposition/cabrieres/"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6409,
-      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Mon, 22 Jun 2026 | https://30.agendaculturel.fr/exposit"
+      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Tue, 23 Jun 2026 | https://30.agendaculturel.fr/exposit"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7025,
-      "preview": "[RSS · 20 items] Fête de la Musique | Sun, 21 Jun 2026 | https://13.agendaculturel.fr/concert/eyguie"
+      "chars": 7050,
+      "preview": "[RSS · 20 items] Les Apéros 4&5, Blasta Collectif, Blaisy Records & more... | Mon, 22 Jun 2026 | htt"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1539,
-      "preview": "[RSS · 5 items] Kiosque Franke : la place Aristide Briand renaît à Sète | Thu, 18 Jun 2026 | https:/"
+      "chars": 1526,
+      "preview": "[RSS · 5 items] Canicule : piscines gratuites du 23 au 28 juin | Tue, 23 Jun 2026 | https://icisete."
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1157,
+      "chars": 1158,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée spéciale JEUNE PUBLIC avec e"
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda DIFFUSION DU MATCH SUR ÉCRAN GÉANT La Halle Tropisme enfile son plus beau ma"
+      "preview": "Halle Tropisme - Agenda mar. 23 juin de 14h00 à 16h00 Tous les mardis de 14h00 à 16h00 Le Secours po"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4911,
+      "chars": 4913,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -195,10 +195,10 @@
     {
       "name": "Théâtre de la Mer Sète",
       "url": "https://www.fiestasete.com/theatre-de-la-mer-2026.html",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 679,
-      "preview": "Concerts au ThÃ©Ã¢tre de la Mer 29 JUILLET > 3 AOUT : CONCERTS AU THEATRE DE LA MER C’est dans l’un "
+      "chars": 10,
+      "preview": "[HTTP 503]"
     },
     {
       "name": "Scène de Bayssan Béziers",
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8246,
+      "chars": 8318,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 5958,
+      "chars": 8134,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3635,
+      "chars": 4758,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 12,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 2,
+    "sources_text": 29,
+    "sources_erreur": 3,
     "total_items_structured": 182,
-    "total_chars": 164436
+    "total_chars": 167245
   },
-  "timestamp": "2026-06-22T11:48:25Z"
+  "timestamp": "2026-06-23T09:33:34Z"
 }
