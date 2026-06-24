@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8616,
+      "chars": 8546,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6728,
+      "chars": 6667,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7124,
+      "chars": 7018,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6929,
-      "preview": "[RSS · 20 items] Clap de Fin | Wed, 17 Jun 2026 | https://34.agendaculturel.fr/exposition/cabrieres/"
+      "chars": 6932,
+      "preview": "[RSS · 20 items] Spectacle de fin d'année Association Pinok | Wed, 24 Jun 2026 | https://34.agendacu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6409,
-      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Tue, 23 Jun 2026 | https://30.agendaculturel.fr/exposit"
+      "chars": 6389,
+      "preview": "[RSS · 20 items] On ne Divorce Plus | Tue, 23 Jun 2026 | https://30.agendaculturel.fr/theatre/nimes/"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7050,
-      "preview": "[RSS · 20 items] Les Apéros 4&5, Blasta Collectif, Blaisy Records & more... | Mon, 22 Jun 2026 | htt"
+      "chars": 6731,
+      "preview": "[RSS · 20 items] La chemise en héritage | Tue, 23 Jun 2026 | https://13.agendaculturel.fr/exposition"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1526,
-      "preview": "[RSS · 5 items] Canicule : piscines gratuites du 23 au 28 juin | Tue, 23 Jun 2026 | https://icisete."
+      "chars": 1413,
+      "preview": "[RSS · 5 items] Pollution mer : 3 plages de Sète fermées | Tue, 23 Jun 2026 | https://icisete.fr/pol"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mar. 23 juin de 14h00 à 16h00 Tous les mardis de 14h00 à 16h00 Le Secours po"
+      "preview": "Halle Tropisme - Agenda Tous les mercredis à 18h00 Tous les mardis et mercredis DJ, fléchettes, snac"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4913,
+      "chars": 5204,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -195,10 +195,10 @@
     {
       "name": "Théâtre de la Mer Sète",
       "url": "https://www.fiestasete.com/theatre-de-la-mer-2026.html",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 503]"
+      "chars": 679,
+      "preview": "Concerts au ThÃ©Ã¢tre de la Mer 29 JUILLET > 3 AOUT : CONCERTS AU THEATRE DE LA MER C’est dans l’un "
     },
     {
       "name": "Scène de Bayssan Béziers",
@@ -237,16 +237,16 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2877,
-      "preview": "[RSS · 10 items] VERINO | Fri, 19 Jun 2026 | https://adamconcerts.com/verino-8-64236/ | Verino explo"
+      "chars": 2942,
+      "preview": "[RSS · 10 items] L’ATELIER DE JOE HISAISHI | Tue, 23 Jun 2026 | https://adamconcerts.com/latelier-de"
     },
     {
       "name": "Marseille Comedy Club",
       "url": "https://marseillecomedyclub.com/programmation/",
-      "method": "texte",
-      "items": 0,
-      "chars": 358,
-      "preview": "Programmation - Marseille Comedy Club découvrez notre programmation Vente de billets en ligne Le QG "
+      "method": "RSS",
+      "items": 2,
+      "chars": 621,
+      "preview": "[RSS · 2 items] Test d’article de blog | Tue, 23 Jun 2026 | https://marseillecomedyclub.com/test-dar"
     },
     {
       "name": "Garage Comedy Marseille",
@@ -277,8 +277,8 @@
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "texte",
       "items": 0,
-      "chars": 4052,
-      "preview": "Soirées SBK - école de danse Alma Dance à Montpellier « ET POURTANT… JE ME SOUVIENS. » “Et pourtant,"
+      "chars": 9557,
+      "preview": "École de danse Montpellier, cours pour adultes avec essai gratuit | Alma Dance Venez apprendre à dan"
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4215,
+      "chars": 4342,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8134,
+      "chars": 7966,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4758,
+      "chars": 3587,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 12,
+    "sources_rss": 13,
     "sources_jsonld": 3,
     "sources_text": 29,
-    "sources_erreur": 3,
-    "total_items_structured": 182,
-    "total_chars": 167245
+    "sources_erreur": 2,
+    "total_items_structured": 184,
+    "total_chars": 172140
   },
-  "timestamp": "2026-06-23T09:33:34Z"
+  "timestamp": "2026-06-24T09:23:36Z"
 }
