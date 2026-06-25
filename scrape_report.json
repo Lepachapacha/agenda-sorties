@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8546,
+      "chars": 8721,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6667,
+      "chars": 6882,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7018,
+      "chars": 7048,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6932,
-      "preview": "[RSS · 20 items] Spectacle de fin d'année Association Pinok | Wed, 24 Jun 2026 | https://34.agendacu"
+      "chars": 6867,
+      "preview": "[RSS · 20 items] Flavia Coelho, Muzanzo et Sin’Dee | Thu, 25 Jun 2026 | https://34.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6389,
-      "preview": "[RSS · 20 items] On ne Divorce Plus | Tue, 23 Jun 2026 | https://30.agendaculturel.fr/theatre/nimes/"
+      "chars": 6451,
+      "preview": "[RSS · 20 items] On ne Divorce Plus | Wed, 24 Jun 2026 | https://30.agendaculturel.fr/theatre/nimes/"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6731,
+      "chars": 6616,
       "preview": "[RSS · 20 items] La chemise en héritage | Tue, 23 Jun 2026 | https://13.agendaculturel.fr/exposition"
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1413,
-      "preview": "[RSS · 5 items] Pollution mer : 3 plages de Sète fermées | Tue, 23 Jun 2026 | https://icisete.fr/pol"
+      "chars": 1498,
+      "preview": "[RSS · 5 items] Pollution à Sète : baignade interdite sur plusieurs plages jusqu’à nouvel ordre | We"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda Tous les mercredis à 18h00 Tous les mardis et mercredis DJ, fléchettes, snac"
+      "preview": "Halle Tropisme - Agenda mer. 01 juil. à 18h00 Tous les mercredis à 18h00 Tous les mardis et mercredi"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,8 +165,8 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5204,
-      "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
+      "chars": 5298,
+      "preview": "Cepac Silo - Marseille | Site officiel Ce soir à 19:30 : La Cité des Minots Cepac Silo – Site offici"
     },
     {
       "name": "Le Dôme Marseille",
@@ -277,7 +277,7 @@
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "texte",
       "items": 0,
-      "chars": 9557,
+      "chars": 9583,
       "preview": "École de danse Montpellier, cours pour adultes avec essai gratuit | Alma Dance Venez apprendre à dan"
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3561,
+      "chars": 3522,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4342,
+      "chars": 4396,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7966,
+      "chars": 7177,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3587,
+      "chars": 3276,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 172140
+    "total_chars": 171562
   },
-  "timestamp": "2026-06-24T09:23:36Z"
+  "timestamp": "2026-06-25T08:57:14Z"
 }
