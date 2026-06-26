@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8721,
+      "chars": 8619,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6882,
+      "chars": 6790,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7048,
+      "chars": 7118,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6867,
-      "preview": "[RSS · 20 items] Flavia Coelho, Muzanzo et Sin’Dee | Thu, 25 Jun 2026 | https://34.agendaculturel.fr"
+      "chars": 6704,
+      "preview": "[RSS · 20 items] Guts et David Walters | Fri, 26 Jun 2026 | https://34.agendaculturel.fr/concert/mon"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6451,
-      "preview": "[RSS · 20 items] On ne Divorce Plus | Wed, 24 Jun 2026 | https://30.agendaculturel.fr/theatre/nimes/"
+      "chars": 6434,
+      "preview": "[RSS · 20 items] Le Chœur Croche Si Belle et son ensemble instrumental | Thu, 25 Jun 2026 | https://"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6616,
+      "chars": 6717,
       "preview": "[RSS · 20 items] La chemise en héritage | Tue, 23 Jun 2026 | https://13.agendaculturel.fr/exposition"
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1498,
-      "preview": "[RSS · 5 items] Pollution à Sète : baignade interdite sur plusieurs plages jusqu’à nouvel ordre | We"
+      "chars": 1648,
+      "preview": "[RSS · 5 items] La fête de Montbazin 2026 se prépare : les festivités démarrent demain soir à 19h | "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1698,
+      "chars": 1644,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -125,8 +125,8 @@
       "url": "https://www.lejam.com/",
       "method": "RSS",
       "items": 10,
-      "chars": 3368,
-      "preview": "[RSS · 10 items] L’ÉCOLE 2026-2027 : INSCRIPTIONS | Mon, 15 Jun 2026 | https://www.lejam.com/17368-2"
+      "chars": 3428,
+      "preview": "[RSS · 10 items] LAURÉATE DU TREMPLIN 2026 : TELMA LANGINIEUX | Thu, 25 Jun 2026 | https://www.lejam"
     },
     {
       "name": "Halle Tropisme Montpellier",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5298,
-      "preview": "Cepac Silo - Marseille | Site officiel Ce soir à 19:30 : La Cité des Minots Cepac Silo – Site offici"
+      "chars": 5385,
+      "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 7870,
+      "chars": 7908,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-01-16 | Vergeze Espace, Vergèz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7177,
+      "chars": 7237,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3276,
+      "chars": 3939,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 3,
     "total_items_structured": 184,
-    "total_chars": 171562
+    "total_chars": 172248
   },
-  "timestamp": "2026-06-25T08:57:14Z"
+  "timestamp": "2026-06-26T08:59:10Z"
 }

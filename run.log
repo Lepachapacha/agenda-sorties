@@ -1,25 +1,25 @@
-[generate.py] 2026-06-25
+[generate.py] 2026-06-26
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8721 chars
+    → texte, 8619 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6882 chars
+    → texte, 6790 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7048 chars
+    → texte, 7118 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6867 chars, 20 items
+    → RSS, 6704 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6451 chars, 20 items
+    → RSS, 6434 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6616 chars, 20 items
+    → RSS, 6717 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1498 chars, 5 items
+    → RSS, 1648 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -33,9 +33,9 @@ Scraping des sources...
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → texte, 1698 chars
+    → texte, 1644 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
-    → RSS, 3368 chars, 10 items
+    → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
@@ -45,9 +45,9 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5298 chars
+    → texte, 5385 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3455 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8318 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 7870 chars, 25 items
+    → JSON-LD, 7908 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4396 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7177 chars
+    → texte, 7237 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3276 chars
+    → texte, 3939 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 184 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 184 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 175268 → 110000 chars
+  Scrape tronqué : 175954 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   28 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-06-25","titre":"Flavia Coelho, Muzanzo et Sin\'Dee","cat":"concert","lieu":"Montpellier","note":"Pop afro-latine et électro - What a trip Festival","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/flavia-coelho-muzanzo-et-sin-d'
-  157 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -34 passés, -0 génériques, 0 cat. corrigées → 123 retenus
-  Total : 151 événements (28 manuels + 123 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-06-26","titre":"Guts et David Walters","cat":"concert","lieu":"Montpellier","note":"Concert électro-créole acoustique et hip hop","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/guts-et-david-walters.html","gratuit":false,"gr'
+  118 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -39 passés, -0 génériques, 0 cat. corrigées → 79 retenus
+  Total : 107 événements (28 manuels + 79 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
