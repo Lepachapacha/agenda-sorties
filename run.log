@@ -1,25 +1,25 @@
-[generate.py] 2026-06-26
+[generate.py] 2026-06-27
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8619 chars
+    → texte, 8547 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6790 chars
+    → texte, 6772 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7118 chars
+    → texte, 7046 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6704 chars, 20 items
+    → RSS, 6801 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6434 chars, 20 items
+    → RSS, 6338 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6717 chars, 20 items
+    → RSS, 6710 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1648 chars, 5 items
+    → RSS, 1801 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2942 chars, 10 items
+    → RSS, 2968 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -81,25 +81,25 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1541 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → texte, 12000 chars
+    → erreur, 10 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
-    → RSS, 1336 chars, 3 items
+    → texte, 4941 chars
   [42/47] Scraping : Family Piknik Montpellier
-    → texte, 4428 chars
+    → texte, 81 chars
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3522 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4396 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7237 chars
+    → texte, 8564 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3939 chars
+    → texte, 4331 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 184 items structurés
+  47 sources — RSS:12 JSON-LD:3 texte:28 skip:0 erreur:4 | 181 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 175954 → 110000 chars
+  Scrape tronqué : 164952 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   28 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-06-26","titre":"Guts et David Walters","cat":"concert","lieu":"Montpellier","note":"Concert électro-créole acoustique et hip hop","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/guts-et-david-walters.html","gratuit":false,"gr'
-  118 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -39 passés, -0 génériques, 0 cat. corrigées → 79 retenus
-  Total : 107 événements (28 manuels + 79 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-06-26","titre":"Kimbaya, Habibisly et Philippe Corti – Soirée WAT 10 ans","cat":"concert","lieu":"Montpellier","note":"DJ set électro-afro-latin avec percussions live","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/kimbaya-h'
+  87 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -23 passés, -0 génériques, 0 cat. corrigées → 64 retenus
+  Total : 92 événements (28 manuels + 64 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

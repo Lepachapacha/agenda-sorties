@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8619,
+      "chars": 8547,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6790,
+      "chars": 6772,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7118,
+      "chars": 7046,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6704,
-      "preview": "[RSS · 20 items] Guts et David Walters | Fri, 26 Jun 2026 | https://34.agendaculturel.fr/concert/mon"
+      "chars": 6801,
+      "preview": "[RSS · 20 items] Kimbaya, Habibisly et Philippe Corti – Soirée WAT 10 ans | Fri, 26 Jun 2026 | https"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6434,
-      "preview": "[RSS · 20 items] Le Chœur Croche Si Belle et son ensemble instrumental | Thu, 25 Jun 2026 | https://"
+      "chars": 6338,
+      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Fri, 26 Jun 2026 | https://30.agendaculturel.fr/exposit"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6717,
+      "chars": 6710,
       "preview": "[RSS · 20 items] La chemise en héritage | Tue, 23 Jun 2026 | https://13.agendaculturel.fr/exposition"
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1648,
-      "preview": "[RSS · 5 items] La fête de Montbazin 2026 se prépare : les festivités démarrent demain soir à 19h | "
+      "chars": 1801,
+      "preview": "[RSS · 5 items] Saint-Pierre 2026 à Sète : stationnement interdit Quai de la Consigne du 1er au 8 ju"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2942,
-      "preview": "[RSS · 10 items] L’ATELIER DE JOE HISAISHI | Tue, 23 Jun 2026 | https://adamconcerts.com/latelier-de"
+      "chars": 2968,
+      "preview": "[RSS · 10 items] NINHO | Fri, 26 Jun 2026 | https://adamconcerts.com/ninho-7-64423/ | Ninho confirme"
     },
     {
       "name": "Marseille Comedy Club",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 10,
+      "preview": "[HTTP 403]"
     },
     {
       "name": "Jazz à Sète",
@@ -323,18 +323,18 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "RSS",
-      "items": 3,
-      "chars": 1336,
-      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
+      "method": "texte",
+      "items": 0,
+      "chars": 4941,
+      "preview": "Programmes - Festival Radio France Occitanie Montpellier - 5 au 18 juillet 2026 Musique de Chambre e"
     },
     {
       "name": "Family Piknik Montpellier",
       "url": "https://www.familypiknikfestival.com/",
       "method": "texte",
       "items": 0,
-      "chars": 4428,
-      "preview": "Family Piknik | festival techno france Armand van Helden - Elrow Stage Armand van Helden @ Family Pi"
+      "chars": 81,
+      "preview": "Family Piknik | festival techno france DU 31 JUILLET AU 2 AOÛT 2026 - MONTPELLIER"
     },
     {
       "name": "CitizenKid Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7237,
+      "chars": 8564,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3939,
+      "chars": 4331,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 12,
     "sources_jsonld": 3,
     "sources_text": 28,
-    "sources_erreur": 3,
-    "total_items_structured": 184,
-    "total_chars": 172248
+    "sources_erreur": 4,
+    "total_items_structured": 181,
+    "total_chars": 161246
   },
-  "timestamp": "2026-06-26T08:59:10Z"
+  "timestamp": "2026-06-27T08:32:48Z"
 }
