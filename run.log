@@ -1,21 +1,21 @@
-[generate.py] 2026-06-27
+[generate.py] 2026-06-28
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8547 chars
+    → texte, 8602 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6772 chars
+    → texte, 6891 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7046 chars
+    → texte, 7013 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6801 chars, 20 items
+    → RSS, 6867 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6338 chars, 20 items
+    → RSS, 6267 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6710 chars, 20 items
+    → RSS, 6831 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -55,7 +55,7 @@ Scraping des sources...
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
-    → texte, 1706 chars
+    → texte, 1621 chars
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8318 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
@@ -81,11 +81,11 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1541 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → erreur, 10 chars
+    → texte, 12000 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
-    → texte, 4941 chars
+    → RSS, 1336 chars, 3 items
   [42/47] Scraping : Family Piknik Montpellier
     → texte, 81 chars
   [43/47] Scraping : CitizenKid Montpellier
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4396 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 8564 chars
+    → texte, 7951 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4331 chars
+    → texte, 3666 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:12 JSON-LD:3 texte:28 skip:0 erreur:4 | 181 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 184 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 164952 → 110000 chars
+  Scrape tronqué : 172231 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  28 événements confirmés (agenda-config.md)
+  27 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-06-26","titre":"Kimbaya, Habibisly et Philippe Corti – Soirée WAT 10 ans","cat":"concert","lieu":"Montpellier","note":"DJ set électro-afro-latin avec percussions live","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/kimbaya-h'
-  87 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -23 passés, -0 génériques, 0 cat. corrigées → 64 retenus
-  Total : 92 événements (28 manuels + 64 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-06-27","titre":"Spectacle de Voltige Aérienne","cat":"theatre","lieu":"Saint-Chinian, Hérault","note":"Compagnie Les Quat\' fers en l\'air","fils":true,"stars":1,"section":"danse","url":"https://34.agendaculturel.fr/arts-du-spectacle/saint-chinian/spectacle-de-voltige-aerienne.h'
+  152 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -42 passés, -0 génériques, 0 cat. corrigées → 110 retenus
+  Total : 137 événements (27 manuels + 110 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

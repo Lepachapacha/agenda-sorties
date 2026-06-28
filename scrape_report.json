@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8547,
+      "chars": 8602,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6772,
+      "chars": 6891,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7046,
+      "chars": 7013,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6801,
-      "preview": "[RSS · 20 items] Kimbaya, Habibisly et Philippe Corti – Soirée WAT 10 ans | Fri, 26 Jun 2026 | https"
+      "chars": 6867,
+      "preview": "[RSS · 20 items] Spectacle de Voltige Aérienne | Sat, 27 Jun 2026 | https://34.agendaculturel.fr/art"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6338,
-      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Fri, 26 Jun 2026 | https://30.agendaculturel.fr/exposit"
+      "chars": 6267,
+      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Sun, 28 Jun 2026 | https://30.agendaculturel.fr/exposit"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6710,
-      "preview": "[RSS · 20 items] La chemise en héritage | Tue, 23 Jun 2026 | https://13.agendaculturel.fr/exposition"
+      "chars": 6831,
+      "preview": "[RSS · 20 items] Memories of a Concrete Love – Part II | Sat, 27 Jun 2026 | https://13.agendaculture"
     },
     {
       "name": "Montpellier Events",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 1706,
+      "chars": 1621,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
+      "chars": 12000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -323,10 +323,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "texte",
-      "items": 0,
-      "chars": 4941,
-      "preview": "Programmes - Festival Radio France Occitanie Montpellier - 5 au 18 juillet 2026 Musique de Chambre e"
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
     },
     {
       "name": "Family Piknik Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8564,
+      "chars": 7951,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4331,
+      "chars": 3666,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 12,
+    "sources_rss": 13,
     "sources_jsonld": 3,
     "sources_text": 28,
-    "sources_erreur": 4,
-    "total_items_structured": 181,
-    "total_chars": 161246
+    "sources_erreur": 3,
+    "total_items_structured": 184,
+    "total_chars": 168525
   },
-  "timestamp": "2026-06-27T08:32:48Z"
+  "timestamp": "2026-06-28T08:47:46Z"
 }
