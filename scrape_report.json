@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8602,
+      "chars": 8522,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6891,
+      "chars": 6626,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7013,
+      "chars": 7117,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6867,
-      "preview": "[RSS · 20 items] Spectacle de Voltige Aérienne | Sat, 27 Jun 2026 | https://34.agendaculturel.fr/art"
+      "chars": 6974,
+      "preview": "[RSS · 20 items] Clap de Fin | Wed, 17 Jun 2026 | https://34.agendaculturel.fr/exposition/cabrieres/"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6267,
+      "chars": 6338,
       "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Sun, 28 Jun 2026 | https://30.agendaculturel.fr/exposit"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6831,
-      "preview": "[RSS · 20 items] Memories of a Concrete Love – Part II | Sat, 27 Jun 2026 | https://13.agendaculture"
+      "chars": 6917,
+      "preview": "[RSS · 20 items] Rooftop Comedy Club | Sun, 28 Jun 2026 | https://13.agendaculturel.fr/theatre/marse"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1801,
-      "preview": "[RSS · 5 items] Saint-Pierre 2026 à Sète : stationnement interdit Quai de la Consigne du 1er au 8 ju"
+      "chars": 1525,
+      "preview": "[RSS · 5 items] Plages de Sète : nouveaux abris PMR pour l’été 2026 | Mon, 29 Jun 2026 | https://ici"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1158,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée spéciale JEUNE PUBLIC avec e"
+      "chars": 1069,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5385,
+      "chars": 5533,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3522,
+      "chars": 3489,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4396,
+      "chars": 4022,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7951,
+      "chars": 7558,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3666,
+      "chars": 3474,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
+    "sources_text": 29,
+    "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 168525
+    "total_chars": 167454
   },
-  "timestamp": "2026-06-28T08:47:46Z"
+  "timestamp": "2026-06-29T10:52:03Z"
 }
