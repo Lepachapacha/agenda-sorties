@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8522,
+      "chars": 8420,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6626,
+      "chars": 6708,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7117,
+      "chars": 7212,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6974,
-      "preview": "[RSS · 20 items] Clap de Fin | Wed, 17 Jun 2026 | https://34.agendaculturel.fr/exposition/cabrieres/"
+      "chars": 7059,
+      "preview": "[RSS · 20 items] Stas Fekete : Les 3 univers du violoncelle | Tue, 30 Jun 2026 | https://34.agendacu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6338,
-      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Sun, 28 Jun 2026 | https://30.agendaculturel.fr/exposit"
+      "chars": 6467,
+      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Tue, 30 Jun 2026 | https://30.agendaculturel.fr/exposit"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6917,
-      "preview": "[RSS · 20 items] Rooftop Comedy Club | Sun, 28 Jun 2026 | https://13.agendaculturel.fr/theatre/marse"
+      "chars": 6905,
+      "preview": "[RSS · 20 items] Côté Cour | Mon, 29 Jun 2026 | https://13.agendaculturel.fr/concert/marseille/cote-"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1525,
-      "preview": "[RSS · 5 items] Plages de Sète : nouveaux abris PMR pour l’été 2026 | Mon, 29 Jun 2026 | https://ici"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1644,
+      "chars": 1561,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -155,34 +155,34 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5533,
+      "chars": 5441,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3455,
-      "preview": "[RSS · 10 items] Fatine Arafati, Arthur Lafrux & Yoan Soriano | Fri, 19 Jun 2026 | https://www.lafri"
+      "chars": 3470,
+      "preview": "[RSS · 10 items] Lisez, luttez ! | Mon, 29 Jun 2026 | https://www.lafriche.org/magazine/lisez-luttez"
     },
     {
       "name": "Le Moulin Marseille",
@@ -203,10 +203,10 @@
     {
       "name": "Scène de Bayssan Béziers",
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 1621,
-      "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
+      "chars": 10,
+      "preview": "[HTTP 403]"
     },
     {
       "name": "JDS Humour Montpellier",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3489,
+      "chars": 3556,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4022,
+      "chars": 4216,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7558,
+      "chars": 9003,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3474,
+      "chars": 3641,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 11,
     "sources_jsonld": 3,
     "sources_text": 29,
-    "sources_erreur": 2,
-    "total_items_structured": 184,
-    "total_chars": 167454
+    "sources_erreur": 4,
+    "total_items_structured": 169,
+    "total_chars": 164657
   },
-  "timestamp": "2026-06-29T10:52:03Z"
+  "timestamp": "2026-06-30T09:29:06Z"
 }
