@@ -3,50 +3,50 @@
     {
       "name": "JDS Montpellier",
       "url": "https://www.jds.fr/montpellier/agenda/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 8420,
-      "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "JDS Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6708,
+      "chars": 6833,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
       "name": "JDS Marseille",
       "url": "https://www.jds.fr/marseille/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 7212,
-      "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Agenda Culturel 34 Montpellier",
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7059,
-      "preview": "[RSS · 20 items] Stas Fekete : Les 3 univers du violoncelle | Tue, 30 Jun 2026 | https://34.agendacu"
+      "chars": 6917,
+      "preview": "[RSS · 20 items] Gala de Danse de la MJC CS | Wed, 01 Jul 2026 | https://34.agendaculturel.fr/danse/"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6467,
-      "preview": "[RSS · 20 items] Seaquarium du Grau-du-Roi | Tue, 30 Jun 2026 | https://30.agendaculturel.fr/exposit"
+      "chars": 6516,
+      "preview": "[RSS · 20 items] Dansing de Damien Laquet | Tue, 30 Jun 2026 | https://30.agendaculturel.fr/theatre/"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6905,
-      "preview": "[RSS · 20 items] Côté Cour | Mon, 29 Jun 2026 | https://13.agendaculturel.fr/concert/marseille/cote-"
+      "chars": 6703,
+      "preview": "[RSS · 20 items] Positano Comedy Club | Wed, 01 Jul 2026 | https://13.agendaculturel.fr/theatre/mars"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1582,
+      "preview": "[RSS · 5 items] Sécurité nautique : opération de contrôle au port de Sète | Mon, 29 Jun 2026 | https"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mer. 01 juil. à 18h00 Tous les mercredis à 18h00 Tous les mardis et mercredi"
+      "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
       "name": "Paloma Nîmes",
@@ -155,17 +155,17 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5441,
+      "chars": 5437,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -203,10 +203,10 @@
     {
       "name": "Scène de Bayssan Béziers",
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
+      "chars": 1621,
+      "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
       "name": "JDS Humour Montpellier",
@@ -286,7 +286,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Soirées Salsa du département 34 (Hérault) - juin 2026 - Liste Salsa d'Olivier Soirées salsa dans le "
+      "preview": "Soirées Salsa du département 34 (Hérault) - juillet 2026 - Liste Salsa d'Olivier Soirées salsa dans "
     },
     {
       "name": "Toutlemondedanse Montpellier",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4216,
+      "chars": 4182,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9003,
+      "chars": 6813,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3641,
+      "chars": 3465,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 4,
-    "total_items_structured": 169,
-    "total_chars": 164657
+    "sources_text": 26,
+    "sources_erreur": 5,
+    "total_items_structured": 184,
+    "total_chars": 151218
   },
-  "timestamp": "2026-06-30T09:29:06Z"
+  "timestamp": "2026-07-01T09:40:34Z"
 }

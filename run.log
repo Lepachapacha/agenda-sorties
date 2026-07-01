@@ -1,25 +1,25 @@
-[generate.py] 2026-06-30
+[generate.py] 2026-07-01
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8420 chars
+    → erreur, 19 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6708 chars
+    → texte, 6833 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7212 chars
+    → erreur, 19 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 7059 chars, 20 items
+    → RSS, 6917 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6467 chars, 20 items
+    → RSS, 6516 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6905 chars, 20 items
+    → RSS, 6703 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → texte, 98 chars
+    → RSS, 1582 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -43,9 +43,9 @@ Scraping des sources...
   [19/47] Scraping : Festival de Nîmes
     → texte, 962 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → texte, 98 chars
+    → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5441 chars
+    → texte, 5437 chars
   [22/47] Scraping : Le Dôme Marseille
     → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -55,7 +55,7 @@ Scraping des sources...
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
-    → erreur, 10 chars
+    → texte, 1621 chars
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8318 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
@@ -91,15 +91,15 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3556 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 4216 chars
+    → texte, 4182 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 9003 chars
+    → texte, 6813 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3641 chars
+    → texte, 3465 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:11 JSON-LD:3 texte:29 skip:0 erreur:4 | 169 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:26 skip:0 erreur:5 | 184 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 168363 → 110000 chars
+  Scrape tronqué : 154924 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   25 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-06-29","titre":"Stas Fekete : Les 3 univers du violoncelle","cat":"classique","lieu":"Villeneuve-lès-Béziers","note":"Concert violoncelle baroque/rock symphonique","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/villeneuve-les-beziers/st'
-  158 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -43 passés, -0 génériques, 0 cat. corrigées → 115 retenus
-  Total : 140 événements (25 manuels + 115 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-01","titre":"Gala de Danse de la MJC CS — Le Cœur des Hommes","cat":"danse","lieu":"Béziers, Hérault","note":"165 danseurs, mise en scène Stéfany Jamet","fils":false,"stars":1,"section":"danse","url":"https://34.agendaculturel.fr/danse/beziers/gala-de-danse-de-la-mjc-cs.htm'
+  101 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -20 passés, -0 génériques, 0 cat. corrigées → 81 retenus
+  Total : 106 événements (25 manuels + 81 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
