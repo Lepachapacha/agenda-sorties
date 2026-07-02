@@ -3,50 +3,50 @@
     {
       "name": "JDS Montpellier",
       "url": "https://www.jds.fr/montpellier/agenda/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 8496,
+      "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
       "name": "JDS Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6833,
+      "chars": 6726,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
       "name": "JDS Marseille",
       "url": "https://www.jds.fr/marseille/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 7952,
+      "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
       "name": "Agenda Culturel 34 Montpellier",
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6917,
-      "preview": "[RSS · 20 items] Gala de Danse de la MJC CS | Wed, 01 Jul 2026 | https://34.agendaculturel.fr/danse/"
+      "chars": 6649,
+      "preview": "[RSS · 20 items] Figures du Vivant | Wed, 01 Jul 2026 | https://34.agendaculturel.fr/exposition/mars"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6516,
-      "preview": "[RSS · 20 items] Dansing de Damien Laquet | Tue, 30 Jun 2026 | https://30.agendaculturel.fr/theatre/"
+      "chars": 6699,
+      "preview": "[RSS · 20 items] Cratère Surfaces 2026 | Thu, 02 Jul 2026 | https://30.agendaculturel.fr/festival/cr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6703,
-      "preview": "[RSS · 20 items] Positano Comedy Club | Wed, 01 Jul 2026 | https://13.agendaculturel.fr/theatre/mars"
+      "chars": 6669,
+      "preview": "[RSS · 20 items] Twerkistan en plein air | Thu, 02 Jul 2026 | https://13.agendaculturel.fr/concert/m"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1582,
-      "preview": "[RSS · 5 items] Sécurité nautique : opération de contrôle au port de Sète | Mon, 29 Jun 2026 | https"
+      "chars": 1444,
+      "preview": "[RSS · 5 items] Ligne 20 : escapade au port de Mèze en bus, 7j/7 | Wed, 01 Jul 2026 | https://iciset"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5437,
+      "chars": 5367,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 7908,
+      "chars": 7944,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-01-16 | Vergeze Espace, Vergèz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6813,
+      "chars": 6792,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3465,
+      "chars": 3334,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 26,
-    "sources_erreur": 5,
+    "sources_text": 28,
+    "sources_erreur": 3,
     "total_items_structured": 184,
-    "total_chars": 151218
+    "total_chars": 167078
   },
-  "timestamp": "2026-07-01T09:40:34Z"
+  "timestamp": "2026-07-02T08:52:02Z"
 }

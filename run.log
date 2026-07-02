@@ -1,25 +1,25 @@
-[generate.py] 2026-07-01
+[generate.py] 2026-07-02
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → erreur, 19 chars
+    → texte, 8496 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6833 chars
+    → texte, 6726 chars
   [3/47] Scraping : JDS Marseille
-    → erreur, 19 chars
+    → texte, 7952 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6917 chars, 20 items
+    → RSS, 6649 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6516 chars, 20 items
+    → RSS, 6699 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6703 chars, 20 items
+    → RSS, 6669 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1582 chars, 5 items
+    → RSS, 1444 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -45,7 +45,7 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5437 chars
+    → texte, 5367 chars
   [22/47] Scraping : Le Dôme Marseille
     → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8318 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 7908 chars, 25 items
+    → JSON-LD, 7944 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4182 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6813 chars
+    → texte, 6792 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3465 chars
+    → texte, 3334 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:26 skip:0 erreur:5 | 184 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 184 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 154924 → 110000 chars
+  Scrape tronqué : 170784 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  25 événements confirmés (agenda-config.md)
+  24 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-01","titre":"Gala de Danse de la MJC CS — Le Cœur des Hommes","cat":"danse","lieu":"Béziers, Hérault","note":"165 danseurs, mise en scène Stéfany Jamet","fils":false,"stars":1,"section":"danse","url":"https://34.agendaculturel.fr/danse/beziers/gala-de-danse-de-la-mjc-cs.htm'
-  101 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -20 passés, -0 génériques, 0 cat. corrigées → 81 retenus
-  Total : 106 événements (25 manuels + 81 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-01","titre":"Figures du Vivant","cat":"expo","lieu":"Marseillan, Hérault","note":"Exposition peinture - Louis Carcassonne","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/marseillan/figures-du-vivant.html","gratuit":false,"groupe":""}'
+  103 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -36 passés, -0 génériques, 0 cat. corrigées → 67 retenus
+  Total : 91 événements (24 manuels + 67 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
