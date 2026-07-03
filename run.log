@@ -1,21 +1,21 @@
-[generate.py] 2026-07-02
+[generate.py] 2026-07-03
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8496 chars
+    → texte, 7955 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6726 chars
+    → texte, 6769 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7952 chars
+    → texte, 7965 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6649 chars, 20 items
+    → RSS, 6667 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6699 chars, 20 items
+    → RSS, 6611 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6669 chars, 20 items
+    → RSS, 6845 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -39,7 +39,7 @@ Scraping des sources...
   [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
-    → RSS, 3421 chars, 10 items
+    → RSS, 3464 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 962 chars
   [20/47] Scraping : Théâtre de Nîmes
@@ -47,7 +47,7 @@ Scraping des sources...
   [21/47] Scraping : Le Silo Marseille
     → texte, 5367 chars
   [22/47] Scraping : Le Dôme Marseille
-    → erreur, 19 chars
+    → texte, 134 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3470 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -55,7 +55,7 @@ Scraping des sources...
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
-    → texte, 1621 chars
+    → texte, 1541 chars
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8318 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4182 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6792 chars
+    → texte, 6682 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3334 chars
+    → texte, 3033 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 184 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 184 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 170784 → 110000 chars
+  Scrape tronqué : 170072 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   24 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-01","titre":"Figures du Vivant","cat":"expo","lieu":"Marseillan, Hérault","note":"Exposition peinture - Louis Carcassonne","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/marseillan/figures-du-vivant.html","gratuit":false,"groupe":""}'
-  103 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -36 passés, -0 génériques, 0 cat. corrigées → 67 retenus
-  Total : 91 événements (24 manuels + 67 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-03","titre":"Ludovico Einaudi","cat":"classique","lieu":"Arènes de Nîmes, Nîmes","note":"Pianiste et compositeur italien","fils":false,"stars":3,"section":"concerts","url":"https://30.agendaculturel.fr/concert/nimes/ludovico-einaudi.html","gratuit":false,"groupe":""},{"date'
+  160 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -30 passés, -0 génériques, 0 cat. corrigées → 130 retenus
+  Total : 154 événements (24 manuels + 130 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

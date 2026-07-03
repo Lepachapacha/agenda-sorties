@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8496,
+      "chars": 7955,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6726,
+      "chars": 6769,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7952,
+      "chars": 7965,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6649,
-      "preview": "[RSS · 20 items] Figures du Vivant | Wed, 01 Jul 2026 | https://34.agendaculturel.fr/exposition/mars"
+      "chars": 6667,
+      "preview": "[RSS · 20 items] La saison culturelle Abbaye des possibles | Fri, 03 Jul 2026 | https://34.agendacul"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6699,
-      "preview": "[RSS · 20 items] Cratère Surfaces 2026 | Thu, 02 Jul 2026 | https://30.agendaculturel.fr/festival/cr"
+      "chars": 6611,
+      "preview": "[RSS · 20 items] Cratère Surfaces 2026 | Fri, 03 Jul 2026 | https://30.agendaculturel.fr/festival/cr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6669,
-      "preview": "[RSS · 20 items] Twerkistan en plein air | Thu, 02 Jul 2026 | https://13.agendaculturel.fr/concert/m"
+      "chars": 6845,
+      "preview": "[RSS · 20 items] Twerkistan en plein air | Fri, 03 Jul 2026 | https://13.agendaculturel.fr/concert/m"
     },
     {
       "name": "Montpellier Events",
@@ -141,8 +141,8 @@
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3421,
-      "preview": "[RSS · 10 items] TINALS 2026 : de la fidélité et de la découverte | Thu, 11 Jun 2026 | https://palom"
+      "chars": 3464,
+      "preview": "[RSS · 10 items] M.A.N.U. fait sa rentrée : envie de passer une saison à Paloma ? | Wed, 01 Jul 2026"
     },
     {
       "name": "Festival de Nîmes",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 1621,
+      "chars": 1541,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6792,
+      "chars": 6682,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3334,
+      "chars": 3033,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
+    "sources_text": 29,
+    "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 167078
+    "total_chars": 166366
   },
-  "timestamp": "2026-07-02T08:52:02Z"
+  "timestamp": "2026-07-03T08:57:59Z"
 }
