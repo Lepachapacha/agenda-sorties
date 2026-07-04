@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7955,
+      "chars": 7988,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6769,
+      "chars": 6862,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7965,
+      "chars": 7711,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6667,
-      "preview": "[RSS · 20 items] La saison culturelle Abbaye des possibles | Fri, 03 Jul 2026 | https://34.agendacul"
+      "chars": 6620,
+      "preview": "[RSS · 20 items] Festival Musiques du monde | Fri, 03 Jul 2026 | https://34.agendaculturel.fr/festiv"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6611,
-      "preview": "[RSS · 20 items] Cratère Surfaces 2026 | Fri, 03 Jul 2026 | https://30.agendaculturel.fr/festival/cr"
+      "chars": 6480,
+      "preview": "[RSS · 20 items] Cratère Surfaces 2026 | Sat, 04 Jul 2026 | https://30.agendaculturel.fr/festival/cr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6845,
-      "preview": "[RSS · 20 items] Twerkistan en plein air | Fri, 03 Jul 2026 | https://13.agendaculturel.fr/concert/m"
+      "chars": 6761,
+      "preview": "[RSS · 20 items] Sunset Live aux Terrasses du Port | Fri, 03 Jul 2026 | https://13.agendaculturel.fr"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1444,
-      "preview": "[RSS · 5 items] Ligne 20 : escapade au port de Mèze en bus, 7j/7 | Wed, 01 Jul 2026 | https://iciset"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,18 +171,18 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3470,
-      "preview": "[RSS · 10 items] Lisez, luttez ! | Mon, 29 Jun 2026 | https://www.lafriche.org/magazine/lisez-luttez"
+      "chars": 3477,
+      "preview": "[RSS · 10 items] Hasnae Lachgar | Fri, 03 Jul 2026 | https://www.lafriche.org/magazine/hasnae-lachga"
     },
     {
       "name": "Le Moulin Marseille",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 1541,
+      "chars": 1464,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2968,
-      "preview": "[RSS · 10 items] NINHO | Fri, 26 Jun 2026 | https://adamconcerts.com/ninho-7-64423/ | Ninho confirme"
+      "chars": 2892,
+      "preview": "[RSS · 10 items] HERVÉ VILARD | Fri, 03 Jul 2026 | https://adamconcerts.com/herve-vilard-3-64114/ | "
     },
     {
       "name": "Marseille Comedy Club",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4182,
+      "chars": 4178,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6682,
+      "chars": 6711,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3033,
+      "chars": 3429,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
-    "total_items_structured": 184,
-    "total_chars": 166366
+    "sources_text": 30,
+    "sources_erreur": 3,
+    "total_items_structured": 169,
+    "total_chars": 163156
   },
-  "timestamp": "2026-07-03T08:57:59Z"
+  "timestamp": "2026-07-04T08:32:47Z"
 }
