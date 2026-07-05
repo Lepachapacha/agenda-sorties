@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7988,
+      "chars": 7963,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6862,
+      "chars": 6706,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7711,
+      "chars": 8026,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6620,
-      "preview": "[RSS · 20 items] Festival Musiques du monde | Fri, 03 Jul 2026 | https://34.agendaculturel.fr/festiv"
+      "chars": 6922,
+      "preview": "[RSS · 20 items] La princesse qui voulait devenir une grenouille (et vice versa) | Sun, 05 Jul 2026 "
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6480,
-      "preview": "[RSS · 20 items] Cratère Surfaces 2026 | Sat, 04 Jul 2026 | https://30.agendaculturel.fr/festival/cr"
+      "chars": 6384,
+      "preview": "[RSS · 20 items] Cordes et Vignes au Château Boucarut | Sat, 04 Jul 2026 | https://30.agendaculturel"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6761,
-      "preview": "[RSS · 20 items] Sunset Live aux Terrasses du Port | Fri, 03 Jul 2026 | https://13.agendaculturel.fr"
+      "chars": 6893,
+      "preview": "[RSS · 20 items] Sunset Live aux Terrasses du Port | Sat, 04 Jul 2026 | https://13.agendaculturel.fr"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1406,
+      "preview": "[RSS · 5 items] Agde : 50 sauveteurs sur les plages dès le 4 juillet | Sat, 04 Jul 2026 | https://ic"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1561,
+      "chars": 1419,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6711,
+      "chars": 7077,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 30,
+    "sources_text": 28,
     "sources_erreur": 3,
-    "total_items_structured": 169,
-    "total_chars": 163156
+    "total_items_structured": 184,
+    "total_chars": 166794
   },
-  "timestamp": "2026-07-04T08:32:47Z"
+  "timestamp": "2026-07-05T08:48:42Z"
 }
