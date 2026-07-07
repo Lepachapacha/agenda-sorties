@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7987,
+      "chars": 7920,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6754,
+      "chars": 6768,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8054,
+      "chars": 8121,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6886,
-      "preview": "[RSS · 20 items] Clap de Fin | Wed, 17 Jun 2026 | https://34.agendaculturel.fr/exposition/cabrieres/"
+      "chars": 6954,
+      "preview": "[RSS · 20 items] Concert de l’Ensemble Musicâme France à la Basilique Notre-Dame des Tables | Tue, 0"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6380,
-      "preview": "[RSS · 20 items] Sting | Sun, 05 Jul 2026 | https://30.agendaculturel.fr/concert/nimes/sting.html | "
+      "chars": 6418,
+      "preview": "[RSS · 20 items] Mon Frère | Tue, 07 Jul 2026 | https://30.agendaculturel.fr/theatre/villeneuve-les-"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6819,
-      "preview": "[RSS · 20 items] Programme Juillet et Août | Sun, 05 Jul 2026 | https://13.agendaculturel.fr/theatre"
+      "chars": 6840,
+      "preview": "[RSS · 20 items] Programme Juillet et Août | Tue, 07 Jul 2026 | https://13.agendaculturel.fr/theatre"
     },
     {
       "name": "Montpellier Events",
@@ -93,16 +93,16 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1069,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
+      "chars": 1115,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Fermeture estivale du 31 juillet au"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 1436,
-      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Opéra Comédie Montpellier",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2892,
-      "preview": "[RSS · 10 items] HERVÉ VILARD | Fri, 03 Jul 2026 | https://adamconcerts.com/herve-vilard-3-64114/ | "
+      "chars": 2874,
+      "preview": "[RSS · 10 items] AMBRE | Tue, 07 Jul 2026 | https://adamconcerts.com/ambre-64517/ | Révélée au grand"
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6777,
+      "chars": 7378,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3033,
+      "chars": 3802,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 3,
     "total_items_structured": 184,
-    "total_chars": 166101
+    "total_chars": 166338
   },
-  "timestamp": "2026-07-06T10:13:02Z"
+  "timestamp": "2026-07-07T09:35:58Z"
 }
