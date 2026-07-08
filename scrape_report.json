@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7920,
+      "chars": 7922,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6768,
+      "chars": 6803,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8121,
+      "chars": 8027,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6954,
-      "preview": "[RSS · 20 items] Concert de l’Ensemble Musicâme France à la Basilique Notre-Dame des Tables | Tue, 0"
+      "chars": 6821,
+      "preview": "[RSS · 20 items] Expo Photos \"La Vigne dans tous ses États\" | Tue, 07 Jul 2026 | https://34.agendacu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6418,
-      "preview": "[RSS · 20 items] Mon Frère | Tue, 07 Jul 2026 | https://30.agendaculturel.fr/theatre/villeneuve-les-"
+      "chars": 6426,
+      "preview": "[RSS · 20 items] The Great Disaster | Tue, 07 Jul 2026 | https://30.agendaculturel.fr/theatre/remoul"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6840,
-      "preview": "[RSS · 20 items] Programme Juillet et Août | Tue, 07 Jul 2026 | https://13.agendaculturel.fr/theatre"
+      "chars": 6959,
+      "preview": "[RSS · 20 items] Concert en Apparté Duo Clameurs | Tue, 07 Jul 2026 | https://13.agendaculturel.fr/c"
     },
     {
       "name": "Montpellier Events",
@@ -93,16 +93,16 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1115,
+      "chars": 1139,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Fermeture estivale du 31 juillet au"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 1436,
+      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
     },
     {
       "name": "Opéra Comédie Montpellier",
@@ -141,8 +141,8 @@
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3464,
-      "preview": "[RSS · 10 items] M.A.N.U. fait sa rentrée : envie de passer une saison à Paloma ? | Wed, 01 Jul 2026"
+      "chars": 3486,
+      "preview": "[RSS · 10 items] Paloma recrute ! | Tue, 07 Jul 2026 | https://paloma-nimes.fr/blog/articles/paloma-"
     },
     {
       "name": "Festival de Nîmes",
@@ -181,8 +181,8 @@
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3477,
-      "preview": "[RSS · 10 items] Hasnae Lachgar | Fri, 03 Jul 2026 | https://www.lafriche.org/magazine/hasnae-lachga"
+      "chars": 3379,
+      "preview": "[RSS · 10 items] Tiruhi Gevorgyan | Tue, 07 Jul 2026 | https://www.lafriche.org/magazine/tiruhi-gevo"
     },
     {
       "name": "Le Moulin Marseille",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2874,
-      "preview": "[RSS · 10 items] AMBRE | Tue, 07 Jul 2026 | https://adamconcerts.com/ambre-64517/ | Révélée au grand"
+      "chars": 2902,
+      "preview": "[RSS · 10 items] MICHÈLE TORR | Wed, 08 Jul 2026 | https://adamconcerts.com/michele-torr-64411/ | « "
     },
     {
       "name": "Marseille Comedy Club",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4312,
+      "chars": 4271,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7378,
+      "chars": 5743,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3802,
+      "chars": 3508,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
+    "sources_text": 29,
+    "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 166338
+    "total_chars": 165698
   },
-  "timestamp": "2026-07-07T09:35:58Z"
+  "timestamp": "2026-07-08T08:23:01Z"
 }

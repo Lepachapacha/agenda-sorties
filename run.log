@@ -1,21 +1,21 @@
-[generate.py] 2026-07-07
+[generate.py] 2026-07-08
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7920 chars
+    → texte, 7922 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6768 chars
+    → texte, 6803 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8121 chars
+    → texte, 8027 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6954 chars, 20 items
+    → RSS, 6821 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6418 chars, 20 items
+    → RSS, 6426 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6840 chars, 20 items
+    → RSS, 6959 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -27,9 +27,9 @@ Scraping des sources...
   [11/47] Scraping : Le Corum Montpellier
     → texte, 249 chars
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
-    → texte, 1115 chars
+    → texte, 1139 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
-    → erreur, 19 chars
+    → texte, 1436 chars
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
@@ -39,7 +39,7 @@ Scraping des sources...
   [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
-    → RSS, 3464 chars, 10 items
+    → RSS, 3486 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 962 chars
   [20/47] Scraping : Théâtre de Nîmes
@@ -49,7 +49,7 @@ Scraping des sources...
   [22/47] Scraping : Le Dôme Marseille
     → texte, 134 chars
   [23/47] Scraping : La Friche Belle de Mai
-    → RSS, 3477 chars, 10 items
+    → RSS, 3379 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
     → erreur, 32 chars
   [25/47] Scraping : Théâtre de la Mer Sète
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2874 chars, 10 items
+    → RSS, 2902 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -91,15 +91,15 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3439 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 4312 chars
+    → texte, 4271 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7378 chars
+    → texte, 5743 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3802 chars
+    → texte, 3508 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 986 chars, 3 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 184 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 184 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 170044 → 110000 chars
+  Scrape tronqué : 169404 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  20 événements confirmés (agenda-config.md)
+  19 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-07","titre":"Concert de l\'Ensemble Musicâme France","cat":"classique","lieu":"Montpellier","note":"Musique classique - Ravel, Bach, Debussy, Vivaldi","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/concert-de-l-ensemble-mu'
-  111 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -18 passés, -0 génériques, 0 cat. corrigées → 93 retenus
-  Total : 113 événements (20 manuels + 93 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-07","titre":"Expo Photos \'La Vigne dans tous ses États\'","cat":"expo","lieu":"Saint-Martin-de-Londres, Hérault","note":"28 clichés de Paul Worms sur la vigne","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/saint-martin-de-londres/exp'
+  194 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -48 passés, -0 génériques, 0 cat. corrigées → 146 retenus
+  Total : 165 événements (19 manuels + 146 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
