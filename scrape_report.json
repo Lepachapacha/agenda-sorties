@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7922,
+      "chars": 7961,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6803,
+      "chars": 6989,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8027,
+      "chars": 8030,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6821,
-      "preview": "[RSS · 20 items] Expo Photos \"La Vigne dans tous ses États\" | Tue, 07 Jul 2026 | https://34.agendacu"
+      "chars": 7144,
+      "preview": "[RSS · 20 items] Agde, photographes d’hier, regards d’aujourd’hui | Wed, 08 Jul 2026 | https://34.ag"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6426,
-      "preview": "[RSS · 20 items] The Great Disaster | Tue, 07 Jul 2026 | https://30.agendaculturel.fr/theatre/remoul"
+      "chars": 6431,
+      "preview": "[RSS · 20 items] Clarinette et piano avec Antoine MÉZY et Adrien AVEZARD pour les Jeudis de Nîmes 20"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6959,
-      "preview": "[RSS · 20 items] Concert en Apparté Duo Clameurs | Tue, 07 Jul 2026 | https://13.agendaculturel.fr/c"
+      "chars": 6682,
+      "preview": "[RSS · 20 items] Les Rencontres de la Photographie de Marrakech | Tue, 07 Jul 2026 | https://13.agen"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1406,
-      "preview": "[RSS · 5 items] Agde : 50 sauveteurs sur les plages dès le 4 juillet | Sat, 04 Jul 2026 | https://ic"
+      "chars": 1483,
+      "preview": "[RSS · 5 items] Feux d’artifice du 14 juillet 2026 : ce qui change sur le Bassin de Thau | Wed, 08 J"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5367,
+      "chars": 5364,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 7944,
+      "chars": 8035,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-01-16 | Vergeze Espace, Vergèz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4271,
+      "chars": 4520,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 5743,
+      "chars": 6107,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3508,
+      "chars": 3550,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 165698
+    "total_chars": 166797
   },
-  "timestamp": "2026-07-08T08:23:01Z"
+  "timestamp": "2026-07-09T09:38:50Z"
 }
