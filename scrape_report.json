@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7961,
+      "chars": 7916,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6989,
+      "chars": 6917,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8030,
+      "chars": 8102,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7144,
+      "chars": 6791,
       "preview": "[RSS · 20 items] Agde, photographes d’hier, regards d’aujourd’hui | Wed, 08 Jul 2026 | https://34.ag"
     },
     {
@@ -37,15 +37,15 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6431,
-      "preview": "[RSS · 20 items] Clarinette et piano avec Antoine MÉZY et Adrien AVEZARD pour les Jeudis de Nîmes 20"
+      "chars": 6364,
+      "preview": "[RSS · 20 items] La Musique et l'Amour | Fri, 10 Jul 2026 | https://30.agendaculturel.fr/concert/nim"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6682,
+      "chars": 6852,
       "preview": "[RSS · 20 items] Les Rencontres de la Photographie de Marrakech | Tue, 07 Jul 2026 | https://13.agen"
     },
     {
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1139,
+      "chars": 1115,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Fermeture estivale du 31 juillet au"
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5364,
+      "chars": 5356,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -181,8 +181,8 @@
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3379,
-      "preview": "[RSS · 10 items] Tiruhi Gevorgyan | Tue, 07 Jul 2026 | https://www.lafriche.org/magazine/tiruhi-gevo"
+      "chars": 3264,
+      "preview": "[RSS · 10 items] Assem Hazem | Thu, 09 Jul 2026 | https://www.lafriche.org/magazine/assem-hazem/ | R"
     },
     {
       "name": "Le Moulin Marseille",
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8318,
+      "chars": 8308,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4520,
+      "chars": 4691,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6107,
+      "chars": 6373,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 166797
+    "total_chars": 166782
   },
-  "timestamp": "2026-07-09T09:38:50Z"
+  "timestamp": "2026-07-10T09:29:34Z"
 }
