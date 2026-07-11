@@ -1,25 +1,25 @@
-[generate.py] 2026-07-10
+[generate.py] 2026-07-11
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7916 chars
+    → texte, 7935 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 6917 chars
+    → texte, 6990 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8102 chars
+    → texte, 7950 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6791 chars, 20 items
+    → RSS, 6911 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6364 chars, 20 items
+    → RSS, 6347 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6852 chars, 20 items
+    → RSS, 6703 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1483 chars, 5 items
+    → RSS, 1586 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -33,7 +33,7 @@ Scraping des sources...
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3387 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → texte, 1419 chars
+    → texte, 3182 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
@@ -45,7 +45,7 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5356 chars
+    → texte, 5331 chars
   [22/47] Scraping : Le Dôme Marseille
     → texte, 134 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -55,7 +55,7 @@ Scraping des sources...
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
-    → texte, 1464 chars
+    → texte, 1392 chars
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8308 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2902 chars, 10 items
+    → RSS, 2868 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -93,7 +93,7 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4691 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6373 chars
+    → texte, 6488 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 3550 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 170488 → 110000 chars
+  Scrape tronqué : 172232 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  19 événements confirmés (agenda-config.md)
+  18 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-08","titre":"Agde, photographes d\'hier, regards d\'aujourd\'hui","cat":"expo","lieu":"Agde, Hérault","note":"Exposition photographique","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/agde/agde-photographes-d-hier-regards-d-aujourd-hui.'
-  184 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -45 passés, -0 génériques, 1 cat. corrigées → 139 retenus
-  Total : 158 événements (19 manuels + 139 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-10","titre":"Discordance","cat":"expo","lieu":"Loupian, Hérault","note":"Installations artistiques","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/loupian/discordance.html","gratuit":false,"groupe":""},{"date":"2026-07-10","titre":"P'
+  161 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -46 passés, -0 génériques, 0 cat. corrigées → 115 retenus
+  Total : 133 événements (18 manuels + 115 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

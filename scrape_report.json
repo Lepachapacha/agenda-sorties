@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7916,
+      "chars": 7935,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6917,
+      "chars": 6990,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8102,
+      "chars": 7950,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6791,
-      "preview": "[RSS · 20 items] Agde, photographes d’hier, regards d’aujourd’hui | Wed, 08 Jul 2026 | https://34.ag"
+      "chars": 6911,
+      "preview": "[RSS · 20 items] Discordance | Fri, 10 Jul 2026 | https://34.agendaculturel.fr/exposition/loupian/di"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6364,
-      "preview": "[RSS · 20 items] La Musique et l'Amour | Fri, 10 Jul 2026 | https://30.agendaculturel.fr/concert/nim"
+      "chars": 6347,
+      "preview": "[RSS · 20 items] Marie Françoise Gagneraud, Variations autour des fenêtres | Fri, 10 Jul 2026 | http"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6852,
+      "chars": 6703,
       "preview": "[RSS · 20 items] Les Rencontres de la Photographie de Marrakech | Tue, 07 Jul 2026 | https://13.agen"
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1483,
-      "preview": "[RSS · 5 items] Feux d’artifice du 14 juillet 2026 : ce qui change sur le Bassin de Thau | Wed, 08 J"
+      "chars": 1586,
+      "preview": "[RSS · 5 items] Les salins de Frontignan ont leur parcours de découverte à ciel ouvert | Fri, 10 Jul"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1419,
+      "chars": 3182,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5356,
+      "chars": 5331,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 1464,
+      "chars": 1392,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2902,
-      "preview": "[RSS · 10 items] MICHÈLE TORR | Wed, 08 Jul 2026 | https://adamconcerts.com/michele-torr-64411/ | « "
+      "chars": 2868,
+      "preview": "[RSS · 10 items] STAR ACADEMY | Fri, 10 Jul 2026 | https://adamconcerts.com/star-academy-7-64541/ | "
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6373,
+      "chars": 6488,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 166782
+    "total_chars": 168526
   },
-  "timestamp": "2026-07-10T09:29:34Z"
+  "timestamp": "2026-07-11T07:50:19Z"
 }
