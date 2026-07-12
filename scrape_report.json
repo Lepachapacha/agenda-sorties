@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7935,
+      "chars": 7892,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6990,
+      "chars": 6992,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7950,
+      "chars": 7789,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6911,
-      "preview": "[RSS · 20 items] Discordance | Fri, 10 Jul 2026 | https://34.agendaculturel.fr/exposition/loupian/di"
+      "chars": 7002,
+      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 11 Jul 2026 | https://34.agendacultur"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6347,
+      "chars": 6443,
       "preview": "[RSS · 20 items] Marie Françoise Gagneraud, Variations autour des fenêtres | Fri, 10 Jul 2026 | http"
     },
     {
@@ -45,7 +45,7 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6703,
+      "chars": 6848,
       "preview": "[RSS · 20 items] Les Rencontres de la Photographie de Marrakech | Tue, 07 Jul 2026 | https://13.agen"
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1586,
-      "preview": "[RSS · 5 items] Les salins de Frontignan ont leur parcours de découverte à ciel ouvert | Fri, 10 Jul"
+      "chars": 1701,
+      "preview": "[RSS · 5 items] L’affiche de la Saint-Louis 2026 dévoilée : l’œuvre de Magali Réthoré | Sat, 11 Jul "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 3182,
+      "chars": 3021,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6488,
+      "chars": 6584,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 168526
+    "total_chars": 168706
   },
-  "timestamp": "2026-07-11T07:50:19Z"
+  "timestamp": "2026-07-12T08:11:53Z"
 }
