@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7892,
+      "chars": 7883,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6992,
+      "chars": 6833,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7789,
+      "chars": 8176,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7002,
+      "chars": 6862,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 11 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6443,
-      "preview": "[RSS · 20 items] Marie Françoise Gagneraud, Variations autour des fenêtres | Fri, 10 Jul 2026 | http"
+      "chars": 6487,
+      "preview": "[RSS · 20 items] Marie Françoise Gagneraud, Variations autour des fenêtres | Mon, 13 Jul 2026 | http"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6848,
-      "preview": "[RSS · 20 items] Les Rencontres de la Photographie de Marrakech | Tue, 07 Jul 2026 | https://13.agen"
+      "chars": 6875,
+      "preview": "[RSS · 20 items] Soirées musicales | Sun, 12 Jul 2026 | https://13.agendaculturel.fr/concert/noves/s"
     },
     {
       "name": "Montpellier Events",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 1392,
+      "chars": 1289,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3439,
+      "chars": 3563,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4691,
+      "chars": 4068,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6584,
+      "chars": 6887,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3550,
+      "chars": 3953,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 3,
     "total_items_structured": 184,
-    "total_chars": 168706
+    "total_chars": 168845
   },
-  "timestamp": "2026-07-12T08:11:53Z"
+  "timestamp": "2026-07-13T09:20:00Z"
 }
