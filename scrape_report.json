@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7883,
+      "chars": 7831,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6833,
+      "chars": 7264,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8176,
+      "chars": 8134,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6862,
+      "chars": 6942,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 11 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6487,
-      "preview": "[RSS · 20 items] Marie Françoise Gagneraud, Variations autour des fenêtres | Mon, 13 Jul 2026 | http"
+      "chars": 6524,
+      "preview": "[RSS · 20 items] Exposition de dessins | Sun, 12 Jul 2026 | https://30.agendaculturel.fr/exposition/"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6875,
-      "preview": "[RSS · 20 items] Soirées musicales | Sun, 12 Jul 2026 | https://13.agendaculturel.fr/concert/noves/s"
+      "chars": 6652,
+      "preview": "[RSS · 20 items] Balèti | Mon, 13 Jul 2026 | https://13.agendaculturel.fr/concert/marseille/baleti-1"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1701,
-      "preview": "[RSS · 5 items] L’affiche de la Saint-Louis 2026 dévoilée : l’œuvre de Magali Réthoré | Sat, 11 Jul "
+      "chars": 1844,
+      "preview": "[RSS · 5 items] Feu d’artifice du 14 juillet à Sète : maintenu, tiré depuis une barge en mer | Mon, "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -99,10 +99,10 @@
     {
       "name": "Théâtre Jean Vilar Montpellier",
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 1436,
-      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Opéra Comédie Montpellier",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4068,
+      "chars": 4030,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6887,
+      "chars": 7171,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3953,
+      "chars": 3550,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
+    "sources_text": 27,
+    "sources_erreur": 4,
     "total_items_structured": 184,
-    "total_chars": 168845
+    "total_chars": 167645
   },
-  "timestamp": "2026-07-13T09:20:00Z"
+  "timestamp": "2026-07-14T07:57:58Z"
 }
