@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7831,
+      "chars": 7974,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7264,
+      "chars": 7184,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8134,
+      "chars": 8234,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6942,
+      "chars": 6853,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 11 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6524,
-      "preview": "[RSS · 20 items] Exposition de dessins | Sun, 12 Jul 2026 | https://30.agendaculturel.fr/exposition/"
+      "chars": 6517,
+      "preview": "[RSS · 20 items] Marie Françoise Gagneraud, Variations autour des fenêtres | Mon, 13 Jul 2026 | http"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6652,
-      "preview": "[RSS · 20 items] Balèti | Mon, 13 Jul 2026 | https://13.agendaculturel.fr/concert/marseille/baleti-1"
+      "chars": 6715,
+      "preview": "[RSS · 20 items] Guignol, l'ami des Enfants | Tue, 14 Jul 2026 | https://13.agendaculturel.fr/jeune-"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1844,
-      "preview": "[RSS · 5 items] Feu d’artifice du 14 juillet à Sète : maintenu, tiré depuis une barge en mer | Mon, "
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -99,10 +99,10 @@
     {
       "name": "Théâtre Jean Vilar Montpellier",
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 1436,
+      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
     },
     {
       "name": "Opéra Comédie Montpellier",
@@ -155,17 +155,17 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5331,
+      "chars": 5254,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3563,
+      "chars": 3534,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4030,
+      "chars": 4086,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7171,
+      "chars": 6210,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3550,
+      "chars": 3841,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 27,
-    "sources_erreur": 4,
-    "total_items_structured": 184,
-    "total_chars": 167645
+    "sources_text": 30,
+    "sources_erreur": 3,
+    "total_items_structured": 169,
+    "total_chars": 165092
   },
-  "timestamp": "2026-07-14T07:57:58Z"
+  "timestamp": "2026-07-15T08:03:09Z"
 }
