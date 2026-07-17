@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7997,
+      "chars": 7928,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7233,
+      "chars": 7144,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8271,
+      "chars": 8260,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6853,
-      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 11 Jul 2026 | https://34.agendacultur"
+      "chars": 6728,
+      "preview": "[RSS · 20 items] Duo 51: Escapade   Harpe et Violoncelle | Thu, 16 Jul 2026 | https://34.agendacultu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6539,
-      "preview": "[RSS · 20 items] Concert Trio DEDOCI — Musica Roque (7ᵉ édition) | Thu, 16 Jul 2026 | https://30.age"
+      "chars": 6416,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Fri, 17 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6545,
-      "preview": "[RSS · 20 items] Libre Comme le Vent | Wed, 15 Jul 2026 | https://13.agendaculturel.fr/jeune-public/"
+      "chars": 6722,
+      "preview": "[RSS · 20 items] La Guinguette Femmes par la Cie En Flammes | Thu, 16 Jul 2026 | https://13.agendacu"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1934,
-      "preview": "[RSS · 5 items] Les plages de Balaruc-les-Bains interdites aux chiens, ce qu’il faut savoir | Wed, 1"
+      "chars": 1872,
+      "preview": "[RSS · 5 items] La plage du Môle fermée la nuit cet été au Cap d’Agde | Thu, 16 Jul 2026 | https://i"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5254,
+      "chars": 5331,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2890,
-      "preview": "[RSS · 10 items] SALUT LES COPAINS | Wed, 15 Jul 2026 | https://adamconcerts.com/salut-les-copains-2"
+      "chars": 2861,
+      "preview": "[RSS · 10 items] DANI LARY | Fri, 17 Jul 2026 | https://adamconcerts.com/dani-lary-3-64581/ | Le Lar"
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6493,
+      "chars": 5944,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 184,
-    "total_chars": 169194
+    "total_chars": 168391
   },
-  "timestamp": "2026-07-16T08:07:28Z"
+  "timestamp": "2026-07-17T08:04:29Z"
 }
