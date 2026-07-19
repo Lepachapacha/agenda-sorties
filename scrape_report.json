@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7853,
+      "chars": 7843,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7088,
+      "chars": 7136,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8068,
+      "chars": 8128,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6941,
-      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 11 Jul 2026 | https://34.agendacultur"
+      "chars": 6789,
+      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6402,
+      "chars": 6361,
       "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sat, 18 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
@@ -45,7 +45,7 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6639,
+      "chars": 6674,
       "preview": "[RSS · 20 items] Murmures – Alain du Pontavice | Fri, 17 Jul 2026 | https://13.agendaculturel.fr/exp"
     },
     {
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1872,
-      "preview": "[RSS · 5 items] La plage du Môle fermée la nuit cet été au Cap d’Agde | Thu, 16 Jul 2026 | https://i"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -323,10 +323,10 @@
     {
       "name": "Festival Radio France Occitanie",
       "url": "https://lefestival.eu/programmes/",
-      "method": "erreur",
-      "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "method": "RSS",
+      "items": 3,
+      "chars": 1336,
+      "preview": "[RSS · 3 items] Entretien sur France Musique avec Michel Orier, Directeur du Festival | Sun, 08 Mar "
     },
     {
       "name": "Family Piknik Montpellier",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4309,
+      "chars": 4312,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6644,
+      "chars": 6660,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 12,
+    "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 4,
-    "total_items_structured": 181,
-    "total_chars": 166760
+    "sources_text": 31,
+    "sources_erreur": 2,
+    "total_items_structured": 169,
+    "total_chars": 164743
   },
-  "timestamp": "2026-07-18T07:44:11Z"
+  "timestamp": "2026-07-19T08:11:05Z"
 }
