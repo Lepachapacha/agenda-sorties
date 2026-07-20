@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7843,
+      "chars": 7859,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7136,
+      "chars": 7156,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8128,
+      "chars": 8086,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6789,
+      "chars": 7000,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6361,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sat, 18 Jul 2026 | https://30.agendaculturel.fr"
+      "chars": 6374,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 20 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6674,
-      "preview": "[RSS · 20 items] Murmures – Alain du Pontavice | Fri, 17 Jul 2026 | https://13.agendaculturel.fr/exp"
+      "chars": 6686,
+      "preview": "[RSS · 20 items] Rocinante | Sun, 19 Jul 2026 | https://13.agendaculturel.fr/exposition/salon-de-pro"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1827,
+      "preview": "[RSS · 5 items] Un nouveau parking relais gratuit à l’entrée de Sète | Sat, 18 Jul 2026 | https://ic"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -155,17 +155,17 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5305,
+      "chars": 5397,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -189,8 +189,8 @@
       "url": "https://lemoulin.org/marseille/",
       "method": "erreur",
       "items": 0,
-      "chars": 32,
-      "preview": "[Indisponible : ConnectionError]"
+      "chars": 10,
+      "preview": "[HTTP 404]"
     },
     {
       "name": "Théâtre de la Mer Sète",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3534,
+      "chars": 3543,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4312,
+      "chars": 4026,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 31,
+    "sources_text": 29,
     "sources_erreur": 2,
-    "total_items_structured": 169,
-    "total_chars": 164743
+    "total_items_structured": 184,
+    "total_chars": 168129
   },
-  "timestamp": "2026-07-19T08:11:05Z"
+  "timestamp": "2026-07-20T08:52:27Z"
 }
