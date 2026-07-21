@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7859,
+      "chars": 7869,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7156,
+      "chars": 7187,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8086,
+      "chars": 8197,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7000,
-      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
+      "chars": 6856,
+      "preview": "[RSS · 20 items] Mémoires perdues | Tue, 21 Jul 2026 | https://34.agendaculturel.fr/exposition/sete/"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6374,
+      "chars": 6418,
       "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 20 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6686,
-      "preview": "[RSS · 20 items] Rocinante | Sun, 19 Jul 2026 | https://13.agendaculturel.fr/exposition/salon-de-pro"
+      "chars": 6526,
+      "preview": "[RSS · 20 items] La Goushka | Mon, 20 Jul 2026 | https://13.agendaculturel.fr/concert/marseille/la-g"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1827,
-      "preview": "[RSS · 5 items] Un nouveau parking relais gratuit à l’entrée de Sète | Sat, 18 Jul 2026 | https://ic"
+      "chars": 1826,
+      "preview": "[RSS · 5 items] Aller à Bouzigues en bus avec la ligne 23, dimanche compris | Mon, 20 Jul 2026 | htt"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1151,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Fermeture estivale du 31 juillet au"
+      "chars": 1153,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée de lancement 2026-2027 What "
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -109,8 +109,8 @@
       "url": "https://www.opera-orchestre-montpellier.fr/",
       "method": "RSS",
       "items": 10,
-      "chars": 3387,
-      "preview": "[RSS · 10 items] Saison 2026-27 | Prendre son temps | Wed, 03 Jun 2026 | https://www.opera-orchestre"
+      "chars": 3201,
+      "preview": "[RSS · 10 items] Votre tenue de ski star de l’opéra | Mon, 20 Jul 2026 | https://www.opera-orchestre"
     },
     {
       "name": "Domaine d'O Montpellier",
@@ -141,8 +141,8 @@
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3486,
-      "preview": "[RSS · 10 items] Paloma recrute ! | Tue, 07 Jul 2026 | https://paloma-nimes.fr/blog/articles/paloma-"
+      "chars": 3556,
+      "preview": "[RSS · 10 items] Rejoins l’équipe bénévole 2026/2027 : les inscriptions sont ouvertes ! | Mon, 20 Ju"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5397,
+      "chars": 5287,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -187,10 +187,10 @@
     {
       "name": "Le Moulin Marseille",
       "url": "https://lemoulin.org/marseille/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 404]"
+      "chars": 0,
+      "preview": ""
     },
     {
       "name": "Théâtre de la Mer Sète",
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8308,
+      "chars": 8226,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -222,7 +222,7 @@
       "method": "JSON-LD",
       "items": 25,
       "chars": 8136,
-      "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-01-16 | Vergeze Espace, Vergèz"
+      "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4026,
+      "chars": 4006,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6660,
+      "chars": 6222,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
+    "sources_text": 30,
+    "sources_erreur": 1,
     "total_items_structured": 184,
-    "total_chars": 168129
+    "total_chars": 167246
   },
-  "timestamp": "2026-07-20T08:52:27Z"
+  "timestamp": "2026-07-21T08:22:46Z"
 }
