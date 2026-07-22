@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7869,
+      "chars": 7859,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7187,
+      "chars": 7256,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8197,
+      "chars": 8103,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6856,
-      "preview": "[RSS · 20 items] Mémoires perdues | Tue, 21 Jul 2026 | https://34.agendaculturel.fr/exposition/sete/"
+      "chars": 6733,
+      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6418,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 20 Jul 2026 | https://30.agendaculturel.fr"
+      "chars": 6491,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 22 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6526,
-      "preview": "[RSS · 20 items] La Goushka | Mon, 20 Jul 2026 | https://13.agendaculturel.fr/concert/marseille/la-g"
+      "chars": 6732,
+      "preview": "[RSS · 20 items] La Boum Boom et le Bal d'Offensive Brioche | Tue, 21 Jul 2026 | https://13.agendacu"
     },
     {
       "name": "Montpellier Events",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5287,
+      "chars": 5423,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -189,8 +189,8 @@
       "url": "https://lemoulin.org/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 0,
-      "preview": ""
+      "chars": 6820,
+      "preview": "OLXTOTO > Lolos Pengujian Situs Toto Slot Gacor Resmi Terpercaya OLXTOTO > Lolos Pengujian Situs Tot"
     },
     {
       "name": "Théâtre de la Mer Sète",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3543,
+      "chars": 3625,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6222,
+      "chars": 6868,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,16 +365,16 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3853,
+      "chars": 3461,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
       "name": "Arènes de Béziers Feria 2026",
       "url": "https://www.arenes-beziers.com/ferias-2026/",
       "method": "RSS",
-      "items": 3,
-      "chars": 986,
-      "preview": "[RSS · 3 items] Soyez VIP à la feria OFF | Wed, 29 Apr 2026 | https://www.arenes-beziers.com/actuali"
+      "items": 7,
+      "chars": 2242,
+      "preview": "[RSS · 7 items] Corrida Zapatista | Tue, 21 Jul 2026 | https://www.arenes-beziers.com/actualites/cor"
     }
   ],
   "totals": {
@@ -384,8 +384,8 @@
     "sources_jsonld": 3,
     "sources_text": 30,
     "sources_erreur": 1,
-    "total_items_structured": 184,
-    "total_chars": 167246
+    "total_items_structured": 188,
+    "total_chars": 175915
   },
-  "timestamp": "2026-07-21T08:22:46Z"
+  "timestamp": "2026-07-22T08:23:16Z"
 }
