@@ -1,21 +1,21 @@
-[generate.py] 2026-07-22
+[generate.py] 2026-07-23
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7859 chars
+    → texte, 7838 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 7256 chars
+    → texte, 7195 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8103 chars
+    → texte, 7786 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6733 chars, 20 items
+    → RSS, 6820 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6491 chars, 20 items
+    → RSS, 6380 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6732 chars, 20 items
+    → RSS, 6465 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -41,13 +41,13 @@ Scraping des sources...
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
-    → texte, 512 chars
+    → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5423 chars
+    → texte, 5474 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8226 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 8136 chars, 25 items
+    → JSON-LD, 8116 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4006 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6868 chars
+    → texte, 7356 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3461 chars
+    → texte, 3404 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2242 chars, 7 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:30 skip:0 erreur:1 | 188 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 188 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 179621 → 110000 chars
+  Scrape tronqué : 178828 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   11 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-22","titre":"Orelsan au Festival de Nîmes 2026","cat":"concert","lieu":"Arènes de Nîmes, Nîmes","note":"Rapper français, 22-23 juillet","fils":false,"stars":3,"section":"concerts","url":"https://30.agendaculturel.fr/concert/nimes/orelsan.html","gratuit":false,"groupe":""},{'
-  89 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -44 passés, -0 génériques, 0 cat. corrigées → 45 retenus
-  Total : 56 événements (11 manuels + 45 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-18","titre":"Les Artistes Contemporains d\'Occitanie","cat":"expo","lieu":"Villeneuve-lès-Béziers, Hérault","note":"Exposition multidisciplinaire peinture et sculpture","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-bez'
+  134 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -40 passés, -0 génériques, 0 cat. corrigées → 94 retenus
+  Total : 105 événements (11 manuels + 94 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7859,
+      "chars": 7838,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7256,
+      "chars": 7195,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8103,
+      "chars": 7786,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6733,
+      "chars": 6820,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,7 +37,7 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6491,
+      "chars": 6380,
       "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 22 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6732,
-      "preview": "[RSS · 20 items] La Boum Boom et le Bal d'Offensive Brioche | Tue, 21 Jul 2026 | https://13.agendacu"
+      "chars": 6465,
+      "preview": "[RSS · 20 items] Rocinante | Mon, 20 Jul 2026 | https://13.agendaculturel.fr/exposition/salon-de-pro"
     },
     {
       "name": "Montpellier Events",
@@ -149,8 +149,8 @@
       "url": "https://www.festivaldenimes.com/programmation",
       "method": "texte",
       "items": 0,
-      "chars": 512,
-      "preview": "Artistes Archive - Festival de Nîmes BOURSE AUX BILLETS OFFICIELLE DISPONIBLE   - BOURSE AUX BILLETS"
+      "chars": 62,
+      "preview": "Artistes Archive - Festival de Nîmes 24 & 25 & 26 juillet 2026"
     },
     {
       "name": "Théâtre de Nîmes",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5423,
+      "chars": 5474,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8136,
+      "chars": 8116,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6868,
+      "chars": 7356,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3461,
+      "chars": 3404,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 1,
+    "sources_text": 29,
+    "sources_erreur": 2,
     "total_items_structured": 188,
-    "total_chars": 175915
+    "total_chars": 175122
   },
-  "timestamp": "2026-07-22T08:23:16Z"
+  "timestamp": "2026-07-23T08:24:38Z"
 }
