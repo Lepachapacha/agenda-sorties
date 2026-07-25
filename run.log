@@ -1,25 +1,25 @@
-[generate.py] 2026-07-24
+[generate.py] 2026-07-25
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7838 chars
+    → texte, 7914 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 7206 chars
+    → texte, 5480 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7848 chars
+    → texte, 7829 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6728 chars, 20 items
+    → RSS, 6723 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6462 chars, 20 items
+    → RSS, 6486 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6589 chars, 20 items
+    → RSS, 6515 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1826 chars, 5 items
+    → RSS, 1830 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -27,7 +27,7 @@ Scraping des sources...
   [11/47] Scraping : Le Corum Montpellier
     → texte, 249 chars
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
-    → texte, 1153 chars
+    → texte, 1192 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
     → texte, 1436 chars
   [14/47] Scraping : Opéra Comédie Montpellier
@@ -47,7 +47,7 @@ Scraping des sources...
   [21/47] Scraping : Le Silo Marseille
     → texte, 5474 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4006 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7082 chars
+    → texte, 6811 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 3404 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2242 chars, 7 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:30 skip:0 erreur:1 | 188 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 188 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 179657 → 110000 chars
+  Scrape tronqué : 177590 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   11 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-18","titre":"Les Artistes Contemporains d\'Occitanie","cat":"expo","lieu":"Villeneuve-lès-Béziers","note":"Exposition multidisciplinaire peinture et sculpture","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-beziers/les-'
-  162 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -38 passés, -0 génériques, 0 cat. corrigées → 124 retenus
-  Total : 135 événements (11 manuels + 124 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-18","titre":"Les Artistes Contemporains d\'Occitanie","cat":"expo","lieu":"Villeneuve-lès-Béziers","note":"Exposition multidisciplinaire peintres et sculpteurs","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-beziers/les'
+  100 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -24 passés, -0 génériques, 0 cat. corrigées → 76 retenus
+  Total : 87 événements (11 manuels + 76 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
