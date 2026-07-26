@@ -1,21 +1,21 @@
-[generate.py] 2026-07-25
+[generate.py] 2026-07-26
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7914 chars
+    → texte, 7841 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5480 chars
+    → texte, 5304 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7829 chars
+    → texte, 7808 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6723 chars, 20 items
+    → RSS, 6752 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6486 chars, 20 items
+    → RSS, 6464 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6515 chars, 20 items
+    → RSS, 6725 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -47,7 +47,7 @@ Scraping des sources...
   [21/47] Scraping : Le Silo Marseille
     → texte, 5474 chars
   [22/47] Scraping : Le Dôme Marseille
-    → erreur, 19 chars
+    → texte, 134 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4006 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6811 chars
+    → texte, 7200 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 3404 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2242 chars, 7 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 188 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:30 skip:0 erreur:1 | 188 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 177590 → 110000 chars
+  Scrape tronqué : 178041 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  11 événements confirmés (agenda-config.md)
+  10 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-18","titre":"Les Artistes Contemporains d\'Occitanie","cat":"expo","lieu":"Villeneuve-lès-Béziers","note":"Exposition multidisciplinaire peintres et sculpteurs","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-beziers/les'
-  100 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -24 passés, -0 génériques, 0 cat. corrigées → 76 retenus
-  Total : 87 événements (11 manuels + 76 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-25","titre":"Baillargues en fête","cat":"feria","lieu":"Baillargues, Hérault","note":"Traditions camarguaises, concerts","fils":true,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/festival/fete-d-ete.html","gratuit":true,"groupe":""},{"date":"2026-07-25"'
+  111 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -31 passés, -0 génériques, 1 cat. corrigées → 80 retenus
+  Total : 90 événements (10 manuels + 80 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

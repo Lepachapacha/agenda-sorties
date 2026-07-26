@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7914,
+      "chars": 7841,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5480,
+      "chars": 5304,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7829,
+      "chars": 7808,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6723,
+      "chars": 6752,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6486,
-      "preview": "[RSS · 20 items] Vernissage Exposition | Fri, 24 Jul 2026 | https://30.agendaculturel.fr/exposition/"
+      "chars": 6464,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sat, 25 Jul 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6515,
-      "preview": "[RSS · 20 items] Holly G et Totally Spice's, Jungeli et Scorpio Qveen | Fri, 24 Jul 2026 | https://1"
+      "chars": 6725,
+      "preview": "[RSS · 20 items] Rocinante | Mon, 20 Jul 2026 | https://13.agendaculturel.fr/exposition/salon-de-pro"
     },
     {
       "name": "Montpellier Events",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6811,
+      "chars": 7200,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
+    "sources_text": 30,
+    "sources_erreur": 1,
     "total_items_structured": 188,
-    "total_chars": 173884
+    "total_chars": 174335
   },
-  "timestamp": "2026-07-25T08:01:52Z"
+  "timestamp": "2026-07-26T08:21:37Z"
 }
