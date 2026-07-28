@@ -1,25 +1,25 @@
-[generate.py] 2026-07-27
+[generate.py] 2026-07-28
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7932 chars
+    → texte, 7915 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5538 chars
+    → texte, 5536 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7914 chars
+    → texte, 7931 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 7093 chars, 20 items
+    → RSS, 6900 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 6526 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6646 chars, 20 items
+    → RSS, 6767 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1830 chars, 5 items
+    → RSS, 1877 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2861 chars, 10 items
+    → RSS, 2889 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -79,7 +79,7 @@ Scraping des sources...
   [37/47] Scraping : Toutlemondedanse Montpellier
     → texte, 979 chars
   [38/47] Scraping : Tempo Latino Vic-Fezensac
-    → texte, 1426 chars
+    → texte, 1366 chars
   [39/47] Scraping : Latinamap Festivals Été
     → texte, 12000 chars
   [40/47] Scraping : Jazz à Sète
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 179198 → 110000 chars
+  Scrape tronqué : 179139 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  9 événements confirmés (agenda-config.md)
+  8 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-27","titre":"Concert Ensemble Petit Titan de Bardou - 5e symphonie de Mahler","cat":"classique","lieu":"Roujan, Hérault","note":"Transcription Klaus Simon","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/roujan/concert-ensemble-petit-'
-  64 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -12 passés, -0 génériques, 0 cat. corrigées → 52 retenus
-  Total : 61 événements (9 manuels + 52 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-18","titre":"Les Artistes Contemporains d\'Occitanie","cat":"expo","lieu":"Villeneuve-lès-Béziers","note":"Exposition multidisciplinaire","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-beziers/les-artistes-contemporains'
+  78 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -8 passés, -0 génériques, 0 cat. corrigées → 70 retenus
+  Total : 78 événements (8 manuels + 70 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

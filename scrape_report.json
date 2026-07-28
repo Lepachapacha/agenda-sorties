@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7932,
+      "chars": 7915,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5538,
+      "chars": 5536,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7914,
+      "chars": 7931,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7093,
-      "preview": "[RSS · 20 items] Concert Ensemble Petit Titan de Bardou - 5e symphonie de Mahler | Mon, 27 Jul 2026 "
+      "chars": 6900,
+      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6646,
-      "preview": "[RSS · 20 items] Exposition de la Saint Éloi | Sun, 26 Jul 2026 | https://13.agendaculturel.fr/expos"
+      "chars": 6767,
+      "preview": "[RSS · 20 items] Éclat, Quand les Chevaux Dansent avec la Lumière | Mon, 27 Jul 2026 | https://13.ag"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1830,
-      "preview": "[RSS · 5 items] Homemade Festival reporté à Sète : le Plan B gratuit du 25 juillet au Dancing | Fri,"
+      "chars": 1877,
+      "preview": "[RSS · 5 items] Augustales à Loupian 2026 : 20 ans de spectacles antiques, le programme complet | Mo"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2861,
-      "preview": "[RSS · 10 items] DANI LARY | Fri, 17 Jul 2026 | https://adamconcerts.com/dani-lary-3-64581/ | Le Lar"
+      "chars": 2889,
+      "preview": "[RSS · 10 items] MOUSQUETAIRE, UNE CREATION DU PUY DU FOU | Tue, 28 Jul 2026 | https://adamconcerts."
     },
     {
       "name": "Marseille Comedy Club",
@@ -301,7 +301,7 @@
       "url": "https://tempolatino.com/en/",
       "method": "texte",
       "items": 0,
-      "chars": 1426,
+      "chars": 1366,
       "preview": "Tempo Latino Festival - 1st European Afro-Cuban Latin Music Festival. Salsa - Vic-Fezensac Gers Occi"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 30,
     "sources_erreur": 1,
     "total_items_structured": 188,
-    "total_chars": 175492
+    "total_chars": 175433
   },
-  "timestamp": "2026-07-27T09:44:07Z"
+  "timestamp": "2026-07-28T08:28:30Z"
 }
