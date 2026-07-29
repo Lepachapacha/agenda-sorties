@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7915,
+      "chars": 7932,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5536,
+      "chars": 5573,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7931,
+      "chars": 7851,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6900,
+      "chars": 6685,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,7 +37,7 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6526,
+      "chars": 6516,
       "preview": "[RSS · 20 items] La Saison | Mon, 27 Jul 2026 | https://30.agendaculturel.fr/festival/la-saison.html"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6767,
-      "preview": "[RSS · 20 items] Éclat, Quand les Chevaux Dansent avec la Lumière | Mon, 27 Jul 2026 | https://13.ag"
+      "chars": 6588,
+      "preview": "[RSS · 20 items] La Boum Boom et le bal d'Offensive Brioche | Wed, 29 Jul 2026 | https://13.agendacu"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1877,
-      "preview": "[RSS · 5 items] Augustales à Loupian 2026 : 20 ans de spectacles antiques, le programme complet | Mo"
+      "chars": 1897,
+      "preview": "[RSS · 5 items] Fiest’A Sète 2026 : six soirées de concerts au Théâtre de la Mer | Tue, 28 Jul 2026 "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1192,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée de lancement 2026-2027 What "
+      "chars": 1125,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée de lancement 2026-2027 fusio"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 12000,
+      "chars": 11752,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5474,
+      "chars": 5483,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2889,
-      "preview": "[RSS · 10 items] MOUSQUETAIRE, UNE CREATION DU PUY DU FOU | Tue, 28 Jul 2026 | https://adamconcerts."
+      "chars": 2905,
+      "preview": "[RSS · 10 items] MICHEL FUGAIN | Wed, 29 Jul 2026 | https://adamconcerts.com/michel-fugain-2-64672/ "
     },
     {
       "name": "Marseille Comedy Club",
@@ -301,7 +301,7 @@
       "url": "https://tempolatino.com/en/",
       "method": "texte",
       "items": 0,
-      "chars": 1366,
+      "chars": 1417,
       "preview": "Tempo Latino Festival - 1st European Afro-Cuban Latin Music Festival. Salsa - Vic-Fezensac Gers Occi"
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3707,
+      "chars": 3711,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7200,
+      "chars": 7141,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3404,
+      "chars": 3053,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 30,
     "sources_erreur": 1,
     "total_items_structured": 188,
-    "total_chars": 175433
+    "total_chars": 174378
   },
-  "timestamp": "2026-07-28T08:28:30Z"
+  "timestamp": "2026-07-29T08:34:52Z"
 }
