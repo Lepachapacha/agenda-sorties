@@ -1,21 +1,21 @@
-[generate.py] 2026-07-29
+[generate.py] 2026-07-30
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7932 chars
+    → texte, 7947 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5573 chars
+    → texte, 5502 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7851 chars
+    → texte, 7718 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6685 chars, 20 items
+    → RSS, 6780 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6516 chars, 20 items
+    → RSS, 6555 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6588 chars, 20 items
+    → RSS, 6555 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -27,7 +27,7 @@ Scraping des sources...
   [11/47] Scraping : Le Corum Montpellier
     → texte, 249 chars
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
-    → texte, 1125 chars
+    → texte, 1126 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
     → texte, 1436 chars
   [14/47] Scraping : Opéra Comédie Montpellier
@@ -37,7 +37,7 @@ Scraping des sources...
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 11752 chars
+    → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8270 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 8039 chars, 25 items
+    → JSON-LD, 8027 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -75,7 +75,7 @@ Scraping des sources...
   [35/47] Scraping : Alma Dance Montpellier
     → texte, 9583 chars
   [36/47] Scraping : Liste Salsa d'Olivier Hérault 34
-    → texte, 12000 chars
+    → erreur, 25 chars
   [37/47] Scraping : Toutlemondedanse Montpellier
     → texte, 979 chars
   [38/47] Scraping : Tempo Latino Vic-Fezensac
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4326 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7141 chars
+    → texte, 7007 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3053 chars
+    → texte, 3042 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
-    → RSS, 2242 chars, 7 items
+    → RSS, 2569 chars, 8 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:30 skip:0 erreur:1 | 188 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 189 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 178084 → 110000 chars
+  Scrape tronqué : 166440 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   8 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-29","titre":"Fiest\'A Sète 2026 – Soirées de concerts au Théâtre de la Mer","cat":"concert","lieu":"Sète","note":"6 soirées jusqu\'au 3 août, musiques du monde","fils":false,"stars":2,"section":"concerts","url":"https://icisete.fr/fiesta-sete-2026-six-soirees-de-concerts-au-t'
-  114 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -0 passés, -0 génériques, 0 cat. corrigées → 114 retenus
-  Total : 122 événements (8 manuels + 114 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-28","titre":"Les Artistes Contemporains d\'Occitanie","cat":"expo","lieu":"Villeneuve-les-Béziers","note":"Exposition multidisciplinaire peintres et sculpteurs","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-beziers/les'
+  166 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -39 passés, -0 génériques, 0 cat. corrigées → 127 retenus
+  Total : 135 événements (8 manuels + 127 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

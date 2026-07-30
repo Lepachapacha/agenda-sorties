@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7932,
+      "chars": 7947,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5573,
+      "chars": 5502,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7851,
+      "chars": 7718,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6685,
+      "chars": 6780,
       "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6516,
-      "preview": "[RSS · 20 items] La Saison | Mon, 27 Jul 2026 | https://30.agendaculturel.fr/festival/la-saison.html"
+      "chars": 6555,
+      "preview": "[RSS · 20 items] La Guinguette du Pradet | Wed, 29 Jul 2026 | https://30.agendaculturel.fr/concert/b"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6588,
-      "preview": "[RSS · 20 items] La Boum Boom et le bal d'Offensive Brioche | Wed, 29 Jul 2026 | https://13.agendacu"
+      "chars": 6555,
+      "preview": "[RSS · 20 items] Robinson 2.0 et Compagnie La Chute | Thu, 30 Jul 2026 | https://13.agendaculturel.f"
     },
     {
       "name": "Montpellier Events",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1125,
+      "chars": 1126,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée de lancement 2026-2027 fusio"
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11752,
+      "chars": 12000,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8039,
+      "chars": 8027,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
@@ -283,10 +283,10 @@
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
       "url": "https://salsa.faurax.fr/index.php/dpt/34",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Soirées Salsa du département 34 (Hérault) - juillet 2026 - Liste Salsa d'Olivier Soirées salsa dans "
+      "chars": 25,
+      "preview": "[Indisponible : SSLError]"
     },
     {
       "name": "Toutlemondedanse Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7141,
+      "chars": 7007,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,16 +365,16 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3053,
+      "chars": 3042,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
       "name": "Arènes de Béziers Feria 2026",
       "url": "https://www.arenes-beziers.com/ferias-2026/",
       "method": "RSS",
-      "items": 7,
-      "chars": 2242,
-      "preview": "[RSS · 7 items] Corrida Zapatista | Tue, 21 Jul 2026 | https://www.arenes-beziers.com/actualites/cor"
+      "items": 8,
+      "chars": 2569,
+      "preview": "[RSS · 8 items] Tendidos jeunes pour la feria | Wed, 29 Jul 2026 | https://www.arenes-beziers.com/ac"
     }
   ],
   "totals": {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 1,
-    "total_items_structured": 188,
-    "total_chars": 174378
+    "sources_text": 29,
+    "sources_erreur": 2,
+    "total_items_structured": 189,
+    "total_chars": 162734
   },
-  "timestamp": "2026-07-29T08:34:52Z"
+  "timestamp": "2026-07-30T08:20:24Z"
 }
