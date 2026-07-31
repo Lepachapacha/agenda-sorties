@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7947,
+      "chars": 7923,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5502,
+      "chars": 5530,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7718,
+      "chars": 7647,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6780,
-      "preview": "[RSS · 20 items] Les Artistes Contemporains d'Occitanie | Sat, 18 Jul 2026 | https://34.agendacultur"
+      "chars": 6753,
+      "preview": "[RSS · 20 items] Family Piknik Festival 2026, 15 ans | Fri, 31 Jul 2026 | https://34.agendaculturel."
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6555,
-      "preview": "[RSS · 20 items] La Guinguette du Pradet | Wed, 29 Jul 2026 | https://30.agendaculturel.fr/concert/b"
+      "chars": 6653,
+      "preview": "[RSS · 20 items] Ré Impression Concert spécial Serge Reggiani | Thu, 30 Jul 2026 | https://30.agenda"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6555,
-      "preview": "[RSS · 20 items] Robinson 2.0 et Compagnie La Chute | Thu, 30 Jul 2026 | https://13.agendaculturel.f"
+      "chars": 6747,
+      "preview": "[RSS · 20 items] La Cité aux enfants | Fri, 31 Jul 2026 | https://13.agendaculturel.fr/jeune-public/"
     },
     {
       "name": "Montpellier Events",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5483,
+      "chars": 5495,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -291,17 +291,17 @@
     {
       "name": "Toutlemondedanse Montpellier",
       "url": "https://www.toutlemondedanse.fr/ville/montpellier",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 979,
-      "preview": "Tout le monde Danse Ã  Montpellier ! SoirÃ©es salsa, kiz et rock prÃ¨s de Montpellier Votre ville : "
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "Tempo Latino Vic-Fezensac",
       "url": "https://tempolatino.com/en/",
       "method": "texte",
       "items": 0,
-      "chars": 1417,
+      "chars": 1458,
       "preview": "Tempo Latino Festival - 1st European Afro-Cuban Latin Music Festival. Salsa - Vic-Fezensac Gers Occi"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7007,
+      "chars": 7973,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 3,
     "total_items_structured": 189,
-    "total_chars": 162734
+    "total_chars": 162989
   },
-  "timestamp": "2026-07-30T08:20:24Z"
+  "timestamp": "2026-07-31T08:45:04Z"
 }
