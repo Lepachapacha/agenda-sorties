@@ -1,25 +1,25 @@
-[generate.py] 2026-07-31
+[generate.py] 2026-08-01
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7923 chars
+    → texte, 7855 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5530 chars
+    → texte, 5434 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7647 chars
+    → texte, 7594 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6753 chars, 20 items
+    → RSS, 6728 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6653 chars, 20 items
+    → RSS, 6610 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6747 chars, 20 items
+    → RSS, 6582 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1897 chars, 5 items
+    → RSS, 1923 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -51,7 +51,7 @@ Scraping des sources...
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
-    → texte, 6820 chars
+    → texte, 147 chars
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
@@ -77,7 +77,7 @@ Scraping des sources...
   [36/47] Scraping : Liste Salsa d'Olivier Hérault 34
     → erreur, 25 chars
   [37/47] Scraping : Toutlemondedanse Montpellier
-    → erreur, 19 chars
+    → texte, 979 chars
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1458 chars
   [39/47] Scraping : Latinamap Festivals Été
@@ -91,15 +91,15 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3711 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 4326 chars
+    → texte, 3867 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7973 chars
+    → texte, 6749 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3042 chars
+    → texte, 3498 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2569 chars, 8 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 189 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 189 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 166695 → 110000 chars
+  Scrape tronqué : 159331 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   8 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-07-29","titre":"Fiest\'A Sète 2026 – Michelle David & The True-Tones","cat":"concert","lieu":"Théâtre de la Mer, Sète","note":"","fils":false,"stars":2,"section":"concerts","url":"https://icisete.fr/fiesta-sete-2026-six-soirees-de-concerts-au-theatre-de-la-mer/","gratuit":false'
-  76 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -17 passés, -0 génériques, 0 cat. corrigées → 59 retenus
-  Total : 67 événements (8 manuels + 59 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-07-31","titre":"La Fiesta Flamenca","cat":"concert","lieu":"Valras-Plage","note":"Spectacle de danse et musique flamenco","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/valras-plage/la-fiesta-flamenca.html","gratuit":false,"groupe":""},'
+  68 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -21 passés, -0 génériques, 0 cat. corrigées → 47 retenus
+  Total : 55 événements (8 manuels + 47 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

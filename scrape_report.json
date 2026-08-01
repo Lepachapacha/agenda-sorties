@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7923,
+      "chars": 7855,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5530,
+      "chars": 5434,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7647,
+      "chars": 7594,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6753,
-      "preview": "[RSS · 20 items] Family Piknik Festival 2026, 15 ans | Fri, 31 Jul 2026 | https://34.agendaculturel."
+      "chars": 6728,
+      "preview": "[RSS · 20 items] Family Piknik Festival 2026, 15 ans | Sat, 01 Aug 2026 | https://34.agendaculturel."
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6653,
-      "preview": "[RSS · 20 items] Ré Impression Concert spécial Serge Reggiani | Thu, 30 Jul 2026 | https://30.agenda"
+      "chars": 6610,
+      "preview": "[RSS · 20 items] Concert.FR duo guitare handpan | Fri, 31 Jul 2026 | https://30.agendaculturel.fr/co"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6747,
-      "preview": "[RSS · 20 items] La Cité aux enfants | Fri, 31 Jul 2026 | https://13.agendaculturel.fr/jeune-public/"
+      "chars": 6582,
+      "preview": "[RSS · 20 items] The Buena Vista Orchestra | Sat, 01 Aug 2026 | https://13.agendaculturel.fr/concert"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1897,
-      "preview": "[RSS · 5 items] Fiest’A Sète 2026 : six soirées de concerts au Théâtre de la Mer | Tue, 28 Jul 2026 "
+      "chars": 1923,
+      "preview": "[RSS · 5 items] Mayel Elhajaoui à Sète : notre rencontre avant sa scène à l’Audace | Fri, 31 Jul 202"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -189,8 +189,8 @@
       "url": "https://lemoulin.org/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 6820,
-      "preview": "OLXTOTO > Lolos Pengujian Situs Toto Slot Gacor Resmi Terpercaya OLXTOTO > Lolos Pengujian Situs Tot"
+      "chars": 147,
+      "preview": "OLXTOTO > Lolos Pengujian Situs Toto Slot Gacor Resmi Terpercaya SUDAH TERUJI IPB & ITB RTP Performa"
     },
     {
       "name": "Théâtre de la Mer Sète",
@@ -291,10 +291,10 @@
     {
       "name": "Toutlemondedanse Montpellier",
       "url": "https://www.toutlemondedanse.fr/ville/montpellier",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 979,
+      "preview": "Tout le monde Danse Ã  Montpellier ! SoirÃ©es salsa, kiz et rock prÃ¨s de Montpellier Votre ville : "
     },
     {
       "name": "Tempo Latino Vic-Fezensac",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4326,
+      "chars": 3867,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7973,
+      "chars": 6749,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3042,
+      "chars": 3498,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
+    "sources_text": 29,
+    "sources_erreur": 2,
     "total_items_structured": 189,
-    "total_chars": 162989
+    "total_chars": 155625
   },
-  "timestamp": "2026-07-31T08:45:04Z"
+  "timestamp": "2026-08-01T08:14:42Z"
 }
