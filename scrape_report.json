@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7855,
+      "chars": 7727,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7594,
+      "chars": 7508,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6728,
-      "preview": "[RSS · 20 items] Family Piknik Festival 2026, 15 ans | Sat, 01 Aug 2026 | https://34.agendaculturel."
+      "chars": 6755,
+      "preview": "[RSS · 20 items] Family Piknik Festival 2026, 15 ans | Sun, 02 Aug 2026 | https://34.agendaculturel."
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6610,
-      "preview": "[RSS · 20 items] Concert.FR duo guitare handpan | Fri, 31 Jul 2026 | https://30.agendaculturel.fr/co"
+      "chars": 6535,
+      "preview": "[RSS · 20 items] La Saison | Fri, 31 Jul 2026 | https://30.agendaculturel.fr/festival/la-saison.html"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6582,
-      "preview": "[RSS · 20 items] The Buena Vista Orchestra | Sat, 01 Aug 2026 | https://13.agendaculturel.fr/concert"
+      "chars": 6730,
+      "preview": "[RSS · 20 items] Exposition de la Saint Éloi | Sun, 26 Jul 2026 | https://13.agendaculturel.fr/expos"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1923,
-      "preview": "[RSS · 5 items] Mayel Elhajaoui à Sète : notre rencontre avant sa scène à l’Audace | Fri, 31 Jul 202"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 12000,
+      "chars": 11581,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -235,10 +235,10 @@
     {
       "name": "Adam Concerts Humour",
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 2905,
-      "preview": "[RSS · 10 items] MICHEL FUGAIN | Wed, 29 Jul 2026 | https://adamconcerts.com/michel-fugain-2-64672/ "
+      "method": "texte",
+      "items": 0,
+      "chars": 7835,
+      "preview": "Théatre / Humour – Adam Concerts https://adamconcerts.com/wp-content/uploads/2026/04/EA-AFFICHE-40X6"
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6749,
+      "chars": 7725,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 10,
     "sources_jsonld": 3,
-    "sources_text": 29,
+    "sources_text": 32,
     "sources_erreur": 2,
-    "total_items_structured": 189,
-    "total_chars": 155625
+    "total_items_structured": 164,
+    "total_chars": 157539
   },
-  "timestamp": "2026-08-01T08:14:42Z"
+  "timestamp": "2026-08-02T08:18:16Z"
 }
