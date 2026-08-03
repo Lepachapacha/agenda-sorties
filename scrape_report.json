@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7727,
+      "chars": 7971,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5434,
+      "chars": 5559,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7508,
+      "chars": 7648,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6755,
-      "preview": "[RSS · 20 items] Family Piknik Festival 2026, 15 ans | Sun, 02 Aug 2026 | https://34.agendaculturel."
+      "chars": 6969,
+      "preview": "[RSS · 20 items] Soirée Repas avec Chris et Jé | Sun, 02 Aug 2026 | https://34.agendaculturel.fr/con"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6535,
+      "chars": 6479,
       "preview": "[RSS · 20 items] La Saison | Fri, 31 Jul 2026 | https://30.agendaculturel.fr/festival/la-saison.html"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6730,
-      "preview": "[RSS · 20 items] Exposition de la Saint Éloi | Sun, 26 Jul 2026 | https://13.agendaculturel.fr/expos"
+      "chars": 6675,
+      "preview": "[RSS · 20 items] Exposition de la Saint Éloi | Mon, 03 Aug 2026 | https://13.agendaculturel.fr/expos"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1923,
+      "preview": "[RSS · 5 items] Mayel Elhajaoui à Sète : notre rencontre avant sa scène à l’Audace | Fri, 31 Jul 202"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11581,
+      "chars": 11339,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -235,10 +235,10 @@
     {
       "name": "Adam Concerts Humour",
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
-      "method": "texte",
-      "items": 0,
-      "chars": 7835,
-      "preview": "Théatre / Humour – Adam Concerts https://adamconcerts.com/wp-content/uploads/2026/04/EA-AFFICHE-40X6"
+      "method": "RSS",
+      "items": 10,
+      "chars": 2905,
+      "preview": "[RSS · 10 items] MICHEL FUGAIN | Wed, 29 Jul 2026 | https://adamconcerts.com/michel-fugain-2-64672/ "
     },
     {
       "name": "Marseille Comedy Club",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3711,
+      "chars": 3700,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3867,
+      "chars": 4209,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7725,
+      "chars": 7269,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3498,
+      "chars": 3042,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 10,
+    "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 32,
-    "sources_erreur": 2,
-    "total_items_structured": 164,
-    "total_chars": 157539
+    "sources_text": 28,
+    "sources_erreur": 3,
+    "total_items_structured": 189,
+    "total_chars": 155742
   },
-  "timestamp": "2026-08-02T08:18:16Z"
+  "timestamp": "2026-08-03T09:37:18Z"
 }

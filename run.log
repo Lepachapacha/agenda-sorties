@@ -1,25 +1,25 @@
-[generate.py] 2026-08-02
+[generate.py] 2026-08-03
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7727 chars
+    → texte, 7971 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5434 chars
+    → texte, 5559 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7508 chars
+    → texte, 7648 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6755 chars, 20 items
+    → RSS, 6969 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6535 chars, 20 items
+    → RSS, 6479 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6730 chars, 20 items
+    → RSS, 6675 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → texte, 98 chars
+    → RSS, 1923 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -37,17 +37,17 @@ Scraping des sources...
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 11581 chars
+    → texte, 11339 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → texte, 98 chars
+    → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
     → texte, 5495 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → texte, 7835 chars
+    → RSS, 2905 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -89,17 +89,17 @@ Scraping des sources...
   [42/47] Scraping : Family Piknik Montpellier
     → texte, 81 chars
   [43/47] Scraping : CitizenKid Montpellier
-    → texte, 3711 chars
+    → texte, 3700 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 3867 chars
+    → texte, 4209 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7725 chars
+    → texte, 7269 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3498 chars
+    → texte, 3042 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2569 chars, 8 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:10 JSON-LD:3 texte:32 skip:0 erreur:2 | 164 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 189 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 161245 → 110000 chars
+  Scrape tronqué : 159448 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  7 événements confirmés (agenda-config.md)
+  6 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-01","titre":"Ieri Ancora","cat":"festival","lieu":"Montpellier, Hérault","note":"Festival multidisciplinaire véhicules anciens","fils":false,"stars":2,"section":"festival","url":"https://34.agendaculturel.fr/festival/ieri-ancora.html","gratuit":false,"groupe":""},{"date":"2'
-  119 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -52 passés, -0 génériques, 0 cat. corrigées → 67 retenus
-  Total : 74 événements (7 manuels + 67 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-02","titre":"Soirée Repas avec Chris et Jé","cat":"concert","lieu":"Fontes, Montpellier","note":"Chansons et reprises musicales","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/fontes/soiree-repas-avec-chris-et-je.html","gratuit":fals'
+  86 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -10 passés, -0 génériques, 0 cat. corrigées → 76 retenus
+  Total : 82 événements (6 manuels + 76 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
