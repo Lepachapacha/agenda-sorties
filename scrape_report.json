@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5559,
+      "chars": 5514,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7648,
+      "chars": 7644,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6969,
-      "preview": "[RSS · 20 items] Soirée Repas avec Chris et Jé | Sun, 02 Aug 2026 | https://34.agendaculturel.fr/con"
+      "chars": 6902,
+      "preview": "[RSS · 20 items] Récital de violon Aïsha Orazbayeva | Tue, 04 Aug 2026 | https://34.agendaculturel.f"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6479,
+      "chars": 6492,
       "preview": "[RSS · 20 items] La Saison | Fri, 31 Jul 2026 | https://30.agendaculturel.fr/festival/la-saison.html"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6675,
-      "preview": "[RSS · 20 items] Exposition de la Saint Éloi | Mon, 03 Aug 2026 | https://13.agendaculturel.fr/expos"
+      "chars": 6725,
+      "preview": "[RSS · 20 items] Éclat, Quand les Chevaux Dansent avec la Lumière | Mon, 03 Aug 2026 | https://13.ag"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1923,
-      "preview": "[RSS · 5 items] Mayel Elhajaoui à Sète : notre rencontre avant sa scène à l’Audace | Fri, 31 Jul 202"
+      "chars": 1889,
+      "preview": "[RSS · 5 items] En bus de Sète à Marseillan : la balade estivale de la ligne 9 | Mon, 03 Aug 2026 | "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8027,
+      "chars": 8015,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4209,
+      "chars": 4361,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7269,
+      "chars": 7429,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,16 +365,16 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3042,
+      "chars": 3857,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
       "name": "Arènes de Béziers Feria 2026",
       "url": "https://www.arenes-beziers.com/ferias-2026/",
       "method": "RSS",
-      "items": 8,
-      "chars": 2569,
-      "preview": "[RSS · 8 items] Tendidos jeunes pour la feria | Wed, 29 Jul 2026 | https://www.arenes-beziers.com/ac"
+      "items": 10,
+      "chars": 3196,
+      "preview": "[RSS · 10 items] La Bodega des Arènes de Béziers | Tue, 04 Aug 2026 | https://www.arenes-beziers.com"
     }
   ],
   "totals": {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
-    "total_items_structured": 189,
-    "total_chars": 155742
+    "sources_text": 29,
+    "sources_erreur": 2,
+    "total_items_structured": 191,
+    "total_chars": 157512
   },
-  "timestamp": "2026-08-03T09:37:18Z"
+  "timestamp": "2026-08-04T08:31:10Z"
 }

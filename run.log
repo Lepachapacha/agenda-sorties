@@ -1,4 +1,4 @@
-[generate.py] 2026-08-03
+[generate.py] 2026-08-04
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
@@ -7,19 +7,19 @@ Scraping des sources...
   [1/47] Scraping : JDS Montpellier
     → texte, 7971 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5559 chars
+    → texte, 5514 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7648 chars
+    → texte, 7644 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6969 chars, 20 items
+    → RSS, 6902 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6479 chars, 20 items
+    → RSS, 6492 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6675 chars, 20 items
+    → RSS, 6725 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1923 chars, 5 items
+    → RSS, 1889 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -47,7 +47,7 @@ Scraping des sources...
   [21/47] Scraping : Le Silo Marseille
     → texte, 5495 chars
   [22/47] Scraping : Le Dôme Marseille
-    → erreur, 19 chars
+    → texte, 134 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8270 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 8027 chars, 25 items
+    → JSON-LD, 8015 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -91,15 +91,15 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3700 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 4209 chars
+    → texte, 4361 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7269 chars
+    → texte, 7429 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3042 chars
+    → texte, 3857 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
-    → RSS, 2569 chars, 8 items
+    → RSS, 3196 chars, 10 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 189 items structurés
+  47 sources — RSS:13 JSON-LD:3 texte:29 skip:0 erreur:2 | 191 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 159448 → 110000 chars
+  Scrape tronqué : 161218 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   6 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-02","titre":"Soirée Repas avec Chris et Jé","cat":"concert","lieu":"Fontes, Montpellier","note":"Chansons et reprises musicales","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/fontes/soiree-repas-avec-chris-et-je.html","gratuit":fals'
-  86 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -10 passés, -0 génériques, 0 cat. corrigées → 76 retenus
-  Total : 82 événements (6 manuels + 76 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-04","titre":"Récital de violon Aïsha Orazbayeva","cat":"classique","lieu":"Roujan, Hérault","note":"","fils":false,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/concert/roujan/recital-de-violon-aisha-orazbayeva.html","gratuit":false,"groupe":""},{"date"'
+  134 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -36 passés, -0 génériques, 0 cat. corrigées → 98 retenus
+  Total : 104 événements (6 manuels + 98 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
