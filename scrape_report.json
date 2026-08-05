@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7971,
+      "chars": 7978,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5514,
+      "chars": 5505,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7644,
+      "chars": 7787,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6902,
-      "preview": "[RSS · 20 items] Récital de violon Aïsha Orazbayeva | Tue, 04 Aug 2026 | https://34.agendaculturel.f"
+      "chars": 6726,
+      "preview": "[RSS · 20 items] Au delà de l'apparat | Tue, 04 Aug 2026 | https://34.agendaculturel.fr/exposition/b"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6492,
-      "preview": "[RSS · 20 items] La Saison | Fri, 31 Jul 2026 | https://30.agendaculturel.fr/festival/la-saison.html"
+      "chars": 6572,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 05 Aug 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6725,
-      "preview": "[RSS · 20 items] Éclat, Quand les Chevaux Dansent avec la Lumière | Mon, 03 Aug 2026 | https://13.ag"
+      "chars": 6726,
+      "preview": "[RSS · 20 items] Quelques mots dans l'air | Tue, 04 Aug 2026 | https://13.agendaculturel.fr/concert/"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1889,
-      "preview": "[RSS · 5 items] En bus de Sète à Marseillan : la balade estivale de la ligne 9 | Mon, 03 Aug 2026 | "
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -115,10 +115,10 @@
     {
       "name": "Domaine d'O Montpellier",
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 2897,
-      "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
+      "chars": 10,
+      "preview": "[HTTP 503]"
     },
     {
       "name": "Le Jam Montpellier (jazz)",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11339,
+      "chars": 10952,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,17 +155,17 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5495,
+      "chars": 5477,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7429,
+      "chars": 6870,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
-    "total_items_structured": 191,
-    "total_chars": 157512
+    "sources_text": 30,
+    "sources_erreur": 3,
+    "total_items_structured": 176,
+    "total_chars": 150282
   },
-  "timestamp": "2026-08-04T08:31:10Z"
+  "timestamp": "2026-08-05T08:30:28Z"
 }
