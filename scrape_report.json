@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7978,
+      "chars": 7992,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7787,
+      "chars": 7797,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6726,
+      "chars": 6896,
       "preview": "[RSS · 20 items] Au delà de l'apparat | Tue, 04 Aug 2026 | https://34.agendaculturel.fr/exposition/b"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6572,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 05 Aug 2026 | https://30.agendaculturel.fr"
+      "chars": 6561,
+      "preview": "[RSS · 20 items] Scène classique | Thu, 06 Aug 2026 | https://30.agendaculturel.fr/concert/nimes/jeu"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6726,
-      "preview": "[RSS · 20 items] Quelques mots dans l'air | Tue, 04 Aug 2026 | https://13.agendaculturel.fr/concert/"
+      "chars": 6444,
+      "preview": "[RSS · 20 items] Entre îles et ailes | Thu, 06 Aug 2026 | https://13.agendaculturel.fr/jeune-public/"
     },
     {
       "name": "Montpellier Events",
@@ -115,10 +115,10 @@
     {
       "name": "Domaine d'O Montpellier",
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 503]"
+      "chars": 2897,
+      "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
       "name": "Le Jam Montpellier (jazz)",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 10952,
+      "chars": 11216,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8015,
+      "chars": 7996,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
@@ -277,7 +277,7 @@
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "texte",
       "items": 0,
-      "chars": 9583,
+      "chars": 9741,
       "preview": "École de danse Montpellier, cours pour adultes avec essai gratuit | Alma Dance Venez apprendre à dan"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6870,
+      "chars": 7248,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3857,
+      "chars": 3636,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 30,
     "sources_erreur": 3,
     "total_items_structured": 176,
-    "total_chars": 150282
+    "total_chars": 153515
   },
-  "timestamp": "2026-08-05T08:30:28Z"
+  "timestamp": "2026-08-06T08:29:52Z"
 }

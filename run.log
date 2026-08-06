@@ -1,21 +1,21 @@
-[generate.py] 2026-08-05
+[generate.py] 2026-08-06
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7978 chars
+    → texte, 7992 chars
   [2/47] Scraping : JDS Nîmes
     → texte, 5505 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7787 chars
+    → texte, 7797 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6726 chars, 20 items
+    → RSS, 6896 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6572 chars, 20 items
+    → RSS, 6561 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6726 chars, 20 items
+    → RSS, 6444 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -33,11 +33,11 @@ Scraping des sources...
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3201 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → erreur, 10 chars
+    → texte, 2897 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 10952 chars
+    → texte, 11216 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
@@ -47,7 +47,7 @@ Scraping des sources...
   [21/47] Scraping : Le Silo Marseille
     → texte, 5477 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3264 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8270 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 8015 chars, 25 items
+    → JSON-LD, 7996 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -73,7 +73,7 @@ Scraping des sources...
   [34/47] Scraping : Temple de la Danse Montpellier
     → texte, 224 chars
   [35/47] Scraping : Alma Dance Montpellier
-    → texte, 9583 chars
+    → texte, 9741 chars
   [36/47] Scraping : Liste Salsa d'Olivier Hérault 34
     → erreur, 25 chars
   [37/47] Scraping : Toutlemondedanse Montpellier
@@ -93,9 +93,9 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4361 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6870 chars
+    → texte, 7248 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3857 chars
+    → texte, 3636 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 3196 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 153988 → 110000 chars
+  Scrape tronqué : 157221 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  6 événements confirmés (agenda-config.md)
+  5 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-06","titre":"Le Rêve du Gladiateur","cat":"theatre","lieu":"Arènes de Nîmes, Nîmes","note":"Spectacle équestre et théâtral aux Arènes","fils":false,"stars":3,"section":"theatre","url":"https://30.agendaculturel.fr/arts-du-spectacle/nimes/le-reve-du-gladiateur.html","gratuit'
-  63 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -0 passés, -0 génériques, 0 cat. corrigées → 63 retenus
-  Total : 69 événements (6 manuels + 63 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-06","titre":"Le Rêve du Gladiateur","cat":"theatre","lieu":"Arènes de Nîmes, Nîmes","note":"Spectacle équestre et musical aux Arènes","fils":false,"stars":3,"section":"theatre","url":"https://30.agendaculturel.fr/arts-du-spectacle/nimes/le-reve-du-gladiateur.html","gratuit"'
+  124 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -20 passés, -0 génériques, 0 cat. corrigées → 104 retenus
+  Total : 109 événements (5 manuels + 104 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
