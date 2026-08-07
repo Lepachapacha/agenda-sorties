@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7992,
+      "chars": 8023,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5505,
+      "chars": 5520,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7797,
+      "chars": 7769,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6896,
-      "preview": "[RSS · 20 items] Au delà de l'apparat | Tue, 04 Aug 2026 | https://34.agendaculturel.fr/exposition/b"
+      "chars": 6745,
+      "preview": "[RSS · 20 items] Au delà de l'apparat | Thu, 06 Aug 2026 | https://34.agendaculturel.fr/exposition/b"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6561,
-      "preview": "[RSS · 20 items] Scène classique | Thu, 06 Aug 2026 | https://30.agendaculturel.fr/concert/nimes/jeu"
+      "chars": 6565,
+      "preview": "[RSS · 20 items] Quel week-end ! | Thu, 06 Aug 2026 | https://30.agendaculturel.fr/theatre/remoulins"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6444,
-      "preview": "[RSS · 20 items] Entre îles et ailes | Thu, 06 Aug 2026 | https://13.agendaculturel.fr/jeune-public/"
+      "chars": 6582,
+      "preview": "[RSS · 20 items] Basso Combo | Fri, 07 Aug 2026 | https://13.agendaculturel.fr/theatre/marseille/bas"
     },
     {
       "name": "Montpellier Events",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11216,
+      "chars": 11831,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3700,
+      "chars": 3745,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7248,
+      "chars": 6614,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3636,
+      "chars": 4087,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 3,
+    "sources_text": 31,
+    "sources_erreur": 2,
     "total_items_structured": 176,
-    "total_chars": 153515
+    "total_chars": 154116
   },
-  "timestamp": "2026-08-06T08:29:52Z"
+  "timestamp": "2026-08-07T07:09:55Z"
 }
