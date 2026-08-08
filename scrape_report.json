@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8023,
+      "chars": 7900,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5520,
+      "chars": 5424,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7769,
+      "chars": 7476,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6745,
-      "preview": "[RSS · 20 items] Au delà de l'apparat | Thu, 06 Aug 2026 | https://34.agendaculturel.fr/exposition/b"
+      "chars": 6794,
+      "preview": "[RSS · 20 items] Saint-Geniès en fête | Fri, 07 Aug 2026 | https://34.agendaculturel.fr/arts-du-spec"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6565,
-      "preview": "[RSS · 20 items] Quel week-end ! | Thu, 06 Aug 2026 | https://30.agendaculturel.fr/theatre/remoulins"
+      "chars": 6581,
+      "preview": "[RSS · 20 items] Faustine, le feu et la lumière | Sat, 08 Aug 2026 | https://30.agendaculturel.fr/co"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6582,
-      "preview": "[RSS · 20 items] Basso Combo | Fri, 07 Aug 2026 | https://13.agendaculturel.fr/theatre/marseille/bas"
+      "chars": 6691,
+      "preview": "[RSS · 20 items] Entre Terre et Mer | Fri, 07 Aug 2026 | https://13.agendaculturel.fr/exposition/cas"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1923,
+      "preview": "[RSS · 5 items] Éclipse solaire du 12 août 2026 à Sète : horaires, spots et sortie en bateau | Thu, "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 2897,
+      "chars": 2795,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11831,
+      "chars": 11742,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 7996,
+      "chars": 8107,
       "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6614,
+      "chars": 7395,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 31,
-    "sources_erreur": 2,
-    "total_items_structured": 176,
-    "total_chars": 154116
+    "sources_text": 28,
+    "sources_erreur": 3,
+    "total_items_structured": 191,
+    "total_chars": 157823
   },
-  "timestamp": "2026-08-07T07:09:55Z"
+  "timestamp": "2026-08-08T06:44:30Z"
 }
