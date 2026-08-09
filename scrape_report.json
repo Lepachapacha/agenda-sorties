@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7900,
+      "chars": 8102,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5424,
+      "chars": 5508,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7476,
+      "chars": 7398,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6794,
-      "preview": "[RSS · 20 items] Saint-Geniès en fête | Fri, 07 Aug 2026 | https://34.agendaculturel.fr/arts-du-spec"
+      "chars": 6681,
+      "preview": "[RSS · 20 items] Mémoires perdues | Sat, 08 Aug 2026 | https://34.agendaculturel.fr/exposition/sete/"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6581,
-      "preview": "[RSS · 20 items] Faustine, le feu et la lumière | Sat, 08 Aug 2026 | https://30.agendaculturel.fr/co"
+      "chars": 6606,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sun, 09 Aug 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6691,
+      "chars": 6534,
       "preview": "[RSS · 20 items] Entre Terre et Mer | Fri, 07 Aug 2026 | https://13.agendaculturel.fr/exposition/cas"
     },
     {
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1923,
-      "preview": "[RSS · 5 items] Éclipse solaire du 12 août 2026 à Sète : horaires, spots et sortie en bateau | Thu, "
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 2795,
+      "chars": 2663,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11742,
+      "chars": 10999,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 32,
+      "preview": "[Indisponible : ConnectionError]"
     },
     {
       "name": "Jazz à Sète",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7395,
+      "chars": 6919,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4087,
+      "chars": 3636,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -373,19 +373,19 @@
       "url": "https://www.arenes-beziers.com/ferias-2026/",
       "method": "RSS",
       "items": 10,
-      "chars": 3196,
-      "preview": "[RSS · 10 items] La Bodega des Arènes de Béziers | Tue, 04 Aug 2026 | https://www.arenes-beziers.com"
+      "chars": 3231,
+      "preview": "[RSS · 10 items] Les Toros de Robert Margé pour la corrida du Dimanche 16 Aout | Sat, 08 Aug 2026 | "
     }
   ],
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
-    "total_items_structured": 191,
-    "total_chars": 157823
+    "sources_text": 29,
+    "sources_erreur": 4,
+    "total_items_structured": 176,
+    "total_chars": 140592
   },
-  "timestamp": "2026-08-08T06:44:30Z"
+  "timestamp": "2026-08-09T06:50:55Z"
 }

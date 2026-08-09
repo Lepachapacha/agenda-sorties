@@ -1,25 +1,25 @@
-[generate.py] 2026-08-08
+[generate.py] 2026-08-09
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7900 chars
+    → texte, 8102 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5424 chars
+    → texte, 5508 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7476 chars
+    → texte, 7398 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6794 chars, 20 items
+    → RSS, 6681 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6581 chars, 20 items
+    → RSS, 6606 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6691 chars, 20 items
+    → RSS, 6534 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1923 chars, 5 items
+    → texte, 98 chars
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -33,17 +33,17 @@ Scraping des sources...
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3201 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → texte, 2795 chars
+    → texte, 2663 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 11742 chars
+    → texte, 10999 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → RSS, 1732 chars, 10 items
+    → texte, 98 chars
   [21/47] Scraping : Le Silo Marseille
     → texte, 5477 chars
   [22/47] Scraping : Le Dôme Marseille
@@ -81,7 +81,7 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1458 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → texte, 12000 chars
+    → erreur, 32 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4361 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7395 chars
+    → texte, 6919 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4087 chars
+    → texte, 3636 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
-    → RSS, 3196 chars, 10 items
+    → RSS, 3231 chars, 10 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 191 items structurés
+  47 sources — RSS:11 JSON-LD:3 texte:29 skip:0 erreur:4 | 176 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : quota search grounding dépassé
   [Gemini] gemini-2.0-flash-lite : quota search grounding dépassé
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 161529 → 110000 chars
+  Scrape tronqué : 144298 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
-  5 événements confirmés (agenda-config.md)
+  4 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-06","titre":"35ème Fête du Cheval et du Toro","cat":"feria","lieu":"Boujan-sur-Libron, Hérault","note":"Traditions équestres et taurines, ferrades, défilés","fils":false,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/arts-du-spectacle/boujan-sur-libron/3'
-  81 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -17 passés, -0 génériques, 0 cat. corrigées → 64 retenus
-  Total : 69 événements (5 manuels + 64 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-08","titre":"Mémoires perdues","cat":"expo","lieu":"Sète","note":"Exposition photographique de Catherine Guilhou","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/sete/memoires-perdues.html","gratuit":false,"groupe":""},{"date":"2026-0'
+  213 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -49 passés, -0 génériques, 0 cat. corrigées → 164 retenus
+  Total : 168 événements (4 manuels + 164 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
