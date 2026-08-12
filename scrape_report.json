@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8177,
+      "chars": 8171,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5563,
+      "chars": 5594,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7481,
+      "chars": 7647,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6702,
-      "preview": "[RSS · 20 items] Spectacle équestre et musical Libre | Mon, 10 Aug 2026 | https://34.agendaculturel."
+      "chars": 6638,
+      "preview": "[RSS · 20 items] Plus Loin | Mon, 10 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6582,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Tue, 11 Aug 2026 | https://30.agendaculturel.fr"
+      "chars": 6679,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 12 Aug 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6721,
-      "preview": "[RSS · 20 items] Spectacle équestre Anatilya | Mon, 10 Aug 2026 | https://13.agendaculturel.fr/arts-"
+      "chars": 6606,
+      "preview": "[RSS · 20 items] Lu y Avaro | Tue, 11 Aug 2026 | https://13.agendaculturel.fr/concert/marseille/jard"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1925,
-      "preview": "[RSS · 5 items] Balaruc-les-Bains 2026 : les joutes s’affichent sur les murs du Pech d’Ay | Sat, 08 "
+      "chars": 1943,
+      "preview": "[RSS · 5 items] Bus à Sète le 15 août 2026 : horaires du samedi sur tout le bassin de Thau | Tue, 11"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 2295,
+      "chars": 2152,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 10517,
+      "chars": 10578,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -253,8 +253,8 @@
       "url": "https://garage-comedy.com/",
       "method": "texte",
       "items": 0,
-      "chars": 56,
-      "preview": "Garage Comedy ⚙️ Le Bar-Tapas & Comedy Club de Marseille"
+      "chars": 80,
+      "preview": "Garage Comedy ⚙️ Le Bar-Tapas & Comedy Club de Marseille RÉSERVATION COMEDY CLUB"
     },
     {
       "name": "Comédie Club Vieux Port Marseille",
@@ -277,7 +277,7 @@
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "texte",
       "items": 0,
-      "chars": 9741,
+      "chars": 9878,
       "preview": "École de danse Montpellier, cours pour adultes avec essai gratuit | Alma Dance Venez apprendre à dan"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4609,
+      "chars": 4629,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8000,
+      "chars": 7099,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4369,
+      "chars": 4718,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 3,
     "total_items_structured": 191,
-    "total_chars": 158047
+    "total_chars": 157606
   },
-  "timestamp": "2026-08-11T07:01:03Z"
+  "timestamp": "2026-08-12T07:19:12Z"
 }
