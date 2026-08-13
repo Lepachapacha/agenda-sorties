@@ -1,25 +1,25 @@
-[generate.py] 2026-08-12
+[generate.py] 2026-08-13
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8171 chars
+    → texte, 8173 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5594 chars
+    → texte, 5599 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7647 chars
+    → texte, 7773 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6638 chars, 20 items
+    → RSS, 6643 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6679 chars, 20 items
+    → RSS, 6705 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6606 chars, 20 items
+    → RSS, 6569 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1943 chars, 5 items
+    → texte, 98 chars
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -33,17 +33,17 @@ Scraping des sources...
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3201 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → texte, 2152 chars
+    → texte, 2008 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 10578 chars
+    → texte, 11141 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → RSS, 1732 chars, 10 items
+    → texte, 98 chars
   [21/47] Scraping : Le Silo Marseille
     → texte, 5477 chars
   [22/47] Scraping : Le Dôme Marseille
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8270 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 8107 chars, 25 items
+    → JSON-LD, 7522 chars, 23 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -81,7 +81,7 @@ Scraping des sources...
   [38/47] Scraping : Tempo Latino Vic-Fezensac
     → texte, 1458 chars
   [39/47] Scraping : Latinamap Festivals Été
-    → texte, 12000 chars
+    → erreur, 32 chars
   [40/47] Scraping : Jazz à Sète
     → texte, 61 chars
   [41/47] Scraping : Festival Radio France Occitanie
@@ -91,15 +91,15 @@ Scraping des sources...
   [43/47] Scraping : CitizenKid Montpellier
     → texte, 3876 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 4629 chars
+    → texte, 4455 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7099 chars
+    → texte, 7409 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4718 chars
+    → texte, 4369 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 3402 chars, 10 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:13 JSON-LD:3 texte:28 skip:0 erreur:3 | 191 items structurés
+  47 sources — RSS:11 JSON-LD:3 texte:29 skip:0 erreur:4 | 174 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : modèle non disponible
   [Gemini] gemini-2.0-flash-lite : modèle non disponible
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 161312 → 110000 chars
+  Scrape tronqué : 145613 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   4 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-12","titre":"Féria de Béziers 2026","cat":"feria","lieu":"Béziers","note":"Feria traditionnelle","fils":false,"stars":3,"section":"concerts","url":"https://www.jds.fr/montpellier/agenda/","gratuit":false,"groupe":""},{"date":"2026-08-12","titre":"Candlelight : Les Quatre Sa'
-  110 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -22 passés, -0 génériques, 0 cat. corrigées → 88 retenus
-  Total : 92 événements (4 manuels + 88 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-13","titre":"Exposition Photos et Peinture","cat":"expo","lieu":"Balaruc-les-Bains, Hérault","note":"Photos nature et peintures géométriques","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/balaruc-les-bains/exposition-photos-et-peint'
+  199 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -53 passés, -0 génériques, 0 cat. corrigées → 146 retenus
+  Total : 150 événements (4 manuels + 146 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

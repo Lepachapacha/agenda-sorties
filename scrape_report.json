@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8171,
+      "chars": 8173,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5594,
+      "chars": 5599,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7647,
+      "chars": 7773,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6638,
-      "preview": "[RSS · 20 items] Plus Loin | Mon, 10 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6643,
+      "preview": "[RSS · 20 items] Exposition Photos et Peinture | Thu, 13 Aug 2026 | https://34.agendaculturel.fr/exp"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6679,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 12 Aug 2026 | https://30.agendaculturel.fr"
+      "chars": 6705,
+      "preview": "[RSS · 20 items] Scène classique | Wed, 12 Aug 2026 | https://30.agendaculturel.fr/concert/nimes/jeu"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6606,
-      "preview": "[RSS · 20 items] Lu y Avaro | Tue, 11 Aug 2026 | https://13.agendaculturel.fr/concert/marseille/jard"
+      "chars": 6569,
+      "preview": "[RSS · 20 items] Entre Terre et Mer | Fri, 07 Aug 2026 | https://13.agendaculturel.fr/exposition/cas"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1943,
-      "preview": "[RSS · 5 items] Bus à Sète le 15 août 2026 : horaires du samedi sur tout le bassin de Thau | Tue, 11"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 2152,
+      "chars": 2008,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 10578,
+      "chars": 11141,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 25,
-      "chars": 8107,
-      "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
+      "items": 23,
+      "chars": 7522,
+      "preview": "[JSON-LD · 23 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 32,
+      "preview": "[Indisponible : ConnectionError]"
     },
     {
       "name": "Jazz à Sète",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4629,
+      "chars": 4455,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7099,
+      "chars": 7409,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4718,
+      "chars": 4369,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -380,12 +380,12 @@
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 13,
+    "sources_rss": 11,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 3,
-    "total_items_structured": 191,
-    "total_chars": 157606
+    "sources_text": 29,
+    "sources_erreur": 4,
+    "total_items_structured": 174,
+    "total_chars": 141907
   },
-  "timestamp": "2026-08-12T07:19:12Z"
+  "timestamp": "2026-08-13T07:21:35Z"
 }
