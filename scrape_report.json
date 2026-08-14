@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8173,
+      "chars": 8232,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5599,
+      "chars": 5579,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7773,
+      "chars": 7790,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6643,
-      "preview": "[RSS · 20 items] Exposition Photos et Peinture | Thu, 13 Aug 2026 | https://34.agendaculturel.fr/exp"
+      "chars": 6639,
+      "preview": "[RSS · 20 items] Plus Loin | Fri, 14 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6705,
-      "preview": "[RSS · 20 items] Scène classique | Wed, 12 Aug 2026 | https://30.agendaculturel.fr/concert/nimes/jeu"
+      "chars": 6763,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Thu, 13 Aug 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6569,
+      "chars": 6779,
       "preview": "[RSS · 20 items] Entre Terre et Mer | Fri, 07 Aug 2026 | https://13.agendaculturel.fr/exposition/cas"
     },
     {
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1937,
+      "preview": "[RSS · 5 items] Place Aristide Briand : l’inauguration le 18 août à Sète | Thu, 13 Aug 2026 | https:"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 2008,
+      "chars": 1866,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11141,
+      "chars": 10612,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 32,
-      "preview": "[Indisponible : ConnectionError]"
+      "chars": 12000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4455,
+      "chars": 4573,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7409,
+      "chars": 6665,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -373,19 +373,19 @@
       "url": "https://www.arenes-beziers.com/ferias-2026/",
       "method": "RSS",
       "items": 10,
-      "chars": 3402,
-      "preview": "[RSS · 10 items] Les toros de EL PARRALEJO pour la Corrida Zapatista du 13 aout | Mon, 10 Aug 2026 |"
+      "chars": 3063,
+      "preview": "[RSS · 10 items] GALERIE PHOTOGRAPHIQUE DE LA PREMIERE CORRIDA DE LA FERIA | Thu, 13 Aug 2026 | http"
     }
   ],
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 13,
     "sources_jsonld": 3,
     "sources_text": 29,
-    "sources_erreur": 4,
-    "total_items_structured": 174,
-    "total_chars": 141907
+    "sources_erreur": 2,
+    "total_items_structured": 189,
+    "total_chars": 156147
   },
-  "timestamp": "2026-08-13T07:21:35Z"
+  "timestamp": "2026-08-14T07:18:44Z"
 }
