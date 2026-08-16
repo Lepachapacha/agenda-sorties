@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8067,
+      "chars": 8114,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5511,
+      "chars": 5520,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7775,
+      "chars": 7808,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6513,
+      "chars": 6618,
       "preview": "[RSS · 20 items] Plus Loin | Fri, 14 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -37,7 +37,7 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6746,
+      "chars": 6703,
       "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sat, 15 Aug 2026 | https://30.agendaculturel.fr"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6742,
-      "preview": "[RSS · 20 items] Spectacle équestre Anatilya | Sat, 15 Aug 2026 | https://13.agendaculturel.fr/arts-"
+      "chars": 6670,
+      "preview": "[RSS · 20 items] Iconiques | Wed, 12 Aug 2026 | https://13.agendaculturel.fr/exposition/arles/iconiq"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1926,
+      "preview": "[RSS · 5 items] Le Cap d’Agde a commémoré le Débarquement de Provence, 82 ans après | Sat, 15 Aug 20"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1866,
+      "chars": 1734,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -131,10 +131,10 @@
     {
       "name": "Halle Tropisme Montpellier",
       "url": "https://tropisme.coop/agenda/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 10412,
-      "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
+      "chars": 10,
+      "preview": "[HTTP 500]"
     },
     {
       "name": "Paloma Nîmes",
@@ -155,10 +155,10 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 32,
+      "preview": "[Indisponible : ConnectionError]"
     },
     {
       "name": "Jazz à Sète",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 4546,
+      "chars": 4573,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6941,
+      "chars": 7544,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -373,19 +373,19 @@
       "url": "https://www.arenes-beziers.com/ferias-2026/",
       "method": "RSS",
       "items": 10,
-      "chars": 2937,
-      "preview": "[RSS · 10 items] REPORTAGE PHOTO DE LA CORRIDA DU VENDREDI 14 AOUT | Fri, 14 Aug 2026 | https://www."
+      "chars": 2578,
+      "preview": "[RSS · 10 items] GALERIE PHOTO DE LA CORRIDA DE REJON – SAMEDI 15 AOUT | Sat, 15 Aug 2026 | https://"
     }
   ],
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 13,
     "sources_jsonld": 3,
-    "sources_text": 30,
-    "sources_erreur": 3,
-    "total_items_structured": 174,
-    "total_chars": 152403
+    "sources_text": 27,
+    "sources_erreur": 4,
+    "total_items_structured": 189,
+    "total_chars": 133828
   },
-  "timestamp": "2026-08-15T06:32:20Z"
+  "timestamp": "2026-08-16T06:33:40Z"
 }
