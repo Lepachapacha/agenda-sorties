@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8210,
+      "chars": 8215,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5601,
+      "chars": 5572,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7806,
+      "chars": 7759,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6806,
-      "preview": "[RSS · 20 items] Plus Loin | Mon, 17 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6556,
+      "preview": "[RSS · 20 items] Plus Loin | Wed, 19 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6638,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Tue, 18 Aug 2026 | https://30.agendaculturel.fr"
+      "chars": 6674,
+      "preview": "[RSS · 20 items] Salon de la Méditerranée | Tue, 18 Aug 2026 | https://30.agendaculturel.fr/expositi"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6603,
-      "preview": "[RSS · 20 items] Concerts de Sainte-Anne Été 2026 | Mon, 17 Aug 2026 | https://13.agendaculturel.fr/"
+      "chars": 6601,
+      "preview": "[RSS · 20 items] Origines | Mon, 17 Aug 2026 | https://13.agendaculturel.fr/exposition/lambesc/origi"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1926,
-      "preview": "[RSS · 5 items] Le Cap d’Agde a commémoré le Débarquement de Provence, 82 ans après | Sat, 15 Aug 20"
+      "chars": 1914,
+      "preview": "[RSS · 5 items] Le Grand Prix cycliste de la Saint-Louis revient après dix-neuf ans | Tue, 18 Aug 20"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1581,
+      "chars": 1446,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8964,
+      "chars": 9100,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5477,
+      "chars": 5579,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -269,7 +269,7 @@
       "url": "https://templededanse.com/soirees-temple-de-la-danse-montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 224,
+      "chars": 2019,
       "preview": "Les Soirées du Temple - Le Temple De La Danse templededanse@gmail.com Le Temple c’est des soirées to"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7544,
+      "chars": 6860,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4024,
+      "chars": 4688,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 2,
     "total_items_structured": 191,
-    "total_chars": 153115
+    "total_chars": 154694
   },
-  "timestamp": "2026-08-18T06:37:02Z"
+  "timestamp": "2026-08-19T06:37:58Z"
 }
