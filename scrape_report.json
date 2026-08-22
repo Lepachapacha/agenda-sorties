@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8188,
+      "chars": 8108,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5514,
+      "chars": 5487,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7877,
+      "chars": 7768,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6449,
-      "preview": "[RSS · 20 items] A-Tripik | Thu, 20 Aug 2026 | https://34.agendaculturel.fr/arts-du-spectacle/sete/a"
+      "chars": 6501,
+      "preview": "[RSS · 20 items] A-Tripik | Fri, 21 Aug 2026 | https://34.agendaculturel.fr/arts-du-spectacle/sete/a"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6700,
-      "preview": "[RSS · 20 items] Salon de la Méditerranée | Wed, 19 Aug 2026 | https://30.agendaculturel.fr/expositi"
+      "chars": 6608,
+      "preview": "[RSS · 20 items] Salon de la Méditerranée | Sat, 22 Aug 2026 | https://30.agendaculturel.fr/expositi"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6579,
-      "preview": "[RSS · 20 items] Origines | Mon, 17 Aug 2026 | https://13.agendaculturel.fr/exposition/lambesc/origi"
+      "chars": 6548,
+      "preview": "[RSS · 20 items] Comedy club & Compagnie | Fri, 21 Aug 2026 | https://13.agendaculturel.fr/theatre/s"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1914,
-      "preview": "[RSS · 5 items] Le Grand Prix cycliste de la Saint-Louis revient après dix-neuf ans | Tue, 18 Aug 20"
+      "chars": 1917,
+      "preview": "[RSS · 5 items] Mas Coulet plein ? 273 places gratuites aux Tonneliers, Saint-Louis 2026 | Fri, 21 A"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 10636,
+      "chars": 10564,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 23,
-      "chars": 7513,
-      "preview": "[JSON-LD · 23 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
+      "items": 24,
+      "chars": 7804,
+      "preview": "[JSON-LD · 24 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 4213,
+      "chars": 4174,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4428,
+      "chars": 5092,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 3,
     "sources_text": 28,
     "sources_erreur": 2,
-    "total_items_structured": 191,
-    "total_chars": 155142
+    "total_items_structured": 192,
+    "total_chars": 155702
   },
-  "timestamp": "2026-08-21T06:39:47Z"
+  "timestamp": "2026-08-22T06:33:42Z"
 }
