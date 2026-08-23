@@ -1,25 +1,25 @@
-[generate.py] 2026-08-22
+[generate.py] 2026-08-23
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8108 chars
+    → texte, 8191 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5487 chars
+    → texte, 5471 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 7768 chars
+    → texte, 7690 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6501 chars, 20 items
+    → RSS, 6595 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6608 chars, 20 items
+    → RSS, 6607 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6548 chars, 20 items
+    → RSS, 6707 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
-    → RSS, 1917 chars, 5 items
+    → RSS, 1865 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -37,7 +37,7 @@ Scraping des sources...
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3428 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 10564 chars
+    → texte, 10124 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3556 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
@@ -75,7 +75,7 @@ Scraping des sources...
   [35/47] Scraping : Alma Dance Montpellier
     → texte, 9878 chars
   [36/47] Scraping : Liste Salsa d'Olivier Hérault 34
-    → erreur, 25 chars
+    → texte, 12000 chars
   [37/47] Scraping : Toutlemondedanse Montpellier
     → texte, 979 chars
   [38/47] Scraping : Tempo Latino Vic-Fezensac
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3601 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6666 chars
+    → texte, 7001 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 5092 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:14 JSON-LD:3 texte:28 skip:0 erreur:2 | 192 items structurés
+  47 sources — RSS:14 JSON-LD:3 texte:29 skip:0 erreur:1 | 192 items structurés
 Recherches Gemini Search (couche 3)...
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
   [Gemini] gemini-2.0-flash : modèle non disponible
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 159408 → 110000 chars
+  Scrape tronqué : 171467 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-21","titre":"A-Tripik","cat":"theatre","lieu":"Sète","note":"Spectacle de cirque, compagnie Cirk VOST","fils":true,"stars":2,"section":"danse","url":"https://34.agendaculturel.fr/arts-du-spectacle/sete/a-tripik.html","gratuit":false,"groupe":""},{"date":"2026-08-21","titre"'
-  152 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -30 passés, -0 génériques, 0 cat. corrigées → 122 retenus
-  Total : 122 événements (0 manuels + 122 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-22","titre":"La Messe Edith : Hommage à Edith Piaf","cat":"concert","lieu":"Sète","note":"Hommage à Édith Piaf avec ses titres phares","fils":false,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/concert/sete/la-messe-edith-hommage-a-edith-piaf.html","gra'
+  113 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -20 passés, -0 génériques, 0 cat. corrigées → 93 retenus
+  Total : 93 événements (0 manuels + 93 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

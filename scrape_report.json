@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8108,
+      "chars": 8191,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5487,
+      "chars": 5471,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7768,
+      "chars": 7690,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6501,
-      "preview": "[RSS · 20 items] A-Tripik | Fri, 21 Aug 2026 | https://34.agendaculturel.fr/arts-du-spectacle/sete/a"
+      "chars": 6595,
+      "preview": "[RSS · 20 items] La Messe Edith : Hommage à Edith Piaf | Sun, 23 Aug 2026 | https://34.agendaculture"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6608,
+      "chars": 6607,
       "preview": "[RSS · 20 items] Salon de la Méditerranée | Sat, 22 Aug 2026 | https://30.agendaculturel.fr/expositi"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6548,
-      "preview": "[RSS · 20 items] Comedy club & Compagnie | Fri, 21 Aug 2026 | https://13.agendaculturel.fr/theatre/s"
+      "chars": 6707,
+      "preview": "[RSS · 20 items] Origines | Mon, 17 Aug 2026 | https://13.agendaculturel.fr/exposition/lambesc/origi"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1917,
-      "preview": "[RSS · 5 items] Mas Coulet plein ? 273 places gratuites aux Tonneliers, Saint-Louis 2026 | Fri, 21 A"
+      "chars": 1865,
+      "preview": "[RSS · 5 items] La Course des Cafés renaît dans les rues de Sète | Sat, 22 Aug 2026 | https://iciset"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 10564,
+      "chars": 10124,
       "preview": "Halle Tropisme - Agenda Du mer. 01 juil. au dim. 23 août DANSE, MUSIQUE, PROJECTIONS, VIDE-GRENIERS,"
     },
     {
@@ -283,10 +283,10 @@
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
       "url": "https://salsa.faurax.fr/index.php/dpt/34",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 25,
-      "preview": "[Indisponible : SSLError]"
+      "chars": 12000,
+      "preview": "Soirées Salsa du département 34 (Hérault) - août 2026 - Liste Salsa d'Olivier Soirées salsa dans le "
     },
     {
       "name": "Toutlemondedanse Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6666,
+      "chars": 7001,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 3,
-    "sources_text": 28,
-    "sources_erreur": 2,
+    "sources_text": 29,
+    "sources_erreur": 1,
     "total_items_structured": 192,
-    "total_chars": 155702
+    "total_chars": 167761
   },
-  "timestamp": "2026-08-22T06:33:42Z"
+  "timestamp": "2026-08-23T06:35:08Z"
 }
