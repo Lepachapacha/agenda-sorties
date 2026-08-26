@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8237,
+      "chars": 8146,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5572,
+      "chars": 5447,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7846,
+      "chars": 7847,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6867,
-      "preview": "[RSS · 20 items] Plus Loin | Tue, 25 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6695,
+      "preview": "[RSS · 20 items] Monotypes de Polynésie | Tue, 25 Aug 2026 | https://34.agendaculturel.fr/exposition"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,14 +38,14 @@
       "method": "RSS",
       "items": 20,
       "chars": 6623,
-      "preview": "[RSS · 20 items] Salon de la Méditerranée | Sat, 22 Aug 2026 | https://30.agendaculturel.fr/expositi"
+      "preview": "[RSS · 20 items] Salon de la Méditerranée | Tue, 25 Aug 2026 | https://30.agendaculturel.fr/expositi"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6658,
+      "chars": 6609,
       "preview": "[RSS · 20 items] Park Chan-wook, par un Matin Calme | Mon, 24 Aug 2026 | https://13.agendaculturel.f"
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1865,
-      "preview": "[RSS · 5 items] La Course des Cafés renaît dans les rues de Sète | Sat, 22 Aug 2026 | https://iciset"
+      "chars": 1862,
+      "preview": "[RSS · 5 items] Dernière nuit de la Saint-Louis : feu d’artifice à 22h et bal jusqu’à minuit | Tue, "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,8 +133,8 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 9727,
-      "preview": "Halle Tropisme - Agenda mar. 25 août de 19h00 à 23h00 MUSIQUE, DANSE ET GASTRONOMIE Quoi de mieux qu"
+      "chars": 10405,
+      "preview": "Halle Tropisme - Agenda mer. 26 août de 19h00 à 22h00 Tous les mercredis de 19h00 à 22h00 80m² de fr"
     },
     {
       "name": "Paloma Nîmes",
@@ -316,9 +316,9 @@
       "name": "Jazz à Sète",
       "url": "https://www.jazzasete.com/programmation/",
       "method": "RSS",
-      "items": 3,
-      "chars": 218,
-      "preview": "[RSS · 3 items] x | Wed, 01 Jan 2020 | https://www.jazzasete.com/x-3/ | x x | Wed, 01 Jan 2020 | htt"
+      "items": 4,
+      "chars": 276,
+      "preview": "[RSS · 4 items] x | Wed, 01 Jan 2020 | https://www.jazzasete.com/x-4/ | x x | Wed, 01 Jan 2020 | htt"
     },
     {
       "name": "Festival Radio France Occitanie",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3603,
+      "chars": 4074,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7001,
+      "chars": 7535,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4428,
+      "chars": 4945,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 3,
     "sources_text": 29,
     "sources_erreur": 1,
-    "total_items_structured": 193,
-    "total_chars": 167154
+    "total_items_structured": 194,
+    "total_chars": 168973
   },
-  "timestamp": "2026-08-25T06:39:56Z"
+  "timestamp": "2026-08-26T06:41:46Z"
 }
