@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8146,
+      "chars": 8246,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5447,
+      "chars": 5517,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 7847,
+      "chars": 8085,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6695,
-      "preview": "[RSS · 20 items] Monotypes de Polynésie | Tue, 25 Aug 2026 | https://34.agendaculturel.fr/exposition"
+      "chars": 6586,
+      "preview": "[RSS · 20 items] Plus Loin | Wed, 26 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6623,
-      "preview": "[RSS · 20 items] Salon de la Méditerranée | Tue, 25 Aug 2026 | https://30.agendaculturel.fr/expositi"
+      "chars": 6684,
+      "preview": "[RSS · 20 items] Salon de la Méditerranée | Thu, 27 Aug 2026 | https://30.agendaculturel.fr/expositi"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6609,
-      "preview": "[RSS · 20 items] Park Chan-wook, par un Matin Calme | Mon, 24 Aug 2026 | https://13.agendaculturel.f"
+      "chars": 6608,
+      "preview": "[RSS · 20 items] Match d'impro | Thu, 27 Aug 2026 | https://13.agendaculturel.fr/theatre/marseille/m"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1862,
-      "preview": "[RSS · 5 items] Dernière nuit de la Saint-Louis : feu d’artifice à 22h et bal jusqu’à minuit | Tue, "
+      "chars": 1962,
+      "preview": "[RSS · 5 items] Fermeture technique des piscines : le calendrier à Sète, Gigean et Frontignan | Thu,"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -125,16 +125,16 @@
       "url": "https://www.lejam.com/",
       "method": "RSS",
       "items": 10,
-      "chars": 3428,
-      "preview": "[RSS · 10 items] LAURÉATE DU TREMPLIN 2026 : TELMA LANGINIEUX | Thu, 25 Jun 2026 | https://www.lejam"
+      "chars": 3425,
+      "preview": "[RSS · 10 items] ABONNEMENT JAM CLUB 2026-2027 | Thu, 27 Aug 2026 | https://www.lejam.com/abonnement"
     },
     {
       "name": "Halle Tropisme Montpellier",
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 10405,
-      "preview": "Halle Tropisme - Agenda mer. 26 août de 19h00 à 22h00 Tous les mercredis de 19h00 à 22h00 80m² de fr"
+      "chars": 11225,
+      "preview": "Halle Tropisme - Agenda Tous les jeudis à 19h00 Venez déguster notre brasucade ! jeu. 27 août de 19h"
     },
     {
       "name": "Paloma Nîmes",
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 24,
-      "chars": 7804,
-      "preview": "[JSON-LD · 24 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
+      "items": 22,
+      "chars": 7191,
+      "preview": "[JSON-LD · 22 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7535,
+      "chars": 8853,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4945,
+      "chars": 4728,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 3,
     "sources_text": 29,
     "sources_erreur": 1,
-    "total_items_structured": 194,
-    "total_chars": 168973
+    "total_items_structured": 192,
+    "total_chars": 170737
   },
-  "timestamp": "2026-08-26T06:41:46Z"
+  "timestamp": "2026-08-27T17:17:19Z"
 }
