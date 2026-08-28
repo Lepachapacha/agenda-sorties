@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8246,
+      "chars": 8244,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5517,
+      "chars": 5455,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8085,
+      "chars": 8127,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6586,
+      "chars": 6714,
       "preview": "[RSS · 20 items] Plus Loin | Wed, 26 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -37,7 +37,7 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6684,
+      "chars": 6847,
       "preview": "[RSS · 20 items] Salon de la Méditerranée | Thu, 27 Aug 2026 | https://30.agendaculturel.fr/expositi"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6608,
-      "preview": "[RSS · 20 items] Match d'impro | Thu, 27 Aug 2026 | https://13.agendaculturel.fr/theatre/marseille/m"
+      "chars": 6530,
+      "preview": "[RSS · 20 items] Land Escape | Fri, 28 Aug 2026 | https://13.agendaculturel.fr/exposition/marseille/"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1962,
-      "preview": "[RSS · 5 items] Fermeture technique des piscines : le calendrier à Sète, Gigean et Frontignan | Thu,"
+      "chars": 1914,
+      "preview": "[RSS · 5 items] Six policiers municipaux d’Agde décorés pour avoir sauvé un motard | Fri, 28 Aug 202"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,16 +133,16 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11225,
-      "preview": "Halle Tropisme - Agenda Tous les jeudis à 19h00 Venez déguster notre brasucade ! jeu. 27 août de 19h"
+      "chars": 11718,
+      "preview": "Halle Tropisme - Agenda Après l'accueil reçu pour la tournée pirate avec Ben PLG, Grünt revient à la"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3556,
-      "preview": "[RSS · 10 items] Rejoins l’équipe bénévole 2026/2027 : les inscriptions sont ouvertes ! | Mon, 20 Ju"
+      "chars": 3678,
+      "preview": "[RSS · 10 items] REJOIGNEZ LA C3 ! Participez à la réflexion sur le projet et le fonctionnement de P"
     },
     {
       "name": "Festival de Nîmes",
@@ -261,7 +261,7 @@
       "url": "https://comedieclubvieuxport.com/",
       "method": "texte",
       "items": 0,
-      "chars": 4585,
+      "chars": 4586,
       "preview": "Comedie Club Vieux Port | Plateaux d'humour, stand-up à Marseille Comedie Club – Vieux Port LE PREMI"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8853,
+      "chars": 9008,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4728,
+      "chars": 5439,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 192,
-    "total_chars": 170737
+    "total_chars": 172362
   },
-  "timestamp": "2026-08-27T17:17:19Z"
+  "timestamp": "2026-08-28T18:09:45Z"
 }
