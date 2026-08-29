@@ -1,21 +1,21 @@
-[generate.py] 2026-08-28
+[generate.py] 2026-08-29
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8244 chars
+    → texte, 8398 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5455 chars
+    → texte, 5502 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8127 chars
+    → texte, 7880 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6714 chars, 20 items
+    → RSS, 6626 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 6847 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6530 chars, 20 items
+    → RSS, 6576 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 536 chars
   [8/47] Scraping : IciSète
@@ -37,7 +37,7 @@ Scraping des sources...
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3425 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
-    → texte, 11718 chars
+    → texte, 11587 chars
   [18/47] Scraping : Paloma Nîmes
     → RSS, 3678 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
@@ -93,9 +93,9 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 4074 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 9008 chars
+    → texte, 8343 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 5439 chars
+    → texte, 6301 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 176068 → 110000 chars
+  Scrape tronqué : 176046 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-08-28","titre":"Danseruna Festival de Danses","cat":"festival","lieu":"Capestang, Hérault","note":"9e édition, stages et ateliers de danses folk","fils":true,"stars":2,"section":"danse","url":"https://34.agendaculturel.fr/festival/danseruna-festival-de-danses.html","gratuit":f'
-  77 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -5 passés, -0 génériques, 0 cat. corrigées → 72 retenus
-  Total : 72 événements (0 manuels + 72 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-08-28","titre":"Le Petit Festival de Lieuran-Cabrières","cat":"festival","lieu":"Lieuran-Cabrières, Hérault","note":"Spectacles multidisciplinaires","fils":true,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/festival/le-petit-festival-de-lieuran-cabrieres.h'
+  91 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -18 passés, -0 génériques, 0 cat. corrigées → 73 retenus
+  Total : 73 événements (0 manuels + 73 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

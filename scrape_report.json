@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8244,
+      "chars": 8398,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5455,
+      "chars": 5502,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8127,
+      "chars": 7880,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6714,
-      "preview": "[RSS · 20 items] Plus Loin | Wed, 26 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6626,
+      "preview": "[RSS · 20 items] Le Petit Festival de Lieuran-Cabrières | Fri, 28 Aug 2026 | https://34.agendacultur"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6530,
-      "preview": "[RSS · 20 items] Land Escape | Fri, 28 Aug 2026 | https://13.agendaculturel.fr/exposition/marseille/"
+      "chars": 6576,
+      "preview": "[RSS · 20 items] Land Escape | Sat, 29 Aug 2026 | https://13.agendaculturel.fr/exposition/marseille/"
     },
     {
       "name": "Montpellier Events",
@@ -133,8 +133,8 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11718,
-      "preview": "Halle Tropisme - Agenda Après l'accueil reçu pour la tournée pirate avec Ben PLG, Grünt revient à la"
+      "chars": 11587,
+      "preview": "Halle Tropisme - Agenda sam. 29 août de 18h30 à 22h00 PÉPITE NOCTURNE DE L'ÉTÉ LE VIDE-GRENIERS DE T"
     },
     {
       "name": "Paloma Nîmes",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9008,
+      "chars": 8343,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5439,
+      "chars": 6301,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 192,
-    "total_chars": 172362
+    "total_chars": 172340
   },
-  "timestamp": "2026-08-28T18:09:45Z"
+  "timestamp": "2026-08-29T12:14:14Z"
 }
