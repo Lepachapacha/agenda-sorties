@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8562,
+      "chars": 8688,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8248,
+      "chars": 8276,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6758,
+      "chars": 6591,
       "preview": "[RSS · 20 items] Plus Loin | Mon, 31 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6877,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 31 Aug 2026 | https://30.agendaculturel.fr"
+      "chars": 6875,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Tue, 01 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6735,
-      "preview": "[RSS · 20 items] This and That / Ceci et Cela, José Quintanar | Sun, 30 Aug 2026 | https://13.agenda"
+      "chars": 6637,
+      "preview": "[RSS · 20 items] This and That / Ceci et Cela, José Quintanar | Mon, 31 Aug 2026 | https://13.agenda"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1893,
-      "preview": "[RSS · 5 items] Rentrée 2026 : les forums des associations dans tout le Bassin de Thau | Mon, 31 Aug"
+      "chars": 1881,
+      "preview": "[RSS · 5 items] Brescoudos 2026 : comment vivre la semaine moto au Cap d’Agde et à Sète | Tue, 01 Se"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -133,7 +133,7 @@
       "url": "https://tropisme.coop/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 11325,
+      "chars": 11619,
       "preview": "Halle Tropisme - Agenda mar. 01 sept. de 18h30 à 20h00 Tous les mardis de 18h30 à 20h00 Ici on danse"
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5579,
+      "chars": 5605,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2905,
-      "preview": "[RSS · 10 items] MICHEL FUGAIN | Wed, 29 Jul 2026 | https://adamconcerts.com/michel-fugain-2-64672/ "
+      "chars": 2932,
+      "preview": "[RSS · 10 items] CABARET ALÉATOIRE | Tue, 01 Sep 2026 | https://adamconcerts.com/cabaret-aletoire-13"
     },
     {
       "name": "Marseille Comedy Club",
@@ -275,10 +275,10 @@
     {
       "name": "Alma Dance Montpellier",
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
-      "method": "texte",
-      "items": 0,
-      "chars": 9878,
-      "preview": "École de danse Montpellier, cours pour adultes avec essai gratuit | Alma Dance Venez apprendre à dan"
+      "method": "JSON-LD",
+      "items": 2,
+      "chars": 676,
+      "preview": "[JSON-LD · 2 événements] Portes Ouvertes &#8211; Semaine 1 | 2026-09-07 | Montpellier Ouest &#038; M"
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -286,7 +286,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Soirées Salsa du département 34 (Hérault) - août 2026 - Liste Salsa d'Olivier Soirées salsa dans le "
+      "preview": "Soirées Salsa du département 34 (Hérault) - septembre 2026 - Liste Salsa d'Olivier Soirées salsa dan"
     },
     {
       "name": "Toutlemondedanse Montpellier",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3987,
+      "chars": 3490,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3471,
+      "chars": 3615,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7396,
+      "chars": 7907,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4643,
+      "chars": 4982,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -381,11 +381,11 @@
     "sources_total": 47,
     "sources_skip": 0,
     "sources_rss": 14,
-    "sources_jsonld": 3,
-    "sources_text": 29,
+    "sources_jsonld": 4,
+    "sources_text": 28,
     "sources_erreur": 1,
-    "total_items_structured": 195,
-    "total_chars": 170726
+    "total_items_structured": 197,
+    "total_chars": 162243
   },
-  "timestamp": "2026-08-31T12:36:51Z"
+  "timestamp": "2026-09-01T11:02:28Z"
 }
