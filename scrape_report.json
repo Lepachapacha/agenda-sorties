@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8705,
+      "chars": 8647,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5733,
+      "chars": 5681,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8353,
+      "chars": 8328,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6539,
+      "chars": 6613,
       "preview": "[RSS · 20 items] Plus Loin | Mon, 31 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -37,7 +37,7 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6875,
+      "chars": 6824,
       "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 02 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
@@ -45,15 +45,15 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6444,
-      "preview": "[RSS · 20 items] This and That / Ceci et Cela, José Quintanar | Mon, 31 Aug 2026 | https://13.agenda"
+      "chars": 6529,
+      "preview": "[RSS · 20 items] Ensemble vocal Gyptis dirigé par Bénédicte Pereira | Wed, 02 Sep 2026 | https://13."
     },
     {
       "name": "Montpellier Events",
       "url": "https://www.montpellier-events.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 536,
+      "chars": 498,
       "preview": "L'agenda et la programmation - Montpellier Events Retrouvez ici toute la programmation du Rechercher"
     },
     {
@@ -77,8 +77,8 @@
       "url": "https://www.zenithsud-montpellier.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 144,
-      "preview": "L'agenda et la programmation - Zenith Montpellier Nom d'artiste, spectacle, etc ... COMPLET Autre da"
+      "chars": 106,
+      "preview": "L'agenda et la programmation - Zenith Montpellier Nom d'artiste, spectacle, etc ... Voir plus d'évèn"
     },
     {
       "name": "Le Corum Montpellier",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mer. 02 sept. de 19h00 à 22h00 Tous les mercredis de 19h00 à 22h00 80m² de f"
+      "preview": "Halle Tropisme - Agenda jeu. 03 sept. de 17h30 à 18h30 Tous les jeudis de 17h30 à 18h30 Vente produc"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5605,
+      "chars": 5738,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2986,
-      "preview": "[RSS · 10 items] THE RISE | Wed, 02 Sep 2026 | https://adamconcerts.com/the-rise-2-64814/ | Chères s"
+      "chars": 2974,
+      "preview": "[RSS · 10 items] K.MARO | Thu, 03 Sep 2026 | https://adamconcerts.com/k-maro-64784/ | De « Femme Lik"
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7026,
+      "chars": 6176,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4982,
+      "chars": 3710,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 197,
-    "total_chars": 161664
+    "total_chars": 159560
   },
-  "timestamp": "2026-09-02T10:34:04Z"
+  "timestamp": "2026-09-03T10:37:57Z"
 }
