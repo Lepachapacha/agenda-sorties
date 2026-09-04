@@ -1,25 +1,25 @@
-[generate.py] 2026-09-03
+[generate.py] 2026-09-04
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8647 chars
+    → texte, 8627 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5681 chars
+    → texte, 5552 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8328 chars
+    → texte, 8344 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6613 chars, 20 items
+    → RSS, 6699 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 6824 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6529 chars, 20 items
+    → RSS, 6565 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
-    → RSS, 1903 chars, 5 items
+    → RSS, 1907 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -39,15 +39,15 @@ Scraping des sources...
   [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
-    → RSS, 3718 chars, 10 items
+    → RSS, 3754 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5738 chars
+    → texte, 5740 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → texte, 161 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3242 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2974 chars, 10 items
+    → RSS, 3014 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -93,9 +93,9 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3615 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 6176 chars
+    → texte, 7665 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3710 chars
+    → texte, 4861 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 163266 → 110000 chars
+  Scrape tronqué : 166004 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-02","titre":"Détournements de Jean-Jacques François","cat":"expo","lieu":"Villeneuve-lès-Béziers","note":"Peintures et travaux plastiques","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/villeneuve-les-beziers/detournements-de-jean-ja'
-  219 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -44 passés, -0 génériques, 0 cat. corrigées → 175 retenus
-  Total : 175 événements (0 manuels + 175 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-03","titre":"ZEvent","cat":"concert","lieu":"Montpellier","note":"Rap/Hip-Hop - GIMS, BigFlo et Oli, Gazo","fils":false,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/concert/montpellier/zevent.html","gratuit":false,"groupe":""},{"date":"2026-09-04","tit'
+  77 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -8 passés, -0 génériques, 0 cat. corrigées → 69 retenus
+  Total : 69 événements (0 manuels + 69 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

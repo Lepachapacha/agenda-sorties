@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8647,
+      "chars": 8627,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5681,
+      "chars": 5552,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8328,
+      "chars": 8344,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6613,
+      "chars": 6699,
       "preview": "[RSS · 20 items] Plus Loin | Mon, 31 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6824,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 02 Sep 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] Afterwork #7 - Lavoir du Puits Couchoux 4 Septembre 2026 | Thu, 03 Sep 2026 | https"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6529,
-      "preview": "[RSS · 20 items] Ensemble vocal Gyptis dirigé par Bénédicte Pereira | Wed, 02 Sep 2026 | https://13."
+      "chars": 6565,
+      "preview": "[RSS · 20 items] « Here and Now » Walid Ben Selim et Marie Marguerite Cano | Thu, 03 Sep 2026 | http"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1903,
-      "preview": "[RSS · 5 items] Le Défi des Quartiers 2026 : Sète se joue à la rame sur ses canaux | Wed, 02 Sep 202"
+      "chars": 1907,
+      "preview": "[RSS · 5 items] Calendrier saison 2026-2027 de l’Arago de Sète : 50 saisons au plus haut niveau | Fr"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -94,7 +94,7 @@
       "method": "texte",
       "items": 0,
       "chars": 1126,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Soirée de lancement 2026-2027 fusio"
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Ouverture de saison 2026-2027 fusio"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -134,15 +134,15 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda jeu. 03 sept. de 17h30 à 18h30 Tous les jeudis de 17h30 à 18h30 Vente produc"
+      "preview": "Halle Tropisme - Agenda sam. 05 sept. de 19h00 à 22h00 Tous les samedis de 19h00 à 22h00 80m² de fri"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3718,
-      "preview": "[RSS · 10 items] Qui a dit que les nouvelles devaient forcément être mauvaises ? | Mon, 31 Aug 2026 "
+      "chars": 3754,
+      "preview": "[RSS · 10 items] M.A.N.U. fait sa rentrée : envie de passer une saison à Paloma ? | Thu, 03 Sep 2026"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5738,
+      "chars": 5740,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -173,8 +173,8 @@
       "url": "https://dome.marseille.fr/programmation",
       "method": "texte",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 161,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal LA DAME DE PIER"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2974,
-      "preview": "[RSS · 10 items] K.MARO | Thu, 03 Sep 2026 | https://adamconcerts.com/k-maro-64784/ | De « Femme Lik"
+      "chars": 3014,
+      "preview": "[RSS · 10 items] L’ATELIER DE JOE HISAISHI | Thu, 03 Sep 2026 | https://adamconcerts.com/latelier-de"
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6176,
+      "chars": 7665,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3710,
+      "chars": 4861,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 197,
-    "total_chars": 159560
+    "total_chars": 162298
   },
-  "timestamp": "2026-09-03T10:37:57Z"
+  "timestamp": "2026-09-04T10:31:57Z"
 }
