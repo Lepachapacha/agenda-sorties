@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8627,
+      "chars": 8495,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5552,
+      "chars": 5500,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8344,
+      "chars": 8176,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6699,
+      "chars": 6864,
       "preview": "[RSS · 20 items] Plus Loin | Mon, 31 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -37,16 +37,16 @@
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6824,
-      "preview": "[RSS · 20 items] Afterwork #7 - Lavoir du Puits Couchoux 4 Septembre 2026 | Thu, 03 Sep 2026 | https"
+      "chars": 6816,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sat, 05 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6565,
-      "preview": "[RSS · 20 items] « Here and Now » Walid Ben Selim et Marie Marguerite Cano | Thu, 03 Sep 2026 | http"
+      "chars": 6660,
+      "preview": "[RSS · 20 items] Les Nouvelles Aventures de Guignol et ses amis les Mascottes a Aix en Provence ! | "
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1907,
-      "preview": "[RSS · 5 items] Calendrier saison 2026-2027 de l’Arago de Sète : 50 saisons au plus haut niveau | Fr"
+      "chars": 1935,
+      "preview": "[RSS · 5 items] Généalogie à Sète : le Cercle de Languedoc ouvre sa 10e section locale | Fri, 04 Sep"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -117,7 +117,7 @@
       "url": "https://www.domainedo.fr/spectacles/tous-les-spectacles",
       "method": "texte",
       "items": 0,
-      "chars": 1134,
+      "chars": 1216,
       "preview": "| Cité européenne du théâtre Domaine d'O Montpellier Aller au contenu principal Tous les spectacles "
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5740,
+      "chars": 5701,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 3014,
-      "preview": "[RSS · 10 items] L’ATELIER DE JOE HISAISHI | Thu, 03 Sep 2026 | https://adamconcerts.com/latelier-de"
+      "chars": 3038,
+      "preview": "[RSS · 10 items] BOUDCHART A MARSEILLE | Sat, 05 Sep 2026 | https://adamconcerts.com/boudchart-a-mar"
     },
     {
       "name": "Marseille Comedy Club",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 32,
+      "preview": "[Indisponible : ConnectionError]"
     },
     {
       "name": "Jazz à Sète",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7665,
+      "chars": 7271,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4861,
+      "chars": 4579,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 28,
-    "sources_erreur": 1,
+    "sources_text": 27,
+    "sources_erreur": 2,
     "total_items_structured": 197,
-    "total_chars": 162298
+    "total_chars": 149649
   },
-  "timestamp": "2026-09-04T10:31:57Z"
+  "timestamp": "2026-09-05T09:55:14Z"
 }
