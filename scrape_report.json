@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8495,
+      "chars": 8484,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5500,
+      "chars": 5503,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8176,
+      "chars": 8191,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,23 +29,23 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6864,
-      "preview": "[RSS · 20 items] Plus Loin | Mon, 31 Aug 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6719,
+      "preview": "[RSS · 20 items] Remp'Arts 2026 | Sat, 05 Sep 2026 | https://34.agendaculturel.fr/exposition/saint-p"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6816,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sat, 05 Sep 2026 | https://30.agendaculturel.fr"
+      "chars": 6841,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sun, 06 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6660,
+      "chars": 6683,
       "preview": "[RSS · 20 items] Les Nouvelles Aventures de Guignol et ses amis les Mascottes a Aix en Provence ! | "
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1935,
-      "preview": "[RSS · 5 items] Généalogie à Sète : le Cercle de Languedoc ouvre sa 10e section locale | Fri, 04 Sep"
+      "chars": 1965,
+      "preview": "[RSS · 5 items] La Palanquée à Sète lance l’appel à candidatures de son incubateur 2026 | Sat, 05 Se"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda sam. 05 sept. de 19h00 à 22h00 Tous les samedis de 19h00 à 22h00 80m² de fri"
+      "preview": "Halle Tropisme - Agenda dim. 06 sept. de 09h00 à 14h00 Tous les dimanches de 09h00 à 14h00 LE VIDE-G"
     },
     {
       "name": "Paloma Nîmes",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 32,
-      "preview": "[Indisponible : ConnectionError]"
+      "chars": 12000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7271,
+      "chars": 7690,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4579,
+      "chars": 4982,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 27,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 1,
     "total_items_structured": 197,
-    "total_chars": 149649
+    "total_chars": 162379
   },
-  "timestamp": "2026-09-05T09:55:14Z"
+  "timestamp": "2026-09-06T10:12:55Z"
 }
