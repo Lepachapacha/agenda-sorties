@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8484,
+      "chars": 8677,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5503,
+      "chars": 5949,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8191,
+      "chars": 8431,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6719,
-      "preview": "[RSS · 20 items] Remp'Arts 2026 | Sat, 05 Sep 2026 | https://34.agendaculturel.fr/exposition/saint-p"
+      "chars": 6544,
+      "preview": "[RSS · 20 items] Plus Loin | Sun, 06 Sep 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6841,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Sun, 06 Sep 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 07 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6683,
-      "preview": "[RSS · 20 items] Les Nouvelles Aventures de Guignol et ses amis les Mascottes a Aix en Provence ! | "
+      "chars": 6797,
+      "preview": "[RSS · 20 items] This and That / Ceci et Cela, José Quintanar | Mon, 07 Sep 2026 | https://13.agenda"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1965,
-      "preview": "[RSS · 5 items] La Palanquée à Sète lance l’appel à candidatures de son incubateur 2026 | Sat, 05 Se"
+      "chars": 1964,
+      "preview": "[RSS · 5 items] Journées Port Ouvert 2026 à Sète : visiter les 3 ports du 18 au 20 septembre | Sun, "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda dim. 06 sept. de 09h00 à 14h00 Tous les dimanches de 09h00 à 14h00 LE VIDE-G"
+      "preview": "Halle Tropisme - Agenda lun. 07 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
     },
     {
       "name": "Paloma Nîmes",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 3038,
-      "preview": "[RSS · 10 items] BOUDCHART A MARSEILLE | Sat, 05 Sep 2026 | https://adamconcerts.com/boudchart-a-mar"
+      "chars": 2989,
+      "preview": "[RSS · 10 items] ELODIE ARNOULD | Mon, 07 Sep 2026 | https://adamconcerts.com/elodie-arnould-3-64915"
     },
     {
       "name": "Marseille Comedy Club",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3486,
+      "chars": 3658,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3615,
+      "chars": 3586,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7690,
+      "chars": 6515,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4982,
+      "chars": 3710,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 197,
-    "total_chars": 162379
+    "total_chars": 160843
   },
-  "timestamp": "2026-09-06T10:12:55Z"
+  "timestamp": "2026-09-07T11:30:04Z"
 }
