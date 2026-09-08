@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8677,
+      "chars": 8742,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8431,
+      "chars": 9228,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6544,
-      "preview": "[RSS · 20 items] Plus Loin | Sun, 06 Sep 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6576,
+      "preview": "[RSS · 20 items] Plus Loin | Tue, 08 Sep 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6841,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 07 Sep 2026 | https://30.agendaculturel.fr"
+      "chars": 6939,
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Tue, 08 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6797,
-      "preview": "[RSS · 20 items] This and That / Ceci et Cela, José Quintanar | Mon, 07 Sep 2026 | https://13.agenda"
+      "chars": 6661,
+      "preview": "[RSS · 20 items] La Maison Forestière | Mon, 07 Sep 2026 | https://13.agendaculturel.fr/theatre/mars"
     },
     {
       "name": "Montpellier Events",
@@ -109,8 +109,8 @@
       "url": "https://www.opera-orchestre-montpellier.fr/",
       "method": "RSS",
       "items": 10,
-      "chars": 3201,
-      "preview": "[RSS · 10 items] Votre tenue de ski star de l’opéra | Mon, 20 Jul 2026 | https://www.opera-orchestre"
+      "chars": 3227,
+      "preview": "[RSS · 10 items] Entretien avec Karen Tanaka, compositrice du Concerto « Verse of light » pour tromp"
     },
     {
       "name": "Domaine d'O Montpellier",
@@ -125,7 +125,7 @@
       "url": "https://www.lejam.com/",
       "method": "RSS",
       "items": 10,
-      "chars": 3425,
+      "chars": 3472,
       "preview": "[RSS · 10 items] ABONNEMENT JAM CLUB 2026-2027 | Thu, 27 Aug 2026 | https://www.lejam.com/abonnement"
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda lun. 07 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
+      "preview": "Halle Tropisme - Agenda mar. 08 sept. de 18h00 à 20h00 Mardi crafty : PHOTO BRODÉE Tous les mardis u"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5701,
+      "chars": 5657,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -316,9 +316,9 @@
       "name": "Jazz à Sète",
       "url": "https://www.jazzasete.com/programmation/",
       "method": "RSS",
-      "items": 4,
-      "chars": 276,
-      "preview": "[RSS · 4 items] x | Wed, 01 Jan 2020 | https://www.jazzasete.com/x-4/ | x x | Wed, 01 Jan 2020 | htt"
+      "items": 5,
+      "chars": 334,
+      "preview": "[RSS · 5 items] x | Wed, 01 Jan 2020 | https://www.jazzasete.com/x-5/ | x x | Wed, 01 Jan 2020 | htt"
     },
     {
       "name": "Festival Radio France Occitanie",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 6515,
+      "chars": 8901,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3710,
+      "chars": 5343,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 4,
     "sources_text": 28,
     "sources_erreur": 1,
-    "total_items_structured": 197,
-    "total_chars": 160843
+    "total_items_structured": 198,
+    "total_chars": 165805
   },
-  "timestamp": "2026-09-07T11:30:04Z"
+  "timestamp": "2026-09-08T10:32:00Z"
 }
