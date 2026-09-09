@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8742,
+      "chars": 8646,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5949,
+      "chars": 5855,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9228,
+      "chars": 9123,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6576,
+      "chars": 6774,
       "preview": "[RSS · 20 items] Plus Loin | Tue, 08 Sep 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
     },
     {
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6939,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Tue, 08 Sep 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 09 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6661,
-      "preview": "[RSS · 20 items] La Maison Forestière | Mon, 07 Sep 2026 | https://13.agendaculturel.fr/theatre/mars"
+      "chars": 6586,
+      "preview": "[RSS · 20 items] Le Magicien d'Oz | Tue, 08 Sep 2026 | https://13.agendaculturel.fr/jeune-public/mar"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1964,
-      "preview": "[RSS · 5 items] Journées Port Ouvert 2026 à Sète : visiter les 3 ports du 18 au 20 septembre | Sun, "
+      "chars": 1932,
+      "preview": "[RSS · 5 items] Loupian : la cour de l’école maternelle refaite pour la rentrée | Tue, 08 Sep 2026 |"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1126,
+      "chars": 1067,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Ouverture de saison 2026-2027 fusio"
     },
     {
@@ -101,8 +101,8 @@
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
       "method": "texte",
       "items": 0,
-      "chars": 1436,
-      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Retrouvez-"
+      "chars": 4233,
+      "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Théâtre - "
     },
     {
       "name": "Opéra Comédie Montpellier",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mar. 08 sept. de 18h00 à 20h00 Mardi crafty : PHOTO BRODÉE Tous les mardis u"
+      "preview": "Halle Tropisme - Agenda mer. 09 sept. de 19h00 à 22h00 Tous les mercredis de 19h00 à 22h00 80m² de f"
     },
     {
       "name": "Paloma Nîmes",
@@ -142,7 +142,7 @@
       "method": "RSS",
       "items": 10,
       "chars": 3754,
-      "preview": "[RSS · 10 items] M.A.N.U. fait sa rentrée : envie de passer une saison à Paloma ? | Thu, 03 Sep 2026"
+      "preview": "[RSS · 10 items] Des morceaux pour se mettre dans l’ambiance | Tue, 08 Sep 2026 | https://paloma-nim"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5657,
+      "chars": 5683,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 161,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal LA DAME DE PIER"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2989,
-      "preview": "[RSS · 10 items] ELODIE ARNOULD | Mon, 07 Sep 2026 | https://adamconcerts.com/elodie-arnould-3-64915"
+      "chars": 2942,
+      "preview": "[RSS · 10 items] SOPRANO | Wed, 09 Sep 2026 | https://adamconcerts.com/soprano-11-64978/ | En 2028, "
     },
     {
       "name": "Marseille Comedy Club",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3658,
+      "chars": 3657,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8901,
+      "chars": 8583,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5343,
+      "chars": 4928,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 28,
-    "sources_erreur": 1,
+    "sources_text": 27,
+    "sources_erreur": 2,
     "total_items_structured": 198,
-    "total_chars": 165805
+    "total_chars": 167442
   },
-  "timestamp": "2026-09-08T10:32:00Z"
+  "timestamp": "2026-09-09T10:43:11Z"
 }
