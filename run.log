@@ -1,21 +1,21 @@
-[generate.py] 2026-09-09
+[generate.py] 2026-09-10
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8646 chars
+    → texte, 8644 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5855 chars
+    → texte, 5883 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 9123 chars
+    → texte, 9224 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6774 chars, 20 items
+    → RSS, 6803 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6939 chars, 20 items
+    → RSS, 6881 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6586 chars, 20 items
+    → RSS, 6606 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
@@ -45,7 +45,7 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5683 chars
+    → texte, 5708 chars
   [22/47] Scraping : Le Dôme Marseille
     → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -59,7 +59,7 @@ Scraping des sources...
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8246 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
-    → JSON-LD, 8007 chars, 25 items
+    → JSON-LD, 7993 chars, 25 items
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
@@ -67,11 +67,11 @@ Scraping des sources...
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
-    → texte, 80 chars
+    → texte, 73 chars
   [33/47] Scraping : Comédie Club Vieux Port Marseille
     → texte, 4586 chars
   [34/47] Scraping : Temple de la Danse Montpellier
-    → texte, 2019 chars
+    → texte, 1976 chars
   [35/47] Scraping : Alma Dance Montpellier
     → JSON-LD, 676 chars, 2 items
   [36/47] Scraping : Liste Salsa d'Olivier Hérault 34
@@ -93,9 +93,9 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3586 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 8583 chars
+    → texte, 7426 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4928 chars
+    → texte, 4034 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 171148 → 110000 chars
+  Scrape tronqué : 169176 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-08","titre":"Plus Loin","cat":"expo","lieu":"Quarante, Hérault","note":"Exposition multidisciplinaire de Pablo Garcia","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/quarante/plus-loin.html","gratuit":false,"groupe":""},{"date":"2026'
-  224 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -34 passés, -0 génériques, 0 cat. corrigées → 190 retenus
-  Total : 190 événements (0 manuels + 190 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-11","titre":"Candlelight : Disney Chansons d\'amour","cat":"concert","lieu":"Montpellier","note":"Concerts à la bougie dans l\'Amphithéâtre d\'Anatomie","fils":false,"stars":1,"section":"concerts","url":"https://www.jds.fr/montpellier/agenda/","gratuit":false,"groupe":""},{"da'
+  188 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -29 passés, -0 génériques, 0 cat. corrigées → 159 retenus
+  Total : 159 événements (0 manuels + 159 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

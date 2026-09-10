@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8646,
+      "chars": 8644,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5855,
+      "chars": 5883,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9123,
+      "chars": 9224,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6774,
-      "preview": "[RSS · 20 items] Plus Loin | Tue, 08 Sep 2026 | https://34.agendaculturel.fr/exposition/quarante/plu"
+      "chars": 6803,
+      "preview": "[RSS · 20 items] Métissages Textiles de Philippe Catherine | Wed, 09 Sep 2026 | https://34.agendacul"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6939,
+      "chars": 6881,
       "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 09 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6586,
-      "preview": "[RSS · 20 items] Le Magicien d'Oz | Tue, 08 Sep 2026 | https://13.agendaculturel.fr/jeune-public/mar"
+      "chars": 6606,
+      "preview": "[RSS · 20 items] Zack Mon Ami le Petit Robot | Thu, 10 Sep 2026 | https://13.agendaculturel.fr/jeune"
     },
     {
       "name": "Montpellier Events",
@@ -62,7 +62,7 @@
       "method": "RSS",
       "items": 5,
       "chars": 1932,
-      "preview": "[RSS · 5 items] Loupian : la cour de l’école maternelle refaite pour la rentrée | Tue, 08 Sep 2026 |"
+      "preview": "[RSS · 5 items] État civil à Frontignan : les horaires élargis jusqu’au 31 décembre 2026 | Wed, 09 S"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mer. 09 sept. de 19h00 à 22h00 Tous les mercredis de 19h00 à 22h00 80m² de f"
+      "preview": "Halle Tropisme - Agenda jeu. 10 sept. de 17h30 à 18h30 Tous les jeudis de 17h30 à 18h30 Vente produc"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5683,
+      "chars": 5708,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -221,8 +221,8 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8007,
-      "preview": "[JSON-LD · 25 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
+      "chars": 7993,
+      "preview": "[JSON-LD · 25 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -253,8 +253,8 @@
       "url": "https://garage-comedy.com/",
       "method": "texte",
       "items": 0,
-      "chars": 80,
-      "preview": "Garage Comedy ⚙️ Le Bar-Tapas & Comedy Club de Marseille RÉSERVATION COMEDY CLUB"
+      "chars": 73,
+      "preview": "Garage Comedy Club ⚙️ Le Comedy Club de Marseille RÉSERVATION COMEDY CLUB"
     },
     {
       "name": "Comédie Club Vieux Port Marseille",
@@ -269,8 +269,8 @@
       "url": "https://templededanse.com/soirees-temple-de-la-danse-montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 2019,
-      "preview": "Les Soirées du Temple - Le Temple De La Danse templededanse@gmail.com Le Temple c’est des soirées to"
+      "chars": 1976,
+      "preview": "Le Temple — bistro, bar dansant & école de danse à Lattes 260 rue du Puech Radier · Lattes On y dîne"
     },
     {
       "name": "Alma Dance Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8583,
+      "chars": 7426,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4928,
+      "chars": 4034,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 27,
     "sources_erreur": 2,
     "total_items_structured": 198,
-    "total_chars": 167442
+    "total_chars": 165470
   },
-  "timestamp": "2026-09-09T10:43:11Z"
+  "timestamp": "2026-09-10T10:32:46Z"
 }
