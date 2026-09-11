@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8644,
+      "chars": 8543,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5883,
+      "chars": 5863,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9224,
+      "chars": 9142,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6803,
-      "preview": "[RSS · 20 items] Métissages Textiles de Philippe Catherine | Wed, 09 Sep 2026 | https://34.agendacul"
+      "chars": 6702,
+      "preview": "[RSS · 20 items] Ressac de Champieux | Thu, 10 Sep 2026 | https://34.agendaculturel.fr/exposition/ag"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6881,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 09 Sep 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] Des gens intelligents | Thu, 10 Sep 2026 | https://30.agendaculturel.fr/theatre/rem"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6606,
-      "preview": "[RSS · 20 items] Zack Mon Ami le Petit Robot | Thu, 10 Sep 2026 | https://13.agendaculturel.fr/jeune"
+      "chars": 6503,
+      "preview": "[RSS · 20 items] La Maison Forestière | Tue, 08 Sep 2026 | https://13.agendaculturel.fr/theatre/mars"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1932,
-      "preview": "[RSS · 5 items] État civil à Frontignan : les horaires élargis jusqu’au 31 décembre 2026 | Wed, 09 S"
+      "chars": 1915,
+      "preview": "[RSS · 5 items] Permis de végétaliser à Frontignan : candidatures jusqu’au 16 octobre | Thu, 10 Sep "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda jeu. 10 sept. de 17h30 à 18h30 Tous les jeudis de 17h30 à 18h30 Vente produc"
+      "preview": "Halle Tropisme - Agenda ven. 11 sept. de 18h00 à 23h59 Dj set - JetLag par based mtp Soirée organisé"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5708,
+      "chars": 5709,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 161,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal LA DAME DE PIER"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3586,
+      "chars": 3630,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7426,
+      "chars": 9155,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 27,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 1,
     "total_items_structured": 198,
-    "total_chars": 165470
+    "total_chars": 166962
   },
-  "timestamp": "2026-09-10T10:32:46Z"
+  "timestamp": "2026-09-11T10:33:25Z"
 }
