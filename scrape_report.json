@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8543,
+      "chars": 8388,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5863,
+      "chars": 5812,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9142,
+      "chars": 9129,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6702,
-      "preview": "[RSS · 20 items] Ressac de Champieux | Thu, 10 Sep 2026 | https://34.agendaculturel.fr/exposition/ag"
+      "chars": 6745,
+      "preview": "[RSS · 20 items] Festival des Arts de Rue : Rêves de Rue 2026 | Sat, 12 Sep 2026 | https://34.agenda"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6881,
-      "preview": "[RSS · 20 items] Des gens intelligents | Thu, 10 Sep 2026 | https://30.agendaculturel.fr/theatre/rem"
+      "chars": 6972,
+      "preview": "[RSS · 20 items] Samedi des kids ! | Fri, 11 Sep 2026 | https://30.agendaculturel.fr/jeune-public/ni"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6503,
-      "preview": "[RSS · 20 items] La Maison Forestière | Tue, 08 Sep 2026 | https://13.agendaculturel.fr/theatre/mars"
+      "chars": 6746,
+      "preview": "[RSS · 20 items] Ouverture festive : jam session et DJ set de Moad Haddadi | Fri, 11 Sep 2026 | http"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1915,
-      "preview": "[RSS · 5 items] Permis de végétaliser à Frontignan : candidatures jusqu’au 16 octobre | Thu, 10 Sep "
+      "chars": 1914,
+      "preview": "[RSS · 5 items] Grande Braderie du Cap d’Agde, 19e édition les 12 et 13 septembre | Fri, 11 Sep 2026"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,14 +134,14 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda ven. 11 sept. de 18h00 à 23h59 Dj set - JetLag par based mtp Soirée organisé"
+      "preview": "Halle Tropisme - Agenda sam. 12 sept. à 14h00 TROPISME PÉTANQUE CLUB Concours de pétanque en doublet"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3754,
+      "chars": 3773,
       "preview": "[RSS · 10 items] Des morceaux pour se mettre dans l’ambiance | Tue, 08 Sep 2026 | https://paloma-nim"
     },
     {
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 25,
-      "chars": 7993,
-      "preview": "[JSON-LD · 25 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
+      "items": 24,
+      "chars": 7694,
+      "preview": "[JSON-LD · 24 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -276,9 +276,9 @@
       "name": "Alma Dance Montpellier",
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "JSON-LD",
-      "items": 2,
-      "chars": 676,
-      "preview": "[JSON-LD · 2 événements] Portes Ouvertes &#8211; Semaine 1 | 2026-09-07 | Montpellier Ouest &#038; M"
+      "items": 1,
+      "chars": 350,
+      "preview": "[JSON-LD · 1 événements] Portes Ouvertes &#8211; Semaine 2 | 2026-09-14 | Montpellier Ouest &#038; M"
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 12000,
-      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
+      "chars": 10,
+      "preview": "[HTTP 403]"
     },
     {
       "name": "Jazz à Sète",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9155,
+      "chars": 10240,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4034,
+      "chars": 4928,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 28,
-    "sources_erreur": 1,
-    "total_items_structured": 198,
-    "total_chars": 166962
+    "sources_text": 27,
+    "sources_erreur": 2,
+    "total_items_structured": 196,
+    "total_chars": 156502
   },
-  "timestamp": "2026-09-11T10:33:25Z"
+  "timestamp": "2026-09-12T10:01:45Z"
 }
