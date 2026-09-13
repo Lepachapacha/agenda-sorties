@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8388,
+      "chars": 8174,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5812,
+      "chars": 5825,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9129,
+      "chars": 8964,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6745,
-      "preview": "[RSS · 20 items] Festival des Arts de Rue : Rêves de Rue 2026 | Sat, 12 Sep 2026 | https://34.agenda"
+      "chars": 6649,
+      "preview": "[RSS · 20 items] Festival des Arts de Rue : Rêves de Rue 2026 | Sun, 13 Sep 2026 | https://34.agenda"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6972,
-      "preview": "[RSS · 20 items] Samedi des kids ! | Fri, 11 Sep 2026 | https://30.agendaculturel.fr/jeune-public/ni"
+      "chars": 7002,
+      "preview": "[RSS · 20 items] Terrain d’Aventures de la rentrée avec la cie du Courcirkoui | Sun, 13 Sep 2026 | h"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6746,
-      "preview": "[RSS · 20 items] Ouverture festive : jam session et DJ set de Moad Haddadi | Fri, 11 Sep 2026 | http"
+      "chars": 6651,
+      "preview": "[RSS · 20 items] Sunugal Festival, 2ᵉ édition | Sat, 12 Sep 2026 | https://13.agendaculturel.fr/fest"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1914,
-      "preview": "[RSS · 5 items] Grande Braderie du Cap d’Agde, 19e édition les 12 et 13 septembre | Fri, 11 Sep 2026"
+      "chars": 1924,
+      "preview": "[RSS · 5 items] Trottinette électrique dans l’Hérault : casque et gilet obligatoires | Sat, 12 Sep 2"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda sam. 12 sept. à 14h00 TROPISME PÉTANQUE CLUB Concours de pétanque en doublet"
+      "preview": "Halle Tropisme - Agenda Du sam. 12 sept. au dim. 13 sept. WEEK-END 100% DANSE ! ATELIERS, GRANDE LEÇ"
     },
     {
       "name": "Paloma Nîmes",
@@ -307,10 +307,10 @@
     {
       "name": "Latinamap Festivals Été",
       "url": "https://latinamap.eu/festival-europe/festival-ete/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 403]"
+      "chars": 12000,
+      "preview": "Festival été 2026 : programmation latino juin, juillet, août Festival de l'été 2025 Danse de l'été l"
     },
     {
       "name": "Jazz à Sète",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3630,
+      "chars": 3667,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 10240,
+      "chars": 9797,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 27,
-    "sources_erreur": 2,
+    "sources_text": 28,
+    "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 156502
+    "total_chars": 167569
   },
-  "timestamp": "2026-09-12T10:01:45Z"
+  "timestamp": "2026-09-13T11:02:36Z"
 }
