@@ -1,25 +1,25 @@
-[generate.py] 2026-09-13
+[generate.py] 2026-09-14
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8174 chars
+    → texte, 8564 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5825 chars
+    → texte, 5952 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8964 chars
+    → texte, 9252 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6649 chars, 20 items
+    → RSS, 6601 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 7002 chars, 20 items
+    → RSS, 7126 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6651 chars, 20 items
+    → RSS, 6975 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
-    → RSS, 1924 chars, 5 items
+    → RSS, 1905 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -33,7 +33,7 @@ Scraping des sources...
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3227 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → texte, 1216 chars
+    → texte, 1330 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3472 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
@@ -45,7 +45,7 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5709 chars
+    → texte, 5672 chars
   [22/47] Scraping : Le Dôme Marseille
     → texte, 161 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2942 chars, 10 items
+    → RSS, 2972 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -89,13 +89,13 @@ Scraping des sources...
   [42/47] Scraping : Family Piknik Montpellier
     → texte, 81 chars
   [43/47] Scraping : CitizenKid Montpellier
-    → texte, 3657 chars
+    → texte, 3635 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 3667 chars
+    → texte, 3654 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 9797 chars
+    → texte, 7575 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4928 chars
+    → texte, 4034 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 171275 → 110000 chars
+  Scrape tronqué : 169417 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-12","titre":"Exposition de photos du patrimoine régional","cat":"expo","lieu":"Canet, Hérault","note":"Patrimoine régional de l\'Hérault","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/canet/exposition-de-photos-du-patrimoine-regional'
-  171 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -53 passés, -0 génériques, 0 cat. corrigées → 118 retenus
-  Total : 118 événements (0 manuels + 118 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-13","titre":"Métissages Textiles de Philippe Catherine","cat":"expo","lieu":"Avène, Hérault","note":"Exposition textiles contemporains","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/avene/metissages-textiles-de-philippe-catherine.ht'
+  151 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -47 passés, -0 génériques, 0 cat. corrigées → 104 retenus
+  Total : 104 événements (0 manuels + 104 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
