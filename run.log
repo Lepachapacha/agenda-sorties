@@ -1,25 +1,25 @@
-[generate.py] 2026-09-14
+[generate.py] 2026-09-15
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8564 chars
+    → texte, 8513 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5952 chars
+    → texte, 5905 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 9252 chars
+    → texte, 9101 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6601 chars, 20 items
+    → RSS, 6936 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 7126 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6975 chars, 20 items
+    → RSS, 6856 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
-    → RSS, 1905 chars, 5 items
+    → RSS, 1853 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -39,13 +39,13 @@ Scraping des sources...
   [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
-    → RSS, 3773 chars, 10 items
+    → RSS, 3824 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5672 chars
+    → texte, 5641 chars
   [22/47] Scraping : Le Dôme Marseille
     → texte, 161 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2972 chars, 10 items
+    → RSS, 2908 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -89,13 +89,13 @@ Scraping des sources...
   [42/47] Scraping : Family Piknik Montpellier
     → texte, 81 chars
   [43/47] Scraping : CitizenKid Montpellier
-    → texte, 3635 chars
+    → texte, 4015 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 3654 chars
+    → texte, 3427 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7575 chars
+    → texte, 10631 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4034 chars
+    → texte, 5911 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 169417 → 110000 chars
+  Scrape tronqué : 174374 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-13","titre":"Métissages Textiles de Philippe Catherine","cat":"expo","lieu":"Avène, Hérault","note":"Exposition textiles contemporains","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/avene/metissages-textiles-de-philippe-catherine.ht'
-  151 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -47 passés, -0 génériques, 0 cat. corrigées → 104 retenus
-  Total : 104 événements (0 manuels + 104 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-18","titre":"Feria des Vendanges à Nîmes 2026","cat":"feria","lieu":"Nîmes","note":"Célébration des vendanges, 3 jours","fils":false,"stars":2,"section":"concerts","url":"https://www.jds.fr/nimes/agenda/","gratuit":false,"groupe":""},{"date":"2026-09-19","titre":"Journées E'
+  50 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -0 passés, -0 génériques, 0 cat. corrigées → 50 retenus
+  Total : 50 événements (0 manuels + 50 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8564,
+      "chars": 8513,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5952,
+      "chars": 5905,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9252,
+      "chars": 9101,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6601,
-      "preview": "[RSS · 20 items] Métissages Textiles de Philippe Catherine | Sun, 13 Sep 2026 | https://34.agendacul"
+      "chars": 6936,
+      "preview": "[RSS · 20 items] Expression libre | Mon, 14 Sep 2026 | https://34.agendaculturel.fr/exposition/bezie"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 7126,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 14 Sep 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Tue, 15 Sep 2026 | https://30.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6975,
-      "preview": "[RSS · 20 items] Programme septembre du Vig's | Sun, 13 Sep 2026 | https://13.agendaculturel.fr/thea"
+      "chars": 6856,
+      "preview": "[RSS · 20 items] Sounds, Tears and Skins | Tue, 15 Sep 2026 | https://13.agendaculturel.fr/concert/m"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1905,
-      "preview": "[RSS · 5 items] World Cleanup Day : quatre nettoyages citoyens sur le bassin de Thau | Mon, 14 Sep 2"
+      "chars": 1853,
+      "preview": "[RSS · 5 items] Argent de poche à Sète : les 14 à 17 ans peuvent postuler jusqu’au 6 octobre | Mon, "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,15 +134,15 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda lun. 14 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
+      "preview": "Halle Tropisme - Agenda Du mar. 15 sept. au dim. 20 sept. Exposition de Signe Lemche, artiste des At"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3773,
-      "preview": "[RSS · 10 items] Des morceaux pour se mettre dans l’ambiance | Tue, 08 Sep 2026 | https://paloma-nim"
+      "chars": 3824,
+      "preview": "[RSS · 10 items] PENDANT LA FERIA, UN BUS T’EMMÈNE DU PARKING DE PALOMA AU CENTRE VILLE | Tue, 15 Se"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5672,
+      "chars": 5641,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2972,
-      "preview": "[RSS · 10 items] SEBASTIAN MARX | Mon, 14 Sep 2026 | https://adamconcerts.com/sebastian-marx-2-64735"
+      "chars": 2908,
+      "preview": "[RSS · 10 items] GÉNÉRATIONS CONNEMARA | Tue, 15 Sep 2026 | https://adamconcerts.com/generations-con"
     },
     {
       "name": "Marseille Comedy Club",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3635,
+      "chars": 4015,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3654,
+      "chars": 3427,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7575,
+      "chars": 10631,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4034,
+      "chars": 5911,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 165711
+    "total_chars": 170668
   },
-  "timestamp": "2026-09-14T11:42:45Z"
+  "timestamp": "2026-09-15T11:00:09Z"
 }
