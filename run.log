@@ -1,25 +1,25 @@
-[generate.py] 2026-09-16
+[generate.py] 2026-09-17
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 8441 chars
+    → texte, 6998 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5735 chars
+    → texte, 5745 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 9187 chars
+    → texte, 8970 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6673 chars, 20 items
+    → RSS, 6688 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 7126 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 7359 chars, 20 items
+    → RSS, 7377 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
-    → RSS, 1865 chars, 5 items
+    → RSS, 1928 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -45,7 +45,7 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5641 chars
+    → texte, 5687 chars
   [22/47] Scraping : Le Dôme Marseille
     → texte, 161 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -55,7 +55,7 @@ Scraping des sources...
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
-    → texte, 2025 chars
+    → texte, 2071 chars
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8246 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
@@ -93,9 +93,9 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3248 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 8806 chars
+    → texte, 7729 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 5558 chars
+    → texte, 4515 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 172143 → 110000 chars
+  Scrape tronqué : 168561 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-18","titre":"Feria des Vendanges à Nîmes 2026","cat":"feria","lieu":"Nîmes","note":"Célébration des vendanges","fils":false,"stars":2,"section":"concerts","url":"https://www.jds.fr/nimes/agenda/","gratuit":false,"groupe":""},{"date":"2026-09-19","titre":"Journées du Patrimo'
-  171 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -27 passés, -0 génériques, 0 cat. corrigées → 144 retenus
-  Total : 144 événements (0 manuels + 144 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-17","titre":"Improvizart","cat":"theatre","lieu":"Montpellier, Hérault","note":"Théâtre d\'improvisation","files":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/theatre/montpellier/improvizart.html","gratuit":false,"groupe":""},{"date":"2026-09-17","ti'
+  88 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -0 passés, -0 génériques, 0 cat. corrigées → 88 retenus
+  Total : 88 événements (0 manuels + 88 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

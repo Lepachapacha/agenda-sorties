@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 8441,
+      "chars": 6998,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5735,
+      "chars": 5745,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9187,
+      "chars": 8970,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6673,
-      "preview": "[RSS · 20 items] Métissages Textiles de Philippe Catherine | Tue, 15 Sep 2026 | https://34.agendacul"
+      "chars": 6688,
+      "preview": "[RSS · 20 items] Improvizart | Thu, 17 Sep 2026 | https://34.agendaculturel.fr/theatre/montpellier/i"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 7126,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Wed, 16 Sep 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7359,
-      "preview": "[RSS · 20 items] Exposition \"Sentiers\" de Jean-Marie Barre | Wed, 16 Sep 2026 | https://13.agendacul"
+      "chars": 7377,
+      "preview": "[RSS · 20 items] Plateau du jeudi au Marseille Comedy Club | Thu, 17 Sep 2026 | https://13.agendacul"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1865,
-      "preview": "[RSS · 5 items] Quotas de thon rouge : la Ville de Sète réaffirme son soutien aux pêcheurs | Tue, 15"
+      "chars": 1928,
+      "preview": "[RSS · 5 items] Kiosque Franke à Sète : le campanile hissé sur l’esplanade Aristide Briand | Thu, 17"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5641,
+      "chars": 5687,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2025,
+      "chars": 2071,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8806,
+      "chars": 7729,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5558,
+      "chars": 4515,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 168437
+    "total_chars": 164855
   },
-  "timestamp": "2026-09-16T10:48:09Z"
+  "timestamp": "2026-09-17T10:54:40Z"
 }
