@@ -1,25 +1,25 @@
-[generate.py] 2026-09-17
+[generate.py] 2026-09-18
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 6998 chars
+    → texte, 6878 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5745 chars
+    → texte, 5678 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8970 chars
+    → texte, 8996 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6688 chars, 20 items
+    → RSS, 7559 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 7126 chars, 20 items
+    → RSS, 7262 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 7377 chars, 20 items
+    → RSS, 6540 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
-    → RSS, 1928 chars, 5 items
+    → RSS, 1921 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -31,7 +31,7 @@ Scraping des sources...
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
     → texte, 4233 chars
   [14/47] Scraping : Opéra Comédie Montpellier
-    → RSS, 3248 chars, 10 items
+    → RSS, 3223 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
     → texte, 1330 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
@@ -45,9 +45,9 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5687 chars
+    → texte, 5671 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 161 chars
+    → erreur, 19 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3242 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2917 chars, 10 items
+    → RSS, 2947 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -93,13 +93,13 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3248 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 7729 chars
+    → texte, 7575 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 4515 chars
+    → texte, 4487 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:14 JSON-LD:4 texte:28 skip:0 erreur:1 | 196 items structurés
+  47 sources — RSS:14 JSON-LD:4 texte:27 skip:0 erreur:2 | 196 items structurés
 Recherches Gemini Search (couche 3)...
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
   [Gemini] gemini-2.0-flash : modèle non disponible
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 168561 → 110000 chars
+  Scrape tronqué : 168228 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-17","titre":"Improvizart","cat":"theatre","lieu":"Montpellier, Hérault","note":"Théâtre d\'improvisation","files":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/theatre/montpellier/improvizart.html","gratuit":false,"groupe":""},{"date":"2026-09-17","ti'
-  88 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -0 passés, -0 génériques, 0 cat. corrigées → 88 retenus
-  Total : 88 événements (0 manuels + 88 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-18","titre":"Visite patrimoine à 2 voix « Agde, dans les pas des photographes d\'hier »","cat":"activite","lieu":"Agde, Hérault","note":"Archives Municipales et Office de Tourisme","fils":false,"stars":1,"section":"activites","url":"https://34.agendaculturel.fr/exposition/ag'
+  135 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -34 passés, -0 génériques, 0 cat. corrigées → 101 retenus
+  Total : 101 événements (0 manuels + 101 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

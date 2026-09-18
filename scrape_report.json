@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6998,
+      "chars": 6878,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5745,
+      "chars": 5678,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8970,
+      "chars": 8996,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6688,
-      "preview": "[RSS · 20 items] Improvizart | Thu, 17 Sep 2026 | https://34.agendaculturel.fr/theatre/montpellier/i"
+      "chars": 7559,
+      "preview": "[RSS · 20 items] Visite patrimoine à 2 voix \"Agde, dans les pas des photographes d'hier\" | Fri, 18 S"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7126,
+      "chars": 7262,
       "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7377,
-      "preview": "[RSS · 20 items] Plateau du jeudi au Marseille Comedy Club | Thu, 17 Sep 2026 | https://13.agendacul"
+      "chars": 6540,
+      "preview": "[RSS · 20 items] Glaneuses et glaneurs | Thu, 17 Sep 2026 | https://13.agendaculturel.fr/exposition/"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1928,
-      "preview": "[RSS · 5 items] Kiosque Franke à Sète : le campanile hissé sur l’esplanade Aristide Briand | Thu, 17"
+      "chars": 1921,
+      "preview": "[RSS · 5 items] Travaux à Sète : la rue de la Caraussane fermée jusqu’au printemps 2027 | Thu, 17 Se"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -109,8 +109,8 @@
       "url": "https://www.opera-orchestre-montpellier.fr/",
       "method": "RSS",
       "items": 10,
-      "chars": 3248,
-      "preview": "[RSS · 10 items] Un coffret de biscuits aux couleurs de l’Opéra Comédie | Wed, 16 Sep 2026 | https:/"
+      "chars": 3223,
+      "preview": "[RSS · 10 items] La musique coréenne à l’honneur à Montpellier | Thu, 17 Sep 2026 | https://www.oper"
     },
     {
       "name": "Domaine d'O Montpellier",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5687,
-      "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
+      "chars": 5671,
+      "preview": "Cepac Silo - Marseille | Site officiel JOURNEES EUROPEENNES DU PATRIMOINE Cepac Silo – Site officiel"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 161,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal LA DAME DE PIER"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2917,
-      "preview": "[RSS · 10 items] HK LE JOUR OÙ J’AI RENCONTRÉ BREL | Tue, 15 Sep 2026 | https://adamconcerts.com/hk-"
+      "chars": 2947,
+      "preview": "[RSS · 10 items] SANANDA MAITREYA & The Sugar Plum Pharaohs | Fri, 18 Sep 2026 | https://adamconcert"
     },
     {
       "name": "Marseille Comedy Club",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7729,
+      "chars": 7575,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4515,
+      "chars": 4487,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 28,
-    "sources_erreur": 1,
+    "sources_text": 27,
+    "sources_erreur": 2,
     "total_items_structured": 196,
-    "total_chars": 164855
+    "total_chars": 164522
   },
-  "timestamp": "2026-09-17T10:54:40Z"
+  "timestamp": "2026-09-18T10:30:46Z"
 }
