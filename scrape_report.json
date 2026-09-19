@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6878,
+      "chars": 6866,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5678,
+      "chars": 5535,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8996,
+      "chars": 9089,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7559,
-      "preview": "[RSS · 20 items] Visite patrimoine à 2 voix \"Agde, dans les pas des photographes d'hier\" | Fri, 18 S"
+      "chars": 7680,
+      "preview": "[RSS · 20 items] Visite guidée autour du Plan-Objet Sud-Hérault | Sat, 19 Sep 2026 | https://34.agen"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7262,
-      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
+      "chars": 7664,
+      "preview": "[RSS · 20 items] Happy Culture, le miel de nos ruches ! | Sat, 19 Sep 2026 | https://30.agendacultur"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6540,
-      "preview": "[RSS · 20 items] Glaneuses et glaneurs | Thu, 17 Sep 2026 | https://13.agendaculturel.fr/exposition/"
+      "chars": 6762,
+      "preview": "[RSS · 20 items] L'eau, Salon et Craponne | Sat, 19 Sep 2026 | https://13.agendaculturel.fr/expositi"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1921,
-      "preview": "[RSS · 5 items] Travaux à Sète : la rue de la Caraussane fermée jusqu’au printemps 2027 | Thu, 17 Se"
+      "chars": 1937,
+      "preview": "[RSS · 5 items] Stationnement à Balaruc-les-Bains : le réflexe disque à ne pas oublier | Fri, 18 Sep"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5671,
+      "chars": 5659,
       "preview": "Cepac Silo - Marseille | Site officiel JOURNEES EUROPEENNES DU PATRIMOINE Cepac Silo – Site officiel"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 161,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal LA DAME DE PIER"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8246,
+      "chars": 8239,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2947,
-      "preview": "[RSS · 10 items] SANANDA MAITREYA & The Sugar Plum Pharaohs | Fri, 18 Sep 2026 | https://adamconcert"
+      "chars": 2949,
+      "preview": "[RSS · 10 items] EROS RAMAZZOTTI | Fri, 18 Sep 2026 | https://adamconcerts.com/eros-ramazzotti-5-652"
     },
     {
       "name": "Marseille Comedy Club",
@@ -275,10 +275,10 @@
     {
       "name": "Alma Dance Montpellier",
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
-      "method": "JSON-LD",
-      "items": 1,
-      "chars": 350,
-      "preview": "[JSON-LD · 1 événements] Portes Ouvertes &#8211; Semaine 2 | 2026-09-14 | Montpellier Ouest &#038; M"
+      "method": "texte",
+      "items": 0,
+      "chars": 7410,
+      "preview": "Événements danse Montpellier : soirées & agenda | Alma Dance Événements danse Montpellier Envie de d"
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7575,
+      "chars": 7728,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4487,
+      "chars": 5586,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -381,11 +381,11 @@
     "sources_total": 47,
     "sources_skip": 0,
     "sources_rss": 14,
-    "sources_jsonld": 4,
-    "sources_text": 27,
-    "sources_erreur": 2,
-    "total_items_structured": 196,
-    "total_chars": 164522
+    "sources_jsonld": 3,
+    "sources_text": 29,
+    "sources_erreur": 1,
+    "total_items_structured": 195,
+    "total_chars": 173658
   },
-  "timestamp": "2026-09-18T10:30:46Z"
+  "timestamp": "2026-09-19T10:15:40Z"
 }
