@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6866,
+      "chars": 6950,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5535,
+      "chars": 5577,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9089,
+      "chars": 8957,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7680,
-      "preview": "[RSS · 20 items] Visite guidée autour du Plan-Objet Sud-Hérault | Sat, 19 Sep 2026 | https://34.agen"
+      "chars": 7516,
+      "preview": "[RSS · 20 items] Veillée-Projection | Sun, 20 Sep 2026 | https://34.agendaculturel.fr/exposition/mon"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7664,
-      "preview": "[RSS · 20 items] Happy Culture, le miel de nos ruches ! | Sat, 19 Sep 2026 | https://30.agendacultur"
+      "chars": 7689,
+      "preview": "[RSS · 20 items] Un atelier famille « Rallye cartes postales » | Sat, 19 Sep 2026 | https://30.agend"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6762,
-      "preview": "[RSS · 20 items] L'eau, Salon et Craponne | Sat, 19 Sep 2026 | https://13.agendaculturel.fr/expositi"
+      "chars": 6436,
+      "preview": "[RSS · 20 items] Le Cirque Variety | Sun, 20 Sep 2026 | https://13.agendaculturel.fr/arts-du-spectac"
     },
     {
       "name": "Montpellier Events",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1067,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios Ouverture de saison 2026-2027 fusio"
+      "chars": 1091,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios fusion groove / rock prog What The "
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -165,8 +165,8 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5659,
-      "preview": "Cepac Silo - Marseille | Site officiel JOURNEES EUROPEENNES DU PATRIMOINE Cepac Silo – Site officiel"
+      "chars": 5480,
+      "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2071,
+      "chars": 2131,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3248,
+      "chars": 3086,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7728,
+      "chars": 8972,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5586,
+      "chars": 5854,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 195,
-    "total_chars": 173658
+    "total_chars": 174442
   },
-  "timestamp": "2026-09-19T10:15:40Z"
+  "timestamp": "2026-09-20T10:34:14Z"
 }
