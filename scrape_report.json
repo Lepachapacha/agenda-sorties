@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6950,
+      "chars": 7043,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5577,
+      "chars": 5660,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8957,
+      "chars": 9024,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7516,
-      "preview": "[RSS · 20 items] Veillée-Projection | Sun, 20 Sep 2026 | https://34.agendaculturel.fr/exposition/mon"
+      "chars": 6950,
+      "preview": "[RSS · 20 items] Deux Impro | Mon, 21 Sep 2026 | https://34.agendaculturel.fr/theatre/montpellier/de"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7689,
-      "preview": "[RSS · 20 items] Un atelier famille « Rallye cartes postales » | Sat, 19 Sep 2026 | https://30.agend"
+      "chars": 6570,
+      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6436,
-      "preview": "[RSS · 20 items] Le Cirque Variety | Sun, 20 Sep 2026 | https://13.agendaculturel.fr/arts-du-spectac"
+      "chars": 6603,
+      "preview": "[RSS · 20 items] Exposition à la Bergerie La Ronde des Artistes Peintres | Mon, 21 Sep 2026 | https:"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1937,
-      "preview": "[RSS · 5 items] Stationnement à Balaruc-les-Bains : le réflexe disque à ne pas oublier | Fri, 18 Sep"
+      "chars": 1907,
+      "preview": "[RSS · 5 items] Semaines d’information sur la santé mentale 2026 à Sète : le programme | Mon, 21 Sep"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda Du mar. 15 sept. au dim. 20 sept. Exposition de Signe Lemche, artiste des At"
+      "preview": "Halle Tropisme - Agenda lun. 21 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5480,
+      "chars": 5590,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2131,
+      "chars": 1928,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 4015,
+      "chars": 3926,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3086,
+      "chars": 3240,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8972,
+      "chars": 7072,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5854,
+      "chars": 4515,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 195,
-    "total_chars": 174442
+    "total_chars": 169870
   },
-  "timestamp": "2026-09-20T10:34:14Z"
+  "timestamp": "2026-09-21T11:55:27Z"
 }
