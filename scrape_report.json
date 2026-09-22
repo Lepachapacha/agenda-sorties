@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9024,
+      "chars": 9097,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6950,
-      "preview": "[RSS · 20 items] Deux Impro | Mon, 21 Sep 2026 | https://34.agendaculturel.fr/theatre/montpellier/de"
+      "chars": 6896,
+      "preview": "[RSS · 20 items] Fruits, Fleurs, Forêts et Eaux, d'ici et d'ailleurs | Sat, 19 Sep 2026 | https://34"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6570,
+      "chars": 6569,
       "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6603,
-      "preview": "[RSS · 20 items] Exposition à la Bergerie La Ronde des Artistes Peintres | Mon, 21 Sep 2026 | https:"
+      "chars": 6650,
+      "preview": "[RSS · 20 items] Exposition du Photo Club des deux rives | Tue, 22 Sep 2026 | https://13.agendacultu"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1907,
-      "preview": "[RSS · 5 items] Semaines d’information sur la santé mentale 2026 à Sète : le programme | Mon, 21 Sep"
+      "chars": 1910,
+      "preview": "[RSS · 5 items] Balaruc-le-Vieux : les inscriptions aux vacances d’automne sont ouvertes | Tue, 22 S"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -125,8 +125,8 @@
       "url": "https://www.lejam.com/",
       "method": "RSS",
       "items": 10,
-      "chars": 3472,
-      "preview": "[RSS · 10 items] ABONNEMENT JAM CLUB 2026-2027 | Thu, 27 Aug 2026 | https://www.lejam.com/abonnement"
+      "chars": 3502,
+      "preview": "[RSS · 10 items] ✨NOUVEAUTÉS 2026/2027 DU JAM – ORCHESTRES À THÈME✨ | Tue, 22 Sep 2026 | https://www"
     },
     {
       "name": "Halle Tropisme Montpellier",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda lun. 21 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
+      "preview": "Halle Tropisme - Agenda mar. 22 sept. de 18h00 à 19h30 Atelier de journaling Montpellier Journaling "
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5590,
+      "chars": 5490,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 24,
-      "chars": 7694,
-      "preview": "[JSON-LD · 24 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
+      "items": 25,
+      "chars": 7876,
+      "preview": "[JSON-LD · 25 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3926,
+      "chars": 4264,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3240,
+      "chars": 3248,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7072,
+      "chars": 9867,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4515,
+      "chars": 5869,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 3,
     "sources_text": 29,
     "sources_erreur": 1,
-    "total_items_structured": 195,
-    "total_chars": 169870
+    "total_items_structured": 196,
+    "total_chars": 174545
   },
-  "timestamp": "2026-09-21T11:55:27Z"
+  "timestamp": "2026-09-22T10:55:18Z"
 }
