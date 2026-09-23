@@ -1,25 +1,25 @@
-[generate.py] 2026-09-22
+[generate.py] 2026-09-23
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 7043 chars
+    → texte, 7164 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5660 chars
+    → texte, 5701 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 9097 chars
+    → texte, 8958 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6896 chars, 20 items
+    → RSS, 6876 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
     → RSS, 6569 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6650 chars, 20 items
+    → RSS, 7102 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 498 chars
   [8/47] Scraping : IciSète
-    → RSS, 1910 chars, 5 items
+    → RSS, 1934 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
@@ -39,13 +39,13 @@ Scraping des sources...
   [17/47] Scraping : Halle Tropisme Montpellier
     → texte, 12000 chars
   [18/47] Scraping : Paloma Nîmes
-    → RSS, 3824 chars, 10 items
+    → RSS, 3876 chars, 10 items
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5490 chars
+    → texte, 5431 chars
   [22/47] Scraping : Le Dôme Marseille
     → texte, 161 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2949 chars, 10 items
+    → RSS, 2932 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -79,7 +79,7 @@ Scraping des sources...
   [37/47] Scraping : Toutlemondedanse Montpellier
     → texte, 979 chars
   [38/47] Scraping : Tempo Latino Vic-Fezensac
-    → texte, 1458 chars
+    → texte, 1507 chars
   [39/47] Scraping : Latinamap Festivals Été
     → texte, 12000 chars
   [40/47] Scraping : Jazz à Sète
@@ -93,9 +93,9 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3248 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 9867 chars
+    → texte, 8354 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 5869 chars
+    → texte, 5218 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 178251 → 110000 chars
+  Scrape tronqué : 176591 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-09-19","titre":"Fruits, Fleurs, Forêts et Eaux, d\'ici et d\'ailleurs","cat":"expo","lieu":"Béziers","note":"Aquarelles et huiles de Heli Ranta","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/beziers/fruits-fleurs-forets-et-eaux-d-ici-et-'
-  175 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -38 passés, -0 génériques, 0 cat. corrigées → 137 retenus
-  Total : 137 événements (0 manuels + 137 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-09-23","titre":"Ma joie comme tranchée","cat":"theatre","lieu":"Laverune, Hérault","note":"Théâtre contemporain sur la colère légitime","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/theatre/laverune/ma-joie-comme-tranchee.html","gratuit":false,"g'
+  180 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -25 passés, -0 génériques, 0 cat. corrigées → 155 retenus
+  Total : 155 événements (0 manuels + 155 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7043,
+      "chars": 7164,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5660,
+      "chars": 5701,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9097,
+      "chars": 8958,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6896,
-      "preview": "[RSS · 20 items] Fruits, Fleurs, Forêts et Eaux, d'ici et d'ailleurs | Sat, 19 Sep 2026 | https://34"
+      "chars": 6876,
+      "preview": "[RSS · 20 items] Ma joie comme tranchée | Wed, 23 Sep 2026 | https://34.agendaculturel.fr/theatre/la"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6650,
-      "preview": "[RSS · 20 items] Exposition du Photo Club des deux rives | Tue, 22 Sep 2026 | https://13.agendacultu"
+      "chars": 7102,
+      "preview": "[RSS · 20 items] En passant, les nuits. (Soupçonne-moi du meilleur) | Wed, 23 Sep 2026 | https://13."
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1910,
-      "preview": "[RSS · 5 items] Balaruc-le-Vieux : les inscriptions aux vacances d’automne sont ouvertes | Tue, 22 S"
+      "chars": 1934,
+      "preview": "[RSS · 5 items] Semaine Bleue 2026 : Frontignan fête 75 ans de lien entre les générations | Tue, 22 "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,15 +134,15 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mar. 22 sept. de 18h00 à 19h30 Atelier de journaling Montpellier Journaling "
+      "preview": "Halle Tropisme - Agenda mer. 23 sept. de 19h00 à 22h00 Tous les mercredis de 19h00 à 22h00 80m² de f"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3824,
-      "preview": "[RSS · 10 items] PENDANT LA FERIA, UN BUS T’EMMÈNE DU PARKING DE PALOMA AU CENTRE VILLE | Tue, 15 Se"
+      "chars": 3876,
+      "preview": "[RSS · 10 items] Collégien·nes / Lycéen·nes / Étudiant·es : rejoignez nos équipes ! | Tue, 22 Sep 20"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5490,
+      "chars": 5431,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2949,
-      "preview": "[RSS · 10 items] EROS RAMAZZOTTI | Fri, 18 Sep 2026 | https://adamconcerts.com/eros-ramazzotti-5-652"
+      "chars": 2932,
+      "preview": "[RSS · 10 items] JOK’AIR | Wed, 23 Sep 2026 | https://adamconcerts.com/jokair-65117/ | JOK’AIR – LA "
     },
     {
       "name": "Marseille Comedy Club",
@@ -301,7 +301,7 @@
       "url": "https://tempolatino.com/en/",
       "method": "texte",
       "items": 0,
-      "chars": 1458,
+      "chars": 1507,
       "preview": "Tempo Latino Festival - 1st European Afro-Cuban Latin Music Festival. Salsa - Vic-Fezensac Gers Occi"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9867,
+      "chars": 8354,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5869,
+      "chars": 5218,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 174545
+    "total_chars": 172885
   },
-  "timestamp": "2026-09-22T10:55:18Z"
+  "timestamp": "2026-09-23T10:43:22Z"
 }
