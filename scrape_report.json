@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7232,
+      "chars": 7172,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5680,
+      "chars": 5661,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9010,
+      "chars": 8726,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6740,
-      "preview": "[RSS · 20 items] Exposition Martin Cauvel | Thu, 24 Sep 2026 | https://34.agendaculturel.fr/expositi"
+      "chars": 6627,
+      "preview": "[RSS · 20 items] Raoul Chichin | Fri, 25 Sep 2026 | https://34.agendaculturel.fr/concert/saint-jean-"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6569,
-      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
+      "preview": "[RSS · 20 items] Furtives | Fri, 25 Sep 2026 | https://30.agendaculturel.fr/theatre/nimes/furtives.h"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7007,
-      "preview": "[RSS · 20 items] Exposition : Les ailes du Sud | Thu, 24 Sep 2026 | https://13.agendaculturel.fr/exp"
+      "chars": 6812,
+      "preview": "[RSS · 20 items] English Comedy Night | Fri, 25 Sep 2026 | https://13.agendaculturel.fr/theatre/mars"
     },
     {
       "name": "Montpellier Events",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5395,
+      "chars": 5402,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -173,8 +173,8 @@
       "url": "https://dome.marseille.fr/programmation",
       "method": "texte",
       "items": 0,
-      "chars": 161,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal LA DAME DE PIER"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 1928,
+      "chars": 1922,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8239,
+      "chars": 8246,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2932,
-      "preview": "[RSS · 10 items] JOK’AIR | Wed, 23 Sep 2026 | https://adamconcerts.com/jokair-65117/ | JOK’AIR – LA "
+      "chars": 2958,
+      "preview": "[RSS · 10 items] REDOUANE BOUGHERABA | Fri, 25 Sep 2026 | https://adamconcerts.com/redouane-boughera"
     },
     {
       "name": "Marseille Comedy Club",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3248,
+      "chars": 3280,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7943,
+      "chars": 9107,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5144,
+      "chars": 5236,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 172221
+    "total_chars": 172845
   },
-  "timestamp": "2026-09-24T11:04:04Z"
+  "timestamp": "2026-09-25T11:04:18Z"
 }
