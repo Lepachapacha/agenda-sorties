@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7076,
+      "chars": 7040,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5651,
+      "chars": 5612,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8533,
+      "chars": 8544,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6391,
-      "preview": "[RSS · 20 items] Okali | Sat, 26 Sep 2026 | https://34.agendaculturel.fr/concert/montpellier/okali.h"
+      "chars": 6684,
+      "preview": "[RSS · 20 items] SÓLL | Sun, 27 Sep 2026 | https://34.agendaculturel.fr/concert/montpellier/soll.htm"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6681,
+      "chars": 6736,
       "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
@@ -45,7 +45,7 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6990,
+      "chars": 7159,
       "preview": "[RSS · 20 items] Jean-Baptiste Sauvage | Sat, 26 Sep 2026 | https://13.agendaculturel.fr/exposition/"
     },
     {
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5402,
+      "chars": 5398,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8239,
+      "chars": 8250,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9174,
+      "chars": 9878,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5236,
+      "chars": 5382,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 29,
     "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 172568
+    "total_chars": 173878
   },
-  "timestamp": "2026-09-26T10:45:48Z"
+  "timestamp": "2026-09-27T11:20:34Z"
 }
