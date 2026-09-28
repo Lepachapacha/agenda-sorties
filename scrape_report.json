@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7040,
+      "chars": 6944,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5612,
+      "chars": 5711,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8544,
+      "chars": 8741,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6684,
-      "preview": "[RSS · 20 items] SÓLL | Sun, 27 Sep 2026 | https://34.agendaculturel.fr/concert/montpellier/soll.htm"
+      "chars": 6962,
+      "preview": "[RSS · 20 items] Fruits, Fleurs, Forêts et Eaux, d'ici et d'ailleurs | Mon, 28 Sep 2026 | https://34"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6736,
+      "chars": 6807,
       "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7159,
-      "preview": "[RSS · 20 items] Jean-Baptiste Sauvage | Sat, 26 Sep 2026 | https://13.agendaculturel.fr/exposition/"
+      "chars": 7070,
+      "preview": "[RSS · 20 items] Le Train de Camargue - Terminus : Les Saintes-Maries-de-la-Mer | Thu, 24 Sep 2026 |"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1965,
-      "preview": "[RSS · 5 items] Saint-Louis : le concours d’affiches reviendra en 2027, quai de la Résistance | Sat,"
+      "chars": 1947,
+      "preview": "[RSS · 5 items] Grève du mardi 29 septembre à Sète : la situation école par école | Mon, 28 Sep 2026"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1140,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios fusion groove / rock prog What The "
+      "chars": 1153,
+      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -125,7 +125,7 @@
       "url": "https://www.lejam.com/",
       "method": "RSS",
       "items": 10,
-      "chars": 3502,
+      "chars": 3546,
       "preview": "[RSS · 10 items] ✨NOUVEAUTÉS 2026/2027 DU JAM – ORCHESTRES À THÈME✨ | Tue, 22 Sep 2026 | https://www"
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda Du jeu. 24 sept. au dim. 27 sept. MAQUETTE DE CAMPEMENTS TSIGANES UNE IMMERS"
+      "preview": "Halle Tropisme - Agenda lun. 28 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5398,
+      "chars": 5417,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 134,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -221,7 +221,7 @@
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 7876,
+      "chars": 7986,
       "preview": "[JSON-LD · 25 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 4345,
+      "chars": 3979,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3155,
+      "chars": 3306,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9878,
+      "chars": 9619,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5382,
+      "chars": 5256,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 3,
-    "sources_text": 29,
-    "sources_erreur": 1,
+    "sources_text": 28,
+    "sources_erreur": 2,
     "total_items_structured": 196,
-    "total_chars": 173878
+    "total_chars": 173791
   },
-  "timestamp": "2026-09-27T11:20:34Z"
+  "timestamp": "2026-09-28T12:49:55Z"
 }
