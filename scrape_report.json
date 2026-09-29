@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6944,
+      "chars": 6923,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5711,
+      "chars": 5640,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8741,
+      "chars": 8781,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,8 +29,8 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6962,
-      "preview": "[RSS · 20 items] Fruits, Fleurs, Forêts et Eaux, d'ici et d'ailleurs | Mon, 28 Sep 2026 | https://34"
+      "chars": 6986,
+      "preview": "[RSS · 20 items] « Divagations » au Kiasma à Castelnau-le-Lez | Tue, 29 Sep 2026 | https://34.agenda"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7070,
-      "preview": "[RSS · 20 items] Le Train de Camargue - Terminus : Les Saintes-Maries-de-la-Mer | Thu, 24 Sep 2026 |"
+      "chars": 7065,
+      "preview": "[RSS · 20 items] Eurasia Circus | Tue, 29 Sep 2026 | https://13.agendaculturel.fr/arts-du-spectacle/"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1947,
-      "preview": "[RSS · 5 items] Grève du mardi 29 septembre à Sète : la situation école par école | Mon, 28 Sep 2026"
+      "chars": 1944,
+      "preview": "[RSS · 5 items] Éolien flottant en Méditerranée : Blue Invest réunit la filière à Frontignan | Tue, "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1153,
+      "chars": 1152,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda lun. 28 sept. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFRO"
+      "preview": "Halle Tropisme - Agenda mar. 29 sept. de 18h30 à 20h00 Tous les mardis de 18h30 à 20h00 Ici on danse"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5417,
+      "chars": 5451,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -181,8 +181,8 @@
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3161,
-      "preview": "[RSS · 10 items] Les ateliers des droits culturels | Thu, 24 Sep 2026 | https://www.lafriche.org/mag"
+      "chars": 3087,
+      "preview": "[RSS · 10 items] Lisez, luttez ! | Tue, 29 Sep 2026 | https://www.lafriche.org/magazine/lisez-luttez"
     },
     {
       "name": "Le Moulin Marseille",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2063,
+      "chars": 2086,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2955,
-      "preview": "[RSS · 10 items] REDOUANE BOUGHERABA | Fri, 25 Sep 2026 | https://adamconcerts.com/redouane-boughera"
+      "chars": 2806,
+      "preview": "[RSS · 10 items] GAROU | Tue, 29 Sep 2026 | https://adamconcerts.com/garou-3-65229/ | Après des anné"
     },
     {
       "name": "Marseille Comedy Club",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3979,
+      "chars": 3638,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3306,
+      "chars": 3311,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9619,
+      "chars": 10296,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5256,
+      "chars": 5995,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 2,
     "total_items_structured": 196,
-    "total_chars": 173791
+    "total_chars": 174668
   },
-  "timestamp": "2026-09-28T12:49:55Z"
+  "timestamp": "2026-09-29T12:04:34Z"
 }
