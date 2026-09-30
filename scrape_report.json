@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6923,
+      "chars": 6944,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5640,
+      "chars": 5664,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8781,
+      "chars": 8832,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,15 +29,15 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6986,
-      "preview": "[RSS · 20 items] « Divagations » au Kiasma à Castelnau-le-Lez | Tue, 29 Sep 2026 | https://34.agenda"
+      "chars": 6846,
+      "preview": "[RSS · 20 items] Fruits, Fleurs, Forêts et Eaux, d'ici et d'ailleurs | Mon, 28 Sep 2026 | https://34"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6807,
+      "chars": 6753,
       "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
     },
     {
@@ -45,8 +45,8 @@
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7065,
-      "preview": "[RSS · 20 items] Eurasia Circus | Tue, 29 Sep 2026 | https://13.agendaculturel.fr/arts-du-spectacle/"
+      "chars": 7207,
+      "preview": "[RSS · 20 items] Exposition \"Sur les traces de la Libération\" | Wed, 30 Sep 2026 | https://13.agenda"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1944,
-      "preview": "[RSS · 5 items] Éolien flottant en Méditerranée : Blue Invest réunit la filière à Frontignan | Tue, "
+      "chars": 1974,
+      "preview": "[RSS · 5 items] Parc de la Fiau à Balaruc-les-Bains : la Ville lance une concertation préalable | Tu"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,15 +134,15 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mar. 29 sept. de 18h30 à 20h00 Tous les mardis de 18h30 à 20h00 Ici on danse"
+      "preview": "Halle Tropisme - Agenda mer. 30 sept. de 15h00 à 23h30 Festival Les Fourmilières - Planète Boum Boum"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3876,
-      "preview": "[RSS · 10 items] Collégien·nes / Lycéen·nes / Étudiant·es : rejoignez nos équipes ! | Tue, 22 Sep 20"
+      "chars": 3954,
+      "preview": "[RSS · 10 items] + que la musique, pour nous, une salle de concert c’est avant tout : | Tue, 29 Sep "
     },
     {
       "name": "Festival de Nîmes",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2086,
+      "chars": 2111,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2806,
-      "preview": "[RSS · 10 items] GAROU | Tue, 29 Sep 2026 | https://adamconcerts.com/garou-3-65229/ | Après des anné"
+      "chars": 2801,
+      "preview": "[RSS · 10 items] PLK | Tue, 29 Sep 2026 | https://adamconcerts.com/plk-3-65359/ | Après une première"
     },
     {
       "name": "Marseille Comedy Club",
@@ -253,8 +253,8 @@
       "url": "https://garage-comedy.com/",
       "method": "texte",
       "items": 0,
-      "chars": 73,
-      "preview": "Garage Comedy Club ⚙️ Le Comedy Club de Marseille RÉSERVATION COMEDY CLUB"
+      "chars": 49,
+      "preview": "Garage Comedy Club ⚙️ Le Comedy Club de Marseille"
     },
     {
       "name": "Comédie Club Vieux Port Marseille",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3638,
+      "chars": 3712,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 10296,
+      "chars": 8855,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5995,
+      "chars": 5290,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 2,
     "total_items_structured": 196,
-    "total_chars": 174668
+    "total_chars": 172744
   },
-  "timestamp": "2026-09-29T12:04:34Z"
+  "timestamp": "2026-09-30T11:52:36Z"
 }
