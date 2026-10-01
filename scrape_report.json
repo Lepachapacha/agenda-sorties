@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6944,
+      "chars": 6897,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5664,
+      "chars": 5660,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8832,
+      "chars": 8902,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6846,
-      "preview": "[RSS · 20 items] Fruits, Fleurs, Forêts et Eaux, d'ici et d'ailleurs | Mon, 28 Sep 2026 | https://34"
+      "chars": 6906,
+      "preview": "[RSS · 20 items] Exposition Martin Cauvel | Thu, 01 Oct 2026 | https://34.agendaculturel.fr/expositi"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6753,
-      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 17 Sep 2026 | https://30.agendacultur"
+      "chars": 6727,
+      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 01 Oct 2026 | https://30.agendacultur"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7207,
-      "preview": "[RSS · 20 items] Exposition \"Sur les traces de la Libération\" | Wed, 30 Sep 2026 | https://13.agenda"
+      "chars": 7160,
+      "preview": "[RSS · 20 items] Regards croisés, collection photographique Regards de Provence | Thu, 01 Oct 2026 |"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1974,
-      "preview": "[RSS · 5 items] Parc de la Fiau à Balaruc-les-Bains : la Ville lance une concertation préalable | Tu"
+      "chars": 1966,
+      "preview": "[RSS · 5 items] Montbazin : la Vène entretenue en douceur, entre crues et biodiversité | Wed, 30 Sep"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1152,
+      "chars": 1163,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mer. 30 sept. de 15h00 à 23h30 Festival Les Fourmilières - Planète Boum Boum"
+      "preview": "Halle Tropisme - Agenda jeu. 01 oct. de 17h30 à 18h30 Tous les jeudis de 17h30 à 18h30 Vente product"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,16 +165,16 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5451,
+      "chars": 5447,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 134,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal 4 VOIX POUR UNE"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -259,10 +259,10 @@
     {
       "name": "Comédie Club Vieux Port Marseille",
       "url": "https://comedieclubvieuxport.com/",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 4586,
-      "preview": "Comedie Club Vieux Port | Plateaux d'humour, stand-up à Marseille Comedie Club – Vieux Port LE PREMI"
+      "chars": 10,
+      "preview": "[HTTP 500]"
     },
     {
       "name": "Temple de la Danse Montpellier",
@@ -286,7 +286,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Soirées Salsa du département 34 (Hérault) - septembre 2026 - Liste Salsa d'Olivier Soirées salsa dan"
+      "preview": "Soirées Salsa du département 34 (Hérault) - octobre 2026 - Liste Salsa d'Olivier Soirées salsa dans "
     },
     {
       "name": "Toutlemondedanse Montpellier",
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3311,
+      "chars": 3245,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8855,
+      "chars": 7243,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5290,
+      "chars": 4982,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 2,
     "total_items_structured": 196,
-    "total_chars": 172744
+    "total_chars": 166302
   },
-  "timestamp": "2026-09-30T11:52:36Z"
+  "timestamp": "2026-10-01T12:22:52Z"
 }
