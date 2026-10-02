@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6897,
+      "chars": 6885,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5660,
+      "chars": 5637,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8902,
+      "chars": 8948,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6906,
-      "preview": "[RSS · 20 items] Exposition Martin Cauvel | Thu, 01 Oct 2026 | https://34.agendaculturel.fr/expositi"
+      "chars": 6725,
+      "preview": "[RSS · 20 items] Romancero | Fri, 02 Oct 2026 | https://34.agendaculturel.fr/concert/beziers/romance"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6727,
-      "preview": "[RSS · 20 items] Exposition personnelle Laurent Arpinon | Thu, 01 Oct 2026 | https://30.agendacultur"
+      "chars": 6664,
+      "preview": "[RSS · 20 items] Journées Nationales des Artistes : Agathe Mazzucotelli et Guyseika | Fri, 02 Oct 20"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7160,
-      "preview": "[RSS · 20 items] Regards croisés, collection photographique Regards de Provence | Thu, 01 Oct 2026 |"
+      "chars": 7014,
+      "preview": "[RSS · 20 items] 14e anniversaire du Molotov ! | Fri, 02 Oct 2026 | https://13.agendaculturel.fr/con"
     },
     {
       "name": "Montpellier Events",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1163,
+      "chars": 1166,
       "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
     },
     {
@@ -134,15 +134,15 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda jeu. 01 oct. de 17h30 à 18h30 Tous les jeudis de 17h30 à 18h30 Vente product"
+      "preview": "Halle Tropisme - Agenda ven. 02 oct. de 14h00 à 22h00 Mind Fest (Festival de la santé mentale) Festi"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3954,
-      "preview": "[RSS · 10 items] + que la musique, pour nous, une salle de concert c’est avant tout : | Tue, 29 Sep "
+      "chars": 3919,
+      "preview": "[RSS · 10 items] LES NOUVEAUX VISAGES DE MANU 2027 | Fri, 02 Oct 2026 | https://paloma-nimes.fr/blog"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5447,
+      "chars": 5547,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2111,
+      "chars": 2116,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -213,7 +213,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
       "items": 25,
-      "chars": 8250,
+      "chars": 8215,
       "preview": "[JSON-LD · 25 événements] Legend Tour By Trade Republic - du Podcast au Show - Tournée | 2026-10-17 "
     },
     {
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2801,
-      "preview": "[RSS · 10 items] PLK | Tue, 29 Sep 2026 | https://adamconcerts.com/plk-3-65359/ | Après une première"
+      "chars": 2808,
+      "preview": "[RSS · 10 items] NINHO | Fri, 02 Oct 2026 | https://adamconcerts.com/ninho-8-65390/ | Le concert de "
     },
     {
       "name": "Marseille Comedy Club",
@@ -259,10 +259,10 @@
     {
       "name": "Comédie Club Vieux Port Marseille",
       "url": "https://comedieclubvieuxport.com/",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 10,
-      "preview": "[HTTP 500]"
+      "chars": 4396,
+      "preview": "Comedie Club Vieux Port | Plateaux d'humour, stand-up à Marseille Comedie Club – Vieux Port FAMILLES"
     },
     {
       "name": "Temple de la Danse Montpellier",
@@ -275,10 +275,10 @@
     {
       "name": "Alma Dance Montpellier",
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
-      "method": "texte",
-      "items": 0,
-      "chars": 7410,
-      "preview": "Événements danse Montpellier : soirées & agenda | Alma Dance Événements danse Montpellier Envie de d"
+      "method": "JSON-LD",
+      "items": 4,
+      "chars": 1199,
+      "preview": "[JSON-LD · 4 événements] ALMA EVENT ÉDITION 1 | 2026-10-03 | El Salon de Tango, Mauguio | Participez"
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7243,
+      "chars": 7288,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4982,
+      "chars": 5283,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -381,11 +381,11 @@
     "sources_total": 47,
     "sources_skip": 0,
     "sources_rss": 14,
-    "sources_jsonld": 3,
+    "sources_jsonld": 4,
     "sources_text": 28,
-    "sources_erreur": 2,
-    "total_items_structured": 196,
-    "total_chars": 166302
+    "sources_erreur": 1,
+    "total_items_structured": 200,
+    "total_chars": 164489
   },
-  "timestamp": "2026-10-01T12:22:52Z"
+  "timestamp": "2026-10-02T11:49:58Z"
 }
