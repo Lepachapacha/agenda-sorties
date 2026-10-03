@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6885,
+      "chars": 6780,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5637,
+      "chars": 5585,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8948,
+      "chars": 8553,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6725,
-      "preview": "[RSS · 20 items] Romancero | Fri, 02 Oct 2026 | https://34.agendaculturel.fr/concert/beziers/romance"
+      "chars": 6551,
+      "preview": "[RSS · 20 items] Kokaz | Sat, 03 Oct 2026 | https://34.agendaculturel.fr/concert/lattes/kokaz.html |"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6664,
-      "preview": "[RSS · 20 items] Journées Nationales des Artistes : Agathe Mazzucotelli et Guyseika | Fri, 02 Oct 20"
+      "chars": 6603,
+      "preview": "[RSS · 20 items] L'art du mensonge | Sat, 03 Oct 2026 | https://30.agendaculturel.fr/theatre/nimes/l"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7014,
-      "preview": "[RSS · 20 items] 14e anniversaire du Molotov ! | Fri, 02 Oct 2026 | https://13.agendaculturel.fr/con"
+      "chars": 7121,
+      "preview": "[RSS · 20 items] Regards croisés, collection photographique Regards de Provence | Thu, 01 Oct 2026 |"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1966,
-      "preview": "[RSS · 5 items] Montbazin : la Vène entretenue en douceur, entre crues et biodiversité | Wed, 30 Sep"
+      "chars": 1940,
+      "preview": "[RSS · 5 items] Vélos électriques : une borne de recharge gratuite à Marseillan | Fri, 02 Oct 2026 |"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,15 +93,15 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1166,
-      "preview": "Victoire 2 - Scène de Musiques Actuelles à Montpellier - Studios What The Fest présente 1000MODS + G"
+      "chars": 1079,
+      "preview": "Victoire 2 – Salle de concert et studios à Montpellier WMF production et Assolust : La soirée Attent"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
       "url": "https://theatrejeanvilar.montpellier.fr/la-saison",
       "method": "texte",
       "items": 0,
-      "chars": 4233,
+      "chars": 4247,
       "preview": "La programmation | Théâtre Jean Vilar Aller au contenu principal Télécharger le programme Théâtre - "
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda ven. 02 oct. de 14h00 à 22h00 Mind Fest (Festival de la santé mentale) Festi"
+      "preview": "Halle Tropisme - Agenda sam. 03 oct. de 15h00 à 16h30 Trokids - Fabrique d'Images Photographie et Ci"
     },
     {
       "name": "Paloma Nîmes",
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2116,
+      "chars": 2111,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 25,
-      "chars": 7986,
-      "preview": "[JSON-LD · 25 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
+      "items": 23,
+      "chars": 7406,
+      "preview": "[JSON-LD · 23 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7288,
+      "chars": 8648,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5283,
+      "chars": 5256,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 4,
     "sources_text": 28,
     "sources_erreur": 1,
-    "total_items_structured": 200,
-    "total_chars": 164489
+    "total_items_structured": 198,
+    "total_chars": 164458
   },
-  "timestamp": "2026-10-02T11:49:58Z"
+  "timestamp": "2026-10-03T11:03:18Z"
 }
