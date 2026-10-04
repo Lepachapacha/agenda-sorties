@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6780,
+      "chars": 6832,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5585,
+      "chars": 5706,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8553,
+      "chars": 8634,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6551,
-      "preview": "[RSS · 20 items] Kokaz | Sat, 03 Oct 2026 | https://34.agendaculturel.fr/concert/lattes/kokaz.html |"
+      "chars": 6720,
+      "preview": "[RSS · 20 items] L'esprit de l'escalier | Sun, 04 Oct 2026 | https://34.agendaculturel.fr/theatre/ai"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6603,
-      "preview": "[RSS · 20 items] L'art du mensonge | Sat, 03 Oct 2026 | https://30.agendaculturel.fr/theatre/nimes/l"
+      "chars": 6441,
+      "preview": "[RSS · 20 items] Journées Nationales des Artistes : Agathe Mazzucotelli et Guyseika | Sun, 04 Oct 20"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7121,
-      "preview": "[RSS · 20 items] Regards croisés, collection photographique Regards de Provence | Thu, 01 Oct 2026 |"
+      "chars": 7158,
+      "preview": "[RSS · 20 items] Concert Acoustique suivi d’une scène ouverte | Sun, 04 Oct 2026 | https://13.agenda"
     },
     {
       "name": "Montpellier Events",
@@ -93,8 +93,8 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1079,
-      "preview": "Victoire 2 – Salle de concert et studios à Montpellier WMF production et Assolust : La soirée Attent"
+      "chars": 1241,
+      "preview": "Victoire 2 – Salle de concert et studios à Montpellier Victoire 2 – Salle de concert et studios à Sa"
     },
     {
       "name": "Théâtre Jean Vilar Montpellier",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda sam. 03 oct. de 15h00 à 16h30 Trokids - Fabrique d'Images Photographie et Ci"
+      "preview": "Halle Tropisme - Agenda dim. 04 oct. de 09h00 à 14h00 Tous les dimanches de 09h00 à 14h00 LE VIDE-GR"
     },
     {
       "name": "Paloma Nîmes",
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 23,
-      "chars": 7406,
-      "preview": "[JSON-LD · 23 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
+      "items": 22,
+      "chars": 7165,
+      "preview": "[JSON-LD · 22 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -277,8 +277,8 @@
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "JSON-LD",
       "items": 4,
-      "chars": 1199,
-      "preview": "[JSON-LD · 4 événements] ALMA EVENT ÉDITION 1 | 2026-10-03 | El Salon de Tango, Mauguio | Participez"
+      "chars": 1184,
+      "preview": "[JSON-LD · 4 événements] ALMA HEBDO BACHATA #3 | 2026-10-14 | El Salon de Tango, Mauguio | Profitez "
     },
     {
       "name": "Liste Salsa d'Olivier Hérault 34",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8648,
+      "chars": 8017,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5256,
+      "chars": 5515,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 4,
     "sources_text": 28,
     "sources_erreur": 1,
-    "total_items_structured": 198,
-    "total_chars": 164458
+    "total_items_structured": 197,
+    "total_chars": 164290
   },
-  "timestamp": "2026-10-03T11:03:18Z"
+  "timestamp": "2026-10-04T11:44:49Z"
 }
