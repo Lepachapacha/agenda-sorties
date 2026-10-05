@@ -1,35 +1,35 @@
-[generate.py] 2026-10-04
+[generate.py] 2026-10-05
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 6832 chars
+    → texte, 6951 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5706 chars
+    → texte, 5613 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8634 chars
+    → texte, 8880 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6720 chars, 20 items
+    → RSS, 6901 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6441 chars, 20 items
+    → RSS, 6599 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 7158 chars, 20 items
+    → RSS, 7234 chars, 20 items
   [7/47] Scraping : Montpellier Events
-    → texte, 498 chars
+    → texte, 528 chars
   [8/47] Scraping : IciSète
-    → RSS, 1940 chars, 5 items
+    → RSS, 1951 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
-    → texte, 106 chars
+    → texte, 136 chars
   [11/47] Scraping : Le Corum Montpellier
     → texte, 249 chars
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
     → texte, 1241 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
-    → texte, 4247 chars
+    → texte, 4290 chars
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3223 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
@@ -45,9 +45,9 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5547 chars
+    → texte, 5540 chars
   [22/47] Scraping : Le Dôme Marseille
-    → texte, 134 chars
+    → texte, 132 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3087 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -63,11 +63,11 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2808 chars, 10 items
+    → RSS, 2810 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
-    → texte, 49 chars
+    → texte, 986 chars
   [33/47] Scraping : Comédie Club Vieux Port Marseille
     → texte, 4396 chars
   [34/47] Scraping : Temple de la Danse Montpellier
@@ -89,13 +89,13 @@ Scraping des sources...
   [42/47] Scraping : Family Piknik Montpellier
     → texte, 81 chars
   [43/47] Scraping : CitizenKid Montpellier
-    → texte, 3712 chars
+    → texte, 3741 chars
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
-    → texte, 3245 chars
+    → texte, 3264 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 8017 chars
+    → texte, 7727 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 5515 chars
+    → texte, 4982 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
     → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
@@ -137,15 +137,15 @@ Direct use of automatic function calling (AFC) in Models.generate_content is not
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 167996 → 110000 chars
+  Scrape tronqué : 168952 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-10-01","titre":"Exposition Martin Cauvel","cat":"expo","lieu":"Lavérune, Hérault","note":"Peintures et dessins","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposition/laverune/exposition-martin-cauvel.html","gratuit":false,"groupe":""},{"date":'
-  169 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -15 passés, -0 génériques, 0 cat. corrigées → 154 retenus
-  Total : 154 événements (0 manuels + 154 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-10-05","titre":"Exposition de Colette Berquet et Nicole Copée et Christian Haussaire","cat":"expo","lieu":"Palavas-les-Flots, Montpellier","note":"Créations multidisciplinaires contemporaines","fils":false,"stars":1,"section":"expos","url":"https://34.agendaculturel.fr/exposit'
+  137 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -5 passés, -0 génériques, 0 cat. corrigées → 132 retenus
+  Total : 132 événements (0 manuels + 132 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
