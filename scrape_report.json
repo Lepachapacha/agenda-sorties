@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6951,
+      "chars": 6944,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5613,
+      "chars": 5638,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8880,
+      "chars": 8860,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -30,7 +30,7 @@
       "method": "RSS",
       "items": 20,
       "chars": 6901,
-      "preview": "[RSS · 20 items] Exposition de Colette Berquet et Nicole Copée et Christian Haussaire | Mon, 05 Oct "
+      "preview": "[RSS · 20 items] Clair Obscur: Expedition 33, La toile aux rêves | Tue, 06 Oct 2026 | https://34.age"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
@@ -38,15 +38,15 @@
       "method": "RSS",
       "items": 20,
       "chars": 6599,
-      "preview": "[RSS · 20 items] Pont du Gard + Musée : Coupe-file | Mon, 05 Oct 2026 | https://30.agendaculturel.fr"
+      "preview": "[RSS · 20 items] L’Abolition des privilèges | Tue, 06 Oct 2026 | https://30.agendaculturel.fr/theatr"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7234,
-      "preview": "[RSS · 20 items] Je passe des frontières. Exposition Alain Andrade | Mon, 05 Oct 2026 | https://13.a"
+      "chars": 7221,
+      "preview": "[RSS · 20 items] Nous, Sorcière & Sauvage | Tue, 06 Oct 2026 | https://13.agendaculturel.fr/expositi"
     },
     {
       "name": "Montpellier Events",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda lun. 05 oct. de 18h30 à 20h15 Tous les lundis de 18h30 à 20h15 Cours d'AFROD"
+      "preview": "Halle Tropisme - Agenda mar. 06 oct. de 18h30 à 20h00 Tous les mardis de 18h30 à 20h00 Ici on danse,"
     },
     {
       "name": "Paloma Nîmes",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2810,
-      "preview": "[RSS · 10 items] STAR WARS IN CONCERT | Mon, 05 Oct 2026 | https://adamconcerts.com/star-wars-in-con"
+      "chars": 2833,
+      "preview": "[RSS · 10 items] STAR ACADEMY | Tue, 06 Oct 2026 | https://adamconcerts.com/star-academy-6-65536/ | "
     },
     {
       "name": "Marseille Comedy Club",
@@ -277,7 +277,7 @@
       "url": "https://almadance.fr/soirees-danse-montpelier-bachata-salsa-kizomba/",
       "method": "JSON-LD",
       "items": 4,
-      "chars": 1184,
+      "chars": 1183,
       "preview": "[JSON-LD · 4 événements] ALMA HEBDO BACHATA #3 | 2026-10-14 | El Salon de Tango, Mauguio | Profitez "
     },
     {
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3741,
+      "chars": 3831,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3264,
+      "chars": 3027,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7727,
+      "chars": 10299,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4982,
+      "chars": 6664,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 197,
-    "total_chars": 165246
+    "total_chars": 169360
   },
-  "timestamp": "2026-10-05T13:31:36Z"
+  "timestamp": "2026-10-06T12:42:18Z"
 }
