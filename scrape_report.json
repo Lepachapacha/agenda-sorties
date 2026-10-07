@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6944,
+      "chars": 7010,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5638,
+      "chars": 5804,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8860,
+      "chars": 8964,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,31 +29,31 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6901,
-      "preview": "[RSS · 20 items] Clair Obscur: Expedition 33, La toile aux rêves | Tue, 06 Oct 2026 | https://34.age"
+      "chars": 6906,
+      "preview": "[RSS · 20 items] Clair Obscur: Expedition 33, La toile aux rêves | Wed, 07 Oct 2026 | https://34.age"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6599,
-      "preview": "[RSS · 20 items] L’Abolition des privilèges | Tue, 06 Oct 2026 | https://30.agendaculturel.fr/theatr"
+      "chars": 6593,
+      "preview": "[RSS · 20 items] Akim Omiri, Contexte | Wed, 07 Oct 2026 | https://30.agendaculturel.fr/theatre/verg"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7221,
-      "preview": "[RSS · 20 items] Nous, Sorcière & Sauvage | Tue, 06 Oct 2026 | https://13.agendaculturel.fr/expositi"
+      "chars": 7223,
+      "preview": "[RSS · 20 items] Au coeur de la Provence, collection du Fonds Régional d’Acquisition d’OEuvres Prove"
     },
     {
       "name": "Montpellier Events",
       "url": "https://www.montpellier-events.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 528,
+      "chars": 584,
       "preview": "L'agenda et la programmation - Montpellier Events Retrouvez ici toute la programmation du Rechercher"
     },
     {
@@ -85,8 +85,8 @@
       "url": "https://www.corum-montpellier.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 249,
-      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... COMPLET - 2ème da"
+      "chars": 305,
+      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... TRANSFÉRÉ AU MO.C"
     },
     {
       "name": "Victoire 2 Saint-Jean-de-Védas",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mar. 06 oct. de 18h30 à 20h00 Tous les mardis de 18h30 à 20h00 Ici on danse,"
+      "preview": "Halle Tropisme - Agenda mer. 07 oct. de 19h00 à 23h00 Mercredizm - DUMBELL COLLECTIVE jeu. 08 oct. d"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5540,
+      "chars": 5636,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -253,8 +253,8 @@
       "url": "https://garage-comedy.com/",
       "method": "texte",
       "items": 0,
-      "chars": 986,
-      "preview": "Garage Comedy Club ⚙️ Le Comedy Club de Marseille BIENVENUE AU GARAGE COMEDY CLUB , c’est quoi ? C’e"
+      "chars": 2261,
+      "preview": "Garage Comedy Club | Comedy Club et stand-up à Marseille Retrouvez chaque semaine notre programmatio"
     },
     {
       "name": "Comédie Club Vieux Port Marseille",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 10299,
+      "chars": 8158,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 6664,
+      "chars": 3835,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 197,
-    "total_chars": 169360
+    "total_chars": 166210
   },
-  "timestamp": "2026-10-06T12:42:18Z"
+  "timestamp": "2026-10-07T12:35:56Z"
 }
