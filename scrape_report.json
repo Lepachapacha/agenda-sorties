@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7010,
+      "chars": 6885,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5804,
+      "chars": 5717,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8964,
+      "chars": 8939,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6906,
-      "preview": "[RSS · 20 items] Clair Obscur: Expedition 33, La toile aux rêves | Wed, 07 Oct 2026 | https://34.age"
+      "chars": 6973,
+      "preview": "[RSS · 20 items] Les Internationales de la Guitare | Thu, 08 Oct 2026 | https://34.agendaculturel.fr"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6593,
-      "preview": "[RSS · 20 items] Akim Omiri, Contexte | Wed, 07 Oct 2026 | https://30.agendaculturel.fr/theatre/verg"
+      "chars": 6656,
+      "preview": "[RSS · 20 items] DUB | Thu, 08 Oct 2026 | https://30.agendaculturel.fr/danse/nimes/compagnie-amala-d"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7223,
-      "preview": "[RSS · 20 items] Au coeur de la Provence, collection du Fonds Régional d’Acquisition d’OEuvres Prove"
+      "chars": 6973,
+      "preview": "[RSS · 20 items] Festival actoral | Thu, 08 Oct 2026 | https://13.agendaculturel.fr/festival/festiva"
     },
     {
       "name": "Montpellier Events",
@@ -59,10 +59,10 @@
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "RSS",
-      "items": 5,
-      "chars": 1951,
-      "preview": "[RSS · 5 items] Concours photo Lumière et Habitat : les lauréats de la Maison de l’Habitat | Mon, 05"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda mer. 07 oct. de 19h00 à 23h00 Mercredizm - DUMBELL COLLECTIVE jeu. 08 oct. d"
+      "preview": "Halle Tropisme - Agenda jeu. 08 oct. de 10h00 à 19h00 Festival de la cellule, savoureusement vivant "
     },
     {
       "name": "Paloma Nîmes",
@@ -155,26 +155,26 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 1732,
-      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5636,
+      "chars": 5669,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 132,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal THE JEFF PANACL"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 22,
-      "chars": 7165,
-      "preview": "[JSON-LD · 22 événements] Akim Omiri - Contexte - Tournée | 2026-10-07 | Vergeze Espace, Vergèze |  "
+      "items": 21,
+      "chars": 6858,
+      "preview": "[JSON-LD · 21 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 8158,
+      "chars": 7313,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,27 +365,27 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3835,
+      "chars": 3592,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
       "name": "Arènes de Béziers Feria 2026",
       "url": "https://www.arenes-beziers.com/ferias-2026/",
-      "method": "RSS",
-      "items": 10,
-      "chars": 2013,
-      "preview": "[RSS · 10 items] Avant dernier Toro piscine de la saison ! | Wed, 19 Aug 2026 | https://www.arenes-b"
+      "method": "texte",
+      "items": 0,
+      "chars": 98,
+      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
     }
   ],
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 14,
+    "sources_rss": 11,
     "sources_jsonld": 4,
-    "sources_text": 28,
-    "sources_erreur": 1,
-    "total_items_structured": 197,
-    "total_chars": 166210
+    "sources_text": 30,
+    "sources_erreur": 2,
+    "total_items_structured": 171,
+    "total_chars": 158976
   },
-  "timestamp": "2026-10-07T12:35:56Z"
+  "timestamp": "2026-10-08T12:45:41Z"
 }
