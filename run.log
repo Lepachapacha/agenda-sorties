@@ -1,37 +1,37 @@
-[generate.py] 2026-10-08
+[generate.py] 2026-10-09
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 6885 chars
+    → texte, 6864 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5717 chars
+    → texte, 5769 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8939 chars
+    → texte, 8953 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6973 chars, 20 items
+    → RSS, 6905 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6656 chars, 20 items
+    → RSS, 6669 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6973 chars, 20 items
+    → RSS, 6781 chars, 20 items
   [7/47] Scraping : Montpellier Events
-    → texte, 584 chars
+    → texte, 556 chars
   [8/47] Scraping : IciSète
-    → texte, 98 chars
+    → RSS, 1948 chars, 5 items
   [9/47] Scraping : EscapadesLR Hérault
     → JSON-LD, 25 chars, 1 items
   [10/47] Scraping : Zénith Sud Montpellier
     → texte, 136 chars
   [11/47] Scraping : Le Corum Montpellier
-    → texte, 305 chars
+    → texte, 277 chars
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
     → texte, 1241 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
     → texte, 4290 chars
   [14/47] Scraping : Opéra Comédie Montpellier
-    → RSS, 3223 chars, 10 items
+    → RSS, 3206 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
     → texte, 1134 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
@@ -43,11 +43,11 @@ Scraping des sources...
   [19/47] Scraping : Festival de Nîmes
     → texte, 62 chars
   [20/47] Scraping : Théâtre de Nîmes
-    → texte, 98 chars
+    → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5669 chars
+    → texte, 5737 chars
   [22/47] Scraping : Le Dôme Marseille
-    → erreur, 19 chars
+    → texte, 132 chars
   [23/47] Scraping : La Friche Belle de Mai
     → RSS, 3087 chars, 10 items
   [24/47] Scraping : Le Moulin Marseille
@@ -63,7 +63,7 @@ Scraping des sources...
   [29/47] Scraping : Fnac Humour Montpellier
     → erreur, 19 chars
   [30/47] Scraping : Adam Concerts Humour
-    → RSS, 2833 chars, 10 items
+    → RSS, 2869 chars, 10 items
   [31/47] Scraping : Marseille Comedy Club
     → RSS, 621 chars, 2 items
   [32/47] Scraping : Garage Comedy Marseille
@@ -95,11 +95,11 @@ Scraping des sources...
   [45/47] Scraping : AlloCiné Pathé Odysseum
     → texte, 7313 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
-    → texte, 3592 chars
+    → texte, 4312 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
-    → texte, 98 chars
+    → RSS, 2013 chars, 10 items
 Sauvegarde scrape_report.json...
-  47 sources — RSS:11 JSON-LD:4 texte:30 skip:0 erreur:2 | 171 items structurés
+  47 sources — RSS:14 JSON-LD:4 texte:28 skip:0 erreur:1 | 196 items structurés
 Recherches Gemini Search (couche 3)...
   [Gemini] gemini-2.0-flash : modèle non disponible
   [Gemini] gemini-2.0-flash-lite : modèle non disponible
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 162682 → 110000 chars
+  Scrape tronqué : 168743 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-10-08","titre":"Les Internationales de la Guitare","cat":"festival","lieu":"Montpellier, Hérault","note":"31e édition du festival guitare","fils":false,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/festival/les-internationales-de-la-guitare.html","gratuit"'
-  77 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -0 passés, -0 génériques, 0 cat. corrigées → 77 retenus
-  Total : 77 événements (0 manuels + 77 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-10-09","titre":"Airs de famille","cat":"festival","lieu":"Vallée de l\'Hérault","note":"Festival chanson française","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/festival/airs-de-famille.html","gratuit":false,"groupe":""},{"date":"2026-10-09","'
+  106 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -23 passés, -0 génériques, 0 cat. corrigées → 83 retenus
+  Total : 83 événements (0 manuels + 83 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.

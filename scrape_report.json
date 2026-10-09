@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6885,
+      "chars": 6864,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5717,
+      "chars": 5769,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8939,
+      "chars": 8953,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,40 +29,40 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6973,
-      "preview": "[RSS · 20 items] Les Internationales de la Guitare | Thu, 08 Oct 2026 | https://34.agendaculturel.fr"
+      "chars": 6905,
+      "preview": "[RSS · 20 items] Airs de famille | Fri, 09 Oct 2026 | https://34.agendaculturel.fr/festival/airs-de-"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6656,
-      "preview": "[RSS · 20 items] DUB | Thu, 08 Oct 2026 | https://30.agendaculturel.fr/danse/nimes/compagnie-amala-d"
+      "chars": 6669,
+      "preview": "[RSS · 20 items] Tomber du ciel | Fri, 09 Oct 2026 | https://30.agendaculturel.fr/exposition/nimes/t"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6973,
-      "preview": "[RSS · 20 items] Festival actoral | Thu, 08 Oct 2026 | https://13.agendaculturel.fr/festival/festiva"
+      "chars": 6781,
+      "preview": "[RSS · 20 items] Peintures | Fri, 09 Oct 2026 | https://13.agendaculturel.fr/exposition/marseille/pe"
     },
     {
       "name": "Montpellier Events",
       "url": "https://www.montpellier-events.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 584,
+      "chars": 556,
       "preview": "L'agenda et la programmation - Montpellier Events Retrouvez ici toute la programmation du Rechercher"
     },
     {
       "name": "IciSète",
       "url": "https://icisete.fr/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 5,
+      "chars": 1948,
+      "preview": "[RSS · 5 items] Robot chirurgical da Vinci à l’hôpital de Sète : mise en service le 15 octobre | Thu"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -85,8 +85,8 @@
       "url": "https://www.corum-montpellier.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 305,
-      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... TRANSFÉRÉ AU MO.C"
+      "chars": 277,
+      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... TRANSFÉRÉ À L’OPÉ"
     },
     {
       "name": "Victoire 2 Saint-Jean-de-Védas",
@@ -109,8 +109,8 @@
       "url": "https://www.opera-orchestre-montpellier.fr/",
       "method": "RSS",
       "items": 10,
-      "chars": 3223,
-      "preview": "[RSS · 10 items] La musique coréenne à l’honneur à Montpellier | Thu, 17 Sep 2026 | https://www.oper"
+      "chars": 3206,
+      "preview": "[RSS · 10 items] Les vacances de la Toussaint à l’Opéra | Fri, 09 Oct 2026 | https://www.opera-orche"
     },
     {
       "name": "Domaine d'O Montpellier",
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda jeu. 08 oct. de 10h00 à 19h00 Festival de la cellule, savoureusement vivant "
+      "preview": "Halle Tropisme - Agenda ven. 09 oct. de 19h00 à 23h30 Depuis maintenant un an, BASH s'impose comme l"
     },
     {
       "name": "Paloma Nîmes",
@@ -155,26 +155,26 @@
     {
       "name": "Théâtre de Nîmes",
       "url": "https://theatredenimes.com/programme/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 1732,
+      "preview": "[RSS · 10 items] Dimitri Chamblas & Boris Charmatz | Thu, 04 Jun 2026 | https://theatredenimes.com/s"
     },
     {
       "name": "Le Silo Marseille",
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5669,
+      "chars": 5737,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "erreur",
+      "method": "texte",
       "items": 0,
-      "chars": 19,
-      "preview": "[Timeout après 10s]"
+      "chars": 132,
+      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal THE JEFF PANACL"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2833,
-      "preview": "[RSS · 10 items] STAR ACADEMY | Tue, 06 Oct 2026 | https://adamconcerts.com/star-academy-6-65536/ | "
+      "chars": 2869,
+      "preview": "[RSS · 10 items] FOREVER | Fri, 09 Oct 2026 | https://adamconcerts.com/forever-4-65610/ | Le 25 juin"
     },
     {
       "name": "Marseille Comedy Club",
@@ -365,27 +365,27 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3592,
+      "chars": 4312,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
       "name": "Arènes de Béziers Feria 2026",
       "url": "https://www.arenes-beziers.com/ferias-2026/",
-      "method": "texte",
-      "items": 0,
-      "chars": 98,
-      "preview": "Un instant, s'il vous plaÃ®tâ¦ Votre demande est en cours de vÃ©rification, veuillez patienterâ¦"
+      "method": "RSS",
+      "items": 10,
+      "chars": 2013,
+      "preview": "[RSS · 10 items] Avant dernier Toro piscine de la saison ! | Wed, 19 Aug 2026 | https://www.arenes-b"
     }
   ],
   "totals": {
     "sources_total": 47,
     "sources_skip": 0,
-    "sources_rss": 11,
+    "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 30,
-    "sources_erreur": 2,
-    "total_items_structured": 171,
-    "total_chars": 158976
+    "sources_text": 28,
+    "sources_erreur": 1,
+    "total_items_structured": 196,
+    "total_chars": 165037
   },
-  "timestamp": "2026-10-08T12:45:41Z"
+  "timestamp": "2026-10-09T12:31:42Z"
 }
