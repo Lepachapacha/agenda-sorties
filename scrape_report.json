@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6864,
+      "chars": 6963,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5769,
+      "chars": 5740,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6905,
-      "preview": "[RSS · 20 items] Airs de famille | Fri, 09 Oct 2026 | https://34.agendaculturel.fr/festival/airs-de-"
+      "chars": 6722,
+      "preview": "[RSS · 20 items] Covers Rock Variétés | Sat, 10 Oct 2026 | https://34.agendaculturel.fr/concert/sain"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6669,
-      "preview": "[RSS · 20 items] Tomber du ciel | Fri, 09 Oct 2026 | https://30.agendaculturel.fr/exposition/nimes/t"
+      "chars": 6507,
+      "preview": "[RSS · 20 items] Tomber du ciel | Sat, 10 Oct 2026 | https://30.agendaculturel.fr/exposition/nimes/t"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6781,
-      "preview": "[RSS · 20 items] Peintures | Fri, 09 Oct 2026 | https://13.agendaculturel.fr/exposition/marseille/pe"
+      "chars": 6867,
+      "preview": "[RSS · 20 items] Cher Renzo Piano, performance d'Élise Courcol-Rozès | Sat, 10 Oct 2026 | https://13"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1948,
-      "preview": "[RSS · 5 items] Robot chirurgical da Vinci à l’hôpital de Sète : mise en service le 15 octobre | Thu"
+      "chars": 1963,
+      "preview": "[RSS · 5 items] Collecte des déchets : nouveau marché au 1er janvier 2027 à Sète et alentours | Fri,"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1241,
+      "chars": 1211,
       "preview": "Victoire 2 – Salle de concert et studios à Montpellier Victoire 2 – Salle de concert et studios à Sa"
     },
     {
@@ -134,15 +134,15 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda ven. 09 oct. de 19h00 à 23h30 Depuis maintenant un an, BASH s'impose comme l"
+      "preview": "Halle Tropisme - Agenda TROPISME PÉTANQUE CLUB Concours de pétanque en doublette Venez lancer vos bo"
     },
     {
       "name": "Paloma Nîmes",
       "url": "https://paloma-nimes.fr/agenda/",
       "method": "RSS",
       "items": 10,
-      "chars": 3919,
-      "preview": "[RSS · 10 items] LES NOUVEAUX VISAGES DE MANU 2027 | Fri, 02 Oct 2026 | https://paloma-nimes.fr/blog"
+      "chars": 3984,
+      "preview": "[RSS · 10 items] Travaux : Cet hiver, Paloma se refait une beauté ! | Fri, 09 Oct 2026 | https://pal"
     },
     {
       "name": "Festival de Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5737,
+      "chars": 5827,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -181,8 +181,8 @@
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3087,
-      "preview": "[RSS · 10 items] Lisez, luttez ! | Tue, 29 Sep 2026 | https://www.lafriche.org/magazine/lisez-luttez"
+      "chars": 3019,
+      "preview": "[RSS · 10 items] Gözde Mimiko Türkkan | Fri, 09 Oct 2026 | https://www.lafriche.org/magazine/gozde-m"
     },
     {
       "name": "Le Moulin Marseille",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3831,
+      "chars": 3792,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7313,
+      "chars": 8594,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4312,
+      "chars": 4519,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 196,
-    "total_chars": 165037
+    "total_chars": 166369
   },
-  "timestamp": "2026-10-09T12:31:42Z"
+  "timestamp": "2026-10-10T11:51:29Z"
 }
