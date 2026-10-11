@@ -1,21 +1,21 @@
-[generate.py] 2026-10-10
+[generate.py] 2026-10-11
 Lecture agenda-config.md...
   29 événements manuels
 /home/runner/work/agenda-sorties/agenda-sorties/generate.py:346: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   ts = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 Scraping des sources...
   [1/47] Scraping : JDS Montpellier
-    → texte, 6963 chars
+    → texte, 6949 chars
   [2/47] Scraping : JDS Nîmes
-    → texte, 5740 chars
+    → texte, 5705 chars
   [3/47] Scraping : JDS Marseille
-    → texte, 8953 chars
+    → texte, 8977 chars
   [4/47] Scraping : Agenda Culturel 34 Montpellier
-    → RSS, 6722 chars, 20 items
+    → RSS, 7013 chars, 20 items
   [5/47] Scraping : Agenda Culturel 30 Nîmes
-    → RSS, 6507 chars, 20 items
+    → RSS, 6364 chars, 20 items
   [6/47] Scraping : Agenda Culturel 13 Marseille
-    → RSS, 6867 chars, 20 items
+    → RSS, 7207 chars, 20 items
   [7/47] Scraping : Montpellier Events
     → texte, 556 chars
   [8/47] Scraping : IciSète
@@ -27,13 +27,13 @@ Scraping des sources...
   [11/47] Scraping : Le Corum Montpellier
     → texte, 277 chars
   [12/47] Scraping : Victoire 2 Saint-Jean-de-Védas
-    → texte, 1211 chars
+    → texte, 1126 chars
   [13/47] Scraping : Théâtre Jean Vilar Montpellier
     → texte, 4290 chars
   [14/47] Scraping : Opéra Comédie Montpellier
     → RSS, 3206 chars, 10 items
   [15/47] Scraping : Domaine d'O Montpellier
-    → texte, 1134 chars
+    → texte, 1066 chars
   [16/47] Scraping : Le Jam Montpellier (jazz)
     → RSS, 3546 chars, 10 items
   [17/47] Scraping : Halle Tropisme Montpellier
@@ -45,7 +45,7 @@ Scraping des sources...
   [20/47] Scraping : Théâtre de Nîmes
     → RSS, 1732 chars, 10 items
   [21/47] Scraping : Le Silo Marseille
-    → texte, 5827 chars
+    → texte, 5890 chars
   [22/47] Scraping : Le Dôme Marseille
     → texte, 132 chars
   [23/47] Scraping : La Friche Belle de Mai
@@ -55,7 +55,7 @@ Scraping des sources...
   [25/47] Scraping : Théâtre de la Mer Sète
     → texte, 679 chars
   [26/47] Scraping : Scène de Bayssan Béziers
-    → texte, 2111 chars
+    → texte, 2129 chars
   [27/47] Scraping : JDS Humour Montpellier
     → JSON-LD, 8215 chars, 25 items
   [28/47] Scraping : JDS Humour Nîmes
@@ -93,7 +93,7 @@ Scraping des sources...
   [44/47] Scraping : Kidiklik Montpellier-Nîmes
     → texte, 3027 chars
   [45/47] Scraping : AlloCiné Pathé Odysseum
-    → texte, 8594 chars
+    → texte, 9065 chars
   [46/47] Scraping : AlloCiné Mégarama Saint-Gély
     → texte, 4519 chars
   [47/47] Scraping : Arènes de Béziers Feria 2026
@@ -136,15 +136,15 @@ Recherches Gemini Search (couche 3)...
   [Gemini 15/15] Films cinéma Pathé Odysseum
     → Erreur : ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-
   Gemini non disponible — pipeline continue avec scrape seul
-  Scrape tronqué : 170075 → 110000 chars
+  Scrape tronqué : 170937 → 110000 chars
   Contenu total Claude : 110000 chars (scrape seul)
 Conversion événements manuels...
   0 événements confirmés (agenda-config.md)
 Extraction nouveaux événements depuis le scrape + Gemini (claude-haiku-4-5)...
-  [Claude raw début] '```json\n[{"date":"2026-10-10","titre":"Covers Rock Variétés","cat":"concert","lieu":"Saint-Jean-de-Védas, Montpellier","note":"Le groupe Meeting reprend les grands tubes de la pop rock","fils":false,"stars":1,"section":"concerts","url":"https://34.agendaculturel.fr/concert/saint-jean-de-vedas/covers'
-  141 nouveaux événements extraits depuis les sources
-  Filtre scrapés : -11 passés, -0 génériques, 0 cat. corrigées → 130 retenus
-  Total : 130 événements (0 manuels + 130 scrapés)
+  [Claude raw début] '```json\n[{"date":"2026-10-10","titre":"Airs de famille","cat":"festival","lieu":"Vallée de l\'Hérault, Montpellier","note":"Festival chanson française","fils":false,"stars":2,"section":"concerts","url":"https://34.agendaculturel.fr/festival/airs-de-famille.html","gratuit":false,"groupe":""},{"date":"'
+  94 nouveaux événements extraits depuis les sources
+  Filtre scrapés : -8 passés, -0 génériques, 0 cat. corrigées → 86 retenus
+  Total : 86 événements (0 manuels + 86 scrapés)
 Sauvegarde events_extracted.json...
 Injection dans template2.html...
 index.html généré avec succès.
