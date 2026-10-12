@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6949,
+      "chars": 6995,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5705,
+      "chars": 5670,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8977,
+      "chars": 9018,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,31 +29,31 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 7013,
-      "preview": "[RSS · 20 items] Airs de famille | Sun, 11 Oct 2026 | https://34.agendaculturel.fr/festival/airs-de-"
+      "chars": 6926,
+      "preview": "[RSS · 20 items] Clair Obscur: Expedition 33, La toile aux rêves | Mon, 12 Oct 2026 | https://34.age"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6364,
-      "preview": "[RSS · 20 items] Tomber du ciel | Sat, 10 Oct 2026 | https://30.agendaculturel.fr/exposition/nimes/t"
+      "chars": 6470,
+      "preview": "[RSS · 20 items] Yaran | Mon, 12 Oct 2026 | https://30.agendaculturel.fr/concert/nimes/yaran.html | "
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7207,
-      "preview": "[RSS · 20 items] Unworlding : exposition collective à la galerie La Salle des machines | Fri, 09 Oct"
+      "chars": 6987,
+      "preview": "[RSS · 20 items] Comédie Club Vieux Port | Mon, 12 Oct 2026 | https://13.agendaculturel.fr/theatre/m"
     },
     {
       "name": "Montpellier Events",
       "url": "https://www.montpellier-events.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 556,
+      "chars": 528,
       "preview": "L'agenda et la programmation - Montpellier Events Retrouvez ici toute la programmation du Rechercher"
     },
     {
@@ -85,15 +85,15 @@
       "url": "https://www.corum-montpellier.com/fr/agenda",
       "method": "texte",
       "items": 0,
-      "chars": 277,
-      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... TRANSFÉRÉ À L’OPÉ"
+      "chars": 249,
+      "preview": "L'agenda et la programmation - Corum Montpellier Nom d'artiste, spectacle, etc ... COMPLET - 2ème da"
     },
     {
       "name": "Victoire 2 Saint-Jean-de-Védas",
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1126,
+      "chars": 1053,
       "preview": "Victoire 2 – Salle de concert et studios à Montpellier Victoire 2 – Salle de concert et studios à Sa"
     },
     {
@@ -205,7 +205,7 @@
       "url": "https://scene-de-bayssan.herault.fr/1090-programmation.htm",
       "method": "texte",
       "items": 0,
-      "chars": 2129,
+      "chars": 2144,
       "preview": "Programme culturel | Scène de Bayssan - Site de la Scène de Bayssan Découvrez les sites et organisme"
     },
     {
@@ -220,9 +220,9 @@
       "name": "JDS Humour Nîmes",
       "url": "https://www.jds.fr/nimes/agenda/humour-comedie-22_B",
       "method": "JSON-LD",
-      "items": 21,
-      "chars": 6858,
-      "preview": "[JSON-LD · 21 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
+      "items": 20,
+      "chars": 6572,
+      "preview": "[JSON-LD · 20 événements] Noëlle Perna - Mado Fait son Cabaret | 2027-02-27 | Vergeze Espace, Vergèz"
     },
     {
       "name": "Fnac Humour Montpellier",
@@ -237,8 +237,8 @@
       "url": "https://adamconcerts.com/programmation/theatre-humour/",
       "method": "RSS",
       "items": 10,
-      "chars": 2869,
-      "preview": "[RSS · 10 items] FOREVER | Fri, 09 Oct 2026 | https://adamconcerts.com/forever-4-65610/ | Le 25 juin"
+      "chars": 2921,
+      "preview": "[RSS · 10 items] HARLEM GLOBETROTTERS | Mon, 12 Oct 2026 | https://adamconcerts.com/harlem-globetrot"
     },
     {
       "name": "Marseille Comedy Club",
@@ -253,7 +253,7 @@
       "url": "https://garage-comedy.com/",
       "method": "texte",
       "items": 0,
-      "chars": 2261,
+      "chars": 2623,
       "preview": "Garage Comedy Club | Comedy Club et stand-up à Marseille Retrouvez chaque semaine notre programmatio"
     },
     {
@@ -316,9 +316,9 @@
       "name": "Jazz à Sète",
       "url": "https://www.jazzasete.com/programmation/",
       "method": "RSS",
-      "items": 5,
-      "chars": 334,
-      "preview": "[RSS · 5 items] x | Wed, 01 Jan 2020 | https://www.jazzasete.com/x-5/ | x x | Wed, 01 Jan 2020 | htt"
+      "items": 8,
+      "chars": 538,
+      "preview": "[RSS · 8 items] cache | Wed, 01 Jan 2020 | https://www.jazzasete.com/cache-3/ | cache cache | Wed, 0"
     },
     {
       "name": "Festival Radio France Occitanie",
@@ -341,7 +341,7 @@
       "url": "https://www.citizenkid.com/montpellier",
       "method": "texte",
       "items": 0,
-      "chars": 3792,
+      "chars": 3734,
       "preview": "Sortie enfant Montpellier, sélection d’activités et de sorties en famille sur Montpellier avec Citiz"
     },
     {
@@ -349,7 +349,7 @@
       "url": "https://montpellier-nimes.kidiklik.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 3027,
+      "chars": 3723,
       "preview": "Le meilleur des sorties pour enfants - Montpellier à Nîmes - Kidiklik Sorry, you need to enable Java"
     },
     {
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 9065,
+      "chars": 7643,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 4519,
+      "chars": 3614,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -384,8 +384,8 @@
     "sources_jsonld": 4,
     "sources_text": 28,
     "sources_erreur": 1,
-    "total_items_structured": 196,
-    "total_chars": 167231
+    "total_items_structured": 198,
+    "total_chars": 165611
   },
-  "timestamp": "2026-10-11T12:03:21Z"
+  "timestamp": "2026-10-12T14:20:55Z"
 }
