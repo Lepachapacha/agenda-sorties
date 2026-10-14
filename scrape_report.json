@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 7024,
+      "chars": 6995,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5735,
+      "chars": 5669,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 9101,
+      "chars": 9029,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6623,
-      "preview": "[RSS · 20 items] A Shamanic funky night | Tue, 13 Oct 2026 | https://34.agendaculturel.fr/concert/mo"
+      "chars": 6624,
+      "preview": "[RSS · 20 items] Show Cocktail | Wed, 14 Oct 2026 | https://34.agendaculturel.fr/theatre/saint-jean-"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6470,
-      "preview": "[RSS · 20 items] Yaran | Tue, 13 Oct 2026 | https://30.agendaculturel.fr/concert/nimes/yaran.html | "
+      "chars": 6459,
+      "preview": "[RSS · 20 items] De Lumière | Wed, 14 Oct 2026 | https://30.agendaculturel.fr/theatre/nimes/de-lumie"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 7060,
-      "preview": "[RSS · 20 items] Comédie Club Vieux Port | Tue, 13 Oct 2026 | https://13.agendaculturel.fr/theatre/m"
+      "chars": 6765,
+      "preview": "[RSS · 20 items] Exposition : Évasion artistique | Wed, 14 Oct 2026 | https://13.agendaculturel.fr/e"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1986,
-      "preview": "[RSS · 5 items] Poussan : livres gratuits à la MJC le 14 octobre, bibliothèque à Saint-Roch | Mon, 1"
+      "chars": 1985,
+      "preview": "[RSS · 5 items] Stages de natation des vacances d’automne : inscriptions à Sète et Gigean | Tue, 13 "
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1053,
+      "chars": 1124,
       "preview": "Victoire 2 – Salle de concert et studios à Montpellier Victoire 2 – Salle de concert et studios à Sa"
     },
     {
@@ -171,10 +171,10 @@
     {
       "name": "Le Dôme Marseille",
       "url": "https://dome.marseille.fr/programmation",
-      "method": "texte",
+      "method": "erreur",
       "items": 0,
-      "chars": 132,
-      "preview": "PROCHAINEMENT | Le Dôme de Marseille - Ville de Marseille Aller au contenu principal THE JEFF PANACL"
+      "chars": 19,
+      "preview": "[Timeout après 10s]"
     },
     {
       "name": "La Friche Belle de Mai",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 10517,
+      "chars": 9115,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 5056,
+      "chars": 4117,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -382,10 +382,10 @@
     "sources_skip": 0,
     "sources_rss": 14,
     "sources_jsonld": 4,
-    "sources_text": 28,
-    "sources_erreur": 1,
+    "sources_text": 27,
+    "sources_erreur": 2,
     "total_items_structured": 198,
-    "total_chars": 170006
+    "total_chars": 167150
   },
-  "timestamp": "2026-10-13T13:30:09Z"
+  "timestamp": "2026-10-14T11:07:18Z"
 }
