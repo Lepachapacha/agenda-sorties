@@ -5,7 +5,7 @@
       "url": "https://www.jds.fr/montpellier/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 6947,
+      "chars": 6968,
       "preview": "Montpellier - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concer"
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.jds.fr/nimes/agenda/",
       "method": "texte",
       "items": 0,
-      "chars": 5727,
+      "chars": 5681,
       "preview": "Nîmes - L’agenda des événements, spectacles, concerts et expos Concert, spectacle, etc. Concert, spe"
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.jds.fr/marseille/",
       "method": "texte",
       "items": 0,
-      "chars": 8990,
+      "chars": 9170,
       "preview": "Que faire et visiter à Marseille : les meilleures idées sorties et loisirs près de chez vous Concert"
     },
     {
@@ -29,24 +29,24 @@
       "url": "https://34.agendaculturel.fr/agenda-culturel/montpellier/",
       "method": "RSS",
       "items": 20,
-      "chars": 6965,
-      "preview": "[RSS · 20 items] Silence, ça tourne | Thu, 15 Oct 2026 | https://34.agendaculturel.fr/theatre/montpe"
+      "chars": 6773,
+      "preview": "[RSS · 20 items] Avion Papier | Fri, 16 Oct 2026 | https://34.agendaculturel.fr/jeune-public/beziers"
     },
     {
       "name": "Agenda Culturel 30 Nîmes",
       "url": "https://30.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6454,
-      "preview": "[RSS · 20 items] Nagori | Thu, 15 Oct 2026 | https://30.agendaculturel.fr/arts-du-spectacle/ales/nag"
+      "chars": 6557,
+      "preview": "[RSS · 20 items] Tomber du ciel | Fri, 16 Oct 2026 | https://30.agendaculturel.fr/exposition/nimes/t"
     },
     {
       "name": "Agenda Culturel 13 Marseille",
       "url": "https://13.agendaculturel.fr/",
       "method": "RSS",
       "items": 20,
-      "chars": 6768,
-      "preview": "[RSS · 20 items] Exposition : Évasion artistique | Thu, 15 Oct 2026 | https://13.agendaculturel.fr/e"
+      "chars": 6825,
+      "preview": "[RSS · 20 items] Voix Publiques - Louisa Babari | Fri, 16 Oct 2026 | https://13.agendaculturel.fr/ex"
     },
     {
       "name": "Montpellier Events",
@@ -61,8 +61,8 @@
       "url": "https://icisete.fr/",
       "method": "RSS",
       "items": 5,
-      "chars": 1950,
-      "preview": "[RSS · 5 items] Sète agglopôle : Loïc Linares élu vice-président d’Intercommunalités de France | Wed"
+      "chars": 1955,
+      "preview": "[RSS · 5 items] Abbaye Saint-Félix-de-Montceau : une nouvelle gestion à Gigean dès avril 2027 | Thu,"
     },
     {
       "name": "EscapadesLR Hérault",
@@ -93,7 +93,7 @@
       "url": "https://www.victoire2.com/",
       "method": "texte",
       "items": 0,
-      "chars": 1124,
+      "chars": 1242,
       "preview": "Victoire 2 – Salle de concert et studios à Montpellier Victoire 2 – Salle de concert et studios à Sa"
     },
     {
@@ -134,7 +134,7 @@
       "method": "texte",
       "items": 0,
       "chars": 12000,
-      "preview": "Halle Tropisme - Agenda Du mer. 14 oct. au mer. 21 oct. Exposition des AJAP et autres voies de l’Arc"
+      "preview": "Halle Tropisme - Agenda jeu. 22 oct. de 18h30 à 20h30 Tous les jeudis de 18h30 à 20h30 Céramique / A"
     },
     {
       "name": "Paloma Nîmes",
@@ -165,7 +165,7 @@
       "url": "https://www.cepacsilo-marseille.fr/",
       "method": "texte",
       "items": 0,
-      "chars": 5901,
+      "chars": 5898,
       "preview": "Cepac Silo - Marseille | Site officiel Cepac Silo – Site officiel | Billetterie concerts & spectacle"
     },
     {
@@ -181,8 +181,8 @@
       "url": "https://www.lafriche.org/temps-forts/",
       "method": "RSS",
       "items": 10,
-      "chars": 3019,
-      "preview": "[RSS · 10 items] Gözde Mimiko Türkkan | Fri, 09 Oct 2026 | https://www.lafriche.org/magazine/gozde-m"
+      "chars": 2958,
+      "preview": "[RSS · 10 items] Amine Hattou | Fri, 16 Oct 2026 | https://www.lafriche.org/magazine/amine-hattou/ |"
     },
     {
       "name": "Le Moulin Marseille",
@@ -357,7 +357,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0702.html",
       "method": "texte",
       "items": 0,
-      "chars": 7113,
+      "chars": 8193,
       "preview": "Cinéma Pathé Montpellier Odysseum - IMAX à Montpellier (34000 ) - Achat ticket cinéma disponible - A"
     },
     {
@@ -365,7 +365,7 @@
       "url": "https://www.allocine.fr/seance/salle_gen_csalle=W4980.html",
       "method": "texte",
       "items": 0,
-      "chars": 3624,
+      "chars": 4479,
       "preview": "Cinéma Mégarama Saint Gely à Saint-Gély-du-Fesc (34980 ) - Achat ticket cinéma disponible - AlloCiné"
     },
     {
@@ -385,7 +385,7 @@
     "sources_text": 28,
     "sources_erreur": 1,
     "total_items_structured": 198,
-    "total_chars": 164950
+    "total_chars": 167067
   },
-  "timestamp": "2026-10-15T10:48:55Z"
+  "timestamp": "2026-10-16T10:38:04Z"
 }
